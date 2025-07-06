@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Slumba ZEN">
+  <title>Slumba ZEN | Premium Hotel Bedding</title>
+  <link rel="icon" type="image/png" href="https://i.postimg.cc/k5NcGrQx/Slumba-ZEN-logo-200.png">
+  <link rel="apple-touch-icon" href="https://i.postimg.cc/k5NcGrQx/Slumba-ZEN-logo-200.png">
+  <link rel="preload" as="image" href="https://i.postimg.cc/DzpY9gWk/cover-page-002.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Baloo+2:wght@700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Sarabun', 'Noto Sans SC', 'Noto Sans Devanagari', 'Noto Sans Arabic', 'sans-serif'],
+            'brand-base': ['"Nunito Sans"', 'Sarabun', 'sans-serif'],
+            'brand-zen': ['"Baloo 2"', 'cursive'],
+          },
+          colors: {
+            // New high-fashion, pastel/earthy palette
+            brand: {
+              // Primary actions, headings, accents
+              primary: '#A58A7A', // Muted Clay/Rose
+              // Secondary buttons, backgrounds for highlighted content
+              secondary: '#E2D7C8', // Pale Beige
+              // Lightest background shade
+              light: '#F9F6F3', // Soft Off-White
+              // Darkest shade for text, dark mode backgrounds
+              dark: '#34384A', // Midnight Blue / Dark Slate
+              // Gold for frames and accents
+              gold: '#D4AF37',
+            },
+            pastel: {
+              pink: '#FFF0F5',
+              mint: '#F0FFF4',
+              blue: '#E6F0FF',
+              lavender: '#F5F3FF',
+            },
+            neutral: {
+              // Main background
+              100: '#F9F6F3', // Soft Off-White
+              // Borders, dividers, subtle backgrounds
+              200: '#EAE5E0', // Light Warm Grey
+              // Lighter text, captions
+              500: '#8C7D73', // Muted Brown
+              // Main body text
+              700: '#4A413A', // Dark Umber
+              // Headings, strong text
+              900: '#34384A', // Midnight Blue / Dark Slate
+            }
+          }
+        }
+      }
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^6.25.0",
+    "i18next": "https://esm.sh/i18next@^23.12.2",
+    "react-i18next": "https://esm.sh/react-i18next@^15.0.0",
+    "i18next-http-backend": "https://esm.sh/i18next-http-backend@^2.5.2",
+    "i18next-browser-languagedetector": "https://esm.sh/i18next-browser-languagedetector@^8.0.0",
+    "@heroicons/react/": "https://esm.sh/@heroicons/react@^2.2.0/",
+    "@heroicons/react": "https://esm.sh/@heroicons/react@^2.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-brand-light">
+  <div id="root"></div>
+  <script type="module" src="./index.js" defer></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

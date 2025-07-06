@@ -1,0 +1,179 @@
+
+{
+  "nav": {
+    "home": "首页",
+    "bedding": "床上用品及其他",
+    "towels": "酒店毛巾",
+    "learn": "技术信息",
+    "shopItems": {
+      "collections": "主要系列",
+      "gallery": "主店铺",
+      "whiteSheets": "白色床单",
+      "premiumColors": "高级色彩",
+      "beddingSets": "床上用品套件"
+    },
+    "learnItems": {
+      "materials": "面料类型信息",
+      "whatIsTencel": "什么是天丝™？",
+      "sizes": "支持的尺寸",
+      "blog": "博客"
+    },
+    "hotelB2B": "酒店与合作伙伴 (B2B)",
+    "shippingWarranty": "运输与保修",
+    "contact": "联系我们",
+    "openMenu": "打开主菜单",
+    "closeMenu": "关闭菜单",
+    "mainNavigation": "主导航",
+    "mobileNavigation": "菜单",
+    "languageSwitcher": "语言切换器"
+  },
+  "footer": {
+    "companyName": "Slumba ZEN",
+    "companyNameRich": "Slumba <1>ZEN</1>",
+    "contactUs": "联系我们",
+    "allRightsReserved": "版权所有",
+    "sitemapLinks": {
+      "collections": "产品系列",
+      "materials": "面料",
+      "hotels": "酒店与B2B业务",
+      "gallery": "产品图库",
+      "delivery": "运输与保修",
+      "contact": "联系我们"
+    },
+    "exploreTitle": "探索",
+    "aboutUsSnippet": "优质酒店床上用品，工厂直供。",
+    "followOnFacebook": "在 Facebook 上关注我们",
+    "followOnInstagram": "在 Instagram 上关注我们",
+    "followOnTikTok": "在 TikTok 上关注我们",
+    "followOnYouTube": "在 YouTube 上关注我们",
+    "followOnTwitter": "在 Twitter 上关注我们",
+    "followOnLinkedIn": "在 LinkedIn 上关注我们",
+    "followOnPinterest": "在 Pinterest 上关注我们"
+  },
+  "contactPage": {
+    "mainTitle": "联系 Slumba ZEN",
+    "subtitle": "我们很高兴回答您的所有问题并听取您的反馈。您可以通过以下渠道联系我们。",
+    "detailsTitle": "联系信息和位置",
+    "legalNameEntity": "Slumba ZEN",
+    "addressLabel": "地址",
+    "address": "919/1 JTC Building, B1-BB038, Silom 19, Silom Road, Silom District, Bangrak, Bangkok 10500 THAILAND",
+    "structuredAddress": {
+      "streetAddress": "919/1 JTC Building, B1-BB038, Silom 19, Silom Road",
+      "addressLocality": "Bangrak",
+      "addressRegion": "Bangkok",
+      "postalCode": "10500",
+      "addressCountry": "TH"
+    },
+    "phoneWhatsAppLabel": "电话 / WhatsApp",
+    "phone1": "+66(0)81 851 9922",
+    "lineLabel": "LINE ID",
+    "lineId": "kris.bkk",
+    "emailLabel": "电子邮件",
+    "emailValue": "info@slumbazen.com",
+    "hoursLabel": "营业时间",
+    "hoursValue": "周一 - 周六: 上午 8:00 - 晚上 9:00<br/>周日: 上午 9:00 - 下午 6:00",
+    "mapTitle": "在这里找到我们",
+    "mapAriaLabel": "在谷歌地图上查看我们的位置"
+  },
+  "hotelsPage": {
+    "mainTitle": "酒店及B2B合作伙伴床上用品解决方案",
+    "mainDescription": "我们了解酒店和B2B合作伙伴对高品质、耐用床上用品的需求，这些床上用品能给客人留下深刻印象并提供巨大价值。请向我们索取B2B报价。",
+    "whyChooseUs": {
+      "title": "为何领先酒店选择我们？",
+      "slideshowAlt": "B2B视觉展示 – 豪华酒店场景",
+      "card1": { "title": "✓ 酒店标准品质", "content": "我们选择符合高标准的原材料和生产工艺。我们的面料经久耐用，可频繁洗涤，使用寿命长。" },
+      "card2": { "title": "✓ 多种选择", "content": "提供多种面料类型（棉、天丝™、Soft-Tex™、CVC）和纱线密度等级，以适应各种预算和酒店风格。", "link": "查看所有面料类型" },
+      "card3": { "title": "✓ 工厂直销价格", "content": "直接从工厂订购，确保价格实惠，并为B2B客户提供特别优惠。" },
+      "card4": { "title": "✓ 定制服务", "content": "我们可以为您的项目生产定制尺寸、绣花标志或选择特定颜色。" },
+      "card5": { "title": "✓ 咨询服务", "content": "我们的专家团队随时准备为您提供建议，帮助您选择适合您酒店类型和预算的面料。" },
+      "card6": { "title": "✓ 免费面料样品", "content": "我们很乐意向您发送面料样品，以便您在批量订购前测试质量和手感。", "button": "为B2B索取样品" }
+    },
+    "expertAdvice": {
+      "title": "📖 专家建议：为您的酒店选择面料",
+      "header1": "酒店类型/使用场景", "header2": "推荐面料", "header3": "原因",
+      "row1": { "useCase": "精品/小型酒店", "recommendation": "棉府绸（500-700密度）或CVC（500密度）条纹", "reason": "舒适、透气、易于护理且性价比高。" },
+      "row2": { "useCase": "海滨酒店/度假村", "recommendation": "棉府绸（500-700密度）或天丝™（400密度）", "reason": "极度透气，快干，不保留水分，感觉凉爽。" },
+      "row3": { "useCase": "3-4星级城市酒店", "recommendation": "棉缎（500-1000密度），Soft-Tex™（600密度）", "reason": "质地致密柔软，外观奢华，耐频繁洗涤。" },
+      "row4": { "useCase": "5星级豪华酒店/贵宾室", "recommendation": "高品质棉缎（1000+密度）或天丝™（600+密度）", "reason": "极致的柔软与舒适，奢华，并给人留下深刻印象。" },
+      "row5": { "useCase": "服务式公寓/高级宿舍", "recommendation": "Soft-Tex™（600密度）或CVC（400-500密度）", "reason": "耐用、易于护理、抗皱且长期使用性价比高。" }
+    },
+    "cta": {
+      "title": "联系我们的B2B团队获取特别优惠",
+      "description": "无论您是酒店、度假村、房地产项目，还是需要高品质床上用品的企业，我们都准备好为您服务并提供最优惠的价格。",
+      "button1": "为B2B索取报价",
+      "button2": "致电咨询：081-851-9922"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Slumba ZEN: 奢华酒店床上用品和毛巾 | 泰国制造",
+      "description": "与 Slumba ZEN 一起体验五星级酒店的奢华。选购为舒适而生的优质泰国棉床单和毛巾。全球配送。",
+      "keywords": "酒店床上用品, 奢华床单, Slumba ZEN, 100%纯棉床单, 天丝莱赛尔床单, 工厂直销床上用品, 透气床单, 防过敏床上用品, B2B酒店供应商, 长绒棉, 可持续床上用品"
+    },
+    "collections": {
+      "title": "按类别选购床上用品: 白色, 彩色, 套件 | Slumba ZEN",
+      "description": "按类别浏览我们的酒店品质床上用品系列。从Slumba ZEN以工厂直销价购买永恒的白色床单、鲜艳的优质彩色床单或方便的全套床上用品。",
+      "keywords": "床上用品系列, 选购床上用品, 白色床单, 彩色床上用品, 床上用品套件, 酒店品质床品, Slumba ZEN, 购买床单"
+    },
+    "materials": {
+      "title": "床上用品材料指南 | 棉, 天丝™ 等 | Slumba ZEN",
+      "description": "酒店床上用品材料指南：了解棉、天丝™、Soft-Tex™、CVC的纱线密度，并获取Slumba ZEN的专家提示，以获得卓越的睡眠体验。",
+      "keywords": "床上用品材料, 什么是棉, 什么是天丝, 纱线密度, 面料指南, Soft-Tex, CVC, 纤维质量, 选择酒店床单, Slumba ZEN, 纯棉床单, 天丝好吗"
+    },
+    "hotels": {
+      "title": "B2B酒店床上用品 Slumba ZEN | 工厂价, 出口品质",
+      "description": "Slumba ZEN，B2B酒店床上用品制造商和供应商。高品质棉、天丝™、Soft-Tex™。可定制规格、刺绣标志、工厂价格。免费咨询。",
+      "keywords": "B2B酒店床上用品, Slumba ZEN, 酒店床上用品制造商, 批发床品, 定制床上用品, 床单刺绣标志, B2B工厂价, 泰国床上用品供应商, 酒店布草"
+    },
+    "gallery": {
+      "title": "床上用品图库 | 酒店床单创意与风格 | Slumba ZEN",
+      "description": "在Slumba ZEN的床上用品图库中寻找灵感。查看各种颜色和设计的酒店品质棉、天丝™、Soft-Tex™床单。以工厂价订购。",
+      "keywords": "床上用品图库, 床上用品创意, 床单设计, Slumba ZEN, 棉质床上用品, 天丝床上用品, 彩色床单, 酒店床品, 床单图片"
+    },
+    "sizes": {
+      "title": "标准床上用品尺寸: 单人, 双人, 特大号 & 定制 | Slumbazen",
+      "description": "适用于3.5、5和6英尺床的床单、被套和枕套尺寸表。Slumbazen工厂为您的床垫尺寸提供定制剪裁服务。保证贴合，带来极致舒适。",
+      "keywords": "床上用品尺寸, 床上用品尺寸表, 3.5英尺床单, 5英尺床单, 6英尺床单, 被套尺寸, 枕套尺寸, 定制床上用品, Slumbazen"
+    },
+    "whatIsTencel": {
+      "title": "什么是天丝™莱赛尔纤维面料？优点、护理与棉的比较",
+      "description": "天丝™莱赛尔纤维深度指南：独特性能、柔软性、环保性。与棉进行比较，并从Slumbazen专家那里学习天丝™的护理技巧，以实现持久使用。",
+      "keywords": "什么是天丝, 天丝面料, 莱赛尔, 天丝性能, 天丝优点, 天丝与棉, 天丝护理说明, 天丝床单, Slumbazen, 天然纤维"
+    },
+    "deliveryWarranty": {
+      "title": "Slumbazen床上用品的运输与保修政策",
+      "description": "关于Slumbazen床上用品运输政策（泰国和国际）、产品保修、退货条件以及为让您满意而设的优质面料护理说明的详细信息。",
+      "keywords": "运输政策, 产品保修, 退货, 床上用品护理, Slumbazen, 免费送货, 国际运费, 送货信息, 产品保证"
+    },
+    "contact": {
+      "title": "联系Slumbazen - 订购酒店床上用品并获取报价",
+      "description": "联系Slumbazen工厂咨询、订购B2B酒店床上用品、出口品质产品，或参观我们的陈列室。电话：081-851-9922，LINE：kris.bkk。我们随时为您服务。",
+      "keywords": "联系Slumbazen, 电话号码, LINE ID, 工厂地图, 订购床单, B2B价格咨询, 联系我们, 泰国床上用品制造商"
+    },
+    "whiteSheets": {
+      "title": "白色酒店床单 | 优质棉、天丝™品质 | Slumbazen",
+      "description": "选购Slumbazen独家白色床单。酒店品质的棉和天丝™面料。洁净、舒适、永恒的优雅。工厂价格。",
+      "keywords": "白色床单, 白色酒店床上用品, 白色棉床单, 白色天丝床单, Slumbazen, 奢华白色床单, 酒店系列白色"
+    },
+    "premiumColors": {
+      "title": "优质彩色床单 - 时尚设计，酒店品质 | Slumbazen",
+      "description": "用Slumbazen的优质彩色床单为您的卧室增添风格。各种色调的优质棉、天丝™面料。以工厂价定制订单。",
+      "keywords": "彩色床单, 优质彩色床上用品, 设计师床品, Slumbazen彩色床单, 纯色床单, 奢华彩色床上用品, 工厂品质"
+    },
+    "beddingSets": {
+      "title": "全套床上用品 - 酒店品质，工厂价格 | Slumbazen",
+      "description": "选择Slumbazen的全套酒店品质床上用品。包括床单、枕套和被套，完美搭配，提供卓越的舒适度和风格。工厂直销。",
+      "keywords": "床上用品套件, 全套床品, 酒店床上用品套餐, Slumbazen床上用品套件, 袋中床, 奢华床上用品组合, 工厂品质"
+    },
+    "towels": {
+        "title": "酒店毛巾指南：选择尺寸、重量和洗涤方法 | Slumbazen",
+        "description": "关于100%纯棉酒店毛巾和浴垫的深入指南。如何为3-5星级酒店选择合适的重量（磅）和尺寸，以及Slumbazen的首次洗涤说明。",
+        "keywords": "酒店毛巾, 浴巾, 浴垫, 毛巾尺寸, 毛巾重量, 如何洗毛巾, 12磅毛巾, 16磅毛巾, 精梳棉, Slumbazen"
+    },
+    "blog": {
+        "title": "博客：酒店床上用品技巧、见解与护理指南 | Slumbazen",
+        "description": "浏览Slumbazen博客，获取关于酒店品质床上用品护理的专家技巧、材料见解以及最新的酒店业趋势。",
+        "keywords": "床上用品博客, 床单护理技巧, 毛巾指南, 酒店品质, Slumbazen, 床上用品文章"
+    }
+  }
+}

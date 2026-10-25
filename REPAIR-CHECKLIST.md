@@ -4,7 +4,7 @@ Baseline: devoncasa/slumbazen-06072025-002, main, 9b2637f292815e8380fd441dc55282
 
 | Finding | Implemented repair | Verification |
 |---|---|---|
-| Home overlap, corruption, long introduction | Responsive header; clean localized introduction; category actions before catalog | Five-language prerender checks; rendered checks pending |
+| Home overlap, corruption, long introduction | Responsive header; clean localized introduction; category actions before catalog | Five-language prerender checks; 450 rendered page/width checks passed |
 | Collection actions hidden on hover | Always-visible category links and descriptions | Semantic links in initial HTML |
 | Gallery missing keys and crowded pagination | Rebuilt localized URL-driven controls; compact previous/page/next | Cotton, white and empty-query assertions pass |
 | Catalog image reuse and invented offers | Retain 106 original raw catalog records and shared original photos with visible representative-photo explanation; remove 30 calculated set offers | Unique SKUs and local image paths asserted |
@@ -15,11 +15,11 @@ Baseline: devoncasa/slumbazen-06072025-002, main, 9b2637f292815e8380fd441dc55282
 | Material filter/links/HTML | Native text content; Cotton route; correct TENCEL link; remove unsupported density conversion | Query and initial HTML checks |
 | TENCEL imagery/general claims | New local care photograph; separate general Lenzing fiber information from product claims | Image existence and source review |
 | Sizes blanket 14-inch fit | Product-specific catalog labels; width/length/depth SVG; measure topper too | Five-language SVG labels |
-| B2B intent lost | Request-type and requirements saved locally across language/page changes | Browser interaction checks pending |
+| B2B intent lost | Request-type and requirements saved locally across language/page changes | B2B sample intent, quantity and requirements survive language switching; invalid quantity blocks copying |
 | Shipping unsupported promises/images | Written-quotation conditions instead of unconfirmed promises; packing and care illustrations; clickable phone | Initial HTML and images checked |
 | Contact map/phone | Address-search link instead of fictional map/pin; international +66818519922; no unsupported WhatsApp action | Destination syntax checked; owner channel confirmation outstanding |
 | Blog placeholders | Three complete localized articles with dedicated routes, 25 October 2026 publication dates and editorial thumbnails | Fifteen article routes checked |
-| Hash URLs and indexing | Browser migration, ordinary static routes, initial HTML, sitemap, reciprocal alternates, canonicals, schema without offers/ratings | 615 pages checked; deployment checks pending |
+| Hash URLs and indexing | Browser migration, ordinary static routes, initial HTML, sitemap, reciprocal alternates, canonicals, schema without offers/ratings | 615 pages checked; preview direct navigation, refresh and legacy migration checked; production check pending |
 | Assets/performance | Six reviewed generated editorial photographs; 59 original images downloaded and optimized; local WebP, explicit image dimensions, below-fold lazy loading; remove runtime Tailwind CDN | Build passes; no unmeasured performance scores claimed |
 | Translation coverage | Active content replaced with a 57-field complete five-language content source, plus five-language catalog labels; old fallback-heavy page modules are no longer used | Exact active-key parity and array-length tests pass |
 
@@ -28,6 +28,8 @@ Baseline: devoncasa/slumbazen-06072025-002, main, 9b2637f292815e8380fd441dc55282
 1. Supplier sheets: exact composition, thread-count method/unit and original 370 figure; each product's complete dimensions, current prices and stock; actual set contents; towel weights/units. The supplier's 370-to-590 conversion is not reproduced.
 2. Confirm contact phone +66818519922, email info@slumbazen.com, JTC room B1-BB038, and supply the current official LINE account link. The old personal LINE ID could not be verified; no generic share-to-friends link is presented as ordering. No WhatsApp support is asserted.
 3. Confirm shipping fees/free thresholds, custom order rules, returns/refund terms, warranty, B2B minimums, lead times and sample conditions. No precise commitment is published until confirmed.
+
+The domain has no MX records. The old info@slumbazen.com contact was removed from public handoffs pending a working business inbox. Enquiry details can be reviewed and copied, followed by the original call contact.
 
 ## Domain
 

@@ -1,5 +1,5 @@
 import React, {useEffect,useState} from 'react';
-import {BrowserRouter,Routes,Route,Link,useLocation,useNavigate,useParams,useSearchParams} from 'react-router-dom';
+import {BrowserRouter,Routes,Route,Navigate,Link,useLocation,useNavigate,useParams,useSearchParams} from 'react-router-dom';
 import {copy,languages,materialComparison} from './content';
 import {products} from './products';
 import ProductDetails from './ProductDetails';
@@ -71,5 +71,5 @@ return <RestorationFrame lang={lang} path={path}>
 {([4,5,6,8,10,11,12].includes(i)||productMode)&&<Enquiry key={path} c={c} lang={lang} p={p}/>}
 {(i===11)&&<p><a href={`tel:${contact.phone}`}>{c.phone} · <bdi>{contact.phone}</bdi></a></p>}
 <div className="related-links">{[7,9,11,12,13].filter(n=>n!==i).map(n=><Link key={n} to={link(paths[n])}>{c.titles[n]}</Link>)}</div></main></RestorationFrame>}
-export function SiteRoutes(){return <Routes><Route path="/:lang/*" element={<Site/>}/><Route path="*" element={<h1>404 · SlumbaZEN</h1>}/></Routes>}
+export function SiteRoutes(){return <Routes><Route path="/" element={<Navigate to="/th/" replace/>}/><Route path="/:lang/*" element={<Site/>}/><Route path="*" element={<h1>404 · SlumbaZEN</h1>}/></Routes>}
 export default function App(){return <BrowserRouter><SiteRoutes/></BrowserRouter>}

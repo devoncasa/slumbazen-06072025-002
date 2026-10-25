@@ -1,5 +1,5 @@
 module.exports = {
-      content: ['./Restoration.tsx','./pages/*.tsx','./components/*.tsx'],
+      content: ['./Restoration.tsx','./pages/{HomePage,CollectionsPage,WhiteSheetsPage,PremiumColorsPage,BeddingSetsPage,TowelsPage,MaterialsPage,WhatIsTencelPage,SizesPage,HotelsPage,DeliveryWarrantyPage,ContactPage}.tsx','./components/{Header,Footer,Button,InlineImage,MissionStatementSection,BeddingSetCard}.tsx'],
       important: '.legacy-site',
       corePlugins: {preflight:false},
       theme: {

@@ -6,5 +6,6 @@ const render=(url:string)=>renderToString(<MemoryRouter initialEntries={[url]}><
 const cotton=render('/en/gallery?fabric=Cotton');assert(cotton.includes('Cotton 100%'));assert(!cotton.includes('class="sku" dir="ltr">FS-S35-ST'));
 const none=render('/en/gallery?color=red');assert(none.includes(copy.en.empty));assert(!none.includes('class="product-card"'));
 const white=render('/en/gallery?color=white');assert(white.includes('class="product-card"'));
+for(const lang of languages)for(const route of paths)assert(!render('/'+lang+'/'+route+'/').includes('<h1>'+copy[lang].notFound+'</h1>'),lang+route+' trailing slash');
 assert(render('/en/product/unknown').includes('404'));
 console.log(JSON.stringify({localizedRoutes:count,products:products.length,languages:languages.length,translationFields:keys.length,staticImages:true,filterQueries:true,structuredData:true}));

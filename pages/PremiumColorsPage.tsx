@@ -15,7 +15,7 @@ const PremiumColorsPage: React.FC = () => {
   const currentLang = i18n.language as keyof LocalizedString;
   const siteName = t('footer.companyName');
   const pageTitle = t('pageTitle.premiumColors');
-  const canonicalUrl = window.location.origin + window.location.pathname + '#/products/premium-colors';
+  const canonicalUrl = 'https://www.slumbazen.com' + '/' + '#/products/premium-colors';
 
   const neutralColorKeysEn = ['White', 'Cream', 'LightGrey', 'DarkGrey', 'Beige'];
   const neutralColorKeysTh = ['ขาว (White)', 'ครีม (Cream)', 'เทาอ่อน (Light Grey)', 'เทาเข้ม (Dark Grey)', 'เบจ (Beige)'];
@@ -39,21 +39,17 @@ const PremiumColorsPage: React.FC = () => {
 
   return (
     <>
-      <MetaManager
-        title={t('seo.premiumColors.title', { siteName })} description={t('seo.premiumColors.description')}
-        keywords={t('seo.premiumColors.keywords')} ogTitle={t('seo.premiumColors.title', { siteName })}
-        ogDescription={t('seo.premiumColors.description')} canonicalUrl={canonicalUrl} jsonLd={jsonLd}
-      />
+      
        <div className="bg-brand-light relative isolate overflow-hidden">
         <div 
           className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10"
-          style={{ backgroundImage: "url('https://i.postimg.cc/W3ZW975p/decorative0005.jpg')" }}
+          style={{ backgroundImage: "url('/assets/restored-364a71697a01.webp')" }}
         ></div>
         <div className="absolute inset-0 -z-10 h-full w-full bg-brand-light/80 backdrop-blur-sm"></div>
 
         <header 
           className="relative text-center py-20 sm:py-28 bg-brand-primary text-white bg-cover bg-center"
-          style={{ backgroundImage: "url('https://i.postimg.cc/XNw1dQZQ/decorative0008.jpg')" }}
+          style={{ backgroundImage: "url('/assets/restored-50e2c89e4a32.webp')" }}
         >
           <div className="absolute inset-0 bg-brand-primary/60 backdrop-brightness-75"></div>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -66,7 +62,7 @@ const PremiumColorsPage: React.FC = () => {
           </div>
         </header>
         
-        <main className="pb-20 sm:pb-28">
+        <div className="pb-20 sm:pb-28">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             {premiumColorProducts.length > 0 && (
               <section id="featured-premium-colors" aria-labelledby="featured-premium-colors-heading" className="py-20 sm:py-24">
@@ -91,7 +87,7 @@ const PremiumColorsPage: React.FC = () => {
             id="benefits-premium-colors"
             aria-labelledby="benefits-premium-colors-heading"
             className="py-20 sm:py-24 relative bg-cover bg-center"
-            style={{ backgroundImage: "url('https://i.postimg.cc/Kjy9CgWP/decorative0006.jpg')" }}
+            style={{ backgroundImage: "url('/assets/restored-ac7e2c8aaca0.webp')" }}
           >
             <div className="absolute inset-0 bg-white/70 backdrop-blur-sm"></div>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -101,7 +97,7 @@ const PremiumColorsPage: React.FC = () => {
                 </h2>
                 <div className="grid lg:grid-cols-2 gap-12 items-center mt-12">
                   <div>
-                      <InlineImage src="https://i.postimg.cc/3wMHyP1x/premium-colors-lifestyle.jpg" alt={t('premiumColorsPage.benefitsTitle')} aspectRatio="1/1" />
+                      <InlineImage src="/assets/editorial/colors.webp" alt={t('premiumColorsPage.benefitsTitle')} aspectRatio="1/1" />
                   </div>
                   <ul className="space-y-6 text-neutral-800 text-lg">
                     {benefits.map(benefit => (
@@ -121,7 +117,7 @@ const PremiumColorsPage: React.FC = () => {
                 id="premium-colors-cta" 
                 aria-labelledby="premium-colors-cta-heading" 
                 className="text-center relative overflow-hidden rounded-2xl bg-neutral-700 text-white bg-cover bg-center py-20 sm:py-24"
-                style={{ backgroundImage: "url('https://i.postimg.cc/qqXmrvf9/decorative0007.jpg')" }}
+                style={{ backgroundImage: "url('/assets/catalogue-07.webp')" }}
             >
               <div className="absolute inset-0 bg-neutral-700/80"></div>
               <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -139,10 +135,11 @@ const PremiumColorsPage: React.FC = () => {
               </div>
             </section>
           </div>
-        </main>
+        </div>
       </div>
     </>
   );
 };
 
 export default PremiumColorsPage;
+

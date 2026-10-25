@@ -1,4 +1,3 @@
-
 {
   "nav": {
     "home": "Home",
@@ -25,23 +24,24 @@
     "closeMenu": "Close menu",
     "mainNavigation": "Main navigation",
     "mobileNavigation": "Menu",
-    "languageSwitcher": "Language switcher"
+    "languageSwitcher": "Language switcher",
+    "blog": "The linen journal"
   },
   "footer": {
     "companyName": "Slumba ZEN",
-    "companyNameRich": "Slumba <1>ZEN</1>",
+    "companyNameRich": "Slumba ZEN",
     "contactUs": "Contact Us",
     "allRightsReserved": "All rights reserved",
     "sitemapLinks": {
-        "collections": "Collections",
-        "materials": "Materials",
-        "hotels": "For Hotels & B2B",
-        "gallery": "Gallery",
-        "delivery": "Shipping & Warranty",
-        "contact": "Contact Us"
+      "collections": "Collections",
+      "materials": "Materials",
+      "hotels": "For Hotels & B2B",
+      "gallery": "Gallery",
+      "delivery": "Shipping & Warranty",
+      "contact": "Contact Us"
     },
     "exploreTitle": "Explore",
-    "aboutUsSnippet": "Premium hotel-quality bedding, direct from our factory.",
+    "aboutUsSnippet": "Considered textiles for restful bedrooms and welcoming guest spaces. Explore the catalogue and enquire about the details that matter to you.",
     "followOnFacebook": "Follow us on Facebook",
     "followOnInstagram": "Follow us on Instagram",
     "followOnTikTok": "Follow us on TikTok",
@@ -60,56 +60,70 @@
     "filterTC": "Thread Density:",
     "filterPrice": "Price Range (THB):",
     "productTypes": {
-        "all": "All Types",
-        "fittedSheet": "Fitted Sheet",
-        "flatSheet": "Flat Sheet",
-        "duvetCover": "Duvet Cover",
-        "pillowCase": "Pillow Case",
-        "bolsterCase": "Bolster Case",
-        "beddingSet": "Bedding Set",
-        "towel": "Towel"
+      "all": "All Types",
+      "fittedSheet": "Fitted Sheet",
+      "flatSheet": "Flat Sheet",
+      "duvetCover": "Duvet Cover",
+      "pillowCase": "Pillow Case",
+      "bolsterCase": "Bolster Case",
+      "beddingSet": "Bedding Set",
+      "towel": "Towel",
+      "title": "Product type"
     },
     "fabricTypes": {
-        "all": "All Fabrics",
-        "softTex": "Soft-Tex",
-        "cotton100": "Cotton 100%",
-        "cottonAntiDust": "Anti-Dust Mite Cotton",
-        "cvc50": "CVC 50/50",
-        "cvc60": "CVC 60/40",
-        "cottonTowel": "Cotton Towel"
+      "all": "All Fabrics",
+      "softTex": "Soft-Tex",
+      "cotton100": "Cotton 100%",
+      "cottonAntiDust": "Anti-Dust Mite Cotton",
+      "cvc50": "CVC 50/50",
+      "cvc60": "CVC 60/40",
+      "cottonTowel": "Cotton Towel",
+      "title": "Material"
     },
     "sizes": {
-        "all": "All Sizes",
-        "s35_10": "3.5 ft (10\" depth)",
-        "q50_10": "5 ft (10\" depth)",
-        "k60_12": "6 ft (12\" depth)",
-        "flat_s35": "72\"x110\" (for 3.5 ft)",
-        "flat_q50": "90\"x110\" (for 5 ft)",
-        "flat_k60": "110\"x110\" (for 6 ft)",
-        "duvet_s35": "70\"x90\" (for 3.5 ft)",
-        "duvet_q50": "90\"x90\" (for 5 ft)",
-        "duvet_k60": "100\"x90\" (for 6 ft)",
-        "pillow_std": "Standard Pillowcase",
-        "bolster_14x44": "14″ x 44″",
-        "bolster_27x40": "27″ x 40″",
-        "towel_std": "27\" x 54\"",
-        "towel_large": "30\" x 60\""
+      "all": "All Sizes",
+      "s35_10": "3.5 ft (10\" depth)",
+      "q50_10": "5 ft (10\" depth)",
+      "k60_12": "6 ft (12\" depth)",
+      "flat_s35": "72\"x110\" (for 3.5 ft)",
+      "flat_q50": "90\"x110\" (for 5 ft)",
+      "flat_k60": "110\"x110\" (for 6 ft)",
+      "duvet_s35": "70\"x90\" (for 3.5 ft)",
+      "duvet_q50": "90\"x90\" (for 5 ft)",
+      "duvet_k60": "100\"x90\" (for 6 ft)",
+      "pillow_std": "Standard Pillowcase",
+      "bolster_14x44": "14″ x 44″",
+      "bolster_27x40": "27″ x 40″",
+      "towel_std": "27\" x 54\"",
+      "towel_large": "30\" x 60\"",
+      "title": "Size"
     },
     "tcRanges": {
-        "all": "All Levels",
-        "low": "400",
-        "medium": "500",
-        "high": "600+"
+      "all": "All Levels",
+      "low": "400",
+      "medium": "500",
+      "high": "600+",
+      "title": "Thread count"
     },
     "resultsInfoPaginated": "Showing {{count}} of {{total}} items (Page {{currentPage}} of {{totalPages}})",
-    "noResults": "No products found matching your selection.",
+    "noResults": {
+      "title": "No matching items",
+      "description": "Try changing your filters.",
+      "button": "Reset filters"
+    },
     "noProductsFound": "No Products Found",
     "noProductsSuggestion": "Try adjusting your search filters.",
     "clearFilters": "Clear Filters",
     "prevPage": "Previous",
     "nextPage": "Next",
     "paginationLabel": "Results pagination",
-    "paginationNav": "Page {{currentPage}} of {{totalPages}}"
+    "paginationNav": "Page {{currentPage}} of {{totalPages}}",
+    "filtersTitle": "Filters",
+    "resetFilters": "Reset filters",
+    "resultsFound": "{{count}} items",
+    "priceRange": {
+      "title": "Price"
+    }
   },
   "beddingSetCard": {
     "specFabric": "Fabric",
@@ -132,47 +146,47 @@
     "shippingPolicyTitle": "📦 Shipping Policy",
     "domesticShippingTitle": "🚚 Domestic Shipping (Thailand)",
     "domesticTimeTitle": "Delivery Time",
-    "domesticTimeDesc": "Bangkok & Metropolitan Area: 1–3 business days | Other Provinces: 2–5 business days",
+    "domesticTimeDesc": "Confirm the delivery estimate in the quotation for the items, quantities and destination.",
     "domesticServicesTitle": "Shipping Services",
-    "domesticServicesDesc": "Kerry, Flash Express, SCG Express, J&T Express, Thailand Post (EMS) | Cash on Delivery (COD) available",
+    "domesticServicesDesc": "Confirm the carrier and supported payment method before ordering.",
     "domesticFreeShippingTitle": "Free Shipping",
-    "domesticFreeShippingDesc": "Upon reaching a purchase total of 5,500 THB or more",
+    "domesticFreeShippingDesc": "Ask for the shipping charge and any free-shipping eligibility for your order before payment.",
     "domesticPackagingTitle": "Packaging",
-    "domesticPackagingDesc": "Products are packaged in high-quality vacuum-sealed zip bags with tags and moisture seals to ensure hygiene and safety.",
+    "domesticPackagingDesc": "Confirm packaging suitable for the items and destination. Editorial imagery does not show actual store packaging.",
     "internationalShippingTitle": "✈️ International Shipping",
     "internationalCountriesTitle": "Shipping Countries",
-    "internationalCountriesDesc": "Service covers Asia, Europe, America, and the Middle East regions.",
+    "internationalCountriesDesc": "Before payment, request an itemized quotation that confirms shipping charges, any free-shipping eligibility, delivery estimate, custom-item conditions and applicable warranty. For returns, ask us to confirm eligibility, return-shipping responsibility and refund method and timing in writing. Keep the quotation and contact us with your order reference and photographs if an item arrives damaged.",
     "internationalCompaniesTitle": "Shipping Companies",
-    "internationalCompaniesDesc": "DHL, FedEx, UPS, EMS World | Tracking Number provided.",
+    "internationalCompaniesDesc": "Before payment, request an itemized quotation that confirms shipping charges, any free-shipping eligibility, delivery estimate, custom-item conditions and applicable warranty. For returns, ask us to confirm eligibility, return-shipping responsibility and refund method and timing in writing. Keep the quotation and contact us with your order reference and photographs if an item arrives damaged.",
     "internationalCostTitle": "Shipping Cost",
-    "internationalCostDesc": "Calculated based on actual weight and destination country | You will be informed of the total cost of goods and shipping before payment.",
+    "internationalCostDesc": "Before payment, request an itemized quotation that confirms shipping charges, any free-shipping eligibility, delivery estimate, custom-item conditions and applicable warranty. For returns, ask us to confirm eligibility, return-shipping responsibility and refund method and timing in writing. Keep the quotation and contact us with your order reference and photographs if an item arrives damaged.",
     "internationalDocsTitle": "Shipping Documents",
-    "internationalDocsDesc": "Complete Tax Invoice, Commercial Invoice, and Customs Declaration documents are provided.",
+    "internationalDocsDesc": "Before payment, request an itemized quotation that confirms shipping charges, any free-shipping eligibility, delivery estimate, custom-item conditions and applicable warranty. For returns, ask us to confirm eligibility, return-shipping responsibility and refund method and timing in writing. Keep the quotation and contact us with your order reference and photographs if an item arrives damaged.",
     "warrantyPolicyTitle": "✅ Warranty and Return Policy",
     "returnExchangePolicyTitle": "Exchange/Return Policy",
     "returnPeriodTitle": "Timeframe for Requesting Exchange/Return",
-    "returnPeriodDesc": "You can request an exchange or return within 7 days from the date of receipt.",
+    "returnPeriodDesc": "Before payment, request an itemized quotation that confirms shipping charges, any free-shipping eligibility, delivery estimate, custom-item conditions and applicable warranty. For returns, ask us to confirm eligibility, return-shipping responsibility and refund method and timing in writing. Keep the quotation and contact us with your order reference and photographs if an item arrives damaged.",
     "returnConditionsTitle": "Conditions for Exchange/Return",
     "returnCondition1": "The product must be in new, perfect condition.",
     "returnCondition2": "It must be unwashed and unused.",
     "returnCondition3": "All original packaging and tags must be intact.",
     "returnReasonTitle": "Note",
-    "returnReasonDesc": "Exchanges or returns are accepted only for products with manufacturing defects, or if the wrong model, color, or size was shipped.",
+    "returnReasonDesc": "Report the issue with the order reference and photographs so the applicable terms can be checked.",
     "returnProcessTitle": "Exchange/Return Process",
     "returnProcessStep1": "Contact our team, describe the issue, and attach clear photos of the product.",
     "returnProcessStep2": "Wait for our team to inspect the product and notify you of the result.",
-    "returnProcessStep3": "If the criteria are met, we will proceed with an exchange for a new product or issue a refund as soon as possible.",
+    "returnProcessStep3": "Confirm the assessment, return-shipping responsibility, and refund method and timing in writing.",
     "careInstructionsTitle": "🧼 Product Care Instructions",
     "careWashTitle": "Washing",
-    "careWashDesc": "Wash with normal or cold water to preserve fabric fibers and colors.",
+    "careWashDesc": "Before payment, request an itemized quotation that confirms shipping charges, any free-shipping eligibility, delivery estimate, custom-item conditions and applicable warranty. For returns, ask us to confirm eligibility, return-shipping responsibility and refund method and timing in writing. Keep the quotation and contact us with your order reference and photographs if an item arrives damaged.",
     "careBleachTitle": "Bleach",
-    "careBleachDesc": "Avoid using chlorine-based bleach directly on colored fabrics.",
+    "careBleachDesc": "Before payment, request an itemized quotation that confirms shipping charges, any free-shipping eligibility, delivery estimate, custom-item conditions and applicable warranty. For returns, ask us to confirm eligibility, return-shipping responsibility and refund method and timing in writing. Keep the quotation and contact us with your order reference and photographs if an item arrives damaged.",
     "careDryTitle": "Drying",
-    "careDryDesc": "Air dry in a shaded, breezy area; avoid prolonged direct sunlight.",
+    "careDryDesc": "Before payment, request an itemized quotation that confirms shipping charges, any free-shipping eligibility, delivery estimate, custom-item conditions and applicable warranty. For returns, ask us to confirm eligibility, return-shipping responsibility and refund method and timing in writing. Keep the quotation and contact us with your order reference and photographs if an item arrives damaged.",
     "careIronTitle": "Ironing",
-    "careIronDesc": "Iron on low to medium heat, or as per the product label, to extend the fabric's life.",
+    "careIronDesc": "Before payment, request an itemized quotation that confirms shipping charges, any free-shipping eligibility, delivery estimate, custom-item conditions and applicable warranty. For returns, ask us to confirm eligibility, return-shipping responsibility and refund method and timing in writing. Keep the quotation and contact us with your order reference and photographs if an item arrives damaged.",
     "moreQuestionsTitle": "📲 Have More Questions?",
-    "moreQuestionsDesc": "Contact us via Line ID: kris.bkk or Phone: 081-851-9922. Our team is happy to assist.",
+    "moreQuestionsDesc": "Call +66 81 851 9922 to discuss your order.",
     "commitmentText": "🌟 We are committed to delivering the best sleep experience through quality products and excellent after-sales service."
   },
   "contactPage": {
@@ -196,16 +210,16 @@
     "emailLabel": "Email",
     "emailValue": "info@slumbazen.com",
     "hoursLabel": "Business Hours",
-    "hoursValue": "Monday - Saturday: 8:00 AM - 9:00 PM<br/>Sunday: 9:00 AM - 6:00 PM",
+    "hoursValue": "Monday - Saturday: 8:00 AM - 9:00 PMSunday: 9:00 AM - 6:00 PM",
     "mapTitle": "Find Us Here",
     "mapAriaLabel": "View our location on Google Maps"
   },
   "homePage": {
     "missionQuote": "“Cheap and good might exist — but without knowledge and transparency, it could become the most expensive trap you ever fall into.”",
-    "missionExplanation": "In a world where true cost matters and quality is tangible, we believe that honest pricing is far more valuable than just an attractive number. Especially when details like thread count per square inch directly affect softness, durability, and long-term use.<br/><br/>That’s why this page was created not just to sell, but to educate and empower—so you can make well-informed, confident decisions backed by facts, not assumptions.",
+    "missionExplanation": "Choose bedding by considering fiber, size, weave and care together—not a thread-count number alone. Ask for the specification of the particular item before making a decision.",
     "hero": {
-      "title": "Drift into Dreamland: Hotel Luxury Bedding, Direct to You",
-      "subtitle": "Dreaming of 5-star hotel sleep? Bring it home with SlumbaZEN. We craft Thailand's finest long-staple cotton and TENCEL™ bedding, direct from our factory to your bedroom. Experience unparalleled softness and breathable comfort for your best night's sleep, every night. Shop now for worldwide delivery.",
+      "title": "Thoughtful bedding for a calmer stay",
+      "subtitle": "Considered textiles for restful bedrooms and welcoming guest spaces. Explore the catalogue and enquire about the details that matter to you.",
       "ctaButton": "Explore All Collections"
     },
     "visualShowcase": {
@@ -222,56 +236,84 @@
     },
     "brandStory": {
       "mainTitle": "The Art of Rest... In Your Own Home",
-      "intro_p1": "Slumba <1>ZEN</1> is born from a simple belief: that restorative sleep is not a luxury, but an essential art form for a balanced life. We combine 'Slumber' with 'Zen' to create a sanctuary in your own bedroom.",
-      "intro_p2": "Our mission is to bring the tangible quality and serene comfort of a five-star hotel directly to you, bypassing traditional markups. This is the art of rest, perfected.",
+      "intro_p1": "Slumba ZEN is born from a simple belief: that restorative sleep is not a luxury, but an essential art form for a balanced life. We combine 'Slumber' with 'Zen' to create a sanctuary in your own bedroom.",
+      "intro_p2": "Start with the size and finish you need. Browse plain or striped white sheets, individual pieces and towels; send a detailed enquiry when you are ready.",
       "quality_title": "The Heart of Quality is in Every Fiber",
-      "quality_intro": "The heart of our quality lies in meticulous craftsmanship and superior materials. We source only the finest long-staple 100% Cotton and sustainably-produced TENCEL™ Lyocell. Each thread is woven to world-class hotel standards to deliver:",
-      "quality_point1": "<strong>Superior Breathability:</strong> A cool, dry, and gentle feel, ideal for sensitive skin and warm climates.",
-      "quality_point2": "<strong>Lasting Softness:</strong> A sumptuously soft texture that resists pilling and becomes even softer with every wash.",
-      "quality_point3": "<strong>Investment in Comfort:</strong> Tangible luxury and durability that you can feel every single night, ensuring a worthy investment in your well-being."
+      "quality_intro": "Cotton is a fiber; plain and striped describe a fabric’s appearance. CVC is a blend category, so the exact cotton/polyester proportions must be checked for each item. “Soft-Tex” is a catalogue name and does not establish fiber composition. Compare like-for-like using the supplier’s specification and a physical sample where available.",
+      "quality_point1": "Compare feel and breathability using a fabric sample.",
+      "quality_point2": "Match the care process to the fabric and its use.",
+      "quality_point3": "Check dimensions, stitching and the item details before ordering."
     },
     "whyUs": {
       "mainTitle": "★ Why Choose Slumba ZEN?",
-      "subTitle": "Experience hotel-quality natural materials direct from the manufacturer.",
+      "subTitle": "Considered textiles for restful bedrooms and welcoming guest spaces. Explore the catalogue and enquire about the details that matter to you.",
       "item1": {
-        "title": "1. Premium Long-Staple Cotton",
-        "description": "<p>Sourced from the world's finest long-staple cotton, our sheets offer unparalleled breathability and a crisp, cool feel. Naturally hypoallergenic and durable, they become softer with every wash, promising timeless comfort.</p>",
+        "title": "1. Understanding cotton",
+        "description": "Cotton is a fiber; plain and striped describe a fabric’s appearance. CVC is a blend category, so the exact cotton/polyester proportions must be checked for each item. “Soft-Tex” is a catalogue name and does not establish fiber composition. Compare like-for-like using the supplier’s specification and a physical sample where available.",
         "linkText": "Learn About Cotton"
       },
       "item2": {
         "title": "2. Tencel™ Lyocell: Softness, Innovated",
-        "description": "<p>Experience the future of comfort with TENCEL™ Lyocell. Sustainably made from eucalyptus wood, its silky-smooth fibers are incredibly gentle on sensitive skin, naturally manage moisture to keep you cool, and inhibit bacteria growth for a cleaner sleep.</p>",
+        "description": "TENCEL™ is Lenzing’s brand of cellulosic fibers, including Lyocell and Modal. The fiber name alone does not identify a finished fabric’s blend, weave or care requirements. Ask about the exact composition and supporting product information before selecting bedding. General fiber information does not confirm a SlumbaZEN product or certification.",
         "linkText": "What is Tencel™?"
       },
       "item3": {
         "title": "3. Soft-Tex™ & CVC for Durability",
-        "description": "<p>Our innovative Soft-Tex™ fabric combines luxurious softness with practical, modern living. This advanced microfiber is wrinkle-resistant, highly durable, and easy to care for, making it the perfect choice for busy households and hospitality use without sacrificing comfort.</p>",
+        "description": "Cotton is a fiber; plain and striped describe a fabric’s appearance. CVC is a blend category, so the exact cotton/polyester proportions must be checked for each item. “Soft-Tex” is a catalogue name and does not establish fiber composition. Compare like-for-like using the supplier’s specification and a physical sample where available.",
         "linkText": "Explore Soft-Tex & CVC"
       },
       "item4": {
         "title": "4. Transparent Quality & Reliable Information",
-        "description": "<p>'Cheap and good' might be an expectation many wish to find, but in the world of products with real costs, real quality, and verifiable origins, this expectation often comes with inherent risks—especially without the knowledge or information to make a decision.</p><p>We therefore adhere to sincerity in pricing according to the true quality of the product, especially what many overlook, like 'thread count per square inch or square centimeter,' which directly affects durability, softness, and long-term use.</p><p>This is the key reason we intend to develop our page not just as a sales platform, but as a source of knowledge everyone can use to make informed, well-supported decisions.</p>",
+        "description": "Thread count is based on warp and filling yarn counts over a stated length. It should include the counting method and unit. Different measurement bases cannot be compared by simply changing a number. Enquire for the supplier’s original specification for the item you want.",
         "linkText": "Understand Fabric Quality"
       },
       "ctaButton": "View All Fabric Details"
     },
     "problems": {
-      "mainTitle": "End the Common Sleep Problems",
-      "item1": { "problem": "Irritating, rough fabric", "solution": "We use <strong>combed long-staple cotton</strong> for a smooth, non-irritating feel." },
-      "item2": { "problem": "Hot, stuffy, sweaty nights", "solution": "Our <strong>Cotton and Tencel™</strong> fabrics have natural temperature-regulating properties, wicking away moisture to keep you cool and comfortable all night long." },
-      "item3": { "problem": "Sheets that slip off", "solution": "Our sheets have <strong>extra-deep pockets</strong> to fit mattresses up to 14 inches securely." },
-      "item4": { "problem": "Colors that fade quickly", "solution": "We use high-quality <strong>reactive dyes</strong> that stay vibrant for over 100 washes." }
+      "mainTitle": "Choose for comfort and practical use",
+      "item1": {
+        "problem": "Irritating, rough fabric",
+        "solution": "Feel a fabric sample and check the composition of the item you want."
+      },
+      "item2": {
+        "problem": "Hot, stuffy, sweaty nights",
+        "solution": "Consider fiber, weave, fabric weight and room conditions together."
+      },
+      "item3": {
+        "problem": "Sheets that slip off",
+        "solution": "Measure mattress width, length and total depth, including any topper. Compare all three with the particular fitted sheet. Current catalogue fit labels include 10-inch and 12-inch depths; there is no universal 14-inch fit. Pillowcases, bolster cases and duvet covers need their own measurements."
+      },
+      "item4": {
+        "problem": "Colors that fade quickly",
+        "solution": "Check the actual color options and care label before ordering."
+      }
     },
     "discoverWorld": {
       "mainTitle": "Discover the World of Slumba ZEN",
-      "item1": { "title": "Our Fabric Types", "description": "Dive into the quality of Cotton, Tencel™, and more.", "buttonText": "View Fabric Info" },
-      "item2": { "title": "Inspiration Gallery", "description": "See real-life examples and find inspiration.", "buttonText": "Browse Gallery" },
-      "item3": { "title": "For B2B Business", "description": "Complete bedding solutions for hotels and partners.", "buttonText": "See B2B Offers" },
-      "item4": { "title": "Contact Us", "description": "Our expert team is ready to provide consultation.", "buttonText": "Contact for Inquiry" }
+      "item1": {
+        "title": "Our Fabric Types",
+        "description": "Dive into the quality of Cotton, Tencel™, and more.",
+        "buttonText": "View Fabric Info"
+      },
+      "item2": {
+        "title": "Inspiration Gallery",
+        "description": "Explore bedding imagery and catalogue details.",
+        "buttonText": "Browse Gallery"
+      },
+      "item3": {
+        "title": "For B2B Business",
+        "description": "Complete bedding solutions for hotels and partners.",
+        "buttonText": "See B2B Offers"
+      },
+      "item4": {
+        "title": "Contact Us",
+        "description": "Our expert team is ready to provide consultation.",
+        "buttonText": "Contact for Inquiry"
+      }
     },
     "consultation": {
       "title": "Expert Consultation Available",
-      "description": "Confused about thread count, weave, or the best fabric for your needs? Whether you're upgrading your home or sourcing for a large-scale hotel project, our direct-from-factory experts are here to provide personalized advice and transparent quotes. Let's create your perfect sleep environment together.",
+      "description": "Describe your property, number of rooms, piece quantities, bed dimensions, preferred fabric and delivery destination. Choose quotation or samples enquiry below. We will need to confirm availability, minimum quantities, sampling conditions and delivery timing before any commitment.",
       "ctaButton1": "Contact for a Quote",
       "ctaButton2": "Browse Products"
     }
@@ -304,27 +346,27 @@
     "mainTitle": "Bedding Fabric Guide",
     "mainDescription": "Get an in-depth understanding of each bedding fabric to help you choose the perfect bedding for your needs. What is the best material for bed sheets?",
     "qualityVsPrice": {
-      "title": "Superior Quality with Technical Data for Confident Decision-Making",
-      "p1": "Our products are meticulously designed and developed at every stage, from material selection and production processes to quality inspection standards, to meet the needs of those who value a rewarding and sustainable long-term user experience.",
-      "p2": "One of the key elements we present with transparency is the Thread Count (TC) standard, which we calculate according to international methods and state clearly on the product label to ensure mutual understanding and prevent consumer confusion.",
-      "p3": "While many retailers may display very high TC values, such as 600 TC, to create an image of luxury, this can result from counting multi-ply threads or measuring in a smaller-than-standard area, like 1 square inch, without proper conversion. This inflates the numbers without reflecting the true quality of the fabric, potentially distorting product comparisons.",
-      "p4": "For materials, we select high-quality natural fibers such as 100% Combed Cotton, TENCEL™, and Bamboo Rayon that are OEKO-TEX® certified, free from irritating residues, even for sensitive skin. This is combined with High-Density Weave technology, which makes the fabric soft, dense, not thin, wrinkle-resistant, and breathable.",
-      "p5": "In terms of craftsmanship, we use a Double-Stitch technique to enhance strength and durability for long-term use, along with designing sizes to fit various mattress types, accommodating both depth and height, ensuring they don't slip off and remain smooth after use.",
-      "p6": "Although our products may have a price point that reflects their fine craftsmanship and high production quality, what customers receive in return is long-term value, confidence in safety, and beauty that does not diminish even after years of use."
+      "title": "Compare fabrics using clear specifications",
+      "p1": "Cotton is a fiber; plain and striped describe a fabric’s appearance. CVC is a blend category, so the exact cotton/polyester proportions must be checked for each item. “Soft-Tex” is a catalogue name and does not establish fiber composition. Compare like-for-like using the supplier’s specification and a physical sample where available.",
+      "p2": "Thread count is based on warp and filling yarn counts over a stated length. It should include the counting method and unit. Different measurement bases cannot be compared by simply changing a number. Enquire for the supplier’s original specification for the item you want.",
+      "p3": "Counts using different units or counting methods should not be compared directly. Ask for the original supplier specification before drawing a conclusion.",
+      "p4": "Certifications must be supported by documents for the particular item. General fiber information is not certification of a SlumbaZEN product.",
+      "p5": "Measure mattress width, length and total depth, including any topper. Compare all three with the particular fitted sheet. Current catalogue fit labels include 10-inch and 12-inch depths; there is no universal 14-inch fit. Pillowcases, bolster cases and duvet covers need their own measurements.",
+      "p6": "Compare price alongside use, laundering and replacement over time."
     },
     "cotton": {
-      "title": "100% Cotton - The Authentic Natural Touch",
-      "intro": "Our 100% cotton is made from extra-long-staple fibers that undergo a combing process to select only the longest and strongest fibers. The result is a fabric that is soft, durable, and exceptionally breathable, reminiscent of a luxury hotel stay.",
-      "advantagesTitle": "The Advantages of Our Quality 100% Cotton:",
+      "title": "Cotton — understanding the fabric",
+      "intro": "Cotton is a natural fiber. Finished fabric performance depends on fiber quality, yarn, weave and finishing. Confirm composition and construction for each item.",
+      "advantagesTitle": "What to compare when selecting cotton",
       "advantage1": "Excellent breathability allows your skin to breathe, perfect for hot and humid climates.",
-      "advantage2": "Purely natural, free from synthetic chemicals, offering a comfortable, non-irritating touch like an embrace from nature.",
-      "advantage3": "Durable and softens with each wash, maintaining its beautiful shape even after many cycles, making it a worthy long-term investment.",
+      "advantage2": "Check fiber composition rather than relying on a trade name.",
+      "advantage3": "Check shrinkage allowance and the item’s care label.",
       "advantage4": "Provides a relaxing, authentically natural feeling for every rest.",
-      "cta": "Shop the 100% Cotton Collection"
+      "cta": "Browse cotton items"
     },
     "softTex": {
       "title": "Soft-Tex™ - Extra Soft, Easy Care",
-      "description": "Our Soft-Tex™ fabric is a microfiber that has been woven and brushed with special techniques, resulting in an exceptionally soft fabric comparable to high-end cotton, but much easier to care for.",
+      "description": "Cotton is a fiber; plain and striped describe a fabric’s appearance. CVC is a blend category, so the exact cotton/polyester proportions must be checked for each item. “Soft-Tex” is a catalogue name and does not establish fiber composition. Compare like-for-like using the supplier’s specification and a physical sample where available.",
       "advantagesTitle": "Advantages of Soft-Tex™:",
       "advantage1": "Exceptionally soft and comfortable on the skin.",
       "advantage2": "Wrinkle-resistant and easy to care for, no ironing needed.",
@@ -333,7 +375,7 @@
     },
     "cvc": {
       "title": "CVC - The Balance of Comfort and Durability",
-      "description": "CVC fabric is a perfect blend of natural cotton and innovative fibers designed for extra strength and durability, while still maintaining a high proportion of cotton (Chief Value) to get the best of both worlds.",
+      "description": "Cotton is a fiber; plain and striped describe a fabric’s appearance. CVC is a blend category, so the exact cotton/polyester proportions must be checked for each item. “Soft-Tex” is a catalogue name and does not establish fiber composition. Compare like-for-like using the supplier’s specification and a physical sample where available.",
       "advantagesTitle": "Advantages of CVC:",
       "advantage1": "Comfortable on the skin, feels close to genuine cotton at a more accessible price.",
       "advantage2": "Easy to care for, wrinkle-resistant, quick-drying, and durable for frequent washing.",
@@ -342,58 +384,98 @@
     },
     "tencel": {
       "title": "Tencel™ Lyocell - The Ultimate in Softness",
-      "description": "Tencel™ Lyocell is a modern fabric that has revolutionized the bedding industry. It is produced from the cellulose of wood pulp (like eucalyptus or bamboo) using an environmentally friendly <i>closed-loop system</i>, which cares not only for you but also for the planet.",
+      "description": "TENCEL™ is Lenzing’s brand of cellulosic fibers, including Lyocell and Modal. The fiber name alone does not identify a finished fabric’s blend, weave or care requirements. Ask about the exact composition and supporting product information before selecting bedding. General fiber information does not confirm a SlumbaZEN product or certification.",
       "advantage1": "Silky smooth, offering an exceptionally soft and luxurious feel on the skin.",
       "advantage2": "Excellent breathability and moisture management, keeping you cool and comfortable.",
-      "advantage3": "Naturally reduces the growth of bacteria for better hygiene.",
-      "advantage4": "Gentle on sensitive skin, making it ideal for those with allergies.",
-      "cta": "Shop the Tencel™ Collection"
+      "advantage3": "Ask for test evidence before assuming antibacterial performance of a finished fabric.",
+      "advantage4": "Skin comfort varies; assess a sample before choosing.",
+      "cta": "Understanding TENCEL™"
     },
     "misconceptions": {
       "title": "Common Misconceptions About Bedding",
-      "item1": { "title": "'Higher Thread Density = Always Better?'", "content": "Not always true! Fabric quality is not measured by density alone but also depends on other crucial factors:",
-                  "point1": "<strong>Fiber Type:</strong> For example, <i>long-staple cotton</i> is better than <i>short-staple</i>.",
-                  "point2": "<strong>Weave and Finishing:</strong> Such as <i>Sateen</i> or <i>Percale</i> and the process of softening the fabric.<br/><br/>Example: A 700 threads/10cm² Cotton fabric using genuine long-staple fibers may feel softer and more durable than a 1300 threads/10cm² fabric using low-quality fibers." },
-      "item2": { "title": "'Is Tencel = Artificial Silk?'", "content": "Incorrect. Tencel™ (Lyocell) is a fiber made from natural wood pulp (Cellulose) through an environmentally friendly process, not a synthetic fiber like Polyester. Although it has a silk-like softness and smoothness, its standout features are breathability and moisture management, which help reduce bacteria growth better than real silk." },
-      "item3": { "title": "'Are White Sheets Prone to Stains and Hard to Care For?'", "content": "On the contrary, white has several advantages:",
-                  "point1": "<strong>Standard of Cleanliness:</strong> It's the easiest color to spot stains on, making it the standard for 5-star hotels worldwide to guarantee true hygiene and cleanliness.",
-                  "point2": "<strong>Care and Maintenance:</strong> Good quality white fabric can withstand gentle bleaching to maintain its brightness better than dark-colored fabrics that might fade from chemicals." }
+      "item1": {
+        "title": "'Higher Thread Density = Always Better?'",
+        "content": "Not always true! Fabric quality is not measured by density alone but also depends on other crucial factors:",
+        "point1": "Fiber Type: For example, long-staple cotton is better than short-staple.",
+        "point2": "Thread count is based on warp and filling yarn counts over a stated length. It should include the counting method and unit. Different measurement bases cannot be compared by simply changing a number. Enquire for the supplier’s original specification for the item you want."
+      },
+      "item2": {
+        "title": "'Is Tencel = Artificial Silk?'",
+        "content": "TENCEL™ is Lenzing’s brand of cellulosic fibers, including Lyocell and Modal. The fiber name alone does not identify a finished fabric’s blend, weave or care requirements. Ask about the exact composition and supporting product information before selecting bedding. General fiber information does not confirm a SlumbaZEN product or certification."
+      },
+      "item3": {
+        "title": "'Are White Sheets Prone to Stains and Hard to Care For?'",
+        "content": "On the contrary, white has several advantages:",
+        "point1": "White fabric makes marks easier to see, but color alone does not guarantee hygiene. Laundering and storage still matter.",
+        "point2": "Use bleach only when permitted by the care label and supplier."
+      }
     },
     "shopTips": {
       "title": "✨ Our Shop's Tips for Choosing Bedding ✨",
-      "tip1": { "segment1": "Don't judge a fabric by its picture or density number alone! If unsure, ", "link": "consult our experts", "segment2": " to ask about the fabric and thickness before deciding, especially for large orders." },
+      "tip1": {
+        "segment1": "Don't judge a fabric by its picture or density number alone! If unsure, ",
+        "link": "consult our experts",
+        "segment2": " to ask about the fabric and thickness before deciding, especially for large orders."
+      },
       "tip2": "Avoid fabrics made from short-staple Cotton or low-quality Polyester Blends, as they tend to pill easily and shed during washing, leading to a short lifespan and discomfort.",
-      "tip3": "A <i>Sateen</i> weave will give a soft, slightly glossy surface, ideal for luxury. A <i>Percale</i> weave will provide a firm, crisp, and cool feel, suitable for hot weather and those who prefer freshness.",
+      "tip3": "A Sateen weave will give a soft, slightly glossy surface, ideal for luxury. A Percale weave will provide a firm, crisp, and cool feel, suitable for hot weather and those who prefer freshness.",
       "tip4": "Beware of overly inflated density numbers, as it's often achieved by counting multi-ply threads as single threads, making the fabric too thick and heavy, stuffy, and not adding to comfort. Focus on fiber quality and weave.",
       "tip5": "Consider the thickness of your mattress: Choose a fitted sheet with a pocket depth appropriate for your mattress thickness to ensure a snug fit that doesn't slip off easily."
     },
     "faq": {
       "title": "Frequently Asked Questions (FAQ)",
-      "item1": { "q": "How do hotel bed sheets differ from regular ones?", "a": "Hotel sheets often use higher quality fibers (e.g., Long-Staple Cotton, Tencel™), a thread density suitable for durability and frequent washing, are resistant to heat and chemicals, have stronger stitching, and favor white or solid colors for a clean, luxurious look." },
-      "item2": { "q": "Which type of Cotton is best for hotels?", "a": "“Combed Cotton” from long fibers (like Egyptian or Pima Cotton) is a high standard for hotel sheets because it's soft, durable, breathable, and doesn't pill easily after many washes." },
-      "item3": { "q": "Are there no-iron bed sheets?", "a": "Tencel™ fabric is significantly more wrinkle-resistant than Cotton and provides a soft, glossy feel without heavy ironing. Cotton-Polyester blends (like our CVC or Soft-Tex™) are also wrinkle-resistant and easy to care for, ideal for those who dislike ironing or hotels looking to reduce care steps." },
-      "item4": { "q": "How to care for different types of bed sheets?", "a": "Generally, wash in cool or warm water (up to 40°C), use a low spin cycle, air dry in the shade or tumble dry on low heat, and avoid chlorine bleach on colored fabrics. However, please refer to the specific care instructions on the product label or ask us." }
+      "item1": {
+        "q": "How do hotel bed sheets differ from regular ones?",
+        "a": "Hotel selection should consider repeated laundering, consistent sizing, storage and replacement budgets. Check actual performance using samples and product documents."
+      },
+      "item2": {
+        "q": "Which type of Cotton is best for hotels?",
+        "a": "“Combed Cotton” from long fibers (like Egyptian or Pima Cotton) is a high standard for hotel sheets because it's soft, durable, breathable, and doesn't pill easily after many washes."
+      },
+      "item3": {
+        "q": "Are there no-iron bed sheets?",
+        "a": "Wrinkling depends on composition, weave and finishing, not fiber name alone. Ask for the care instructions for the specific item."
+      },
+      "item4": {
+        "q": "How to care for different types of bed sheets?",
+        "a": "Generally, wash in cool or warm water (up to 40°C), use a low spin cycle, air dry in the shade or tumble dry on low heat, and avoid chlorine bleach on colored fabrics. However, please refer to the specific care instructions on the product label or ask us."
+      }
     }
   },
   "whatIsTencelPage": {
-    "mainTitle": "What is Tencel™ Lyocell? The Secret to Superior Sleep",
-    "mainDescription": "Discover the wonders of Tencel™, a natural cellulose fiber that offers unparalleled softness, hygiene, and environmental friendliness. Immerse yourself in blissful sleep every night.",
+    "mainTitle": "Understanding TENCEL™",
+    "mainDescription": "TENCEL™ is Lenzing’s brand of cellulosic fibers, including Lyocell and Modal. The fiber name alone does not identify a finished fabric’s blend, weave or care requirements. Ask about the exact composition and supporting product information before selecting bedding. General fiber information does not confirm a SlumbaZEN product or certification.",
     "introSection": {
       "title": "What is Tencel™ and Why is it Special?"
     },
     "whatIsIt": {
       "intro": "Tencel™ is the brand name for Lyocell and Modal fibers, produced by the Austrian company Lenzing AG. These fibers have a fascinating origin and production process:",
-      "point1": "<strong>From Nature to Fiber:</strong> Produced from the cellulose of wood pulp, primarily from sustainably managed eucalyptus or beech trees.",
-      "point2": "<strong>Eco-Friendly Production:</strong> The Tencel™ Lyocell production process won the European Award for the Environment for its <i>closed-loop system</i>, which recycles over 99% of its non-toxic solvent and uses significantly less water than conventional cotton production.",
-      "point3": "<strong>Unique Nanofibril Structure:</strong> The result is a high-purity fiber with this special structure, which gives Tencel™ fabric many remarkable properties not found in other fabrics."
+      "point1": "These are cellulosic fibers made from wood pulp. Check the fiber type and manufacturer documentation.",
+      "point2": "Lenzing describes TENCEL™ Lyocell production as a closed-loop process. This fiber information does not establish the origin or certification of every finished product.",
+      "point3": "Composition, weave and finishing affect the finished fabric, so check the item-specific information."
     },
     "featuresTitle": "Key Features of Tencel™ Fabric You'll Love",
     "features": {
-      "item1": { "title": "Silky Smooth, Luxurious Feel", "description": "Tencel™ has an exceptionally smooth and soft surface, providing superior skin comfort, like a gentle caress, creating a luxurious sleep experience." },
-      "item2": { "title": "Excellent Breathability for a Cool Night", "description": "Tencel™'s nanofibril structure efficiently absorbs and releases moisture, keeping you cool and dry all night, perfect for hot and humid climates." },
-      "item3": { "title": "Reduces Bacterial Growth for Better Hygiene", "description": "The superior moisture management creates an environment that is naturally unfavorable for the growth of bacteria and dust mites, reducing odors and giving you confidence in its cleanliness." },
-      "item4": { "title": "Gentle on Sensitive Skin, Like a Soothing Embrace", "description": "Its smooth surface and fiber purity make Tencel™ ideal for sensitive skin, including children and the elderly, minimizing irritation." },
-      "item5": { "title": "Vibrant Colors, Long-Lasting", "description": "Tencel™ fibers absorb dye exceptionally well, resulting in vibrant, long-lasting colors, even after many washes, keeping your bedding looking new." }
+      "item1": {
+        "title": "Silky Smooth, Luxurious Feel",
+        "description": "Tencel™ has an exceptionally smooth and soft surface, providing superior skin comfort, like a gentle caress, creating a luxurious sleep experience."
+      },
+      "item2": {
+        "title": "Excellent Breathability for a Cool Night",
+        "description": "Tencel™'s nanofibril structure efficiently absorbs and releases moisture, keeping you cool and dry all night, perfect for hot and humid climates."
+      },
+      "item3": {
+        "title": "Care and hygiene",
+        "description": "Do not assume antibacterial or anti-mite performance without item-specific tests. Follow the care label for laundering and storage."
+      },
+      "item4": {
+        "title": "Gentle on Sensitive Skin, Like a Soothing Embrace",
+        "description": "Skin comfort varies by person and fabric. Assess a sample and confirm composition before selecting."
+      },
+      "item5": {
+        "title": "Vibrant Colors, Long-Lasting",
+        "description": "Tencel™ fibers absorb dye exceptionally well, resulting in vibrant, long-lasting colors, even after many washes, keeping your bedding looking new."
+      }
     },
     "care": {
       "title": "Caring for Your Tencel™ Fabric for Lasting Beauty",
@@ -406,29 +488,71 @@
   },
   "hotelsPage": {
     "mainTitle": "Bedding Solutions for Hotels & B2B Partners",
-    "mainDescription": "We understand the needs of hotels and B2B partners for high-quality, durable bedding that impresses guests and offers great value. Ask us for a B2B quote.",
+    "mainDescription": "Describe your property, number of rooms, piece quantities, bed dimensions, preferred fabric and delivery destination. Choose quotation or samples enquiry below. We will need to confirm availability, minimum quantities, sampling conditions and delivery timing before any commitment.",
     "whyChooseUs": {
-      "title": "Why Do Leading Hotels Choose Us?",
+      "title": "Plan bedding for your hospitality operation",
       "slideshowAlt": "B2B visual showcase – luxury hotel scenes",
-      "card1": { "title": "✓ Hotel-Standard Quality", "content": "We select raw materials and production processes that meet high standards. Our fabrics are durable for frequent washing and have a long lifespan." },
-      "card2": { "title": "✓ Wide Variety of Options", "content": "Multiple fabric types (Cotton, Tencel™, Soft-Tex™, CVC) and thread density levels are available to suit every budget and hotel style.", "link": "View All Fabric Types" },
-      "card3": { "title": "✓ Direct Manufacturer Pricing", "content": "Order directly from the factory to ensure cost-effective pricing, with special offers for B2B clients." },
-      "card4": { "title": "✓ Customization Services", "content": "We can produce custom sizes, embroider logos, or select specific colors for your project." },
-      "card5": { "title": "✓ Consultation Services", "content": "Our team of experts is ready to advise you on selecting the right fabric for your hotel's type and budget." },
-      "card6": { "title": "✓ Free Fabric Samples", "content": "We are happy to send you fabric samples to test the quality and feel before you place a bulk order.", "button": "Request Samples for B2B" }
+      "card1": {
+        "title": "Use and laundering",
+        "content": "Describe your use and laundry system to compare suitable fabrics and care requirements."
+      },
+      "card2": {
+        "title": "✓ Wide Variety of Options",
+        "content": "Cotton is a fiber; plain and striped describe a fabric’s appearance. CVC is a blend category, so the exact cotton/polyester proportions must be checked for each item. “Soft-Tex” is a catalogue name and does not establish fiber composition. Compare like-for-like using the supplier’s specification and a physical sample where available.",
+        "link": "View All Fabric Types"
+      },
+      "card3": {
+        "title": "An itemized quotation",
+        "content": "Confirm SKU, quantity, price unit, shipping and applicable tax before payment."
+      },
+      "card4": {
+        "title": "Project dimensions and requirements",
+        "content": "Send any size, color or embroidery requirements so feasibility can be checked. An enquiry does not confirm a service or production capability."
+      },
+      "card5": {
+        "title": "✓ Consultation Services",
+        "content": "Describe your property, number of rooms, piece quantities, bed dimensions, preferred fabric and delivery destination. Choose quotation or samples enquiry below. We will need to confirm availability, minimum quantities, sampling conditions and delivery timing before any commitment."
+      },
+      "card6": {
+        "title": "Enquire about fabric samples",
+        "content": "Ask about sample availability, charges and conditions before dispatch. Samples are not automatically free.",
+        "button": "Request Samples for B2B"
+      }
     },
     "expertAdvice": {
       "title": "📖 Expert Advice: Choosing Fabric for Your Hotel",
-      "header1": "Hotel Type/Use Case", "header2": "Recommended Fabric", "header3": "Reason",
-      "row1": { "useCase": "Boutique / Small Hotels", "recommendation": "Cotton Percale (500-700 density) or CVC (500 density) Stripe", "reason": "Comfortable, breathable, easy to care for, and cost-effective." },
-      "row2": { "useCase": "Seaside Hotels / Resorts", "recommendation": "Cotton Percale (500-700 density) or Tencel™ (400 density)", "reason": "Extremely breathable, quick-drying, doesn't retain moisture, and feels cool." },
-      "row3": { "useCase": "3-4 Star City Hotels", "recommendation": "Cotton Sateen (500-1000 density), Soft-Tex™ (600 density)", "reason": "Dense and soft texture, luxurious appearance, and durable for frequent washing." },
-      "row4": { "useCase": "5-Star Luxury Hotels / VIP Rooms", "recommendation": "High-Quality Cotton Sateen (1000+ density) or Tencel™ (600+ density)", "reason": "Ultimate softness and comfort, luxurious, and makes a strong impression." },
-      "row5": { "useCase": "Serviced Apartments / Premium Dorms", "recommendation": "Soft-Tex™ (600 density) or CVC (400-500 density)", "reason": "Durable, easy to care for, wrinkle-resistant, and cost-effective for long-term use." }
+      "header1": "Hotel Type/Use Case",
+      "header2": "Recommended Fabric",
+      "header3": "Reason",
+      "row1": {
+        "useCase": "Boutique / Small Hotels",
+        "recommendation": "Start with cotton or CVC and compare samples",
+        "reason": "Assess actual samples and item-specific specifications; thread count alone is not a selection rule."
+      },
+      "row2": {
+        "useCase": "Seaside Hotels / Resorts",
+        "recommendation": "Compare fabric feel and drying requirements",
+        "reason": "Assess actual samples and item-specific specifications; thread count alone is not a selection rule."
+      },
+      "row3": {
+        "useCase": "3-4 Star City Hotels",
+        "recommendation": "Compare plain and striped fabric within budget",
+        "reason": "Assess actual samples and item-specific specifications; thread count alone is not a selection rule."
+      },
+      "row4": {
+        "useCase": "5-Star Luxury Hotels / VIP Rooms",
+        "recommendation": "Compare sample feel, weave and care",
+        "reason": "Assess actual samples and item-specific specifications; thread count alone is not a selection rule."
+      },
+      "row5": {
+        "useCase": "Serviced Apartments / Premium Dorms",
+        "recommendation": "Consider repeat laundering and replacement costs",
+        "reason": "Assess actual samples and item-specific specifications; thread count alone is not a selection rule."
+      }
     },
     "cta": {
-      "title": "Contact Our B2B Team for a Special Offer",
-      "description": "Whether you are a hotel, resort, real estate project, or a business in need of high-quality bedding, we are ready to serve you and offer the best prices.",
+      "title": "Hotels & business enquiries",
+      "description": "Describe your property, number of rooms, piece quantities, bed dimensions, preferred fabric and delivery destination. Choose quotation or samples enquiry below. We will need to confirm availability, minimum quantities, sampling conditions and delivery timing before any commitment.",
       "button1": "Request a Quote for B2B",
       "button2": "Call to Consult: 081-851-9922"
     }
@@ -438,44 +562,44 @@
     "mainDescription": "Experience the classic charm and pristine purity of high-quality white bed sheets from Slumba ZEN. Perfect for any bedroom style, creating an atmosphere of cleanliness, visual comfort, and true luxury. Make every night a perfect retreat.",
     "featuredTitle": "Featured White Bed Sheets to Elevate Your Bedroom",
     "benefitsTitle": "Why are White Bed Sheets the Right Choice?",
-    "benefit1": "<strong>Timeless Classic:</strong> White is an immortal color that never goes out of style, perfectly complementing any bedroom decor.",
-    "benefit2": "<strong>A Sense of Cleanliness & Freshness:</strong> White sheets provide a feeling of being clean, bright, and airy, inviting you to relax and unwind.",
-    "benefit3": "<strong>Simple Elegance & Sophistication:</strong> The standard of leading hotels worldwide, symbolizing attention to detail and a touch of luxury.",
-    "benefit4": "<strong>Easy to Mix & Match:</strong> Pairs effortlessly with any other color of bedding, pillowcases, or decor, allowing you to create endless creative looks for your bedroom.",
+    "benefit1": "Timeless Classic: White is an immortal color that never goes out of style, perfectly complementing any bedroom decor.",
+    "benefit2": "A Sense of Cleanliness & Freshness: White sheets provide a feeling of being clean, bright, and airy, inviting you to relax and unwind.",
+    "benefit3": "Simple Elegance & Sophistication: The standard of leading hotels worldwide, symbolizing attention to detail and a touch of luxury.",
+    "benefit4": "Easy to Mix & Match: Pairs effortlessly with any other color of bedding, pillowcases, or decor, allowing you to create endless creative looks for your bedroom.",
     "viewAllInGallery": "View All White Sheets in Gallery",
     "ctaTitle": "Find Your Perfect White Bedding at Slumba ZEN",
     "ctaButtonContact": "Consult Our Experts",
     "ctaButtonCollections": "View All Collections"
   },
   "premiumColorsPage": {
-    "mainTitle": "Premium Color Bed Sheets Collection: Enliven Your Bedroom",
-    "mainDescription": "Add vibrancy and personality to your bedroom with our various shades of premium color bed sheets. Slumba ZEN curates beautiful and stylish colors for a superior sleep experience and enchanting aesthetics, bringing luxurious factory quality to your home.",
+    "mainTitle": "Color enquiries",
+    "mainDescription": "The current catalogue lists white products. Tell us your preferred color, size and quantity so we can check whether a suitable option is available. This enquiry does not confirm a stocked or made-to-order color.",
     "featuredTitle": "Featured Premium Color Bed Sheets to Brighten Every Day",
     "benefitsTitle": "Add a Splash of Color to Your Bedroom with the Charm of Premium Hues",
-    "benefit1": "<strong>Create a Unique Atmosphere:</strong> Colors influence mood and feelings. Freely choose a color that reflects your personal style.",
-    "benefit2": "<strong>Add Dimension and Interest:</strong> Dark colors can make a room feel cozy and intimate, while light shades help a room look more spacious and airy, creating depth and interest.",
-    "benefit3": "<strong>Versatile Decorating:</strong> Colored sheets allow you to enjoy matching colors with curtains, rugs, or other decorations, creating endless new looks.",
-    "benefit4": "<strong>Reflect Your Personality and Taste:</strong> Choose a color that expresses your taste and personal preference, creating a resting space that is truly yours.",
-    "viewAllInGallery": "View All Premium Color Sheets in Gallery",
+    "benefit1": "Create a Unique Atmosphere: Colors influence mood and feelings. Freely choose a color that reflects your personal style.",
+    "benefit2": "Add Dimension and Interest: Dark colors can make a room feel cozy and intimate, while light shades help a room look more spacious and airy, creating depth and interest.",
+    "benefit3": "Versatile Decorating: Colored sheets allow you to enjoy matching colors with curtains, rugs, or other decorations, creating endless new looks.",
+    "benefit4": "Reflect Your Personality and Taste: Choose a color that expresses your taste and personal preference, creating a resting space that is truly yours.",
+    "viewAllInGallery": "Explore the catalogue",
     "ctaTitle": "Choose the Right Color that Reflects Your Style",
     "ctaButtonContact": "Inquire About More Shades",
     "ctaButtonCollections": "View All Collections"
   },
   "beddingSetsPage": {
     "mainTitle": "Complete Bedding Sets: The Perfect Ensemble for Your Rest",
-    "mainDescription": "Choose convenience and harmony with a complete bedding set from Slumba ZEN, designed to provide the perfect sleep experience with quality, beauty, and value. Experience hotel-level relaxation every night, with quality delivered directly from our factory.",
+    "mainDescription": "Choose the pieces you need individually: fitted sheet, pillowcases and, if required, a separate duvet cover. Ask us to confirm every included piece, its size and the total price in writing before ordering. A duvet cover does not include a duvet insert.",
     "featuredTitle": "Sample Bedding Sets to Transform Your Bedroom into a Paradise",
     "benefitsTitle": "Why Choose Our Complete Bedding Sets?",
-    "benefit1": "<strong>All-in-One Convenience:</strong> Everything you need for blissful sleep, all in one set. Saves time, no need to buy pieces separately.",
-    "benefit2": "<strong>Perfectly Coordinated Design:</strong> All items in the set are designed to match perfectly in color, pattern, and fabric, creating a harmonious beauty in your bedroom.",
-    "benefit3": "<strong>More Value, More Savings:</strong> Buying as a set is often more cost-effective than buying individual items, with a guarantee of quality and satisfaction.",
-    "componentsTitle": "Our standard sets typically include:",
-    "component1": "A high-quality fitted sheet",
-    "component2": "Soft-touch pillowcases",
-    "component4": "A beautifully designed duvet cover (for sets including a duvet)",
+    "benefit1": "Specify the quantity of each piece before confirming the price.",
+    "benefit2": "Check matching fabric, color and pattern for every piece.",
+    "benefit3": "Compare the total for confirmed contents. No automatic discount or warranty is implied.",
+    "componentsTitle": "Select the pieces and confirm the quotation contents",
+    "component1": "Fitted sheet — choose size and depth",
+    "component2": "Pillowcases — confirm dimensions and quantity",
+    "component4": "Duvet cover — enquire separately if needed; no duvet insert implied",
     "viewAllInGallery": "View All Bedding Sets in Gallery",
     "ctaTitle": "Find the Perfect Bedding Set for You",
-    "ctaDescription": "Choose the convenience and harmony of our quality complete bedding sets.",
+    "ctaDescription": "Choose the pieces you need individually: fitted sheet, pillowcases and, if required, a separate duvet cover. Ask us to confirm every included piece, its size and the total price in writing before ordering. A duvet cover does not include a duvet insert.",
     "ctaButtonContact": "Consult Our Experts",
     "ctaButtonCollections": "View All Collections"
   },
@@ -484,30 +608,93 @@
     "mainDescription": "Find the right size for your bed with our comprehensive size guide, ensuring your bedding fits perfectly. What are the standard bed sheet sizes in Thailand?",
     "standardSizesTitle": "Standard Bedding Sizes",
     "sizeTable": {
-      "header1": "Type", "header2": "Size", "header3": "Dimensions (in/cm)", "header4": "Details",
-      "footerNote": "Fitted sheets are suitable for mattresses up to 14 inches thick. For thicker mattresses, please contact us for a custom size.",
-      "row1": { "category": "Fitted Sheet", "size": "Twin/Single (3.5 ft)", "dimensions": "42 x 78 inches", "details": "For a standard single mattress." },
-      "row2": { "category": "Fitted Sheet", "size": "Queen (5 ft)", "dimensions": "60 x 78 inches", "details": "For a standard queen-size bed." },
-      "row3": { "category": "Fitted Sheet", "size": "King (6 ft)", "dimensions": "72 x 78 inches", "details": "For a standard king-size bed." },
-      "row4": { "category": "Pillowcase", "size": "Standard", "dimensions": "19 x 29 inches", "details": "Fits a standard-size pillow." },
-      "row5": { "category": "Pillowcase", "size": "King", "dimensions": "20 x 36 inches", "details": "Fits a king-size pillow." },
-      "row6": { "category": "Bolster Case", "size": "Standard", "dimensions": "14 x 42 inches", "details": "Fits a standard-size bolster." },
-      "row7": { "category": "Duvet Cover", "size": "Twin/Single (60x80 in)", "dimensions": "60 x 80 inches", "details": "Suitable for a 3.5 ft bed." },
-      "row8": { "category": "Duvet Cover", "size": "Twin/Single (70x90 in)", "dimensions": "70 x 90 inches", "details": "Suitable for a 3.5-5 ft bed." },
-      "row9": { "category": "Duvet Cover", "size": "Queen (80x90 in)", "dimensions": "80 x 90 inches", "details": "Suitable for a 5 ft bed." },
-      "row10": { "category": "Duvet Cover", "size": "King (90x100 in)", "dimensions": "90 x 100 inches", "details": "Suitable for a 5-6 ft bed." },
-      "row11": { "category": "Duvet Cover", "size": "King (100x90 in)", "dimensions": "100 x 90 inches", "details": "Suitable for a 6 ft bed." },
-      "row12": { "category": "Comforter", "size": "For 3.5-6 ft beds", "dimensions": "Varies", "details": "Multiple sizes available." }
+      "header1": "Type",
+      "header2": "Size",
+      "header3": "Dimensions (in/cm)",
+      "header4": "Details",
+      "footerNote": "Measure mattress width, length and total depth, including any topper. Compare all three with the particular fitted sheet. Current catalogue fit labels include 10-inch and 12-inch depths; there is no universal 14-inch fit. Pillowcases, bolster cases and duvet covers need their own measurements.",
+      "row1": {
+        "category": "Fitted Sheet",
+        "size": "Twin/Single (3.5 ft)",
+        "dimensions": "42 x 78 inches",
+        "details": "For a standard single mattress."
+      },
+      "row2": {
+        "category": "Fitted Sheet",
+        "size": "Queen (5 ft)",
+        "dimensions": "60 x 78 inches",
+        "details": "For a standard queen-size bed."
+      },
+      "row3": {
+        "category": "Fitted Sheet",
+        "size": "King (6 ft)",
+        "dimensions": "72 x 78 inches",
+        "details": "For a standard king-size bed."
+      },
+      "row4": {
+        "category": "Pillowcase",
+        "size": "Standard",
+        "dimensions": "19 x 29 inches",
+        "details": "Fits a standard-size pillow."
+      },
+      "row5": {
+        "category": "Pillowcase",
+        "size": "King",
+        "dimensions": "20 x 36 inches",
+        "details": "Fits a king-size pillow."
+      },
+      "row6": {
+        "category": "Bolster Case",
+        "size": "Standard",
+        "dimensions": "14 x 42 inches",
+        "details": "Fits a standard-size bolster."
+      },
+      "row7": {
+        "category": "Duvet Cover",
+        "size": "Twin/Single (60x80 in)",
+        "dimensions": "60 x 80 inches",
+        "details": "Suitable for a 3.5 ft bed."
+      },
+      "row8": {
+        "category": "Duvet Cover",
+        "size": "Twin/Single (70x90 in)",
+        "dimensions": "70 x 90 inches",
+        "details": "Suitable for a 3.5-5 ft bed."
+      },
+      "row9": {
+        "category": "Duvet Cover",
+        "size": "Queen (80x90 in)",
+        "dimensions": "80 x 90 inches",
+        "details": "Suitable for a 5 ft bed."
+      },
+      "row10": {
+        "category": "Duvet Cover",
+        "size": "King (90x100 in)",
+        "dimensions": "90 x 100 inches",
+        "details": "Suitable for a 5-6 ft bed."
+      },
+      "row11": {
+        "category": "Duvet Cover",
+        "size": "King (100x90 in)",
+        "dimensions": "100 x 90 inches",
+        "details": "Suitable for a 6 ft bed."
+      },
+      "row12": {
+        "category": "Comforter",
+        "size": "For 3.5-6 ft beds",
+        "dimensions": "Varies",
+        "details": "Multiple sizes available."
+      }
     },
     "mattressDepth": {
       "title": "Why Does Mattress Depth Matter?",
       "p1": "To get the perfect fit for your fitted sheet, it's crucial to measure the thickness (depth) of your mattress.",
-      "p2": "Our standard fitted sheets are designed to fit mattresses up to 14 inches deep, which covers most standard mattresses.",
-      "example": "Example: If you have a 12-inch mattress, our 14-inch pocket depth will provide a secure and snug fit."
+      "p2": "Measure mattress width, length and total depth, including any topper. Compare all three with the particular fitted sheet. Current catalogue fit labels include 10-inch and 12-inch depths; there is no universal 14-inch fit. Pillowcases, bolster cases and duvet covers need their own measurements.",
+      "example": "Example: a 12-inch-deep mattress should not use a sheet specified for only 10 inches."
     },
     "customSizes": {
       "title": "Need a Custom Size?",
-      "description": "If you have a non-standard mattress or want a truly bespoke fit, we offer custom sizing services. Contact us to discuss your requirements.",
+      "description": "Send width, length and depth so suitable options can be checked. An enquiry does not confirm custom manufacturing.",
       "ctaButton": "Contact for Custom Size"
     }
   },
@@ -553,34 +740,34 @@
       "keywords": "shipping policy, product warranty, returns, bedding care, Slumbazen, free delivery, Kerry, Flash Express, DHL, international shipping cost, delivery information, product guarantee"
     },
     "contact": {
-        "title": "Contact Slumbazen - Order Hotel Bedding & Get a Quote",
-        "description": "Contact the Slumbazen factory to inquire, order B2B hotel bedding, export quality, or visit our showroom. Call 081-851-9922, LINE: kris.bkk. We are ready to serve you.",
-        "keywords": "contact Slumbazen, phone number, LINE ID, factory map, order bed sheets, B2B price inquiry, Bang Bo bedding showroom, contact us, Thai bedding manufacturer"
+      "title": "Contact Slumbazen - Order Hotel Bedding & Get a Quote",
+      "description": "Contact the Slumbazen factory to inquire, order B2B hotel bedding, export quality, or visit our showroom. Call 081-851-9922, LINE: kris.bkk. We are ready to serve you.",
+      "keywords": "contact Slumbazen, phone number, LINE ID, factory map, order bed sheets, B2B price inquiry, Bang Bo bedding showroom, contact us, Thai bedding manufacturer"
     },
     "whiteSheets": {
-        "title": "White Hotel Bed Sheets | Premium Cotton, Tencel™ | Slumbazen",
-        "description": "Shop exclusive white bed sheets from Slumbazen. Hotel-quality Cotton & Tencel™ fabric. Clean, comforting, timeless elegance. Factory prices.",
-        "keywords": "white sheets, white hotel bedding, white cotton sheets, white tencel sheets, white linen sets, Slumbazen, luxury white sheets, hotel collection white, factory quality"
+      "title": "White Hotel Bed Sheets | Premium Cotton, Tencel™ | Slumbazen",
+      "description": "Shop exclusive white bed sheets from Slumbazen. Hotel-quality Cotton & Tencel™ fabric. Clean, comforting, timeless elegance. Factory prices.",
+      "keywords": "white sheets, white hotel bedding, white cotton sheets, white tencel sheets, white linen sets, Slumbazen, luxury white sheets, hotel collection white, factory quality"
     },
     "premiumColors": {
-        "title": "Premium Color Bed Sheets - Stylish Designs, Hotel Quality",
-        "description": "Style your bedroom with premium color bed sheets from Slumbazen. Various shades in quality Cotton, Tencel™ fabrics. Custom orders at factory prices.",
-        "keywords": "colored sheets, premium color bedding, designer bed linen, Slumbazen color sheets, solid color sheets, luxury color bedding, factory quality, cotton color sheets, tencel color sheets"
+      "title": "Premium Color Bed Sheets - Stylish Designs, Hotel Quality",
+      "description": "Style your bedroom with premium color bed sheets from Slumbazen. Various shades in quality Cotton, Tencel™ fabrics. Custom orders at factory prices.",
+      "keywords": "colored sheets, premium color bedding, designer bed linen, Slumbazen color sheets, solid color sheets, luxury color bedding, factory quality, cotton color sheets, tencel color sheets"
     },
     "beddingSets": {
-        "title": "Complete Bedding Sets - Hotel Quality, Factory Prices | Slumbazen",
-        "description": "Choose complete, hotel-quality bedding sets from Slumbazen. Includes fitted sheet, pillowcases, and duvet cover, perfectly coordinated for superior comfort and style. Factory direct.",
-        "keywords": "bedding sets, complete bed linen, hotel bedding package, Slumbazen bedding sets, bed in a bag, luxury bedding ensemble, factory quality, sheet and duvet cover sets"
+      "title": "Complete Bedding Sets - Hotel Quality, Factory Prices | Slumbazen",
+      "description": "Choose complete, hotel-quality bedding sets from Slumbazen. Includes fitted sheet, pillowcases, and duvet cover, perfectly coordinated for superior comfort and style. Factory direct.",
+      "keywords": "bedding sets, complete bed linen, hotel bedding package, Slumbazen bedding sets, bed in a bag, luxury bedding ensemble, factory quality, sheet and duvet cover sets"
     },
     "towels": {
-        "title": "Hotel Towel Guide: Choose Size, Weight & Washing Method",
-        "description": "In-depth guide on 100% cotton hotel towels and bath mats. How to choose the right weight (lbs) and size for 3-5 star hotels, with first-wash instructions from Slumbazen.",
-        "keywords": "hotel towels, bath towel, bath mat, towel size, towel weight, how to wash towels, 12 lbs towel, 16 lbs towel, combed cotton, Slumbazen"
+      "title": "Hotel Towel Guide: Choose Size, Weight & Washing Method",
+      "description": "In-depth guide on 100% cotton hotel towels and bath mats. How to choose the right weight (lbs) and size for 3-5 star hotels, with first-wash instructions from Slumbazen.",
+      "keywords": "hotel towels, bath towel, bath mat, towel size, towel weight, how to wash towels, 12 lbs towel, 16 lbs towel, combed cotton, Slumbazen"
     },
     "blog": {
-        "title": "Blog: Hotel Bedding Tips, Insights & Care Guides | Slumbazen",
-        "description": "Explore the Slumbazen blog for expert tips on hotel-quality bedding care, material insights, and the latest hospitality trends.",
-        "keywords": "bedding blog, sheet care tips, towel guide, hotel quality, Slumbazen, bedding articles"
+      "title": "Blog: Hotel Bedding Tips, Insights & Care Guides | Slumbazen",
+      "description": "Explore the Slumbazen blog for expert tips on hotel-quality bedding care, material insights, and the latest hospitality trends.",
+      "keywords": "bedding blog, sheet care tips, towel guide, hotel quality, Slumbazen, bedding articles"
     }
   },
   "towelsPage": {
@@ -589,48 +776,48 @@
     "suitability": "Suitability",
     "bathTowel": {
       "name": "Hotel Bath Towel",
-      "description": "Premium-grade terry towels made from Grade A 100% cotton fibers, woven using a Double Loop Terry Weave technique. This dual-loop method increases surface density, resulting in a towel that is soft, highly absorbent, and durable even after repeated washing.",
+      "description": "Select bath towels by dimensions, weight, loop construction and laundry process. Confirm the composition and weight of the particular item before ordering.",
       "techTip": "Tip: The choice of towel weight should correspond to the hotel's laundry capacity.",
       "variant1_name": "Standard Weight",
-      "variant1_spec": "Size 27″ x 54″, 12 lbs",
+      "variant1_spec": "Size 27″ x 54″, 12 lbs — confirm weight basis and dimensions before ordering",
       "variant1_suitability": "Mid-range hotels, high turnover",
       "variant2_name": "Medium Plush",
-      "variant2_spec": "Size 27″ x 54″, 14 lbs",
+      "variant2_spec": "Size 27″ x 54″, 14 lbs — confirm weight basis and dimensions before ordering",
       "variant2_suitability": "Hotels aiming for a premium feel",
       "variant3_name": "Large Comfort Fit",
-      "variant3_spec": "Size 30″ x 60″, 16 lbs",
+      "variant3_spec": "Size 30″ x 60″, 16 lbs — confirm weight basis and dimensions before ordering",
       "variant3_suitability": "Hotels with international guests",
       "variant4_name": "Luxury Grade",
-      "variant4_spec": "Size 30″ x 60″, 18 lbs",
-      "variant4_suitability": "5–6 star hotels"
+      "variant4_spec": "Size 30″ x 60″, 18 lbs — confirm weight basis and dimensions before ordering",
+      "variant4_suitability": "Compare plushness with drying capacity"
     },
     "bathMat": {
       "name": "Hotel Bath Mat",
-      "description": "A bath mat is another essential component for a standard hotel, used to prevent slips and absorb water from the floor after a shower, especially in hotels that prioritize safety and cleanliness.",
+      "description": "Bath mats absorb water after bathing and should be laundered separately from towels. Do not assume a cotton mat is slip-resistant without supporting information.",
       "techTip": "Tip: For hygiene, wash bath mats separately from towels.",
       "variant1_name": "Jacquard Welcome Mat",
-      "variant1_spec": "Size 18″ x 28″, 8 lbs",
+      "variant1_spec": "Size 18″ x 28″, 8 lbs — confirm weight basis and dimensions before ordering",
       "variant1_suitability": "All hotel levels"
     },
     "firstWash": {
       "title": "First Wash and Use Instructions for Hotel Towels",
       "intro": "To ensure hotel towels perform at their best from the first use and to extend their lifespan, follow these guidelines:",
       "step1_title": "1. Wash Before First Use",
-      "step1_reason": "<b>Technical Reason:</b> New towels from the factory are often coated with chemicals (like softener or wax) to prevent dust during storage, which reduces absorbency.",
-      "step1_practice_item1": "Wash towels in 40–60°C water before use.",
+      "step1_reason": "Wash before first use according to the care label to remove loose lint and manufacturing or storage residues.",
+      "step1_practice_item1": "Use the temperature permitted by the care label and supplier.",
       "step1_practice_item2": "Avoid using fabric softener in the first wash as it will coat the fibers and reduce absorbency.",
-      "step1_practice_item3": "It is recommended to add ½ cup of distilled vinegar instead of softener in the first cycle to help open up the fibers and reduce any chemical residue.",
+      "step1_practice_item3": "Dose detergent for water conditions and machine load. Never mix vinegar with bleach.",
       "step2_title": "2. Wash Separately from Other Fabrics",
       "step2_item1": "Wash towels separately from other items like clothes, bed sheets, or items with zippers/buttons to avoid friction that could cause linting.",
       "step2_item2": "Avoid washing with dark-colored fabrics to prevent color bleeding onto white towels.",
       "step3_title": "3. Avoid Harsh Bleaches or Detergents",
       "step3_item1": "Use a mild, non-bio or low-sudsing detergent that won't damage the cotton fibers.",
-      "step3_item2": "If extra whitening is needed, opt for an oxygen-based bleach instead of chlorine bleach.",
+      "step3_item2": "Use bleach only if permitted by the care label and supplier.",
       "step4_title": "4. Proper Drying",
       "step4_item1": "Use a medium heat setting for drying to prevent shrinkage or stiffness.",
       "step4_item2": "If using a dryer, add dryer balls to help fluff the towel fibers and prevent them from clumping.",
       "step5_title": "5. Long-Term Care",
-      "step5_item1": "Wash towels every 1–2 days of use to prevent bacteria and odor buildup.",
+      "step5_item1": "Schedule laundering according to use and the property’s hygiene process.",
       "step5_item2": "Avoid drying in damp, shaded areas or in direct, strong sunlight for too long, as this can make the fabric brittle or fade.",
       "step6_title": "6. Avoid Overloading the Washer",
       "step6_item1": "Don't cram the washing machine with too many towels. Overloading prevents proper rinsing, leaving detergent residue that makes towels stiff and less absorbent. Wash in smaller loads for better results.",
@@ -641,14 +828,14 @@
       "step9_title": "9. Rotate Your Towel Stock",
       "step9_item1": "For hotels and high-use environments, regularly rotate your stock of towels. This ensures even wear and tear across all towels, extending the overall life of your inventory instead of overusing a few favorites.",
       "step10_title": "10. Refreshing Stiff or Musty Towels",
-      "step10_item1": "If towels become stiff or musty over time, run them through a wash cycle with hot water and one cup of white vinegar (no detergent). Follow with a second cycle using hot water and half a cup of baking soda (no detergent). This strips residue and restores softness.",
+      "step10_item1": "If towels become stiff or musty, check detergent dosage, rinsing and drying. Ask the supplier before using special chemicals or treatment cycles.",
       "conclusion": "✅ Summary: Washing towels correctly the first time helps them achieve maximum absorbency, prevents residual odors, and reduces long-term linting or pilling. Ideal for hotels looking to maintain quality and a professional, clean brand image."
     },
     "careInstructions": {
       "title": "Towel Care Instructions",
       "tip1": {
-        "title": "Machine wash warm (max 60°C) with similar colors",
-        "explanation": "Warm water effectively cleans towels without damaging the fibers. We advise separating colors to prevent any fading and suggest adding a bit of baking soda to the wash to enhance brightness and remove odors."
+        "title": "Wash at the temperature stated on the care label",
+        "explanation": "Separate colors and textile types. Match detergent dosage to the machine and water conditions."
       },
       "tip2": {
         "title": "Avoid bleach or optical brighteners",
@@ -660,11 +847,11 @@
       },
       "tip4": {
         "title": "Do not use fabric softeners – it may reduce absorbency",
-        "explanation": "Fabric softeners work by coating the fibers, which unfortunately blocks their ability to absorb moisture. To maintain natural fluffiness, try adding a cup of white vinegar to the rinse cycle instead."
+        "explanation": "Fabric softener can coat fibers and reduce absorbency. Follow manufacturer guidance and avoid improvised chemical mixtures."
       },
       "tip5": {
-        "title": "Replace towels every 12–18 months for best hygiene",
-        "explanation": "Over time and after many washes, towels naturally lose their effectiveness. We recommend regular replacement to ensure your guests always experience maximum softness, hygiene, and satisfaction. Old towels can be repurposed for cleaning to promote sustainability."
+        "title": "Inspect condition and plan replacements",
+        "explanation": "Assess permanent stains, wear, damage and laundry performance. No single replacement interval suits every hotel."
       }
     }
   },
@@ -681,25 +868,25 @@
     "productImage": "Product Image",
     "noImage": "No image available"
   },
-    "blogPage": {
+  "blogPage": {
     "mainTitle": "Blog",
     "mainDescription": "Tips, insights, and inspiration for the perfect sleep experience. Get the best advice for hotel bedding care.",
     "category": "Bedding Care",
     "comingSoon": "Article Coming Soon",
     "post1": {
-        "title": "How to Wash Your 5-Star Hotel Sheets at Home to Keep Them Soft",
-        "summary": "A step-by-step guide for Slumba ZEN customers on washing luxury sheets. Covers water temperature, detergent choice, and drying methods to preserve the softness of their Thai cotton bedding.",
-        "keywords": "wash hotel sheets, keep sheets soft, luxury bedding care, slumbazen care instructions"
+      "title": "How to Wash Your 5-Star Hotel Sheets at Home to Keep Them Soft",
+      "summary": "A step-by-step guide for Slumba ZEN customers on washing luxury sheets. Covers water temperature, detergent choice, and drying methods to preserve the softness of their Thai cotton bedding.",
+      "keywords": "wash hotel sheets, keep sheets soft, luxury bedding care, slumbazen care instructions"
     },
     "post2": {
-        "title": "The Secret to Hotel Luxury: Top Cotton Fabrics Used in Thailand",
-        "summary": "An educational post exploring high-quality cottons, explaining thread count and weaves. It highlights why Slumba ZEN's select Thai cotton is the superior choice for a luxury sleep experience.",
-        "keywords": "hotel cotton types, best cotton for sheets, thai cotton vs egyptian, thread count explained"
+      "title": "The Secret to Hotel Luxury: Top Cotton Fabrics Used in Thailand",
+      "summary": "An educational post exploring high-quality cottons, explaining thread count and weaves. It highlights why Slumba ZEN's select Thai cotton is the superior choice for a luxury sleep experience.",
+      "keywords": "hotel cotton types, best cotton for sheets, thai cotton vs egyptian, thread count explained"
     },
     "post3": {
-        "title": "The Ultimate Checklist for Choosing Towels for an Airbnb or Boutique Hotel",
-        "summary": "A practical guide for hospitality hosts on selecting towels. Covers durability, absorbency, and guest impressions, positioning Slumba ZEN towels as the perfect investment.",
-        "keywords": "best towels for airbnb, commercial towels, durable cotton towels, hospitality supplies thailand"
+      "title": "The Ultimate Checklist for Choosing Towels for an Airbnb or Boutique Hotel",
+      "summary": "A practical guide for hospitality hosts on selecting towels. Covers durability, absorbency, and guest impressions, positioning Slumba ZEN towels as the perfect investment.",
+      "keywords": "best towels for airbnb, commercial towels, durable cotton towels, hospitality supplies thailand"
     }
   }
 }

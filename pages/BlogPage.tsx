@@ -23,7 +23,7 @@ const BlogPage: React.FC = () => {
             summaryKey: 'blogPage.post1.summary',
             keywordsKey: 'blogPage.post1.keywords',
             date: '2024-07-28',
-            imageUrl: 'https://i.postimg.cc/k4zQwz9V/blog-wash.jpg'
+            imageUrl: '/assets/editorial/textile.webp'
         },
         {
             id: '2',
@@ -31,7 +31,7 @@ const BlogPage: React.FC = () => {
             summaryKey: 'blogPage.post2.summary',
             keywordsKey: 'blogPage.post2.keywords',
             date: '2024-07-25',
-            imageUrl: 'https://i.postimg.cc/bJqC1w9X/blog-fabric.jpg'
+            imageUrl: '/assets/editorial/textile.webp'
         },
         {
             id: '3',
@@ -39,7 +39,7 @@ const BlogPage: React.FC = () => {
             summaryKey: 'blogPage.post3.summary',
             keywordsKey: 'blogPage.post3.keywords',
             date: '2024-07-22',
-            imageUrl: 'https://i.postimg.cc/tJn5g9fQ/blog-airbnb.jpg'
+            imageUrl: '/assets/editorial/textile.webp'
         }
     ];
 
@@ -75,7 +75,7 @@ const BlogPage: React.FC = () => {
                 canonicalUrl={canonicalUrl}
                 ogTitle={pageTitle}
                 ogDescription={pageDescription}
-                ogImage="https://i.postimg.cc/bJqC1w9X/blog-fabric.jpg"
+                ogImage="/assets/editorial/textile.webp"
                 jsonLd={jsonLd}
             />
             <div className="bg-brand-light">

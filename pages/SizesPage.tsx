@@ -5,7 +5,7 @@ import Button from '../components/Button';
 import MetaManager from '../components/MetaManager';
 import InlineImage from '../components/InlineImage';
 
-const SizeTableStyled: React.FC<{ headerKeys: string[]; data: (string | JSX.Element)[][]; captionKey?: string }> = ({ headerKeys, data, captionKey }) => {
+const SizeTableStyled: React.FC<{ headerKeys: string[]; data: (string | React.ReactElement)[][]; captionKey?: string }> = ({ headerKeys, data, captionKey }) => {
   const { t } = useTranslation();
   return (
     <div className="overflow-x-auto shadow-2xl rounded-2xl border border-neutral-200/50">
@@ -42,7 +42,7 @@ const SizesPage: React.FC = () => {
   const pageTitle = t('seo.sizes.title', { siteName });
   const pageDescription = t('seo.sizes.description');
   const pageKeywords = t('seo.sizes.keywords');
-  const canonicalUrl = `${window.location.origin}${window.location.pathname}#/sizes`;
+  const canonicalUrl = `${'https://www.slumbazen.com'}${'/'}#/sizes`;
 
   const formatDimension = (value: string) => {
     if (currentLang === 'en') {
@@ -71,23 +71,18 @@ const SizesPage: React.FC = () => {
     "mainEntity": { "@type": "Table", "about": t('sizesPage.standardSizesTitle') },
     "breadcrumb": { "@context": "https://schema.org", "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": t('nav.home'), "item": `${window.location.origin}${window.location.pathname}#${langPrefix}` },
-        { "@type": "ListItem", "position": 2, "name": t('nav.learnItems.sizes'), "item": `${window.location.origin}${window.location.pathname}#${langPrefix}/sizes` }
+        { "@type": "ListItem", "position": 1, "name": t('nav.home'), "item": `${'https://www.slumbazen.com'}${'/'}#${langPrefix}` },
+        { "@type": "ListItem", "position": 2, "name": t('nav.learnItems.sizes'), "item": `${'https://www.slumbazen.com'}${'/'}#${langPrefix}/sizes` }
       ]
     },
-    "publisher": { "@type": "Organization", "name": siteName, "logo": { "@type": "ImageObject", "url": "https://i.postimg.cc/k5NcGrQx/Slumba-ZEN-logo-200.png" } }
+    "publisher": { "@type": "Organization", "name": siteName, "logo": { "@type": "ImageObject", "url": "/assets/logo.png" } }
   };
 
   return (
     <>
-      <MetaManager
-        title={pageTitle} description={pageDescription} keywords={pageKeywords} ogTitle={pageTitle}
-        ogDescription={pageDescription} ogUrl={canonicalUrl} canonicalUrl={canonicalUrl}
-        ogImage="https://i.postimg.cc/fLYC7RbJ/decorative00015.jpg"
-        jsonLd={webpageJsonLd}
-      />
+      
       <div className="bg-brand-light relative isolate overflow-hidden">
-        <div className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10" style={{ backgroundImage: "url('https://i.postimg.cc/fLYC7RbJ/decorative00015.jpg')" }}></div>
+        <div className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10" style={{ backgroundImage: "url('/assets/restored-d1a224aa01f5.webp')" }}></div>
         <div className="absolute inset-0 -z-10 h-full w-full bg-brand-secondary/20 backdrop-blur-sm" />
 
         <header className="text-center py-20 sm:py-28">
@@ -101,7 +96,7 @@ const SizesPage: React.FC = () => {
           </div>
         </header>
 
-        <main className="pb-20 sm:pb-28">
+        <div className="pb-20 sm:pb-28">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <section id="standard-sizes" aria-labelledby="standard-sizes-heading" className="mb-20 sm:mb-24">
               <h2 id="standard-sizes-heading" className="text-4xl sm:text-5xl font-bold text-neutral-900 mb-12 text-center">
@@ -129,7 +124,7 @@ const SizesPage: React.FC = () => {
                         </div>
                     </div>
                     <div className="md:order-1">
-                        <InlineImage src="https://i.postimg.cc/DfP2z1p8/Why-Does-Mattress-Depth-Matter.jpg" alt={t('sizesPage.mattressDepth.title')} aspectRatio="1/1" />
+                        <InlineImage src="/assets/restored-b7b2f7faacfb.webp" alt={t('sizesPage.mattressDepth.title')} aspectRatio="1/1" />
                     </div>
                 </div>
             </section>
@@ -138,7 +133,7 @@ const SizesPage: React.FC = () => {
               id="custom-sizes" 
               aria-labelledby="custom-sizes-heading" 
               className="text-center py-20 bg-brand-dark text-white rounded-2xl relative overflow-hidden bg-cover bg-center"
-              style={{ backgroundImage: "url('https://i.postimg.cc/1XPHv1gM/decorative00016.jpg')" }}
+              style={{ backgroundImage: "url('/assets/restored-40960a97898d.webp')" }}
             >
                 <div className="absolute inset-0 bg-brand-dark/70"></div>
                <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -154,10 +149,11 @@ const SizesPage: React.FC = () => {
                </div>
             </section>
           </div>
-        </main>
+        </div>
       </div>
     </>
   );
 };
 
 export default SizesPage;
+

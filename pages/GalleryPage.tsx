@@ -24,6 +24,7 @@ const GalleryPage: React.FC = () => {
   const [productTypeFilter, setProductTypeFilter] = useState<FilterKey>('all');
   const [fabricFilter, setFabricFilter] = useState<FilterKey>('all');
   const [sizeFilter, setSizeFilter] = useState<FilterKey>('all');
+  const [colorFilter, setColorFilter] = useState<FilterKey>('all');
   const [tcFilter, setTcFilter] = useState<FilterKey>('all');
   
   const maxPrice = useMemo(() => {
@@ -47,7 +48,8 @@ const GalleryPage: React.FC = () => {
     const color = params.get('color');
 
     if (productType) handleProductTypeChange(productType);
-    if (fabric) handleFabricChange(fabric);
+    if (fabric) handleFabricChange(({Cotton:'cotton100',cotton:'cotton100'} as Record<string,string>)[fabric] || fabric);
+    setColorFilter(color?.toLowerCase() || 'all');
     
     // Reset page to 1 on any param change
     setCurrentPage(1);
@@ -85,6 +87,7 @@ const GalleryPage: React.FC = () => {
   
   const resetFilters = () => {
     setProductTypeFilter('all');
+    setColorFilter('all');
     setFabricFilter('all');
     setSizeFilter('all');
     setTcFilter('all');
@@ -96,13 +99,13 @@ const GalleryPage: React.FC = () => {
   const productTypeOptions = useMemo(() => [
     { key: 'all', label: t('galleryPage.productTypes.all') },
     ...[...new Map(allProducts.map(p => [p.productType.key, p.productType])).values()]
-      .map(pt => ({ key: pt.key, label: t(`galleryPage.productTypes.${pt.key}`) || pt[currentLang] || pt.en }))
+      .map(pt => ({ key: pt.key, label: t(`galleryPage.productTypes.${pt.key}`, {defaultValue:pt[currentLang] || pt.en}) }))
   ], [t, currentLang]);
   
   const fabricOptions = useMemo(() => [
     { key: 'all', label: t('galleryPage.fabricTypes.all') },
     ...[...new Map(allProducts.filter(p => p.productType.key !== 'towel').map(p => [p.fabricType.key, p.fabricType])).values()]
-      .map(ft => ({ key: ft.key, label: t(`galleryPage.fabricTypes.${ft.key}`) || ft[currentLang] || ft.en }))
+      .map(ft => ({ key: ft.key, label: t(`galleryPage.fabricTypes.${ft.key}`, {defaultValue:ft[currentLang] || ft.en}) }))
   ], [t, currentLang]);
   
   const sizeOptions = useMemo(() => {
@@ -130,6 +133,7 @@ const GalleryPage: React.FC = () => {
   // --- Filtering Logic ---
   const filteredProducts = useMemo(() => {
     return allProducts.filter(p => {
+      if (colorFilter !== 'all' && p.color.key !== colorFilter) return false;
       if (productTypeFilter !== 'all' && p.productType.key !== productTypeFilter) return false;
       if (fabricFilter !== 'all' && p.fabricType.key !== fabricFilter) return false;
       if (sizeFilter !== 'all' && p.size.key !== sizeFilter) return false;
@@ -145,7 +149,7 @@ const GalleryPage: React.FC = () => {
       
       return true;
     });
-  }, [productTypeFilter, fabricFilter, sizeFilter, tcFilter, priceRange]);
+  }, [productTypeFilter, fabricFilter, sizeFilter, tcFilter, priceRange, colorFilter]);
 
   // --- Pagination Logic ---
   const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
@@ -195,7 +199,7 @@ const GalleryPage: React.FC = () => {
       />
       <div className="bg-brand-secondary/40">
         <header className="py-20 sm:py-24 text-center bg-brand-light relative overflow-hidden">
-          <div className="absolute inset-0 -z-10 bg-cover bg-center opacity-10" style={{ backgroundImage: "url('https://i.postimg.cc/qRzQnXwb/Bed000116.jpg')"}}></div>
+          <div className="absolute inset-0 -z-10 bg-cover bg-center opacity-10" style={{ backgroundImage: "url('/assets/restored-fe78379afdf9.webp')"}}></div>
           <div className="container mx-auto px-4">
             <h1 className="text-5xl sm:text-6xl font-bold text-neutral-900">{pageTitle}</h1>
             <p className="mt-4 text-lg text-neutral-700 max-w-2xl mx-auto">{t('galleryPage.description')}</p>
@@ -205,7 +209,7 @@ const GalleryPage: React.FC = () => {
         <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
             {/* --- Filters Sidebar --- */}
-            <aside className="lg:col-span-1 lg:sticky lg:top-24 h-fit">
+            <aside className="lg:col-span-1 lg:sticky lg:top-24 h-fit min-w-0"><details open><summary className="lg:hidden p-3 font-semibold">{t('galleryPage.filtersTitle')}</summary>
               <div className="space-y-6">
                 <div className="flex justify-between items-center">
                     <h2 className="text-2xl font-bold text-neutral-800 flex items-center">
@@ -257,7 +261,7 @@ const GalleryPage: React.FC = () => {
                 </FilterBlock>
 
               </div>
-            </aside>
+            </details></aside>
 
             {/* --- Products Grid --- */}
             <div className="lg:col-span-3">
@@ -285,7 +289,7 @@ const GalleryPage: React.FC = () => {
               {/* --- Pagination --- */}
               {totalPages > 1 && (
                 <nav className="mt-12 flex justify-center" aria-label="Pagination">
-                  <ul className="flex items-center -space-x-px h-10 text-base">
+                  <ul className="flex flex-wrap items-center justify-center gap-1 text-base">
                     <li>
                       <button
                         onClick={() => handlePageChange(currentPage - 1)}
@@ -298,7 +302,7 @@ const GalleryPage: React.FC = () => {
                         </svg>
                       </button>
                     </li>
-                    {Array.from({ length: totalPages }, (_, i) => (
+                    {Array.from({ length: totalPages }, (_, i) => i).filter(i => Math.abs(i + 1 - currentPage) <= 1 || i === 0 || i === totalPages - 1).map(i => (
                       <li key={i}>
                         <button
                           onClick={() => handlePageChange(i + 1)}
@@ -337,3 +341,4 @@ const GalleryPage: React.FC = () => {
 };
 
 export default GalleryPage;
+

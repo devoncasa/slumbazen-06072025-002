@@ -38,16 +38,16 @@ const HeroSection: React.FC<{ imageUrl: string }> = ({ imageUrl }) => {
 const VisualShowcaseSection: React.FC = () => {
   const { t, i18n } = useTranslation();
   const images = [
-      { src: "https://i.postimg.cc/Z5Py7B0T/Bed000399.jpg", altKey: "homePage.visualShowcase.alt1", className: "md:col-span-2" },
-      { src: "https://i.postimg.cc/MHZsH24B/Bed000363.jpg", altKey: "homePage.visualShowcase.alt2" },
-      { src: "https://i.postimg.cc/P5MPbgFJ/Bed000309.jpg", altKey: "homePage.visualShowcase.alt3" },
-      { src: "https://i.postimg.cc/25PTQLtC/Bed000242.jpg", altKey: "homePage.visualShowcase.alt4" },
-      { src: "https://i.postimg.cc/DZJHFK9w/Bed000222.jpg", altKey: "homePage.visualShowcase.alt5" },
-      { src: "https://i.postimg.cc/C19yfKG8/Bed000213.jpg", altKey: "homePage.visualShowcase.alt6" },
-      { src: "https://i.postimg.cc/1R6Rrx8S/Bed000325.jpg", altKey: "homePage.visualShowcase.alt7" },
-      { src: "https://i.postimg.cc/zfVPhNWg/decorative0003.jpg", altKey: "homePage.visualShowcase.alt8", className: "md:col-span-2" },
-      { src: "https://i.postimg.cc/VkHKmhTL/decorative00013.jpg", altKey: "homePage.visualShowcase.alt9" },
-      { src: "https://i.postimg.cc/qvFGrC42/Bed000249.jpg", altKey: "homePage.visualShowcase.alt10" },
+      { src: "/assets/catalogue-57.webp", altKey: "homePage.visualShowcase.alt1", className: "md:col-span-2" },
+      { src: "/assets/catalogue-40.webp", altKey: "homePage.visualShowcase.alt2" },
+      { src: "/assets/catalogue-06.webp", altKey: "homePage.visualShowcase.alt3" },
+      { src: "/assets/catalogue-41.webp", altKey: "homePage.visualShowcase.alt4" },
+      { src: "/assets/catalogue-42.webp", altKey: "homePage.visualShowcase.alt5" },
+      { src: "/assets/catalogue-43.webp", altKey: "homePage.visualShowcase.alt6" },
+      { src: "/assets/catalogue-44.webp", altKey: "homePage.visualShowcase.alt7" },
+      { src: "/assets/restored-32d0351b5a31.webp", altKey: "homePage.visualShowcase.alt8", className: "md:col-span-2" },
+      { src: "/assets/catalogue-04.webp", altKey: "homePage.visualShowcase.alt9" },
+      { src: "/assets/restored-3fc4414bb92b.webp", altKey: "homePage.visualShowcase.alt10" },
   ];
 
   return (
@@ -79,7 +79,7 @@ const BrandStorySection: React.FC = () => {
     const { t } = useTranslation();
     return (
         <section className="py-20 sm:py-28 bg-brand-light relative overflow-hidden">
-            <div className="absolute inset-0 z-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: "url('https://i.postimg.cc/B6Brk202/decorative-bedding.jpg')" }}>
+            <div className="absolute inset-0 z-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: "url('/assets/restored-c4d60195df9d.webp')" }}>
                 <div className="absolute inset-0 bg-brand-light/80"></div>
             </div>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -110,8 +110,8 @@ const BrandStorySection: React.FC = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className="order-1 md:order-2 rounded-2xl overflow-hidden shadow-2xl aspect-w-4 aspect-h-3 p-0.5 bg-brand-gold">
-                       <img src="https://i.postimg.cc/B6Brk202/decorative-bedding.jpg" alt={t('homePage.brandStory.quality_title')} loading="lazy" className="w-full h-full object-cover rounded-xl"/>
+                    <div className="order-1 md:order-2 rounded-2xl overflow-hidden shadow-2xl aspect-[4/3] p-0.5 bg-brand-gold">
+                       <img src="/assets/restored-c4d60195df9d.webp" alt={t('homePage.brandStory.quality_title')} loading="lazy" className="w-full h-full object-cover rounded-xl"/>
                     </div>
                 </div>
             </div>
@@ -131,7 +131,7 @@ const SummarizedWhyUsSection: React.FC = () => {
 
   return (
     <section id="why-us-summary" className="py-20 sm:py-28 bg-brand-secondary/50 relative overflow-hidden">
-      <div className="absolute inset-0 z-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: "url('https://i.postimg.cc/CKvmz6Gn/Bed000115.jpg')" }}>
+      <div className="absolute inset-0 z-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: "url('/assets/restored-3009995b2299.webp')" }}>
          <div className="absolute inset-0 bg-brand-secondary/70"></div>
       </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -178,7 +178,7 @@ const CustomerProblemsSection: React.FC = () => {
 
   return (
     <section id="customer-problems" className="py-20 sm:py-28 bg-brand-light relative overflow-hidden">
-       <div className="absolute inset-0 z-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: "url('https://i.postimg.cc/qRzQnXwb/Bed000116.jpg')" }}>
+       <div className="absolute inset-0 z-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: "url('/assets/restored-fe78379afdf9.webp')" }}>
             <div className="absolute inset-0 bg-brand-light/80"></div>
        </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -212,7 +212,7 @@ const DiscoverWorldSection: React.FC = () => {
 
   return (
     <section className="py-20 sm:py-28 bg-white relative overflow-hidden">
-       <div className="absolute inset-0 z-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: "url('https://i.postimg.cc/Y9ZRxGyp/Bed000117.jpg')" }}>
+       <div className="absolute inset-0 z-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: "url('/assets/restored-1e33fdaa5ef7.webp')" }}>
           <div className="absolute inset-0 bg-white/70"></div>
        </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -245,7 +245,7 @@ const ConsultationCtaSection: React.FC = () => {
     <section 
       id="consultation-cta" 
       className="py-20 sm:py-28 bg-brand-dark text-white relative overflow-hidden bg-cover bg-center"
-      style={{ backgroundImage: "url('https://i.postimg.cc/rs4JZVv5/Bed000118.jpg')" }}
+      style={{ backgroundImage: "url('/assets/restored-1c64547b1d6a.webp')" }}
     >
       <div className="absolute inset-0 z-0 bg-brand-dark/70">
       </div>
@@ -270,14 +270,14 @@ const ConsultationCtaSection: React.FC = () => {
 const HomePage: React.FC = () => {
   const { t, i18n } = useTranslation();
   const siteName = "Slumba ZEN";
-  const canonicalUrl = `${window.location.origin}${window.location.pathname}#/${i18n.language}`;
+  const canonicalUrl = `${'https://www.slumbazen.com'}${'/'}#/${i18n.language}`;
   
   const randomHeroImage = useMemo(() => {
     const heroImages = IMAGE_ASSETS.hero_backgrounds;
     if (!heroImages || heroImages.length === 0) {
-      return 'https://i.postimg.cc/DzpY9gWk/cover-page-002.jpg'; // Fallback
+      return '/assets/hero.webp'; // Fallback
     }
-    const randomIndex = Math.floor(Math.random() * heroImages.length);
+    const randomIndex = 0;
     return heroImages[randomIndex];
   }, []);
 
@@ -285,9 +285,9 @@ const HomePage: React.FC = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": siteName,
-    "image": "https://i.postimg.cc/k5NcGrQx/Slumba-ZEN-logo-200.png",
-    "@id": window.location.origin,
-    "url": window.location.origin,
+    "image": "/assets/logo.png",
+    "@id": 'https://www.slumbazen.com',
+    "url": 'https://www.slumbazen.com',
     "telephone": t('contactPage.phone1'),
     "priceRange": "THB",
     "address": t('contactPage.structuredAddress', { returnObjects: true }),
@@ -332,7 +332,7 @@ const HomePage: React.FC = () => {
         "name": siteName,
         "logo": {
             "@type": "ImageObject",
-            "url": "https://i.postimg.cc/k5NcGrQx/Slumba-ZEN-logo-200.png"
+            "url": "/assets/logo.png"
         }
     },
     "potentialAction": {
@@ -345,14 +345,7 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-      <MetaManager
-        title={t('seo.home.title')}
-        description={t('seo.home.description')}
-        keywords={t('seo.home.keywords')}
-        ogImage={randomHeroImage} 
-        canonicalUrl={`${window.location.origin}${window.location.pathname}#/`}
-        jsonLd={[localBusinessSchema, webSiteSchema]}
-      />
+      
       <HeroSection imageUrl={randomHeroImage} />
       <MissionStatementSection />
       <BrandStorySection />
@@ -366,3 +359,4 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+

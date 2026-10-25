@@ -7,7 +7,7 @@ import Button from '../components/Button';
 import MetaManager from '../components/MetaManager';
 import InlineImage from '../components/InlineImage';
 
-const FeatureCard: React.FC<{ titleKey: string; descriptionKey: string; icon: JSX.Element }> = ({ titleKey, descriptionKey, icon }) => {
+const FeatureCard: React.FC<{ titleKey: string; descriptionKey: string; icon: React.ReactElement<any> }> = ({ titleKey, descriptionKey, icon }) => {
   const { t } = useTranslation();
   return (
     <div className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2 text-start">
@@ -26,7 +26,7 @@ export default function WhatIsTencelPage() {
   const pageTitle = t('seo.whatIsTencel.title', { siteName });
   const pageDescription = t('seo.whatIsTencel.description');
   const pageKeywords = t('seo.whatIsTencel.keywords');
-  const canonicalUrl = `${window.location.origin}${window.location.pathname}#/what-is-tencel`;
+  const canonicalUrl = `${'https://www.slumbazen.com'}${'/'}#/what-is-tencel`;
 
   const featuresData = [
     { titleKey: "whatIsTencelPage.features.item1.title", descriptionKey: "whatIsTencelPage.features.item1.description", icon: <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM18 15.75l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 20l-1.035.259a3.375 3.375 0 00-2.456 2.456L18 23.75l-.259-1.035a3.375 3.375 0 00-2.456-2.456L14.25 20l1.035-.259a3.375 3.375 0 002.456-2.456L18 15.75z" /></svg> },
@@ -38,33 +38,28 @@ export default function WhatIsTencelPage() {
   const careItems = ["whatIsTencelPage.care.item1", "whatIsTencelPage.care.item2", "whatIsTencelPage.care.item3", "whatIsTencelPage.care.item4"];
 
   const articleJsonLd = { "@context": "https://schema.org", "@type": "Article", "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl },
-    "headline": t('whatIsTencelPage.mainTitle'), "description": pageDescription, "keywords": pageKeywords, "image": "https://i.postimg.cc/L4Bvn57W/decorative000201.jpg", 
-    "author": { "@type": "Organization", "name": siteName, "url": `${window.location.origin}${window.location.pathname}#/` },
-    "publisher": { "@type": "Organization", "name": siteName, "logo": { "@type": "ImageObject", "url": "https://i.postimg.cc/k5NcGrQx/Slumba-ZEN-logo-200.png" } },
+    "headline": t('whatIsTencelPage.mainTitle'), "description": pageDescription, "keywords": pageKeywords, "image": "/assets/restored-0040ea4de0d2.webp", 
+    "author": { "@type": "Organization", "name": siteName, "url": `${'https://www.slumbazen.com'}${'/'}#/` },
+    "publisher": { "@type": "Organization", "name": siteName, "logo": { "@type": "ImageObject", "url": "/assets/logo.png" } },
     "datePublished": "2024-07-01", "dateModified": "2024-07-28" 
   };
    const breadcrumbJsonLd = { "@context": "https://schema.org", "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": t('nav.home'), "item": `${window.location.origin}${window.location.pathname}#/` },
+      { "@type": "ListItem", "position": 1, "name": t('nav.home'), "item": `${'https://www.slumbazen.com'}${'/'}#/` },
       { "@type": "ListItem", "position": 2, "name": t('nav.learnItems.whatIsTencel'), "item": canonicalUrl }
     ]
   };
 
   return (
     <>
-      <MetaManager
-        title={pageTitle} description={pageDescription} keywords={pageKeywords} ogTitle={pageTitle}
-        ogDescription={pageDescription} ogUrl={canonicalUrl} ogType="article"
-        ogImage="https://i.postimg.cc/L4Bvn57W/decorative000201.jpg"
-        canonicalUrl={canonicalUrl} jsonLd={[articleJsonLd, breadcrumbJsonLd]}
-      />
+      
       <div className="bg-brand-light relative isolate overflow-hidden">
-        <div className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10" style={{ backgroundImage: "url('https://i.postimg.cc/sxcJ8H7z/decorative000200.jpg')" }}></div>
+        <div className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10" style={{ backgroundImage: "url('/assets/restored-62e89523623f.webp')" }}></div>
         <div className="absolute inset-0 -z-10 h-full w-full bg-brand-secondary/20 backdrop-blur-sm" />
       
          <header 
             className="relative text-center py-20 sm:py-28 text-white overflow-hidden bg-brand-dark bg-cover bg-center"
-            style={{ backgroundImage: "url('https://i.postimg.cc/L4Bvn57W/decorative000201.jpg')" }}
+            style={{ backgroundImage: "url('/assets/restored-0040ea4de0d2.webp')" }}
           >
             <div className="absolute inset-0 bg-brand-dark/70"></div>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -77,13 +72,13 @@ export default function WhatIsTencelPage() {
             </div>
         </header>
 
-        <main className="pb-20 sm:pb-28">
+        <div className="pb-20 sm:pb-28">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <section id="tencel-intro" aria-labelledby="tencel-intro-heading" className="mb-20 sm:mb-24">
                   <div className="bg-white/80 backdrop-blur-sm p-8 sm:p-12 rounded-2xl shadow-xl max-w-4xl mx-auto relative overflow-hidden text-start">
                     <div 
                       className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10"
-                      style={{ backgroundImage: "url('https://i.postimg.cc/0QLGWV4f/tencel-background.png')" }}
+                      style={{ backgroundImage: "url('/assets/restored-e4ea03f2ddb9.webp')" }}
                     ></div>
                     <div className="relative z-10">
                       <h2 id="tencel-intro-heading" className="text-4xl sm:text-5xl font-bold text-neutral-900 mb-8 text-center">
@@ -91,7 +86,7 @@ export default function WhatIsTencelPage() {
                       </h2>
                       <div className="prose prose-lg max-w-none text-neutral-700 space-y-4">
                         <p>{t('whatIsTencelPage.whatIsIt.intro')}</p>
-                        <InlineImage src="https://i.postimg.cc/mDcNyvmk/tencel-cover.png" alt={t('whatIsTencelPage.mainTitle')} />
+                        <InlineImage src="/assets/restored-38ad32bd128d.webp" alt={t('whatIsTencelPage.mainTitle')} />
                         <ul className="list-disc space-y-2 ps-5">
                           <li dangerouslySetInnerHTML={{ __html: t('whatIsTencelPage.whatIsIt.point1') }} />
                           <li dangerouslySetInnerHTML={{ __html: t('whatIsTencelPage.whatIsIt.point2') }} />
@@ -103,7 +98,7 @@ export default function WhatIsTencelPage() {
                 </section>
 
                 <section id="tencel-features" aria-labelledby="tencel-features-heading" className="mb-20 sm:mb-24 py-16 bg-brand-secondary/50 rounded-2xl relative overflow-hidden bg-cover bg-center"
-                    style={{ backgroundImage: "url('https://i.postimg.cc/wTq2JHYj/decorative000202.jpg')" }}>
+                    style={{ backgroundImage: "url('/assets/restored-a0d4e67b7e5f.webp')" }}>
                     <div className="absolute inset-0 bg-brand-secondary/70"></div>
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                       <h2 id="tencel-features-heading" className="text-4xl sm:text-5xl font-bold text-neutral-900 mb-12 text-center">
@@ -124,7 +119,7 @@ export default function WhatIsTencelPage() {
                             {t('whatIsTencelPage.care.title')}
                             </h2>
                             <p className="text-neutral-700 text-base mb-6">{t('whatIsTencelPage.care.intro')}</p>
-                            <InlineImage src="https://i.postimg.cc/d1TqgN6D/laundry-care.jpg" alt={t('whatIsTencelPage.care.title')} aspectRatio='16/9' />
+                            <InlineImage src="/assets/editorial/care.webp" alt={t('whatIsTencelPage.care.title')} aspectRatio='16/9' />
                             <ul className="list-decimal list-outside space-y-3 text-neutral-700 text-base ps-5 mt-6">
                                 {careItems.map(itemKey => (
                                     <li key={itemKey}>{t(itemKey)}</li>
@@ -134,7 +129,7 @@ export default function WhatIsTencelPage() {
                     </div>
                 </section>
             </div>
-        </main>
+        </div>
       </div>
     </>
   );

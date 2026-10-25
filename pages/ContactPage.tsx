@@ -50,7 +50,7 @@ const ContactPage: React.FC = () => {
         "@type": "LocalBusiness",
         "name": t('footer.companyName'),
         "legalName": t('contactPage.legalNameEntity'),
-        "image": "https://i.postimg.cc/k5NcGrQx/Slumba-ZEN-logo-200.png",
+        "image": "/assets/logo.png",
         "telephone": phone,
         "email": t('contactPage.emailValue'),
         "address": t('contactPage.structuredAddress', { returnObjects: true }),
@@ -91,7 +91,7 @@ const ContactPage: React.FC = () => {
         jsonLd={jsonLd}
       />
       <div className="bg-brand-light relative isolate overflow-hidden">
-        <div className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10" style={{ backgroundImage: "url('https://i.postimg.cc/d0pNmfmS/decorative0001.jpg')" }}></div>
+        <div className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10" style={{ backgroundImage: "url('/assets/restored-fcce72c96f95.webp')" }}></div>
         <div className="absolute inset-0 -z-10 h-full w-full bg-brand-light/80 backdrop-blur-sm" />
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 text-start">
@@ -122,7 +122,7 @@ const ContactPage: React.FC = () => {
             <h2 className="text-3xl font-bold text-center text-neutral-900 mb-8">{t('contactPage.mapTitle')}</h2>
             <a href="https://maps.app.goo.gl/JgA4yF8v8bK9xR2t5" target="_blank" rel="noopener noreferrer" aria-label={t('contactPage.mapAriaLabel')}>
                 <InlineImage 
-                    src="https://i.postimg.cc/8PzC4g9d/bangkok-map-stylized.jpg"
+                    src="/assets/editorial/textile.webp"
                     alt={t('contactPage.addressLabel')}
                     aspectRatio="16/9"
                 />
@@ -136,3 +136,4 @@ const ContactPage: React.FC = () => {
 };
 
 export default ContactPage;
+

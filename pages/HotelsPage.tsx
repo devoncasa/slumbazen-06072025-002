@@ -10,28 +10,18 @@ import InlineImage from '../components/InlineImage';
 const ImageSlideshow: React.FC<{ images: string[]; alt: string; interval?: number; aspectRatio?: '4/3' | '16/9' | '1/1' | '4/5'; }> = ({ images, alt, interval = 2000, aspectRatio = '4/5' }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    if (images.length <= 1) return;
-
-    const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, interval);
-
-    return () => clearInterval(timer);
-  }, [images.length, interval]);
-  
   const aspectClasses = {
-    '4/3': 'aspect-w-4 aspect-h-3',
-    '16/9': 'aspect-w-16 aspect-h-9',
-    '1/1': 'aspect-w-1 aspect-h-1',
-    '4/5': 'aspect-w-4 aspect-h-5',
+    '4/3': 'aspect-[4/3]',
+    '16/9': 'aspect-[16/9]',
+    '1/1': 'aspect-square',
+    '4/5': 'aspect-[4/5]',
   };
 
   return (
     <div className={`my-8 sm:my-10`}>
       <div className={`group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 ${aspectClasses[aspectRatio]} p-0.5 bg-brand-gold`}>
         <div className="w-full h-full relative rounded-xl overflow-hidden">
-          {images.map((src, index) => (
+          {images.slice(0,1).map((src, index) => (
             <img
               key={src + index}
               src={src}
@@ -65,11 +55,11 @@ const InfoCard: React.FC<{ titleKey: string; children: React.ReactNode; classNam
   );
 };
 
-const HotelInfoTable: React.FC<{ headerKeys: string[]; data: (string | JSX.Element)[][]; captionKey?: string }> = ({ headerKeys, data, captionKey }) => {
+const HotelInfoTable: React.FC<{ headerKeys: string[]; data: (string | React.ReactElement)[][]; captionKey?: string }> = ({ headerKeys, data, captionKey }) => {
   const { t } = useTranslation();
   return (
     <div className="overflow-x-auto rounded-xl shadow-xl border border-neutral-200/80">
-      {captionKey && <caption className="p-5 text-xl font-semibold text-start text-neutral-900 bg-brand-light/90 backdrop-blur-sm rounded-t-xl">{t(captionKey)}</caption>}
+      
       <table className="min-w-full bg-white/80 backdrop-blur-sm text-base">
         <thead className="bg-brand-secondary/70 text-brand-dark">
           <tr>
@@ -101,18 +91,18 @@ export default function HotelsPage() {
   const pageTitle = t('seo.hotels.title', { siteName });
   const pageDescription = t('seo.hotels.description');
   const pageKeywords = t('seo.hotels.keywords');
-  const canonicalUrl = `${window.location.origin}${window.location.pathname}#/hotels`;
+  const canonicalUrl = `${'https://www.slumbazen.com'}${'/'}#/hotels`;
   
   const slideshowImages = [
-    "https://i.postimg.cc/MGMJwQN3/B2B-0013.jpg",
-    "https://i.postimg.cc/tTQwHmh7/B2B-002.jpg",
-    "https://i.postimg.cc/Xvymm0BT/B2B-003.jpg",
-    "https://i.postimg.cc/dV3zRCsQ/B2B-004.jpg",
-    "https://i.postimg.cc/YCPTdS06/B2B-005.jpg",
-    "https://i.postimg.cc/PrXGxc0w/B2B-006.jpg",
-    "https://i.postimg.cc/hPpk7sq3/B2B-007.jpg",
-    "https://i.postimg.cc/h4bWKgZn/B2B-008.jpg",
-    "https://i.postimg.cc/90Bvbtw0/B2B-009.jpg"
+    "/assets/restored-f12d2f42cb89.webp",
+    "/assets/restored-afe0e45f73f8.webp",
+    "/assets/restored-f7c92a7fe9f0.webp",
+    "/assets/restored-95b676b8efa1.webp",
+    "/assets/restored-8f158b62f061.webp",
+    "/assets/restored-000d1e2d1f6c.webp",
+    "/assets/restored-5f74694d0e25.webp",
+    "/assets/restored-3ca48e9246fc.webp",
+    "/assets/restored-fc4d229c0e5b.webp"
   ];
 
   const expertAdviceDataContent = [
@@ -126,7 +116,7 @@ export default function HotelsPage() {
 
   const whyChooseUsCards = [
     { titleKey: "hotelsPage.whyChooseUs.card1.title", contentKey: "hotelsPage.whyChooseUs.card1.content" },
-    { titleKey: "hotelsPage.whyChooseUs.card2.title", contentKey: "hotelsPage.whyChooseUs.card2.content", linkTo: "/collections", linkKey: "hotelsPage.whyChooseUs.card2.link" },
+    { titleKey: "hotelsPage.whyChooseUs.card2.title", contentKey: "hotelsPage.whyChooseUs.card2.content", linkTo: "/materials", linkKey: "hotelsPage.whyChooseUs.card2.link" },
     { titleKey: "hotelsPage.whyChooseUs.card3.title", contentKey: "hotelsPage.whyChooseUs.card3.content" },
     { titleKey: "hotelsPage.whyChooseUs.card4.title", contentKey: "hotelsPage.whyChooseUs.card4.content" },
     { titleKey: "hotelsPage.whyChooseUs.card5.title", contentKey: "hotelsPage.whyChooseUs.card5.content" },
@@ -138,34 +128,29 @@ export default function HotelsPage() {
     "@type": "WebPage",
     "name": pageTitle, "description": pageDescription, "url": canonicalUrl, "keywords": pageKeywords,
      "mainEntity": { "@type": "Service", "serviceType": t('hotelsPage.mainTitle'), 
-      "provider": { "@type": "Organization", "name": siteName, "url": `${window.location.origin}${window.location.pathname}#/` },
+      "provider": { "@type": "Organization", "name": siteName, "url": `${'https://www.slumbazen.com'}${'/'}#/` },
       "areaServed": { "@type": "Country", "name": "Thailand" }, "description": pageDescription,
       "serviceOutput": { "@type": "Product", "name": "Hotel Bedding (Cotton, Tencel, CVC, Soft-Tex)" }
     },
     "breadcrumb": { "@context": "https://schema.org", "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": t('nav.home'), "item": `${window.location.origin}${window.location.pathname}#${langPrefix}` },
-        { "@type": "ListItem", "position": 2, "name": t('nav.hotelB2B'), "item": `${window.location.origin}${window.location.pathname}#${langPrefix}/hotels` }
+        { "@type": "ListItem", "position": 1, "name": t('nav.home'), "item": `${'https://www.slumbazen.com'}${'/'}#${langPrefix}` },
+        { "@type": "ListItem", "position": 2, "name": t('nav.hotelB2B'), "item": `${'https://www.slumbazen.com'}${'/'}#${langPrefix}/hotels` }
       ]
     },
-    "publisher": { "@type": "Organization", "name": siteName, "logo": { "@type": "ImageObject", "url": "https://i.postimg.cc/k5NcGrQx/Slumba-ZEN-logo-200.png" } }
+    "publisher": { "@type": "Organization", "name": siteName, "logo": { "@type": "ImageObject", "url": "/assets/logo.png" } }
   };
 
   return (
     <>
-      <MetaManager
-        title={pageTitle} description={pageDescription} keywords={pageKeywords} ogTitle={pageTitle}
-        ogDescription={pageDescription} ogUrl={canonicalUrl} canonicalUrl={canonicalUrl}
-        ogImage="https://i.postimg.cc/vBT3N7Pg/cover-Bedding-Solutions-for-Hotels-B2-B-Partners.jpg"
-        jsonLd={serviceJsonLd}
-      />
+      
       <div className="bg-brand-light relative isolate overflow-hidden">
-        <div className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10" style={{ backgroundImage: "url('https://i.postimg.cc/nhLd8x3P/decorative00011.jpg')" }}></div>
+        <div className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10" style={{ backgroundImage: "url('/assets/restored-b0f9cb299859.webp')" }}></div>
         <div className="absolute inset-0 -z-10 h-full w-full bg-brand-secondary/20 backdrop-blur-sm" />
         
         <header 
           className="relative text-center py-20 sm:py-28 text-white overflow-hidden bg-brand-dark bg-cover bg-center"
-          style={{ backgroundImage: "url('https://i.postimg.cc/vBT3N7Pg/cover-Bedding-Solutions-for-Hotels-B2-B-Partners.jpg')" }}
+          style={{ backgroundImage: "url('/assets/restored-f08369169e9f.webp')" }}
         >
           <div className="absolute inset-0 bg-brand-dark/70"></div>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -178,7 +163,7 @@ export default function HotelsPage() {
           </div>
         </header>
         
-        <main className="py-20 sm:py-28">
+        <div className="py-20 sm:py-28">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <section id="why-choose-us-b2b" aria-labelledby="why-choose-us-heading" className="mb-20 sm:mb-28 p-8 -m-8 relative overflow-hidden rounded-2xl bg-brand-light/50">
                 <div className="relative z-10">
@@ -187,8 +172,8 @@ export default function HotelsPage() {
                     </h2>
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <ImageSlideshow
-                                images={slideshowImages}
+                            <InlineImage
+                                src="/assets/editorial/hospitality-room.webp"
                                 alt={t('hotelsPage.whyChooseUs.slideshowAlt')}
                                 aspectRatio="4/3"
                             />
@@ -222,7 +207,7 @@ export default function HotelsPage() {
               id="b2b-contact-cta" 
               aria-labelledby="b2b-cta-heading" 
               className="text-center py-20 bg-brand-dark text-white rounded-2xl relative overflow-hidden bg-cover bg-center"
-              style={{ backgroundImage: "url('https://i.postimg.cc/VkHKmhTL/decorative00013.jpg')" }}
+              style={{ backgroundImage: "url('/assets/catalogue-04.webp')" }}
             >
               <div className="absolute inset-0 bg-brand-dark/70"></div>
                <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -243,8 +228,9 @@ export default function HotelsPage() {
               </div>
             </section>
           </div>
-        </main>
+        </div>
       </div>
     </>
   );
 }
+

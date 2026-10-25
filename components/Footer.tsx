@@ -8,17 +8,17 @@ const Footer: React.FC = () => {
   const langPrefix = `/${i18n.language}`;
 
   const socialMediaLinks = [
-    { name: 'Facebook', href: 'https://www.facebook.com/slumbazen', ariaLabelKey: 'footer.followOnFacebook', iconUrl: 'https://i.postimg.cc/YCMfNbVb/facebook.webp' },
-    { name: 'Instagram', href: 'https://www.instagram.com/slumbazen', ariaLabelKey: 'footer.followOnInstagram', iconUrl: 'https://i.postimg.cc/P5ybS1nh/instagram.webp' },
-    { name: 'TikTok', href: 'https://www.tiktok.com/@slumbazen', ariaLabelKey: 'footer.followOnTikTok', iconUrl: 'https://i.postimg.cc/cJJR26d3/tiktok.webp' },
-    { name: 'YouTube', href: 'https://www.youtube.com/@slumbazen', ariaLabelKey: 'footer.followOnYouTube', iconUrl: 'https://i.postimg.cc/hG3LBgG5/youtube.webp' },
-    { name: 'Twitter', href: 'https://x.com/slumbazen', ariaLabelKey: 'footer.followOnTwitter', iconUrl: 'https://i.postimg.cc/632d6S25/twitter.webp' },
-    { name: 'LinkedIn', href: 'https://www.linkedin.com/company/slumbazen', ariaLabelKey: 'footer.followOnLinkedIn', iconUrl: 'https://i.postimg.cc/bNXRrzRX/linkedin.webp' },
-    { name: 'Pinterest', href: 'https://www.pinterest.com/slumbazen', ariaLabelKey: 'footer.followOnPinterest', iconUrl: 'https://i.postimg.cc/JnfjsqZ3/pinterest.webp' },
+    { name: 'Facebook', href: 'https://www.facebook.com/slumbazen', ariaLabelKey: 'footer.followOnFacebook', iconUrl: '/assets/restored-329d9616045b.webp' },
+    { name: 'Instagram', href: 'https://www.instagram.com/slumbazen', ariaLabelKey: 'footer.followOnInstagram', iconUrl: '/assets/restored-5ee9d798d621.webp' },
+    { name: 'TikTok', href: 'https://www.tiktok.com/@slumbazen', ariaLabelKey: 'footer.followOnTikTok', iconUrl: '/assets/restored-e867858b0593.webp' },
+    { name: 'YouTube', href: 'https://www.youtube.com/@slumbazen', ariaLabelKey: 'footer.followOnYouTube', iconUrl: '/assets/restored-e871bccc486e.webp' },
+    { name: 'Twitter', href: 'https://x.com/slumbazen', ariaLabelKey: 'footer.followOnTwitter', iconUrl: '/assets/restored-4ca6f5f3cc26.webp' },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/company/slumbazen', ariaLabelKey: 'footer.followOnLinkedIn', iconUrl: '/assets/restored-da8719142f3d.webp' },
+    { name: 'Pinterest', href: 'https://www.pinterest.com/slumbazen', ariaLabelKey: 'footer.followOnPinterest', iconUrl: '/assets/restored-36229d2cb992.webp' },
   ];
   
   const phone = t('contactPage.phone1');
-  const phoneHref = `tel:${phone.replace(/[()-\s]/g, '')}`;
+  const phoneHref = 'tel:+66818519922';
   const email = t('contactPage.emailValue');
 
   return (
@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
       {/* Faded decorative background image */}
       <div 
           className="absolute inset-0 bg-cover bg-center opacity-20" 
-          style={{backgroundImage: "url('https://i.postimg.cc/GmxM1p9Q/Bed000113.jpg')"}}
+          style={{backgroundImage: "url('/assets/restored-75c85586a273.webp')"}}
       ></div>
       {/* Gradient overlay to ensure text readability */}
       <div className="absolute inset-0 bg-gradient-to-t from-brand-secondary via-brand-secondary/95 to-brand-secondary"></div>
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
           {/* Column 1: Brand & Social */}
           <div className="lg:col-span-5 text-center lg:text-start">
             <Link to={langPrefix} className="inline-flex items-center space-x-3 rtl:space-x-reverse mb-6">
-              <img src="https://i.postimg.cc/k5NcGrQx/Slumba-ZEN-logo-200.png" alt={t('footer.companyName') + " Logo"} className="h-12 w-auto" loading="lazy" />
+              <img src="/assets/logo.png" alt={t('footer.companyName') + " Logo"} className="h-12 w-auto" loading="lazy" />
               <span className="font-brand-base text-2xl md:text-3xl text-neutral-900 inline-flex items-baseline">
                 <Trans 
                     i18nKey="footer.companyNameRich" 
@@ -86,10 +86,7 @@ const Footer: React.FC = () => {
                  <PhoneIcon className="h-5 w-5 text-brand-primary flex-shrink-0 me-3" aria-hidden="true" />
                  <a href={phoneHref} className="text-sm text-neutral-700 hover:text-brand-primary transition-colors">{phone}</a>
               </li>
-              <li className="flex items-center justify-center lg:justify-start">
-                <EnvelopeIcon className="h-5 w-5 text-brand-primary flex-shrink-0 me-3" aria-hidden="true" />
-                <a href={`mailto:${email}`} className="text-sm text-neutral-700 hover:text-brand-primary transition-colors">{email}</a>
-              </li>
+              
                <li className="flex items-start justify-center lg:justify-start">
                   <span className="text-brand-primary font-bold text-sm me-3 mt-0.5">A:</span>
                   <p className="text-sm text-neutral-700">{t('contactPage.address')}</p>
@@ -120,3 +117,4 @@ const Footer: React.FC = () => {
 };
 
 export default Footer;
+

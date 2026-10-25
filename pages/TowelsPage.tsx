@@ -11,18 +11,18 @@ import InlineImage from '../components/InlineImage';
 
 // --- NEW ---
 const towelImageGallery = [
-    "https://i.postimg.cc/GpRX4qcP/towel0001.jpg", "https://i.postimg.cc/NjmNGWwf/towel0002.jpg",
-    "https://i.postimg.cc/mDXj647V/towel0003.jpg", "https://i.postimg.cc/6QhYnn3k/towel0004.jpg",
-    "https://i.postimg.cc/7hjVwNs2/towel0005.jpg", "https://i.postimg.cc/wj8Vr0sK/towel0006.jpg",
-    "https://i.postimg.cc/x1vRVMKX/towel0007.jpg", "https://i.postimg.cc/pdPBWrZq/towel0008.jpg",
-    "https://i.postimg.cc/HLScsHZc/towel-001.jpg",  "https://i.postimg.cc/d1phr6KJ/towel-002.jpg",
-    "https://i.postimg.cc/C1zZRtXv/towel-003.jpg",  "https://i.postimg.cc/1XFfHF9w/towel-004.jpg",
-    "https://i.postimg.cc/jdVWjMXX/towel-005.jpg",  "https://i.postimg.cc/RCJ69kch/towel-006.jpg",
-    "https://i.postimg.cc/7Zwf3bjJ/towel-007.jpg",  "https://i.postimg.cc/zXnyHT21/towel-008.jpg",
-    "https://i.postimg.cc/nh2M0ptR/towel-009.jpg",  "https://i.postimg.cc/DzD3Z36C/hotel-towel-0020.jpg",
-    "https://i.postimg.cc/vBVFx2SG/hotel-towel-0021.jpg", "https://i.postimg.cc/Y0Bc6NJY/hotel-towel-0022.jpg",
-    "https://i.postimg.cc/sxYkwQr8/hotel-towel-0023.jpg", "https://i.postimg.cc/dQGcqXyB/hotel-towel-0024.jpg",
-    "https://i.postimg.cc/28mR3wdf/hotel-towel-0025.jpg"
+    "/assets/restored-1ca368effb6a.webp", "/assets/restored-34cf1950f5ab.webp",
+    "/assets/restored-c941431880fb.webp", "/assets/restored-affe0d18f18e.webp",
+    "/assets/restored-1e166ed78e7b.webp", "/assets/restored-c8cfe349790b.webp",
+    "/assets/restored-5087b49e41df.webp", "/assets/restored-fb3ea2d10d8c.webp",
+    "/assets/restored-f15233e81de8.webp",  "/assets/restored-04b671b43b6f.webp",
+    "/assets/restored-b4efd6e71ac4.webp",  "/assets/restored-21dd306705eb.webp",
+    "/assets/restored-b0eecfa427d9.webp",  "/assets/restored-649557cb6a46.webp",
+    "/assets/restored-493eb3bddbec.webp",  "/assets/restored-5c5487299936.webp",
+    "/assets/restored-754d34fc6f87.webp",  "/assets/catalogue-46.webp",
+    "/assets/catalogue-48.webp", "/assets/restored-98e5f3796820.webp",
+    "/assets/catalogue-45.webp", "/assets/catalogue-47.webp",
+    "/assets/restored-8565517e3836.webp"
 ];
 
 // Shuffle array function
@@ -43,7 +43,7 @@ const towelProducts: TowelProduct[] = [
     key: 'bathTowel',
     nameKey: 'towelsPage.bathTowel.name',
     descriptionKey: 'towelsPage.bathTowel.description',
-    imageUrl: 'https://i.postimg.cc/GpRX4qcP/towel0001.jpg',
+    imageUrl: '/assets/restored-1ca368effb6a.webp',
     techTipKey: 'towelsPage.bathTowel.techTip',
     variants: [
       { parentProduct: 'bathTowel', nameKey: 'towelsPage.bathTowel.variant1_name', specKey: 'towelsPage.bathTowel.variant1_spec', suitabilityKey: 'towelsPage.bathTowel.variant1_suitability' },
@@ -56,7 +56,7 @@ const towelProducts: TowelProduct[] = [
     key: 'bathMat',
     nameKey: 'towelsPage.bathMat.name',
     descriptionKey: 'towelsPage.bathMat.description',
-    imageUrl: 'https://i.postimg.cc/V6pFvXGC/hotel-bath-matt.jpg',
+    imageUrl: '/assets/restored-fce9ea172c2e.webp',
     techTipKey: 'towelsPage.bathMat.techTip',
     variants: [
       { parentProduct: 'bathMat', nameKey: 'towelsPage.bathMat.variant1_name', specKey: 'towelsPage.bathMat.variant1_spec', suitabilityKey: 'towelsPage.bathMat.variant1_suitability' },
@@ -69,9 +69,9 @@ const ProductCard: React.FC<{ product: TowelProduct }> = ({ product }) => {
 
     const isBathMat = product.key === 'bathMat';
     const bathMatDecorativeImages = [
-        'https://i.postimg.cc/vHYmVN4L/hotel-bath-mat-002.jpg',
-        'https://i.postimg.cc/y8WYf3XD/hotel-bath-mat-003.jpg',
-        'https://i.postimg.cc/zXxGSFWm/hotel-bath-mat-004.jpg',
+        '/assets/restored-56972c41d04d.webp',
+        '/assets/restored-ba25005abbfb.webp',
+        '/assets/restored-30dc767e8c29.webp',
     ];
 
     return (
@@ -139,7 +139,7 @@ const FirstWashGuide: React.FC<{randomImages: string[]}> = ({ randomImages }) =>
     ];
 
     const decorativeImages = useMemo(() => randomImages.slice(0, 3), [randomImages]);
-    const sectionBgImage = useMemo(() => randomImages.length > 3 ? randomImages[3] : "https://i.postimg.cc/C1zZRtXv/towel-003.jpg", [randomImages]);
+    const sectionBgImage = useMemo(() => randomImages.length > 3 ? randomImages[3] : "/assets/restored-b4efd6e71ac4.webp", [randomImages]);
 
     const WashStep: React.FC<{step: {titleKey: string, content: string[]}}> = ({step}) => (
         <details className="bg-white/80 p-5 rounded-xl shadow-lg group text-start" name="wash-guide-accordion">
@@ -163,9 +163,9 @@ const FirstWashGuide: React.FC<{randomImages: string[]}> = ({ randomImages }) =>
             <div className="container mx-auto px-4 relative z-10">
                 <div className="grid lg:grid-cols-3 gap-12 items-start">
                     <div className="hidden lg:flex flex-col gap-6 sticky top-28">
-                        {decorativeImages.map((img, index) => (
+                        {["/assets/editorial/towel-first-wash.webp",...decorativeImages.slice(0,1)].map((img, index) => (
                            <div key={index} className="bg-brand-gold p-0.5 rounded-2xl shadow-lg">
-                               <img src={img} loading="lazy" className="rounded-[14px] w-full h-auto object-cover aspect-square" alt={`Decorative towel image ${index + 1}`} />
+                               <InlineImage src={img} alt={t('towelsPage.firstWash.title')} aspectRatio="4/3" />
                            </div>
                         ))}
                     </div>
@@ -225,10 +225,10 @@ const TowelsPage: React.FC = () => {
     const siteName = t('footer.companyName');
     const pageTitle = t('towelsPage.mainTitle');
     const pageDescription = t('seo.towels.description', { siteName });
-    const canonicalUrl = `${window.location.origin}${window.location.pathname}#/towels`;
+    const canonicalUrl = `${'https://www.slumbazen.com'}${'/'}#/towels`;
     
     // Shuffle images once per component mount for consistency during a session
-    const shuffledImages = useMemo(() => shuffleArray(towelImageGallery), []);
+    const shuffledImages = useMemo(() => towelImageGallery, []);
 
     const pageBgImage = useMemo(() => shuffledImages[0], [shuffledImages]);
     const defaultOgImage = useMemo(() => shuffledImages.length > 1 ? shuffledImages[1] : pageBgImage, [shuffledImages, pageBgImage]);
@@ -255,7 +255,7 @@ const TowelsPage: React.FC = () => {
                     "name": `${t(parentProduct.nameKey)} - ${t(variant.nameKey)}`,
                     "description": t(variant.suitabilityKey),
                     "image": parentProduct.imageUrl,
-                    "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "seller": { "@type": "Organization", "name": siteName } }
+                    
                 };
             }).filter(Boolean)
         }
@@ -263,14 +263,7 @@ const TowelsPage: React.FC = () => {
 
     return (
         <>
-            <MetaManager
-                title={t('seo.towels.title', { siteName })}
-                description={pageDescription}
-                keywords={t('seo.towels.keywords')}
-                canonicalUrl={canonicalUrl}
-                ogImage={defaultOgImage}
-                jsonLd={jsonLd}
-            />
+            
             <div className="bg-brand-light relative isolate overflow-hidden">
                 <div className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10" style={{ backgroundImage: `url('${pageBgImage}')` }}></div>
                 <div className="absolute inset-0 -z-10 h-full w-full bg-brand-light/80 backdrop-blur-sm" />
@@ -286,18 +279,19 @@ const TowelsPage: React.FC = () => {
                     </div>
                 </header>
 
-                <main className="py-16 sm:py-24 space-y-16 sm:space-y-24">
+                <div className="py-16 sm:py-24 space-y-16 sm:space-y-24">
                     <section id="towel-products" className="container mx-auto px-4">
                         <div className="grid lg:grid-cols-2 gap-10">
                             {towelProducts.map(product => <ProductCard key={product.key} product={product} />)}
                         </div>
                     </section>
                     
+                    <div className="container mx-auto px-4"><InlineImage src="/assets/editorial/hospitality-bath.webp" alt={t('towelsPage.mainTitle')} aspectRatio="4/3" /></div>
                     <FirstWashGuide randomImages={shuffledImages.slice(2)} />
 
                     <TowelCareSection />
 
-                </main>
+                </div>
             </div>
         </>
     );

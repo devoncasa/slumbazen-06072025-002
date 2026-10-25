@@ -52,6 +52,7 @@ const Button: React.FC<ButtonProps> = ({
     }
   };
 
+  if (to && /^(tel:|mailto:|https?:)/.test(to) && !disabled) return <a href={to} onClick={internalOnClick} className={combinedClassName}>{children}</a>;
   if (to && !disabled) {
     return (
       <Link to={to} onClick={internalOnClick} className={combinedClassName}>

@@ -15,7 +15,7 @@ const WhiteSheetsPage: React.FC = () => {
   const currentLang = i18n.language as keyof LocalizedString;
   const siteName = t('footer.companyName');
   const pageTitle = t('pageTitle.whiteSheets');
-  const canonicalUrl = window.location.origin + window.location.pathname + '#/products/white-sheets';
+  const canonicalUrl = 'https://www.slumbazen.com' + '/' + '#/products/white-sheets';
 
   const whiteProducts = allProducts.filter(p => 
     p.color.key === 'white'
@@ -36,15 +36,11 @@ const WhiteSheetsPage: React.FC = () => {
 
   return (
     <>
-      <MetaManager
-        title={t('seo.whiteSheets.title', { siteName })} description={t('seo.whiteSheets.description')}
-        keywords={t('seo.whiteSheets.keywords')} ogTitle={t('seo.whiteSheets.title', { siteName })}
-        ogDescription={t('seo.whiteSheets.description')} canonicalUrl={canonicalUrl} jsonLd={jsonLd}
-      />
+      
       <div className="bg-brand-light relative isolate overflow-hidden">
          <div 
             className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10"
-            style={{ backgroundImage: "url('https://i.postimg.cc/VkshYnk4/decorative0002.jpg')" }}
+            style={{ backgroundImage: "url('/assets/restored-7a9ec5f4ab95.webp')" }}
           ></div>
           <div className="absolute inset-0 -z-10 h-full w-full bg-brand-light/70 backdrop-blur-sm"></div>
       
@@ -61,7 +57,7 @@ const WhiteSheetsPage: React.FC = () => {
             </div>
         </header>
 
-        <main className="pb-20 sm:pb-28">
+        <div className="pb-20 sm:pb-28">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             {whiteProducts.length > 0 && (
               <section id="featured-white-sheets" aria-labelledby="featured-white-sheets-heading" className="mb-20 sm:mb-24">
@@ -74,7 +70,7 @@ const WhiteSheetsPage: React.FC = () => {
                   ))}
                 </div>
                 <div className="text-center mt-16">
-                  <Button to={`${langPrefix}/gallery?color=White`} variant="primary" size="large">
+                  <Button to={`${langPrefix}/gallery?color=white`} variant="primary" size="large">
                     {t('whiteSheetsPage.viewAllInGallery')}
                   </Button>
                 </div>
@@ -88,7 +84,7 @@ const WhiteSheetsPage: React.FC = () => {
                   </h2>
                   <div className="grid lg:grid-cols-2 gap-12 items-center mt-12">
                     <div className="lg:order-2">
-                        <InlineImage src="https://i.postimg.cc/dV3zRCsQ/B2B-004.jpg" alt={t('whiteSheetsPage.benefitsTitle')} aspectRatio='1/1' />
+                        <InlineImage src="/assets/restored-95b676b8efa1.webp" alt={t('whiteSheetsPage.benefitsTitle')} aspectRatio='1/1' />
                     </div>
                     <ul className="lg:order-1 space-y-6 text-neutral-700 text-lg">
                       {benefits.map(benefit => (
@@ -106,7 +102,7 @@ const WhiteSheetsPage: React.FC = () => {
               id="white-sheets-cta" 
               aria-labelledby="white-sheets-cta-heading" 
               className="text-center py-16 relative overflow-hidden rounded-2xl bg-brand-dark bg-cover bg-center"
-              style={{ backgroundImage: "url('https://i.postimg.cc/zfVPhNWg/decorative0003.jpg')" }}
+              style={{ backgroundImage: "url('/assets/restored-32d0351b5a31.webp')" }}
             >
               <div className="absolute inset-0 bg-brand-dark/70"></div>
               <div className="relative z-10 text-white">
@@ -124,10 +120,11 @@ const WhiteSheetsPage: React.FC = () => {
               </div>
             </section>
           </div>
-        </main>
+        </div>
       </div>
     </>
   );
 };
 
 export default WhiteSheetsPage;
+

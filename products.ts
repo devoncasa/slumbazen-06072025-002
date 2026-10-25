@@ -1,5 +1,5 @@
 import type {Product} from './data/galleryData';
-const IMAGE_ASSETS = {
+export const IMAGE_ASSETS = {
   hero_backgrounds: [
     '/assets/catalogue-00.webp',  
     '/assets/catalogue-01.webp',  

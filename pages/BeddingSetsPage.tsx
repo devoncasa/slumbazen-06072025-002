@@ -15,7 +15,7 @@ export default function BeddingSetsPage() {
   const currentLang = i18n.language as keyof LocalizedString;
   const siteName = t('footer.companyName');
   const pageTitle = t('pageTitle.beddingSets');
-  const canonicalUrl = window.location.origin + window.location.pathname + '#/products/sets';
+  const canonicalUrl = 'https://www.slumbazen.com' + '/' + '#/products/sets';
 
   const beddingSetProducts = allProducts.filter(p => p.productType.key === 'beddingSet');
 
@@ -43,13 +43,9 @@ export default function BeddingSetsPage() {
 
   return (
     <>
-      <MetaManager
-        title={t('seo.beddingSets.title', { siteName })} description={t('seo.beddingSets.description')}
-        keywords={t('seo.beddingSets.keywords')} ogTitle={t('seo.beddingSets.title', { siteName })}
-        ogDescription={t('seo.beddingSets.description')} canonicalUrl={canonicalUrl} jsonLd={jsonLd}
-      />
+      
       <div className="bg-brand-light relative isolate overflow-hidden">
-        <div className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10" style={{ backgroundImage: "url('https://i.postimg.cc/Kjy9CgWP/decorative0006.jpg')" }}></div>
+        <div className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10" style={{ backgroundImage: "url('/assets/restored-ac7e2c8aaca0.webp')" }}></div>
         <div className="absolute inset-0 -z-10 h-full w-full bg-brand-secondary/20 backdrop-blur-sm" />
       
          <header className="text-center py-20 sm:py-28 bg-pastel-lavender">
@@ -63,7 +59,7 @@ export default function BeddingSetsPage() {
             </div>
         </header>
         
-        <main className="pb-20 sm:pb-28">
+        <div className="pb-20 sm:pb-28">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               {featuredProducts.length > 0 && (
                 <section id="featured-bedding-sets" aria-labelledby="featured-bedding-sets-heading" className="mb-20 sm:mb-24">
@@ -90,7 +86,7 @@ export default function BeddingSetsPage() {
                       </h2>
                       <div className="grid md:grid-cols-2 gap-12 items-center">
                           <div>
-                            <InlineImage src="https://i.postimg.cc/t47j38x8/bedding-set-lifestyle.jpg" alt={t('beddingSetsPage.benefitsTitle')} aspectRatio="1/1" />
+                            <InlineImage src="/assets/editorial/set.webp" alt={t('beddingSetsPage.benefitsTitle')} aspectRatio="1/1" />
                           </div>
                           <div>
                             <h3 className="text-2xl font-semibold text-brand-dark mb-6">{t('beddingSetsPage.componentsTitle')}</h3>
@@ -137,8 +133,9 @@ export default function BeddingSetsPage() {
                 </div>
               </section>
             </div>
-        </main>
+        </div>
       </div>
     </>
   );
 }
+

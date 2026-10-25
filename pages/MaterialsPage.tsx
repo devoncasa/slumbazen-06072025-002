@@ -22,7 +22,7 @@ const MaterialDetailCard: React.FC<{ id: string; titleKey: string; children: Rea
 };
 
 
-const InfoTable: React.FC<{ headerKeys: string[]; data: (string | JSX.Element)[][]; captionKey?: string }> = ({ headerKeys, data, captionKey }) => {
+const InfoTable: React.FC<{ headerKeys: string[]; data: (string | React.ReactElement)[][]; captionKey?: string }> = ({ headerKeys, data, captionKey }) => {
   const { t } = useTranslation();
   return (
     <div className="overflow-x-auto rounded-lg mb-8 border border-neutral-200/80">
@@ -64,7 +64,7 @@ export default function MaterialsPage() {
   const pageTitle = t('seo.materials.title', { siteName });
   const pageDescription = t('seo.materials.description');
   const pageKeywords = t('seo.materials.keywords');
-  const canonicalUrl = `${window.location.origin}${window.location.pathname}#/materials`;
+  const canonicalUrl = `${'https://www.slumbazen.com'}${'/'}#/materials`;
 
   const misconceptionsData = [
     { titleKey: "materialsPage.misconceptions.item1.title", contentKey: "materialsPage.misconceptions.item1.content", pointsKeys: ["materialsPage.misconceptions.item1.point1", "materialsPage.misconceptions.item1.point2"] },
@@ -98,17 +98,17 @@ export default function MaterialsPage() {
     "headline": t('materialsPage.mainTitle'),
     "description": pageDescription,
     "keywords": pageKeywords,
-    "image": "https://i.postimg.cc/c4hD5CB3/decorative00010.jpg",
-    "author": { "@type": "Organization", "name": siteName, "url": `${window.location.origin}${window.location.pathname}#/` },
-    "publisher": { "@type": "Organization", "name": siteName, "logo": { "@type": "ImageObject", "url": "https://i.postimg.cc/k5NcGrQx/Slumba-ZEN-logo-200.png" } },
+    "image": "/assets/restored-8e8b3bed6bef.webp",
+    "author": { "@type": "Organization", "name": siteName, "url": `${'https://www.slumbazen.com'}${'/'}#/` },
+    "publisher": { "@type": "Organization", "name": siteName, "logo": { "@type": "ImageObject", "url": "/assets/logo.png" } },
     "datePublished": "2024-07-01",
     "dateModified": "2024-07-28"
   };
   const breadcrumbJsonLd = {
     "@context": "https://schema.org", "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": t('nav.home'), "item": `${window.location.origin}${window.location.pathname}#${langPrefix}` },
-      { "@type": "ListItem", "position": 2, "name": t('materialsPage.mainTitle'), "item": `${window.location.origin}${window.location.pathname}#${langPrefix}/materials` }
+      { "@type": "ListItem", "position": 1, "name": t('nav.home'), "item": `${'https://www.slumbazen.com'}${'/'}#${langPrefix}` },
+      { "@type": "ListItem", "position": 2, "name": t('materialsPage.mainTitle'), "item": `${'https://www.slumbazen.com'}${'/'}#${langPrefix}/materials` }
     ]
   };
   const faqJsonLd = {
@@ -121,14 +121,9 @@ export default function MaterialsPage() {
 
   return (
     <>
-      <MetaManager
-        title={pageTitle} description={pageDescription} keywords={pageKeywords} ogTitle={pageTitle}
-        ogDescription={pageDescription} ogType="article" canonicalUrl={canonicalUrl}
-        ogImage="https://i.postimg.cc/c4hD5CB3/decorative00010.jpg"
-        jsonLd={[articleJsonLd, breadcrumbJsonLd, faqJsonLd]}
-      />
+      
       <div className="bg-brand-light relative isolate overflow-hidden">
-        <div className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10" style={{ backgroundImage: "url('https://i.postimg.cc/c4hD5CB3/decorative00010.jpg')" }}></div>
+        <div className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10" style={{ backgroundImage: "url('/assets/restored-8e8b3bed6bef.webp')" }}></div>
         <div className="absolute inset-0 -z-10 h-full w-full bg-brand-secondary/20 backdrop-blur-sm" />
         
         <header className="text-center py-20 sm:py-28">
@@ -142,7 +137,7 @@ export default function MaterialsPage() {
           </div>
         </header>
 
-        <main className="pb-20 sm:pb-28">
+        <div className="pb-20 sm:pb-28">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
                 
                 {/* Quality vs Price Section */}
@@ -152,10 +147,10 @@ export default function MaterialsPage() {
                         <div className="space-y-4 text-neutral-700 text-base leading-relaxed">
                             <p>{t('materialsPage.qualityVsPrice.p1')}</p>
                             <p>{t('materialsPage.qualityVsPrice.p2')}</p>
-                            <InlineImage src="https://i.postimg.cc/sDnT67k8/decorative-bedding-0010.jpg" alt={t('materialsPage.qualityVsPrice.title')} aspectRatio="16/9" />
+                            <InlineImage src="/assets/catalogue-00.webp" alt={t('materialsPage.qualityVsPrice.title')} aspectRatio="16/9" />
                             <p>{t('materialsPage.qualityVsPrice.p3')}</p>
                             <p>{t('materialsPage.qualityVsPrice.p4')}</p>
-                            <InlineImage src="https://i.postimg.cc/Xv5xYhrS/decorative-bedding-0011.jpg" alt={t('materialsPage.qualityVsPrice.title')} />
+                            <InlineImage src="/assets/catalogue-51.webp" alt={t('materialsPage.qualityVsPrice.title')} />
                             <p>{t('materialsPage.qualityVsPrice.p5')}</p>
                             <p className="font-semibold text-neutral-800 mt-4">{t('materialsPage.qualityVsPrice.p6')}</p>
                         </div>
@@ -175,12 +170,12 @@ export default function MaterialsPage() {
                               <li>{t('materialsPage.cotton.advantage3')}</li>
                               <li>{t('materialsPage.cotton.advantage4')}</li>
                             </ul>
-                            <Button to={`${langPrefix}/gallery?fabric=cotton`} variant="secondary" size="medium" className="mt-8">
+                            <Button to={`${langPrefix}/gallery?fabric=cotton100`} variant="secondary" size="medium" className="mt-8">
                                 {t('materialsPage.cotton.cta')} <span className="inline-block rtl:rotate-180">&rarr;</span>
                             </Button>
                           </div>
                           <div className="mt-8 md:mt-0">
-                            <InlineImage src="https://i.postimg.cc/T1MzPgdQ/cotton-100-Large.jpg" alt={t('materialsPage.cotton.title')} aspectRatio="1/1" />
+                            <InlineImage src="/assets/restored-96a3bd7fcde7.webp" alt={t('materialsPage.cotton.title')} aspectRatio="1/1" />
                           </div>
                        </div>
                     </MaterialDetailCard>
@@ -203,7 +198,7 @@ export default function MaterialsPage() {
                             </Button>
                           </div>
                            <div className="mt-8 md:mt-0">
-                            <InlineImage src="https://i.postimg.cc/mrhfpTp3/tencel-Large.jpg" alt={t('materialsPage.tencel.title')} aspectRatio="1/1" />
+                            <InlineImage src="/assets/restored-7118338e81c2.webp" alt={t('materialsPage.tencel.title')} aspectRatio="1/1" />
                           </div>
                         </div>
                     </MaterialDetailCard>
@@ -224,7 +219,7 @@ export default function MaterialsPage() {
                             </ul>
                            </div>
                            <div className="mt-8 md:mt-0">
-                            <InlineImage src="https://i.postimg.cc/X7cbpHy5/soft-tex-Large.jpg" alt={t('materialsPage.softTex.title')} aspectRatio="1/1" />
+                            <InlineImage src="/assets/restored-3daca8befcee.webp" alt={t('materialsPage.softTex.title')} aspectRatio="1/1" />
                           </div>
                         </div>
                     </MaterialDetailCard>
@@ -245,7 +240,7 @@ export default function MaterialsPage() {
                             </ul>
                           </div>
                           <div className="mt-8 md:mt-0">
-                            <InlineImage src="https://i.postimg.cc/mgLGMYQ5/cvc-fabric-Large.jpg" alt={t('materialsPage.cvc.title')} aspectRatio="1/1" />
+                            <InlineImage src="/assets/restored-a25cd5472b0e.webp" alt={t('materialsPage.cvc.title')} aspectRatio="1/1" />
                           </div>
                         </div>
                     </MaterialDetailCard>
@@ -317,8 +312,9 @@ export default function MaterialsPage() {
                 </section>
 
             </div>
-        </main>
+        </div>
       </div>
     </>
   );
 }
+

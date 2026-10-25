@@ -27,8 +27,8 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ titleKey, descriptionKey, l
       <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/40 to-transparent rounded-xl"></div>
       <div className="relative h-full flex flex-col justify-end p-8 text-white z-10 text-start">
         <h3 className="text-3xl sm:text-4xl font-bold mb-3 transition-transform duration-300 group-hover:-translate-y-1 text-white">{t(titleKey)}</h3>
-        <p className="text-base mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 text-neutral-200">{t(descriptionKey)}</p>
-        <div className="mt-auto opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200">
+        <p className="text-base mb-6 opacity-100 transition-opacity duration-300 delay-100 text-neutral-200">{t(descriptionKey)}</p>
+        <div className="mt-auto opacity-100 transition-opacity duration-300 delay-200">
           <Button to={linkTo} variant="secondary" size="medium">{t(linkTextKey)} <span className="inline-block rtl:rotate-180">&rarr;</span></Button>
         </div>
       </div>
@@ -39,7 +39,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ titleKey, descriptionKey, l
 const CollectionsPage: React.FC = () => {
   const { t, i18n } = useTranslation();
   const langPrefix = `/${i18n.language}`;
-  const canonicalUrl = `${window.location.origin}${window.location.pathname}#/collections`;
+  const canonicalUrl = `${'https://www.slumbazen.com'}${'/'}#/collections`;
 
   const categories: CategoryCardProps[] = [
     {
@@ -47,29 +47,29 @@ const CollectionsPage: React.FC = () => {
       descriptionKey: "collectionsPage.categoryWhite.description",
       linkTo: `${langPrefix}/products/white-sheets`,
       linkTextKey: "collectionsPage.categoryWhite.buttonText",
-      imageUrl: "https://i.postimg.cc/NfWtgJGR/White-Bed-Sheets-Large.jpg",
+      imageUrl: "/assets/restored-712794140946.webp",
     },
     {
       titleKey: "collectionsPage.categoryColors.title",
       descriptionKey: "collectionsPage.categoryColors.description",
       linkTo: `${langPrefix}/products/premium-colors`,
       linkTextKey: "collectionsPage.categoryColors.buttonText",
-      imageUrl: "https://i.postimg.cc/Qd13VQVw/Premium-Color-Sheets-Large.jpg",
+      imageUrl: "/assets/restored-80b55a2e5c98.webp",
     },
     {
       titleKey: "collectionsPage.categorySets.title",
       descriptionKey: "collectionsPage.categorySets.description",
       linkTo: `${langPrefix}/products/sets`,
       linkTextKey: "collectionsPage.categorySets.buttonText",
-      imageUrl: "https://i.postimg.cc/QMDr7FTt/Complete-Bedding-Sets-Large.jpg",
+      imageUrl: "/assets/restored-e1cf6f784c9c.webp",
     }
   ];
   
   const breadcrumbJsonLd = {
     "@context": "https://schema.org", "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": t('nav.home'), "item": `${window.location.origin}${window.location.pathname}#/${i18n.language}` },
-      { "@type": "ListItem", "position": 2, "name": t('collectionsPage.mainTitle'), "item": `${window.location.origin}${window.location.pathname}#${langPrefix}/collections` }
+      { "@type": "ListItem", "position": 1, "name": t('nav.home'), "item": `${'https://www.slumbazen.com'}${'/'}#/${i18n.language}` },
+      { "@type": "ListItem", "position": 2, "name": t('collectionsPage.mainTitle'), "item": `${'https://www.slumbazen.com'}${'/'}#${langPrefix}/collections` }
     ]
   };
 
@@ -85,7 +85,7 @@ const CollectionsPage: React.FC = () => {
         "name": t('footer.companyName'),
         "logo": {
             "@type": "ImageObject",
-            "url": "https://i.postimg.cc/k5NcGrQx/Slumba-ZEN-logo-200.png"
+            "url": "/assets/logo.png"
         }
       },
       "mainEntity": {
@@ -94,7 +94,7 @@ const CollectionsPage: React.FC = () => {
           "@type": "ListItem",
           "position": index + 1,
           "name": t(cat.titleKey),
-          "url": `${window.location.origin}${window.location.pathname}#${cat.linkTo}`
+          "url": `${'https://www.slumbazen.com'}${'/'}#${cat.linkTo}`
         }))
       }
     };
@@ -102,16 +102,9 @@ const CollectionsPage: React.FC = () => {
 
   return (
     <>
-      <MetaManager
-        title={t('seo.collections.title')}
-        description={t('seo.collections.description')}
-        keywords={t('seo.collections.keywords')}
-        ogImage="https://i.postimg.cc/XNw1dQZQ/decorative0008.jpg"
-        canonicalUrl={canonicalUrl}
-        jsonLd={[breadcrumbJsonLd, collectionJsonLd]}
-      />
+      
       <div className="bg-brand-light relative isolate overflow-hidden">
-        <div className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10" style={{ backgroundImage: "url('https://i.postimg.cc/qqXmrvf9/decorative0007.jpg')" }}></div>
+        <div className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10" style={{ backgroundImage: "url('/assets/catalogue-07.webp')" }}></div>
         <div className="absolute inset-0 -z-10 h-full w-full bg-brand-secondary/20 backdrop-blur-sm" />
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
@@ -136,7 +129,7 @@ const CollectionsPage: React.FC = () => {
           <section 
             id="learn-more-cta" 
             className="text-center py-20 sm:py-24 mt-20 bg-brand-dark rounded-2xl relative overflow-hidden bg-cover bg-center"
-            style={{ backgroundImage: "url('https://i.postimg.cc/XNw1dQZQ/decorative0008.jpg')" }}
+            style={{ backgroundImage: "url('/assets/restored-50e2c89e4a32.webp')" }}
           >
             <div className="absolute inset-0 bg-brand-dark/70"></div>
             <div className="max-w-2xl mx-auto px-4 relative z-10 text-white">
@@ -158,3 +151,4 @@ const CollectionsPage: React.FC = () => {
 };
 
 export default CollectionsPage;
+

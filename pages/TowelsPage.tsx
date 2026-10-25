@@ -8,6 +8,7 @@ import MetaManager from '../components/MetaManager';
 import { TowelProduct, TowelVariant } from '../data/towelData';
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
 import InlineImage from '../components/InlineImage';
+import OriginalGallery from '../OriginalGallery';
 
 // --- NEW ---
 const towelImageGallery = [
@@ -93,7 +94,7 @@ const ProductCard: React.FC<{ product: TowelProduct }> = ({ product }) => {
                                 <div className="w-24 h-24 rounded-full overflow-hidden">
                                   <img
                                       src={img}
-                                      alt={`${t(product.nameKey)} decorative image ${index + 1}`}
+                                      alt={`${t(product.nameKey)} · ${index + 1}`}
                                       className="w-full h-full object-cover"
                                       loading="lazy"
                                   />
@@ -290,6 +291,7 @@ const TowelsPage: React.FC = () => {
                     <FirstWashGuide randomImages={shuffledImages.slice(2)} />
 
                     <TowelCareSection />
+                    <OriginalGallery images={towelImageGallery} title={t('towelsPage.mainTitle')} />
 
                 </div>
             </div>

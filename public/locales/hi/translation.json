@@ -65,7 +65,7 @@
       "addressCountry": "TH"
     },
     "phoneWhatsAppLabel": "फ़ोन / WhatsApp",
-    "phone1": "+66(0)81 851 9922",
+    "phone1": "+66 81 851 9922",
     "lineLabel": "लाइन आईडी",
     "lineId": "kris.bkk",
     "emailLabel": "ईमेल",
@@ -73,7 +73,8 @@
     "hoursLabel": "व्यापार के घंटे",
     "hoursValue": "सोमवार - शनिवार: सुबह 8:00 - रात 9:00<br/>रविवार: सुबह 9:00 - शाम 6:00",
     "mapTitle": "हमें यहाँ खोजें",
-    "mapAriaLabel": "Google मानचित्र पर हमारा स्थान देखें"
+    "mapAriaLabel": "Google मानचित्र पर हमारा स्थान देखें",
+    "callLabel": "कॉल करें"
   },
   "hotelsPage": {
     "mainTitle": "होटल और B2B भागीदारों के लिए बिस्तर समाधान",

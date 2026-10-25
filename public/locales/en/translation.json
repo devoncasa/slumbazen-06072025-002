@@ -155,17 +155,17 @@
     "domesticPackagingDesc": "Confirm packaging suitable for the items and destination. Editorial imagery does not show actual store packaging.",
     "internationalShippingTitle": "✈️ International Shipping",
     "internationalCountriesTitle": "Shipping Countries",
-    "internationalCountriesDesc": "Before payment, request an itemized quotation that confirms shipping charges, any free-shipping eligibility, delivery estimate, custom-item conditions and applicable warranty. For returns, ask us to confirm eligibility, return-shipping responsibility and refund method and timing in writing. Keep the quotation and contact us with your order reference and photographs if an item arrives damaged.",
+    "internationalCountriesDesc": "Provide country, city and postcode so service availability and restrictions can be checked.",
     "internationalCompaniesTitle": "Shipping Companies",
-    "internationalCompaniesDesc": "Before payment, request an itemized quotation that confirms shipping charges, any free-shipping eligibility, delivery estimate, custom-item conditions and applicable warranty. For returns, ask us to confirm eligibility, return-shipping responsibility and refund method and timing in writing. Keep the quotation and contact us with your order reference and photographs if an item arrives damaged.",
+    "internationalCompaniesDesc": "Confirm the carrier, tracking method and responsibility for destination formalities in the quotation.",
     "internationalCostTitle": "Shipping Cost",
-    "internationalCostDesc": "Before payment, request an itemized quotation that confirms shipping charges, any free-shipping eligibility, delivery estimate, custom-item conditions and applicable warranty. For returns, ask us to confirm eligibility, return-shipping responsibility and refund method and timing in writing. Keep the quotation and contact us with your order reference and photographs if an item arrives damaged.",
+    "internationalCostDesc": "Request an itemized total for goods, shipping, taxes and relevant charges before payment.",
     "internationalDocsTitle": "Shipping Documents",
-    "internationalDocsDesc": "Before payment, request an itemized quotation that confirms shipping charges, any free-shipping eligibility, delivery estimate, custom-item conditions and applicable warranty. For returns, ask us to confirm eligibility, return-shipping responsibility and refund method and timing in writing. Keep the quotation and contact us with your order reference and photographs if an item arrives damaged.",
+    "internationalDocsDesc": "State the required documents and importer details so available documentation can be confirmed.",
     "warrantyPolicyTitle": "✅ Warranty and Return Policy",
     "returnExchangePolicyTitle": "Exchange/Return Policy",
     "returnPeriodTitle": "Timeframe for Requesting Exchange/Return",
-    "returnPeriodDesc": "Before payment, request an itemized quotation that confirms shipping charges, any free-shipping eligibility, delivery estimate, custom-item conditions and applicable warranty. For returns, ask us to confirm eligibility, return-shipping responsibility and refund method and timing in writing. Keep the quotation and contact us with your order reference and photographs if an item arrives damaged.",
+    "returnPeriodDesc": "Confirm the reporting period applicable to the order in the quotation or written terms.",
     "returnConditionsTitle": "Conditions for Exchange/Return",
     "returnCondition1": "The product must be in new, perfect condition.",
     "returnCondition2": "It must be unwashed and unused.",
@@ -178,13 +178,13 @@
     "returnProcessStep3": "Confirm the assessment, return-shipping responsibility, and refund method and timing in writing.",
     "careInstructionsTitle": "🧼 Product Care Instructions",
     "careWashTitle": "Washing",
-    "careWashDesc": "Before payment, request an itemized quotation that confirms shipping charges, any free-shipping eligibility, delivery estimate, custom-item conditions and applicable warranty. For returns, ask us to confirm eligibility, return-shipping responsibility and refund method and timing in writing. Keep the quotation and contact us with your order reference and photographs if an item arrives damaged.",
+    "careWashDesc": "Use the wash program and temperature stated on the item’s care label.",
     "careBleachTitle": "Bleach",
-    "careBleachDesc": "Before payment, request an itemized quotation that confirms shipping charges, any free-shipping eligibility, delivery estimate, custom-item conditions and applicable warranty. For returns, ask us to confirm eligibility, return-shipping responsibility and refund method and timing in writing. Keep the quotation and contact us with your order reference and photographs if an item arrives damaged.",
+    "careBleachDesc": "Use bleach only if the care label allows it, and do not improvise chemical mixtures.",
     "careDryTitle": "Drying",
-    "careDryDesc": "Before payment, request an itemized quotation that confirms shipping charges, any free-shipping eligibility, delivery estimate, custom-item conditions and applicable warranty. For returns, ask us to confirm eligibility, return-shipping responsibility and refund method and timing in writing. Keep the quotation and contact us with your order reference and photographs if an item arrives damaged.",
+    "careDryDesc": "Dry according to the care label and avoid storing damp textiles.",
     "careIronTitle": "Ironing",
-    "careIronDesc": "Before payment, request an itemized quotation that confirms shipping charges, any free-shipping eligibility, delivery estimate, custom-item conditions and applicable warranty. For returns, ask us to confirm eligibility, return-shipping responsibility and refund method and timing in writing. Keep the quotation and contact us with your order reference and photographs if an item arrives damaged.",
+    "careIronDesc": "Check the ironing symbol and heat level appropriate to the fabric composition.",
     "moreQuestionsTitle": "📲 Have More Questions?",
     "moreQuestionsDesc": "Call +66 81 851 9922 to discuss your order.",
     "commitmentText": "🌟 We are committed to delivering the best sleep experience through quality products and excellent after-sales service."
@@ -204,7 +204,7 @@
       "addressCountry": "TH"
     },
     "phoneWhatsAppLabel": "Phone / WhatsApp",
-    "phone1": "+66(0)81 851 9922",
+    "phone1": "+66 81 851 9922",
     "lineLabel": "LINE ID",
     "lineId": "kris.bkk",
     "emailLabel": "Email",
@@ -212,7 +212,8 @@
     "hoursLabel": "Business Hours",
     "hoursValue": "Monday - Saturday: 8:00 AM - 9:00 PMSunday: 9:00 AM - 6:00 PM",
     "mapTitle": "Find Us Here",
-    "mapAriaLabel": "View our location on Google Maps"
+    "mapAriaLabel": "View our location on Google Maps",
+    "callLabel": "Call"
   },
   "homePage": {
     "missionQuote": "“Cheap and good might exist — but without knowledge and transparency, it could become the most expensive trap you ever fall into.”",
@@ -368,19 +369,19 @@
       "title": "Soft-Tex™ - Extra Soft, Easy Care",
       "description": "Cotton is a fiber; plain and striped describe a fabric’s appearance. CVC is a blend category, so the exact cotton/polyester proportions must be checked for each item. “Soft-Tex” is a catalogue name and does not establish fiber composition. Compare like-for-like using the supplier’s specification and a physical sample where available.",
       "advantagesTitle": "Advantages of Soft-Tex™:",
-      "advantage1": "Exceptionally soft and comfortable on the skin.",
-      "advantage2": "Wrinkle-resistant and easy to care for, no ironing needed.",
-      "advantage3": "Dries quickly, ideal for frequent washing.",
-      "advantage4": "Cost-effective and durable for long-term use."
+      "advantage1": "Assess a sample for the softness you prefer.",
+      "advantage2": "Ask about the item’s wash process and ironing needs.",
+      "advantage3": "Check drying performance with the actual laundry system.",
+      "advantage4": "Compare purchase, care and replacement costs together."
     },
     "cvc": {
       "title": "CVC - The Balance of Comfort and Durability",
       "description": "Cotton is a fiber; plain and striped describe a fabric’s appearance. CVC is a blend category, so the exact cotton/polyester proportions must be checked for each item. “Soft-Tex” is a catalogue name and does not establish fiber composition. Compare like-for-like using the supplier’s specification and a physical sample where available.",
       "advantagesTitle": "Advantages of CVC:",
-      "advantage1": "Comfortable on the skin, feels close to genuine cotton at a more accessible price.",
-      "advantage2": "Easy to care for, wrinkle-resistant, quick-drying, and durable for frequent washing.",
-      "advantage3": "Colors are long-lasting and do not fade easily, maintaining their beauty over time.",
-      "advantage4": "Ideal for heavy use in hotels and dormitories."
+      "advantage1": "Confirm the blend proportions for the selected item.",
+      "advantage2": "Compare wrinkling, laundering and drying using a sample.",
+      "advantage3": "Check the care label and any colorfastness information.",
+      "advantage4": "Assess suitability for repeated laundering and the replacement budget."
     },
     "tencel": {
       "title": "Tencel™ Lyocell - The Ultimate in Softness",
@@ -462,7 +463,7 @@
       },
       "item2": {
         "title": "Excellent Breathability for a Cool Night",
-        "description": "Tencel™'s nanofibril structure efficiently absorbs and releases moisture, keeping you cool and dry all night, perfect for hot and humid climates."
+        "description": "Cellulosic fibers interact with moisture, while comfort in use also depends on composition, weave and room conditions."
       },
       "item3": {
         "title": "Care and hygiene",
@@ -473,8 +474,8 @@
         "description": "Skin comfort varies by person and fabric. Assess a sample and confirm composition before selecting."
       },
       "item5": {
-        "title": "Vibrant Colors, Long-Lasting",
-        "description": "Tencel™ fibers absorb dye exceptionally well, resulting in vibrant, long-lasting colors, even after many washes, keeping your bedding looking new."
+        "title": "Color and finished-fabric care",
+        "description": "Check actual available colors, washing instructions and colorfastness information for the finished item rather than inferring them from the fiber name."
       }
     },
     "care": {
@@ -614,76 +615,76 @@
       "header4": "Details",
       "footerNote": "Measure mattress width, length and total depth, including any topper. Compare all three with the particular fitted sheet. Current catalogue fit labels include 10-inch and 12-inch depths; there is no universal 14-inch fit. Pillowcases, bolster cases and duvet covers need their own measurements.",
       "row1": {
-        "category": "Fitted Sheet",
-        "size": "Twin/Single (3.5 ft)",
-        "dimensions": "42 x 78 inches",
-        "details": "For a standard single mattress."
+        "category": "Fitted sheet",
+        "size": "3.5 ft",
+        "dimensions": "42 in wide; depth 10 in",
+        "details": "Confirm the selected item’s length"
       },
       "row2": {
-        "category": "Fitted Sheet",
-        "size": "Queen (5 ft)",
-        "dimensions": "60 x 78 inches",
-        "details": "For a standard queen-size bed."
+        "category": "Fitted sheet",
+        "size": "5 ft",
+        "dimensions": "60 in wide; depth 10 in",
+        "details": "Include any topper when measuring depth"
       },
       "row3": {
-        "category": "Fitted Sheet",
-        "size": "King (6 ft)",
-        "dimensions": "72 x 78 inches",
-        "details": "For a standard king-size bed."
+        "category": "Fitted sheet",
+        "size": "6 ft",
+        "dimensions": "72 in wide; depth 12 in",
+        "details": "No universal 14-inch fit"
       },
       "row4": {
         "category": "Pillowcase",
         "size": "Standard",
-        "dimensions": "19 x 29 inches",
-        "details": "Fits a standard-size pillow."
+        "dimensions": "20 × 30 in",
+        "details": "Confirm closure construction and pillow size"
       },
       "row5": {
-        "category": "Pillowcase",
-        "size": "King",
-        "dimensions": "20 x 36 inches",
-        "details": "Fits a king-size pillow."
+        "category": "Flat sheet",
+        "size": "3.5 ft",
+        "dimensions": "72 × 110 in",
+        "details": "Fabric dimensions, not mattress dimensions"
       },
       "row6": {
-        "category": "Bolster Case",
-        "size": "Standard",
-        "dimensions": "14 x 42 inches",
-        "details": "Fits a standard-size bolster."
+        "category": "Bolster case",
+        "size": "SKU-specific",
+        "dimensions": "14 × 44 / 27 × 40 in",
+        "details": "Confirm flat measurement versus circumference; not a diameter"
       },
       "row7": {
-        "category": "Duvet Cover",
-        "size": "Twin/Single (60x80 in)",
-        "dimensions": "60 x 80 inches",
-        "details": "Suitable for a 3.5 ft bed."
+        "category": "Duvet cover",
+        "size": "3.5 ft",
+        "dimensions": "70 × 90 in",
+        "details": "No duvet insert automatically included"
       },
       "row8": {
-        "category": "Duvet Cover",
-        "size": "Twin/Single (70x90 in)",
-        "dimensions": "70 x 90 inches",
-        "details": "Suitable for a 3.5-5 ft bed."
+        "category": "Flat sheet",
+        "size": "5 ft",
+        "dimensions": "90 × 110 in",
+        "details": "Allow for tucking under the mattress"
       },
       "row9": {
-        "category": "Duvet Cover",
-        "size": "Queen (80x90 in)",
-        "dimensions": "80 x 90 inches",
-        "details": "Suitable for a 5 ft bed."
+        "category": "Duvet cover",
+        "size": "5 ft",
+        "dimensions": "90 × 90 in",
+        "details": "Match the actual duvet insert"
       },
       "row10": {
-        "category": "Duvet Cover",
-        "size": "King (90x100 in)",
-        "dimensions": "90 x 100 inches",
-        "details": "Suitable for a 5-6 ft bed."
+        "category": "Duvet cover",
+        "size": "6 ft",
+        "dimensions": "100 × 90 in",
+        "details": "Confirm width and length orientation"
       },
       "row11": {
-        "category": "Duvet Cover",
-        "size": "King (100x90 in)",
-        "dimensions": "100 x 90 inches",
-        "details": "Suitable for a 6 ft bed."
+        "category": "Flat sheet",
+        "size": "6 ft",
+        "dimensions": "110 × 110 in",
+        "details": "Fabric dimensions, not mattress dimensions"
       },
       "row12": {
-        "category": "Comforter",
-        "size": "For 3.5-6 ft beds",
-        "dimensions": "Varies",
-        "details": "Multiple sizes available."
+        "category": "Bath towel",
+        "size": "Variant-specific",
+        "dimensions": "27 × 54 / 30 × 60 in",
+        "details": "Confirm weight per dozen and price unit before ordering"
       }
     },
     "mattressDepth": {

@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
           {/* Column 1: Brand & Social */}
           <div className="lg:col-span-5 text-center lg:text-start">
             <Link to={langPrefix} className="inline-flex items-center space-x-3 rtl:space-x-reverse mb-6">
-              <img src="/assets/logo.png" alt={t('footer.companyName') + " Logo"} className="h-12 w-auto" loading="lazy" />
+              <img src="/assets/logo.png" alt={t('footer.companyName')} className="h-12 w-auto" loading="lazy" />
               <span className="font-brand-base text-2xl md:text-3xl text-neutral-900 inline-flex items-baseline">
                 <Trans 
                     i18nKey="footer.companyNameRich" 

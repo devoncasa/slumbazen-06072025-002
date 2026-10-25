@@ -65,7 +65,7 @@
       "addressCountry": "TH"
     },
     "phoneWhatsAppLabel": "الهاتف / واتساب",
-    "phone1": "+66(0)81 851 9922",
+    "phone1": "+66 81 851 9922",
     "lineLabel": "معرف لاين",
     "lineId": "kris.bkk",
     "emailLabel": "البريد الإلكتروني",
@@ -73,7 +73,8 @@
     "hoursLabel": "ساعات العمل",
     "hoursValue": "الاثنين - السبت: 8:00 صباحًا - 9:00 مساءً<br/>الأحد: 9:00 صباحًا - 6:00 مساءً",
     "mapTitle": "تجدنا هنا",
-    "mapAriaLabel": "عرض موقعنا على خرائط جوجل"
+    "mapAriaLabel": "عرض موقعنا على خرائط جوجل",
+    "callLabel": "اتصال"
   },
   "hotelsPage": {
     "mainTitle": "حلول مفروشات للفنادق وشركاء الأعمال (B2B)",

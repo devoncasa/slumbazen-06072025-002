@@ -54,3 +54,18 @@ Primary sources: https://rdap.verisign.com/com/v1/domain/slumbazen.com ; Spacesh
 Rendered preview matrix: 14 page types × five languages × five widths (350), plus three articles × five languages × five widths (75), plus one product × five languages × five widths (25): 450 checks passed. All 106 source product routes have lowercase/trailing-slash regression assertions. Browser tests also cover Cotton+size filtering, reset, query preservation during language switching and back/forward, B2B sample intent, quantity validation, copied product enquiry details, legacy hash migration, direct refresh, and preview noindex metadata. No customer enquiries were sent. Console observations showed browser-extension metadata noise, not application errors. No Lighthouse or real-user score is claimed.
 
 Public material labels use families (Cotton, CVC blend, Soft-Tex) rather than unverified composition percentages or anti-mite claims. Raw source labels remain available in the catalog source for supplier reconciliation. Existing CVC filter aliases are retained.
+
+
+## Original-content restoration — 25 October 2026
+
+The earlier simplified release replaced too much original content. Original page components and navigation have now been restored from commit 9b2637f292815e8380fd441dc55282c72c361ca8. Full Thai/English source guides are restored; hotel and towel details are restored and edited in all five languages. Other Chinese/Arabic/Hindi pages retain their already-localized shorter versions; full-length translations of those restored guides remain outstanding. This is not described as a full five-language restoration.
+
+- Original towel variants, bath mats, ten first-wash steps, five care sections and 23 original gallery images restored.
+- Original hotel selection cards, five use-case comparisons, quote/sample paths and nine gallery images restored.
+- Three new labelled editorial images: hospitality-room, hospitality-bath, towel-first-wash. Genuine product files remain unchanged apart from delivery conversion/compression.
+- Original collections, home, white sheets, color enquiries, set-planning, fabric guide, Tencel guide, size tables, contact layout and policy sections restored with targeted factual corrections.
+- Quotation-based pricing retained until current prices and sales units are confirmed. Original raw source specifications remain recoverable.
+- Product facts now expose source dimensions, exact inch-to-centimeter conversions, nominal mattress width, product-specific mattress depth, care/contents questions and localized unique SKU-based descriptions/meta descriptions. Fitted-sheet length and thread-count basis remain unconfirmed and are not invented. Towel weight-per-dozen basis remains unconfirmed.
+- Fine image frames and section borders, a subtle room background, active section guide, reading progress, session-local recently-viewed products and accessible image enlargement added. No messages are sent by these interactions.
+- Source image generation prompts: natural daylight, realistic textile loops/folds/stitching, warm ivory/clay palette, landscape 4:3, no brand/factory/customer-project claims, no logos/text. Built-in image generation used; final optimized assets stored under public/assets/editorial.
+- Recoverable previous release: backup/slumbazen-before-content-restoration-20261025.

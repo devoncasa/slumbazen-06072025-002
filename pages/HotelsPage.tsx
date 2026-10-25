@@ -6,6 +6,7 @@ import Button from '../components/Button';
 import MetaManager from '../components/MetaManager'; // Import MetaManager
 import { CheckBadgeIcon } from '@heroicons/react/24/solid';
 import InlineImage from '../components/InlineImage';
+import OriginalGallery from '../OriginalGallery';
 
 const ImageSlideshow: React.FC<{ images: string[]; alt: string; interval?: number; aspectRatio?: '4/3' | '16/9' | '1/1' | '4/5'; }> = ({ images, alt, interval = 2000, aspectRatio = '4/5' }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -191,6 +192,7 @@ export default function HotelsPage() {
                 </div>
             </section>
 
+            <OriginalGallery images={slideshowImages} title={t('hotelsPage.whyChooseUs.slideshowAlt')} />
             <section id="expert-hotel-advice" aria-labelledby="expert-advice-heading" className="mb-20 sm:mb-28 p-8 -m-8 relative overflow-hidden rounded-2xl bg-brand-light/50">
               <div className="relative z-10">
                   <h2 id="expert-advice-heading" className="text-4xl sm:text-5xl font-bold text-neutral-900 mb-12 text-center">

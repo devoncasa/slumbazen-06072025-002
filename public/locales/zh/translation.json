@@ -65,7 +65,7 @@
       "addressCountry": "TH"
     },
     "phoneWhatsAppLabel": "电话 / WhatsApp",
-    "phone1": "+66(0)81 851 9922",
+    "phone1": "+66 81 851 9922",
     "lineLabel": "LINE ID",
     "lineId": "kris.bkk",
     "emailLabel": "电子邮件",
@@ -73,7 +73,8 @@
     "hoursLabel": "营业时间",
     "hoursValue": "周一 - 周六: 上午 8:00 - 晚上 9:00<br/>周日: 上午 9:00 - 下午 6:00",
     "mapTitle": "在这里找到我们",
-    "mapAriaLabel": "在谷歌地图上查看我们的位置"
+    "mapAriaLabel": "在谷歌地图上查看我们的位置",
+    "callLabel": "致电"
   },
   "hotelsPage": {
     "mainTitle": "酒店及B2B合作伙伴床上用品解决方案",

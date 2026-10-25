@@ -137,7 +137,7 @@ const Header: React.FC = () => {
           <div className="flex items-center justify-between min-h-20 py-3">
             
             <Link to={langPrefix} className="flex items-center space-x-3 rtl:space-x-reverse" onClick={closeMenus}>
-               <img src="/assets/logo.png" alt={t('footer.companyName') + " Logo"} className="h-12 w-auto" />
+               <img src="/assets/logo.png" alt={t('footer.companyName')} className="h-12 w-auto" />
                <span className="font-brand-base text-xl sm:text-2xl text-neutral-900 inline-flex items-baseline">
                  <Trans 
                      i18nKey="footer.companyNameRich" 

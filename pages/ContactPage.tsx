@@ -34,11 +34,11 @@ const ContactInfoItem: React.FC<{ icon: React.ElementType; labelKey: string; val
 const ContactPage: React.FC = () => {
   const { t } = useTranslation();
   const pageTitle = t('contactPage.mainTitle');
-  const canonicalUrl = `${window.location.origin}${window.location.pathname}#/contact`;
+  const canonicalUrl = `${'https://www.slumbazen.com'}${'/'}#/contact`;
   
   const address = t('contactPage.address');
-  const phone = t('contactPage.phone1');
-  const phoneHref = `tel:${phone.replace(/[()-\s]/g, '')}`;
+  const phone = '+66 81 851 9922';
+  const phoneHref = 'tel:+66818519922';
 
   const jsonLd = { 
       "@context": "https://schema.org", 
@@ -59,7 +59,7 @@ const ContactPage: React.FC = () => {
           "latitude": 13.7222,
           "longitude": 100.5285
         },
-        "url": window.location.origin,
+        "url": 'https://www.slumbazen.com',
         "priceRange": "THB",
         "openingHoursSpecification": [
           {
@@ -83,13 +83,7 @@ const ContactPage: React.FC = () => {
 
   return (
     <>
-      <MetaManager
-        title={t('seo.contact.title')}
-        description={t('seo.contact.description')}
-        keywords={t('seo.contact.keywords')}
-        canonicalUrl={canonicalUrl} 
-        jsonLd={jsonLd}
-      />
+      
       <div className="bg-brand-light relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10" style={{ backgroundImage: "url('/assets/restored-fcce72c96f95.webp')" }}></div>
         <div className="absolute inset-0 -z-10 h-full w-full bg-brand-light/80 backdrop-blur-sm" />
@@ -111,22 +105,13 @@ const ContactPage: React.FC = () => {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
                   <ContactInfoItem icon={MapPinIcon} labelKey="contactPage.addressLabel" value={address}/>
-                  <ContactInfoItem icon={PhoneIcon} labelKey="contactPage.phoneWhatsAppLabel" value={phone} href={phoneHref} />
-                  <ContactInfoItem icon={ChatBubbleOvalLeftEllipsisIcon} labelKey="contactPage.lineLabel" value={t('contactPage.lineId')} href={`line://ti/p/~${t('contactPage.lineId')}`} />
-                  <ContactInfoItem icon={EnvelopeIcon} labelKey="contactPage.emailLabel" value={t('contactPage.emailValue')} href={`mailto:${t('contactPage.emailValue')}`} />
-                  <ContactInfoItem icon={ClockIcon} labelKey="contactPage.hoursLabel" value={t('contactPage.hoursValue')} isHtml={true} />
+                  <ContactInfoItem icon={PhoneIcon} labelKey="contactPage.callLabel" value={phone} href={phoneHref} />
               </div>
           </div>
           
           <div className="mt-16 sm:mt-20 max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-neutral-900 mb-8">{t('contactPage.mapTitle')}</h2>
-            <a href="https://maps.app.goo.gl/JgA4yF8v8bK9xR2t5" target="_blank" rel="noopener noreferrer" aria-label={t('contactPage.mapAriaLabel')}>
-                <InlineImage 
-                    src="/assets/editorial/textile.webp"
-                    alt={t('contactPage.addressLabel')}
-                    aspectRatio="16/9"
-                />
-            </a>
+            <a className="button secondary" href="https://www.google.com/maps/search/?api=1&amp;query=919%2F1%20Jewelry%20Trade%20Center%20Silom%20Road%20Bang%20Rak%20Bangkok%2010500%20Thailand" target="_blank" rel="noopener noreferrer">{t('contactPage.mapAriaLabel')} ↗</a>
           </div>
 
         </div>

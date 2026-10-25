@@ -25,7 +25,8 @@
     "mainNavigation": "Main navigation",
     "mobileNavigation": "Menu",
     "languageSwitcher": "Language switcher",
-    "blog": "The linen journal"
+    "blog": "The linen journal",
+    "collections": "Collections"
   },
   "footer": {
     "companyName": "Slumba ZEN",
@@ -52,7 +53,7 @@
   },
   "galleryPage": {
     "title": "Product Gallery",
-    "description": "Find inspiration and choose the perfect bedding for you from our quality collection. We have the best hotel sheets for sale in Thailand.",
+    "description": "Browse bedding textures, colors and styling ideas, then compare the dimensions and details of the catalog items that interest you.",
     "filterTitle": "Filter by Your Needs",
     "filterProductType": "Product Type:",
     "filterFabric": "Fabric Type:",
@@ -259,7 +260,7 @@
         "linkText": "What is Tencel™?"
       },
       "item3": {
-        "title": "3. Soft-Tex™ & CVC for Durability",
+        "title": "3. Compare Soft-Tex & CVC",
         "description": "Cotton is a fiber; plain and striped describe a fabric’s appearance. CVC is a blend category, so the exact cotton/polyester proportions must be checked for each item. “Soft-Tex” is a catalogue name and does not establish fiber composition. Compare like-for-like using the supplier’s specification and a physical sample where available.",
         "linkText": "Explore Soft-Tex & CVC"
       },
@@ -308,12 +309,12 @@
       },
       "item4": {
         "title": "Contact Us",
-        "description": "Our expert team is ready to provide consultation.",
+        "description": "Share your requirements and the product references you are considering.",
         "buttonText": "Contact for Inquiry"
       }
     },
     "consultation": {
-      "title": "Expert Consultation Available",
+      "title": "Discuss your bedding requirements",
       "description": "Describe your property, number of rooms, piece quantities, bed dimensions, preferred fabric and delivery destination. Choose quotation or samples enquiry below. We will need to confirm availability, minimum quantities, sampling conditions and delivery timing before any commitment.",
       "ctaButton1": "Contact for a Quote",
       "ctaButton2": "Browse Products"
@@ -321,7 +322,7 @@
   },
   "collectionsPage": {
     "mainTitle": "Shop by Product Category",
-    "mainDescription": "Browse our hotel-quality bedding collections, categorized to help you easily find what you're looking for. Find the best sheets for your home.",
+    "mainDescription": "Explore white bedding, individual pieces, set planning and bath textiles. Choose a category to see its details and enquiry options.",
     "categoryWhite": {
       "title": "White Bed Sheets",
       "description": "Timeless, classic elegance that never goes out of style, creating an atmosphere of cleanliness, comfort, and luxury.",
@@ -431,7 +432,7 @@
       },
       "item2": {
         "q": "Which type of Cotton is best for hotels?",
-        "a": "“Combed Cotton” from long fibers (like Egyptian or Pima Cotton) is a high standard for hotel sheets because it's soft, durable, breathable, and doesn't pill easily after many washes."
+        "a": "Choose from the finished fabric specification, sample, care label and your laundry process. Cotton origin or a combed-yarn label alone cannot establish durability or resistance to pilling. Ask for product-specific test information before making performance comparisons."
       },
       "item3": {
         "q": "Are there no-iron bed sheets?",
@@ -521,34 +522,34 @@
       }
     },
     "expertAdvice": {
-      "title": "📖 Expert Advice: Choosing Fabric for Your Hotel",
+      "title": "Choosing linen for your property",
       "header1": "Hotel Type/Use Case",
-      "header2": "Recommended Fabric",
+      "header2": "Selection starting point",
       "header3": "Reason",
       "row1": {
         "useCase": "Boutique / Small Hotels",
         "recommendation": "Start with cotton or CVC and compare samples",
-        "reason": "Assess actual samples and item-specific specifications; thread count alone is not a selection rule."
+        "reason": "For a smaller room inventory, compare sample appearance with your room design and confirm how individual replacement pieces can be ordered."
       },
       "row2": {
         "useCase": "Seaside Hotels / Resorts",
         "recommendation": "Compare fabric feel and drying requirements",
-        "reason": "Assess actual samples and item-specific specifications; thread count alone is not a selection rule."
+        "reason": "Discuss your actual washing and drying process with the supplier and trial a sample under those conditions before committing to a fabric."
       },
       "row3": {
         "useCase": "3-4 Star City Hotels",
         "recommendation": "Compare plain and striped fabric within budget",
-        "reason": "Assess actual samples and item-specific specifications; thread count alone is not a selection rule."
+        "reason": "List bed sizes and pieces per room, then compare complete quotations using the same quantities and sales units."
       },
       "row4": {
         "useCase": "5-Star Luxury Hotels / VIP Rooms",
         "recommendation": "Compare sample feel, weave and care",
-        "reason": "Assess actual samples and item-specific specifications; thread count alone is not a selection rule."
+        "reason": "Review a physical sample for surface appearance, hand feel and finishing; check that care requirements suit your laundry process."
       },
       "row5": {
         "useCase": "Serviced Apartments / Premium Dorms",
         "recommendation": "Consider repeat laundering and replacement costs",
-        "reason": "Assess actual samples and item-specific specifications; thread count alone is not a selection rule."
+        "reason": "Confirm repeat-purchase references, dimensions and pack quantities so replacement purchases remain consistent with existing linen."
       }
     },
     "cta": {

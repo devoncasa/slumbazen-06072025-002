@@ -1,0 +1,1840 @@
+{
+  "source": "Legacy catalog in products.ts; no supplier specification sheet supplied. Pending values are not inferred or published as verified.",
+  "reviewDate": "2026-10-25",
+  "products": [
+    {
+      "sku": "FS-S35-ST370P-001",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-S35-ST370S-002",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-S35-C260S-003",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-S35-C230P-004",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-S35-C260P-005",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-S35-C260S-006",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-S35-C310P-007",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-S35-C310S-008",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-S35-CVC50-195P-009",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-S35-CVC60-260S-010",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-Q50-ST370P-011",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-Q50-ST370S-012",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-Q50-C260S-013",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-Q50-C230P-014",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-Q50-C260P-015",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-Q50-C260S-016",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-Q50-C310P-017",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-Q50-C310S-018",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-Q50-CVC50-195P-019",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-Q50-CVC60-260S-020",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-K60-ST370P-021",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-K60-ST370S-022",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-K60-C260S-023",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-K60-C230P-024",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-K60-C260P-025",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-K60-C260S-026",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-K60-C310P-027",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-K60-C310S-028",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-K60-CVC50-195P-029",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FS-K60-CVC60-260S-030",
+      "category": "Fitted Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "mattressLength",
+        "finishedTextileDimensions",
+        "fitTolerance",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-S35-ST370P-031",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-K60-CVC60-260S-090",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "PC-STD-ST370P-091",
+      "category": "Pillow Case",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "PC-STD-ST370S-092",
+      "category": "Pillow Case",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "PC-STD-C260S-093",
+      "category": "Pillow Case",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "PC-STD-C230P-094",
+      "category": "Pillow Case",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "PC-STD-C260P-095",
+      "category": "Pillow Case",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "PC-STD-C260S-096",
+      "category": "Pillow Case",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "PC-STD-C310P-097",
+      "category": "Pillow Case",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "PC-STD-C310S-098",
+      "category": "Pillow Case",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "PC-STD-CVC50-195P-099",
+      "category": "Pillow Case",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "PC-STD-CVC60-260S-100",
+      "category": "Pillow Case",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-S35-ST370S-101",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-S35-C260S-102",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-S35-C230P-103",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-S35-C260P-104",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-S35-C260S-105",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-S35-C310P-106",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-S35-C310S-107",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-S35-CVC50P-108",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-S35-CVC60S-109",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-Q50-ST370P-110",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-Q50-ST370S-111",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-Q50-C260S-112",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-Q50-C230P-113",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-Q50-C260P-114",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-Q50-C260S-115",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-Q50-C310P-116",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-Q50-C310S-117",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-Q50-CVC50P-118",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-Q50-CVC60S-119",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-K60-ST370P-120",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-K60-ST370S-121",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-K60-C260S-122",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-K60-C230P-123",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-K60-C260P-124",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-K60-C260S-125",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-K60-C310P-126",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-K60-C310S-127",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-K60-CVC50P-128",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "FL-K60-CVC60S-129",
+      "category": "Flat Sheet",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-S35-ST370P-130",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-S35-ST370S-131",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-S35-C260S-132",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-S35-C230P-133",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-S35-C260P-134",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-S35-C260S-135",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-S35-C310P-136",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-S35-C310S-137",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-S35-CVC50P-138",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-S35-CVC60S-139",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-Q50-ST370P-140",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-Q50-ST370S-141",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-Q50-C260S-142",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-Q50-C230P-143",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-Q50-C260P-144",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-Q50-C260S-145",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-Q50-C310P-146",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-Q50-C310S-147",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-Q50-CVC50P-148",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-Q50-CVC60S-149",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-K60-ST370P-150",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-K60-ST370S-151",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-K60-C260S-152",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-K60-C230P-153",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-K60-C260P-154",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-K60-C260S-155",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-K60-C310P-156",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-K60-C310S-157",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "DC-K60-CVC50P-158",
+      "category": "Duvet Cover",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "TWL-STD-12LBS-WHT-01",
+      "category": "Towel",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "weightUnitBasis",
+        "GSM"
+      ]
+    },
+    {
+      "sku": "TWL-MED-14LBS-WHT-02",
+      "category": "Towel",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "weightUnitBasis",
+        "GSM"
+      ]
+    },
+    {
+      "sku": "TWL-LRG-16LBS-WHT-03",
+      "category": "Towel",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "weightUnitBasis",
+        "GSM"
+      ]
+    },
+    {
+      "sku": "TWL-LUX-18LBS-WHT-04",
+      "category": "Towel",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "weightUnitBasis",
+        "GSM"
+      ]
+    },
+    {
+      "sku": "BC-C100-406S-01",
+      "category": "Bolster Case",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "flatWidthOrCircumferenceBasis",
+        "threadCountMeasurementBasis"
+      ]
+    },
+    {
+      "sku": "BC-CAD-500S-02",
+      "category": "Bolster Case",
+      "unconfirmed": [
+        "currentPriceAndCurrency",
+        "currentAvailability",
+        "supplierComposition",
+        "constructionAndFinishing",
+        "careLabel",
+        "salesPackContents",
+        "originIfClaimed",
+        "certificationIfClaimed",
+        "warrantyTerms",
+        "closure",
+        "flatWidthOrCircumferenceBasis",
+        "threadCountMeasurementBasis"
+      ]
+    }
+  ]
+}

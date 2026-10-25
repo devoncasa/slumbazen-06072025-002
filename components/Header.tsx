@@ -11,8 +11,10 @@ const Header: React.FC = () => {
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+  const activePath = location.pathname.replace(/\/+$/,'');
   const headerRef = useRef<HTMLElement>(null);
   const mobileMenuPanelRef = useRef<HTMLDivElement>(null);
+  const mobileMenuTriggerRef = useRef<HTMLButtonElement>(null);
   const { t, i18n } = useTranslation();
   const langPrefix = `/${i18n.language}`;
 
@@ -107,6 +109,21 @@ const Header: React.FC = () => {
     };
   }, []);
 
+  useEffect(() => {
+    if (!isMobileMenuOpen) return;
+    const panel = mobileMenuPanelRef.current;
+    const focusable = () => Array.from(panel?.querySelectorAll<HTMLElement>('a[href],button:not([disabled])') || []).filter(el => !el.closest('[inert]'));
+    focusable()[0]?.focus();
+    const trap = (e: KeyboardEvent) => {
+      if (e.key !== 'Tab') return;
+      const items = focusable(); const first = items[0], last = items[items.length - 1];
+      if (e.shiftKey && document.activeElement === first) {e.preventDefault(); last?.focus();}
+      if (!e.shiftKey && document.activeElement === last) {e.preventDefault(); first?.focus();}
+    };
+    panel?.addEventListener('keydown', trap);
+    return () => {panel?.removeEventListener('keydown', trap); mobileMenuTriggerRef.current?.focus();};
+  }, [isMobileMenuOpen]);
+
   const DesktopNavItem: React.FC<{ to: string; label: string; onClick?: () => void; isActive?: boolean; }> = ({ to, label, onClick, isActive }) => (
     <Link
       to={to}
@@ -141,7 +158,7 @@ const Header: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between min-h-20 py-3">
             
-            <Link to={langPrefix} className="flex items-center space-x-3 rtl:space-x-reverse" onClick={closeMenus}>
+            <Link to={langPrefix} className="brand-lockup flex items-center space-x-3 rtl:space-x-reverse" onClick={closeMenus}>
                <img src="/assets/logo.png" alt={t('footer.companyName')} className="h-12 w-auto" />
                <span className="font-brand-base text-xl sm:text-2xl text-neutral-900 inline-flex items-baseline">
                  <Trans 
@@ -157,8 +174,8 @@ const Header: React.FC = () => {
             <nav className="hidden min-[1600px]:flex items-center space-x-2 rtl:space-x-reverse" aria-label={t('nav.mainNavigation')}>
               {navItems.map((item) => {
                 const itemPath = item.to === '/' ? langPrefix : `${langPrefix}${item.to}`;
-                const isActive = (item.to && location.pathname === itemPath) || 
-                                 (item.subItems && item.subItems.some(sub => `${langPrefix}${sub.to}` === location.pathname));
+                const isActive = (item.to && activePath === itemPath) || 
+                                 (item.subItems && item.subItems.some(sub => `${langPrefix}${sub.to}` === activePath));
 
                 return item.subItems ? (
                   <div key={item.id} className="relative">
@@ -172,7 +189,7 @@ const Header: React.FC = () => {
                                      ${openDropdown === item.id ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
                         {item.subItems.map((subItem) => (
                           <Link key={subItem.to} to={`${langPrefix}${subItem.to}`} onClick={closeMenus}
-                                className={`block w-full text-start px-4 py-2.5 rounded-lg text-sm transition-colors ${location.pathname === `${langPrefix}${subItem.to}` ? 'bg-brand-secondary text-brand-dark font-semibold' : 'text-neutral-700 hover:bg-brand-secondary/70'}`}>
+                                className={`block w-full text-start px-4 py-2.5 rounded-lg text-sm transition-colors ${activePath === `${langPrefix}${subItem.to}` ? 'bg-brand-secondary text-brand-dark font-semibold' : 'text-neutral-700 hover:bg-brand-secondary/70'}`}>
                             {t(subItem.labelKey)}
                           </Link>
                         ))}
@@ -184,8 +201,8 @@ const Header: React.FC = () => {
               })}
             </nav>
 
-            <div className="flex items-center">
-              <div className="relative border-e border-neutral-200/80 pe-3 me-3 rtl:border-s rtl:border-e-0 rtl:ps-3 rtl:pe-0 rtl:ms-3 rtl:me-0">
+            <div className="brand-controls flex items-center">
+              <div className="language-control relative border-e border-neutral-200/80 pe-3 me-3 rtl:border-s rtl:border-e-0 rtl:ps-3 rtl:pe-0 rtl:ms-3 rtl:me-0">
                 <button
                   onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}
                   className="flex items-center justify-center px-3 py-2 text-sm font-bold text-neutral-700 bg-transparent hover:bg-brand-secondary/70 rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-brand-primary/50"
@@ -226,7 +243,7 @@ const Header: React.FC = () => {
                     </div>
                 </div>
               </div>
-              <button onClick={toggleMobileMenu} className="min-[1600px]:hidden text-neutral-900 focus:outline-none" aria-label={t('nav.openMenu')} aria-expanded={isMobileMenuOpen}>
+              <button ref={mobileMenuTriggerRef} onClick={toggleMobileMenu} className="min-[1600px]:hidden text-neutral-900 focus:outline-none" aria-label={t('nav.openMenu')} aria-expanded={isMobileMenuOpen}>
                 <Bars3Icon className="h-6 w-6" />
               </button>
             </div>
@@ -237,7 +254,7 @@ const Header: React.FC = () => {
       {/* Mobile Navigation Menu */}
       <div inert={!isMobileMenuOpen} aria-hidden={!isMobileMenuOpen} style={{visibility:isMobileMenuOpen?'visible':'hidden'}} className={`fixed inset-0 z-50 min-[1600px]:hidden transition-opacity duration-300 ${isMobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
         <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" onClick={closeMenus}></div>
-        <div ref={mobileMenuPanelRef} className={`absolute top-0 end-0 h-full w-full max-w-sm bg-brand-light shadow-2xl transition-transform duration-300 ease-in-out flex flex-col ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full rtl:-translate-x-full'}`}>
+        <div ref={mobileMenuPanelRef} role="dialog" aria-modal="true" aria-label={t('nav.mobileNavigation')} className={`absolute top-0 end-0 h-full w-full max-w-sm bg-brand-light shadow-2xl transition-transform duration-300 ease-in-out flex flex-col ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full rtl:-translate-x-full'}`}>
           <div className="flex justify-between items-center p-5 border-b border-neutral-200 flex-shrink-0">
             <span className="text-xl font-bold text-brand-dark">{t('nav.mobileNavigation')}</span>
             <button onClick={closeMenus} className="p-2 text-neutral-900" aria-label={t('nav.closeMenu')}>
@@ -270,7 +287,7 @@ const Header: React.FC = () => {
                             <div className="ps-4 pt-2 pb-2 space-y-1 border-s-2 border-brand-secondary/70 ms-2 my-2">
                               {item.subItems.map((subItem) => (
                                 <Link key={subItem.to} to={`${langPrefix}${subItem.to}`} onClick={closeMenus}
-                                      className={`block py-3 text-base rounded-md transition-colors ps-4 ${location.pathname === `${langPrefix}${subItem.to}` ? 'text-brand-primary font-bold' : 'text-neutral-700 hover:text-brand-primary'}`}>
+                                      className={`block py-3 text-base rounded-md transition-colors ps-4 ${activePath === `${langPrefix}${subItem.to}` ? 'text-brand-primary font-bold' : 'text-neutral-700 hover:text-brand-primary'}`}>
                                   {t(subItem.labelKey)}
                                 </Link>
                               ))}
@@ -280,7 +297,7 @@ const Header: React.FC = () => {
                       ) : (
                         item.to && (
                           <Link to={itemPath} onClick={closeMenus}
-                                className={`block py-4 px-2 text-lg font-semibold transition-colors rounded-md hover:bg-black/5 ${location.pathname === itemPath ? 'text-brand-primary' : 'text-neutral-900 hover:text-brand-primary'}`}>
+                                className={`block py-4 px-2 text-lg font-semibold transition-colors rounded-md hover:bg-black/5 ${activePath === itemPath ? 'text-brand-primary' : 'text-neutral-900 hover:text-brand-primary'}`}>
                             {t(item.labelKey)}
                           </Link>
                         )

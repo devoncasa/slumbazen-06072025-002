@@ -1,3 +1,4 @@
+import {shoppingCopy} from '../shoppingCopy';
 import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation, Trans } from 'react-i18next';
@@ -7,31 +8,9 @@ import MissionStatementSection from '../components/MissionStatementSection';
 import InlineImage from '../components/InlineImage';
 import { IMAGE_ASSETS } from '../products';
 
-const HeroSection: React.FC<{ imageUrl: string }> = ({ imageUrl }) => {
-  const { t, i18n } = useTranslation();
-  return (
-    <section 
-        className="relative text-center overflow-hidden bg-cover bg-center"
-        style={{ backgroundImage: `url('${imageUrl}')` }}
-    >
-      <div className="absolute inset-0 z-0 bg-brand-dark/30">
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-light via-brand-light/50 to-transparent"></div>
-      </div>
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-center min-h-[70vh] sm:min-h-[80vh]">
-        <div className="relative z-10 max-w-4xl bg-brand-light/70 backdrop-blur-sm p-8 rounded-2xl">
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-brand-dark !leading-tight mb-6">
-            {t('homePage.hero.title')}
-          </h1>
-          <p className="text-lg sm:text-xl text-neutral-700 mb-10 mx-auto">
-            {t('homePage.hero.subtitle')}
-          </p>
-          <Button to={`/${i18n.language}/collections`} variant="primary" size="large">
-            {t('homePage.hero.ctaButton')}
-          </Button>
-        </div>
-      </div>
-    </section>
-  );
+const HeroSection: React.FC = () => {
+ const {i18n,t}=useTranslation();const lang=i18n.language;const w=shoppingCopy[lang]||shoppingCopy.en;
+ return <section className="editorial-hero" id="welcome"><div className="editorial-hero-copy"><p className="eyebrow">{w.heroKicker}</p><h1>{w.heroTitle}</h1><p className="hero-intro">{w.heroIntro}</p><div className="actions"><Link className="button" to={`/${lang}/collections/`}>{w.heroShop} →</Link><Link className="hero-hotel" to={`/${lang}/hotels/`}>{w.heroHotel} ↗</Link></div><Link className="hero-finder" to={`/${lang}/bedding-finder/`}>{w.finder} <span aria-hidden="true">→</span></Link></div><figure className="editorial-hero-image"><img src="/assets/editorial/quiet-bedroom.webp" srcSet="/assets/editorial/quiet-bedroom-640.webp 640w, /assets/editorial/quiet-bedroom.webp 1200w" sizes="(max-width:767px) 100vw, 57vw" alt={w.heroAlt} width={1200} height={800} fetchPriority="high"/><figcaption>{t('restoration.illustration', {defaultValue:({en:'Illustrative setting',th:'ภาพบรรยากาศจำลอง',zh:'示意场景',ar:'مشهد توضيحي',hi:'सांकेतिक दृश्य'} as Record<string,string>)[lang]})}</figcaption></figure></section>;
 };
 
 const VisualShowcaseSection: React.FC = () => {
@@ -59,7 +38,7 @@ const VisualShowcaseSection: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4" style={{ gridAutoRows: 'minmax(150px, auto)' }}>
           {images.map((image, index) => (
             <div key={index} className={`group relative overflow-hidden rounded-2xl shadow-lg p-0.5 bg-brand-gold ${image.className || ''}`}>
-              <img src={image.src} alt={t(image.altKey)} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 rounded-xl" />
+              <img src={image.src} alt={t(image.altKey)} width={800} height={600} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02] rounded-xl" />
               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors rounded-xl"></div>
             </div>
           ))}
@@ -268,84 +247,9 @@ const ConsultationCtaSection: React.FC = () => {
 
 const HomePage: React.FC = () => {
   const { t, i18n } = useTranslation();
-  const siteName = "Slumba ZEN";
-  const canonicalUrl = `${'https://www.slumbazen.com'}${'/'}#/${i18n.language}`;
-  
-  const randomHeroImage = useMemo(() => {
-    const heroImages = IMAGE_ASSETS.hero_backgrounds;
-    if (!heroImages || heroImages.length === 0) {
-      return '/assets/hero.webp'; // Fallback
-    }
-    const randomIndex = 0;
-    return heroImages[randomIndex];
-  }, []);
-
-  const localBusinessSchema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": siteName,
-    "image": "/assets/logo.png",
-    "@id": 'https://www.slumbazen.com',
-    "url": 'https://www.slumbazen.com',
-    "telephone": t('contactPage.phone1'),
-    "priceRange": "THB",
-    "address": t('contactPage.structuredAddress', { returnObjects: true }),
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 13.7222, // Approximate coordinates for Silom, Bangkok
-      "longitude": 100.5285
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [ "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday" ],
-        "opens": "08:00",
-        "closes": "21:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Sunday",
-        "opens": "09:00",
-        "closes": "18:00"
-      }
-    ],
-    "sameAs": [
-      "https://www.facebook.com/slumbazen",
-      "https://www.instagram.com/slumbazen",
-      "https://www.tiktok.com/@slumbazen",
-      "https://www.youtube.com/@slumbazen",
-      "https://x.com/slumbazen",
-      "https://www.linkedin.com/company/slumbazen",
-      "https://www.pinterest.com/slumbazen"
-    ]
-  };
-
-  const webSiteSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": t('seo.home.title', { siteName }),
-    "url": canonicalUrl,
-    "description": t('seo.home.description'),
-    "publisher": {
-        "@type": "Organization",
-        "name": siteName,
-        "logo": {
-            "@type": "ImageObject",
-            "url": "/assets/logo.png"
-        }
-    },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": `${canonicalUrl}gallery?q={search_term_string}`, 
-      "query-input": "required name=search_term_string"
-    }
-  };
-
-
   return (
-    <>
-      
-      <HeroSection imageUrl={randomHeroImage} />
+    <div className="home-editorial">
+      <HeroSection />
       <MissionStatementSection />
       <BrandStorySection />
       <VisualShowcaseSection />
@@ -353,7 +257,7 @@ const HomePage: React.FC = () => {
       <CustomerProblemsSection />
       <DiscoverWorldSection />
       <ConsultationCtaSection />
-    </>
+    </div>
   );
 };
 

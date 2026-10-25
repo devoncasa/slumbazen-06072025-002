@@ -1,3 +1,4 @@
+import {pageSEO} from '../seo';
 import React from 'react';
 import {loadLocale} from '../localeResources';
 import {renderToString} from 'react-dom/server';
@@ -14,14 +15,11 @@ const escape=(s:string)=>s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(
 const map=[];
 for(const lang of languages){await loadLocale(lang);for(const route of routes){
  const url=`/${lang}${route?'/'+route:''}`;const {title,c,i,article,p}=pageData(route,lang);
- const description=(p?'':title+'. ')+(i===0?c.intro:i===4?c.colorText:i===5?c.setText:i===6?c.towelText:i===7?c.fabricText:i===8?c.tencelText:i===9?c.sizesText:i===10?c.b2bText:i===11?c.policyText:i===12?c.contactText:article>=0?([c.care,c.cotton,c.towels][article][0]):p?productDescription(p,lang).meta:c.homeText).slice(0,220);
- const alternates=languages.map(l=>`<link rel="alternate" hreflang="${l==='zh'?'zh-Hans':l}" href="${origin}/${l}${route?'/'+route:''}/">`).join('');
- const canonical=origin+url+'/';const schema:any=p?productSchema(p,lang,origin):{'@context':'https://schema.org','@type':p?'Product':article>=0?'Article':'WebPage',name:title,url:canonical,inLanguage:lang,description};
- if(p){schema.sku=p.id;schema.brand={'@type':'Brand',name:'SlumbaZEN'};schema.image=origin+p.imageUrl;}if(article>=0){schema.headline=title;schema.datePublished='2026-10-25';schema.author={'@type':'Organization',name:'SlumbaZEN'};}
- const breadcrumb={'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:c.nav[0],item:origin+'/'+lang+'/'},...(route?[{'@type':'ListItem',position:2,name:title,item:canonical}]:[])]};
- const meta=`<title>${escape(title)} | SlumbaZEN</title><meta name="description" content="${escape(description)}"><link rel="canonical" href="${canonical}">${alternates}<link rel="alternate" hreflang="x-default" href="${origin}/th${route?'/'+route:''}/"><meta property="og:title" content="${escape(title)}"><meta property="og:description" content="${escape(description)}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="${article>=0?'article':'website'}"><meta property="og:image" content="${origin}${p?.imageUrl||'/assets/hero.webp'}"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">${JSON.stringify({'@context':'https://schema.org','@graph':[schema,breadcrumb]}).replace(/</g,'\\u003c')}</script>`;
+ const seo=pageSEO(route,lang);const description=seo.description;const canonical=seo.canonical;
+ const alternates=seo.alternates.map(v=>`<link rel="alternate" hreflang="${v.lang}" href="${v.url}">`).join('');
+  const meta=`<title>${escape(title)} | SlumbaZEN</title><meta name="description" content="${escape(description)}"><link rel="canonical" href="${canonical}">${alternates}<link rel="alternate" hreflang="x-default" href="${origin}/th${route?'/'+route:''}/"><meta property="og:title" content="${escape(title)}"><meta property="og:description" content="${escape(description)}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="${article>=0?'article':'website'}"><meta property="og:image" content="${seo.image}"><meta property="og:locale" content="${seo.locale}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escape(title)}"><meta name="twitter:description" content="${escape(description)}"><meta name="twitter:image" content="${seo.image}"><script type="application/ld+json">${JSON.stringify(seo.graph).replace(/</g,'\\u003c')}</script>`;
  const body=renderToString(<MemoryRouter initialEntries={[url]}><SiteRoutes/></MemoryRouter>);
- const html=template.replace(/<title>.*?<\/title>/,'').replace('<html lang="en">',`<html lang="${lang}" dir="${lang==='ar'?'rtl':'ltr'}">`).replace('</head>',meta+'</head>').replace('<div id="root"></div>',`<div id="root">${body}</div>`);
+ const html=template.replace(/<title>.*?<\/title>/,'').replace('<html lang="en">',`<html lang="${lang}" dir="${lang==='ar'?'rtl':'ltr'}">`).replace('</head>',meta+'</head>').replace('<div id="root"></div>',`<div id="root" data-prerendered="true">${body}</div>`);
  const dest=path.join('dist',url,'index.html');fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,html);
  map.push(`<url><loc>${canonical}</loc>${languages.map(l=>`<xhtml:link rel="alternate" hreflang="${l==='zh'?'zh-Hans':l}" href="${origin}/${l}${route?'/'+route:''}/"/>`).join('')}</url>`);
 }

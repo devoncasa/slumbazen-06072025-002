@@ -7,8 +7,9 @@ ar:['أرسل استفسارك','اسمك','البريد الإلكتروني ل
 hi:['पूछताछ भेजें','आपका नाम','जवाब के लिए ईमेल','पूछताछ भेजें','भेजा जा रहा है…','आपकी पूछताछ प्राप्त हुई। यह ऑर्डर की पुष्टि नहीं है। उपलब्धता, कीमत और डिलीवरी समय की पुष्टि बाकी है।','प्राप्ति की पुष्टि नहीं हो सकी। विवरण यहाँ सुरक्षित हैं; फिर प्रयास करें या संदेश कॉपी करके संपर्क करें।','हम आपके संपर्क विवरण और आवश्यकताओं का उपयोग इस पूछताछ का जवाब देने के लिए करते हैं। संदेश वेबसाइट होस्ट Netlify के माध्यम से संसाधित और संग्रहीत होता है। संवेदनशील जानकारी न दें।','भेजने से पहले ऊपर सही मात्राएँ भरें।','SlumbaZEN पर लौटें','देखना जारी रखें']
 };
 export async function deliverInquiry(fields:Record<string,string>,request:typeof fetch=fetch){
- const response=await request('/__forms.html',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(fields).toString()});
- const body=await response.text();if(!response.ok||body.includes('data-form-definition'))throw Error('Receipt not confirmed');
+ const abort=new AbortController();const timer=setTimeout(()=>abort.abort(),20000);
+ try{const response=await request('/__forms.html',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(fields).toString(),signal:abort.signal});
+ const body=await response.text();if(!response.ok||body.includes('data-form-definition'))throw Error('Receipt not confirmed');}finally{clearTimeout(timer)}
 }
 export default function InquiryDelivery({lang,message,valid}:{lang:string,message:string,valid:boolean}){
  const w=deliveryWords[lang];const [status,setStatus]=useState<'idle'|'sending'|'sent'|'error'>('idle');const form=useRef<HTMLFormElement>(null);const [sentMessage,setSentMessage]=useState('');const waiting=useRef(false);

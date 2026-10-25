@@ -59,3 +59,15 @@ The custom-domain check on 25 October still returned an upstream connection fail
 Real-user p75 LCP, INP and CLS are not available in this environment. The targets remain 2.5 seconds, 200 milliseconds and 0.1 respectively, separately for mobile and desktop. No ranking, traffic, rich-result or AI citation guarantee is made. Google documents established SEO foundations for AI features, without a special AI schema or required AI text file.
 
 References: https://developers.google.com/search/docs/appearance/ai-features ; https://web.dev/articles/vitals ; https://store.astm.org/d3775-17r23.html ; https://docs.netlify.com/manage/forms/usage-and-billing/ .
+
+## Hosted preview verification
+
+Preview deploy 6ade0e51a23e9be052ad058f reached ready for commit 576931a. Netlify registered slumbazen-enquiry with the expected name, email, message, language and honeypot fields. A clearly labelled QA message was submitted through the preview UI and verified in the Netlify inbox: PC-STD-ST370P-091, quantity 2, language en. The UI showed a receipt acknowledgement only after the receiver accepted it. Submission count changed from 0 to 1. The test remains visibly labelled; it was not an order. Notification email forwarding has not been configured; enquiries are stored in the Netlify form inbox.
+
+Netlify Domain Management now specifically reports that SSL provisioning is temporarily disabled because of too many recent certificate-order creations. The displayed wildcard certificate expired on 24 September. No further renewal was attempted against that limit. Existing support case 1153097 remains the dependency for custom-domain TLS.
+
+Final hosted review also corrected the hotel call link to international format and replaced repetitive hotel-selection advice with five distinct operational considerations in every supported language.
+
+Native keyboard checks confirmed comparison Escape closes the dialog and returns focus, and the mobile menu wraps Shift+Tab from its close button to the final contact link, then returns focus to the menu trigger on Escape. A local receiver failure showed the error state while preserving the entered name, email and requirements. The final hotel wording was rechecked at 320 and 1440 px in all five languages without document overflow. Hosted application logs showed no application error in the inspected records; browser-extension metadata errors are excluded.
+
+Hosted HTTP checks: root 302 to /th/; representative Thai, English, Chinese, Arabic and Hindi routes 200; missing route 404; new WebP image 200 image/webp; sitemap 200 application/xml. Preview responses include X-Robots-Tag: noindex, nofollow.

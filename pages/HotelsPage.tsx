@@ -222,7 +222,7 @@ export default function HotelsPage() {
                   <Button to={`${langPrefix}/contact?subject=B2BInquiry`} variant="secondary" size="large">
                     {t('hotelsPage.cta.button1')}
                   </Button>
-                  <Button to="tel:0818519922" variant="outline" size="large" className="!border-white !text-white hover:!bg-white hover:!text-brand-dark">
+                  <Button to="tel:+66818519922" variant="outline" size="large" className="!border-white !text-white hover:!bg-white hover:!text-brand-dark">
                     {t('hotelsPage.cta.button2')}
                   </Button>
                 </div>

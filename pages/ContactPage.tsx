@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import MetaManager from '../components/MetaManager';
 import { MapPinIcon, PhoneIcon, ChatBubbleOvalLeftEllipsisIcon, EnvelopeIcon, ClockIcon } from '@heroicons/react/24/outline';
 import InlineImage from '../components/InlineImage';
 

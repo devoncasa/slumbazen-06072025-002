@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '../components/Button';
-import MetaManager from '../components/MetaManager';
 import InlineImage from '../components/InlineImage';
 
 const SizeTableStyled: React.FC<{ headerKeys: string[]; data: (string | React.ReactElement)[][]; captionKey?: string }> = ({ headerKeys, data, captionKey }) => {

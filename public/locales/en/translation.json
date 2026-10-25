@@ -328,14 +328,14 @@
       "buttonText": "Shop White Sheets"
     },
     "categoryColors": {
-      "title": "Premium Color Sheets",
-      "description": "Add dimension and color to your bedroom with our carefully curated selection of shades.",
-      "buttonText": "Shop Premium Colors"
+      "title": "Color enquiries",
+      "description": "The current catalogue lists white products. Tell us your preferred color, size and quantity so we can check whether a suitable option is available. This enquiry does not confirm a stocked or made-to-order color.",
+      "buttonText": "Prepare an enquiry"
     },
     "categorySets": {
       "title": "Complete Bedding Sets",
-      "description": "The convenience of a perfectly matched design, offering both savings and value.",
-      "buttonText": "Shop Bedding Sets"
+      "description": "Choose the pieces you need individually: fitted sheet, pillowcases and, if required, a separate duvet cover. Ask us to confirm every included piece, its size and the total price in writing before ordering. A duvet cover does not include a duvet insert.",
+      "buttonText": "View details"
     },
     "cta": {
       "title": "Still Unsure? Learn More About Our Fabrics",

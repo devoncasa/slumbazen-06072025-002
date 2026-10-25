@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import MetaManager from '../components/MetaManager';
 import Button from '../components/Button';
 import BeddingSetCard from '../components/BeddingSetCard';
 import { products as allProducts } from '../products';
@@ -18,7 +17,7 @@ const WhiteSheetsPage: React.FC = () => {
   const canonicalUrl = 'https://www.slumbazen.com' + '/' + '#/products/white-sheets';
 
   const whiteProducts = allProducts.filter(p => 
-    p.color.key === 'white'
+    p.color.key === 'white' && p.fabricType.key === 'cotton100'
   ).slice(0, 3); // Display up to 3 featured sets for a cleaner look
 
   const benefits = [

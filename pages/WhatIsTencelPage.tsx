@@ -4,7 +4,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '../components/Button';
-import MetaManager from '../components/MetaManager';
 import InlineImage from '../components/InlineImage';
 
 const FeatureCard: React.FC<{ titleKey: string; descriptionKey: string; icon: React.ReactElement<any> }> = ({ titleKey, descriptionKey, icon }) => {

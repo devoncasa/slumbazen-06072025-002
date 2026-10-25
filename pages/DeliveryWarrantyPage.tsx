@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import MetaManager from '../components/MetaManager';
 import {
   TruckIcon, ClockIcon, TagIcon, GiftIcon, ShieldCheckIcon, GlobeAltIcon,
   BuildingOfficeIcon, CurrencyDollarIcon, DocumentTextIcon, CheckBadgeIcon,

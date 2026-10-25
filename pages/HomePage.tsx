@@ -2,7 +2,6 @@ import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation, Trans } from 'react-i18next';
 import Button from '../components/Button';
-import MetaManager from '../components/MetaManager';
 import { BeakerIcon, PhotoIcon, BuildingStorefrontIcon, ChatBubbleLeftRightIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
 import MissionStatementSection from '../components/MissionStatementSection';
 import InlineImage from '../components/InlineImage';

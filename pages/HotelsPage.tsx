@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Button from '../components/Button';
-import MetaManager from '../components/MetaManager'; // Import MetaManager
 import { CheckBadgeIcon } from '@heroicons/react/24/solid';
 import InlineImage from '../components/InlineImage';
 import OriginalGallery from '../OriginalGallery';

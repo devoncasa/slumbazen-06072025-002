@@ -71,3 +71,7 @@ Final hosted review also corrected the hotel call link to international format a
 Native keyboard checks confirmed comparison Escape closes the dialog and returns focus, and the mobile menu wraps Shift+Tab from its close button to the final contact link, then returns focus to the menu trigger on Escape. A local receiver failure showed the error state while preserving the entered name, email and requirements. The final hotel wording was rechecked at 320 and 1440 px in all five languages without document overflow. Hosted application logs showed no application error in the inspected records; browser-extension metadata errors are excluded.
 
 Hosted HTTP checks: root 302 to /th/; representative Thai, English, Chinese, Arabic and Hindi routes 200; missing route 404; new WebP image 200 image/webp; sitemap 200 application/xml. Preview responses include X-Robots-Tag: noindex, nofollow.
+
+## Production follow-up
+
+Production deploy 6ade114f18ad41e5f3021769 published merge commit 2c05eed8181214247917692b3efc9b1b4e224e23. Live direct routes, imagery, root redirect, robots and 404 statuses were verified. A final old-hash-link check exposed a hydration recovery after the root redirect: the server supplied Thai HTML before the client migrated to Arabic. The entry now records that migration and performs a fresh client render for that case. A regression test executes the real entry against the old-language HTML and asserts the resulting Arabic path, RTL state and absence of rendering errors.

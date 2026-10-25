@@ -7,7 +7,7 @@ import {SiteRoutes,paths,articleSlugs,pageData,origin} from '../App';
 import {languages} from '../content';
 import {products} from '../products';
 const template=fs.readFileSync('dist/index.html','utf8');
-const routes=[...paths,...articleSlugs.map(s=>'blog/'+s),...products.map(p=>'product/'+p.id)];
+const routes=[...paths,...articleSlugs.map(s=>'blog/'+s),...products.map(p=>'product/'+p.id.toLowerCase())];
 const escape=(s:string)=>s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
 const map=[];
 for(const lang of languages)for(const route of routes){

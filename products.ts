@@ -12,8 +12,8 @@ const IMAGE_ASSETS = {
     '/assets/catalogue-08.webp',  
     '/assets/catalogue-09.webp'
   ],
-  white_striped: [ '/assets/catalogue-10.webp', '/assets/catalogue-11.webp', '/assets/catalogue-12.webp', '/assets/catalogue-13.webp', '/assets/catalogue-14.webp', '/assets/catalogue-15.webp', '/assets/catalogue-16.webp', '/assets/catalogue-17.webp', '/assets/catalogue-18.webp', '/assets/catalogue-19.webp', '/assets/catalogue-20.webp', '/assets/catalogue-21.webp', '/assets/catalogue-22.webp', '/assets/catalogue-23.webp', '/assets/catalogue-24.webp', '/assets/catalogue-25.webp', '/assets/catalogue-26.webp', '/assets/catalogue-27.webp' ],
-  white_plain: [ '/assets/catalogue-28.webp', '/assets/catalogue-29.webp', '/assets/catalogue-30.webp', '/assets/catalogue-31.webp', '/assets/catalogue-32.webp', '/assets/catalogue-33.webp', '/assets/catalogue-34.webp', '/assets/catalogue-35.webp', '/assets/catalogue-36.webp', '/assets/catalogue-37.webp', '/assets/catalogue-38.webp', '/assets/catalogue-39.webp' ],
+  white_striped: ['/assets/catalogue-00.webp', '/assets/catalogue-02.webp', '/assets/catalogue-04.webp', '/assets/catalogue-09.webp', '/assets/catalogue-10.webp', '/assets/catalogue-12.webp', '/assets/catalogue-15.webp', '/assets/catalogue-18.webp', '/assets/catalogue-21.webp', '/assets/catalogue-23.webp', '/assets/catalogue-26.webp'],
+  white_plain: ['/assets/catalogue-01.webp', '/assets/catalogue-03.webp', '/assets/catalogue-05.webp', '/assets/catalogue-07.webp', '/assets/catalogue-08.webp', '/assets/catalogue-28.webp', '/assets/catalogue-29.webp', '/assets/catalogue-30.webp', '/assets/catalogue-31.webp', '/assets/catalogue-37.webp', '/assets/catalogue-39.webp', '/assets/catalogue-40.webp'],
   color_plain: ['/assets/catalogue-40.webp', '/assets/catalogue-06.webp', '/assets/catalogue-41.webp', '/assets/catalogue-42.webp', '/assets/catalogue-43.webp', '/assets/catalogue-44.webp'],
   towel: ['/assets/catalogue-45.webp', '/assets/catalogue-46.webp', '/assets/catalogue-47.webp', '/assets/catalogue-48.webp'],
   bolster: ['/assets/catalogue-49.webp', '/assets/catalogue-50.webp'],

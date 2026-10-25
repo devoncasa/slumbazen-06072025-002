@@ -25,7 +25,8 @@
     "mainNavigation": "主导航",
     "mobileNavigation": "菜单",
     "languageSwitcher": "语言切换器",
-    "blog": "床品知识"
+    "blog": "床品知识",
+    "collections": "系列"
   },
   "footer": {
     "companyName": "Slumba ZEN",
@@ -242,7 +243,8 @@
     },
     "tcRanges": {
       "title": "纱线密度"
-    }
+    },
+    "description": "浏览床品纹理、色彩与搭配灵感，再比较感兴趣商品的尺寸和细节。"
   },
   "towelsPage": {
     "mainTitle": "酒店毛巾与浴室地垫",
@@ -422,12 +424,12 @@
       },
       "item4": {
         "title": "联系我们",
-        "description": "讨论产品选择与报价要求。",
+        "description": "提供需求及感兴趣的商品编号。",
         "buttonText": "联系咨询"
       }
     },
     "consultation": {
-      "title": "讨论合适的床品选择",
+      "title": "咨询您的床品需求",
       "ctaButton1": "联系索取报价",
       "ctaButton2": "浏览产品",
       "description": "请说明住宿类型、客房数量、各单品数量、床铺尺寸、面料偏好及配送地点。下方可选择报价或样品咨询。供货、最低数量、样品条件及交货时间均须确认后才能承诺。"
@@ -435,7 +437,7 @@
   },
   "collectionsPage": {
     "mainTitle": "按产品类别浏览",
-    "mainDescription": "按用途浏览床品类别，更方便地比较适合卧室的选择。",
+    "mainDescription": "探索白色床品、单件产品、套装搭配及浴室织物，查看各类别的详情与咨询方式。",
     "categoryWhite": {
       "title": "白色床单",
       "description": "白色床品风格简洁，便于搭配不同卧室与客房环境。",
@@ -591,7 +593,7 @@
       },
       "item2": {
         "q": "哪类棉织物适合酒店？",
-        "a": "可以比较梳棉、纤维品质与不同织法，但最终应依据成品样品、洗涤表现和预算选择，不单凭产地名称。"
+        "a": "请结合成品面料规格、样布、护理标签与洗涤流程选择。棉花产地或精梳标签本身不能确定耐用性及抗起球表现，比较性能前应索取具体产品的测试信息。"
       },
       "item3": {
         "q": "有没有不用熨烫的床单？",

@@ -25,7 +25,8 @@
     "mainNavigation": "Main navigation",
     "mobileNavigation": "Menu",
     "languageSwitcher": "Language switcher",
-    "blog": "The linen journal"
+    "blog": "The linen journal",
+    "collections": "Collections"
   },
   "footer": {
     "companyName": "Slumba ZEN",
@@ -52,7 +53,7 @@
   },
   "galleryPage": {
     "title": "Product Gallery",
-    "description": "Find inspiration and choose the perfect bedding for you from our quality collection. We have the best hotel sheets for sale in Thailand.",
+    "description": "Browse bedding textures, colors and styling ideas, then compare the dimensions and details of the catalog items that interest you.",
     "filterTitle": "Filter by Your Needs",
     "filterProductType": "Product Type:",
     "filterFabric": "Fabric Type:",
@@ -259,7 +260,7 @@
         "linkText": "What is Tencel™?"
       },
       "item3": {
-        "title": "3. Soft-Tex™ & CVC for Durability",
+        "title": "3. Compare Soft-Tex & CVC",
         "description": "Cotton is a fiber; plain and striped describe a fabric’s appearance. CVC is a blend category, so the exact cotton/polyester proportions must be checked for each item. “Soft-Tex” is a catalogue name and does not establish fiber composition. Compare like-for-like using the supplier’s specification and a physical sample where available.",
         "linkText": "Explore Soft-Tex & CVC"
       },
@@ -308,12 +309,12 @@
       },
       "item4": {
         "title": "Contact Us",
-        "description": "Our expert team is ready to provide consultation.",
+        "description": "Share your requirements and the product references you are considering.",
         "buttonText": "Contact for Inquiry"
       }
     },
     "consultation": {
-      "title": "Expert Consultation Available",
+      "title": "Discuss your bedding requirements",
       "description": "Describe your property, number of rooms, piece quantities, bed dimensions, preferred fabric and delivery destination. Choose quotation or samples enquiry below. We will need to confirm availability, minimum quantities, sampling conditions and delivery timing before any commitment.",
       "ctaButton1": "Contact for a Quote",
       "ctaButton2": "Browse Products"
@@ -321,7 +322,7 @@
   },
   "collectionsPage": {
     "mainTitle": "Shop by Product Category",
-    "mainDescription": "Browse our hotel-quality bedding collections, categorized to help you easily find what you're looking for. Find the best sheets for your home.",
+    "mainDescription": "Explore white bedding, individual pieces, set planning and bath textiles. Choose a category to see its details and enquiry options.",
     "categoryWhite": {
       "title": "White Bed Sheets",
       "description": "Timeless, classic elegance that never goes out of style, creating an atmosphere of cleanliness, comfort, and luxury.",
@@ -431,7 +432,7 @@
       },
       "item2": {
         "q": "Which type of Cotton is best for hotels?",
-        "a": "“Combed Cotton” from long fibers (like Egyptian or Pima Cotton) is a high standard for hotel sheets because it's soft, durable, breathable, and doesn't pill easily after many washes."
+        "a": "Choose from the finished fabric specification, sample, care label and your laundry process. Cotton origin or a combed-yarn label alone cannot establish durability or resistance to pilling. Ask for product-specific test information before making performance comparisons."
       },
       "item3": {
         "q": "Are there no-iron bed sheets?",

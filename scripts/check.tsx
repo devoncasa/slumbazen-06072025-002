@@ -1,3 +1,5 @@
+import {pageSEO} from '../seo';
+import {gzipSync} from 'node:zlib';
 import {catalogueSizeDimensions,productFacts} from '../catalogueSpecs';
 import {loadLocale} from '../localeResources';
 import React from 'react';import {renderToString} from 'react-dom/server';import {MemoryRouter} from 'react-router-dom';import assert from 'node:assert/strict';import fs from 'node:fs';import {SiteRoutes,paths,articleSlugs} from '../App';import {copy,languages} from '../content';import {products} from '../products';
@@ -24,3 +26,23 @@ for(const lang of languages){const actual=flatten(JSON.parse(fs.readFileSync('pu
 console.log(JSON.stringify({restoredCustomerFacingKeys:active.length,restoredLocaleGaps:0,interpolationChecked:true}));
 
 for(const lang of languages){const dims=catalogueSizeDimensions(lang);assert.equal(dims.length,12);assert(dims.every(Boolean));assert(dims[3].includes('20'));assert(dims[3].includes('30'));}assert.equal(productFacts(products.find(p=>p.id==='PC-STD-ST370P-091')!).width,20);
+
+// Crawlable links, metadata parity and explicit transfer-size budgets.
+let linkCount=0;
+const esc=(s:string)=>s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
+for(const lang of languages)for(const route of [...paths,...articleSlugs.map(s=>'blog/'+s),...products.map(p=>'product/'+p.id.toLowerCase())]){
+ const file='dist/'+lang+'/'+(route?route+'/':'')+'index.html';const html=fs.readFileSync(file,'utf8');const seo=pageSEO(route,lang);
+ assert(html.includes('<meta name="description" content="'+esc(seo.description)+'">'));
+ assert(html.includes('<link rel="canonical" href="'+seo.canonical+'">'));
+ assert(html.includes('<meta property="og:image" content="'+seo.image+'">'));
+ assert(html.includes('data-prerendered="true"'));
+ for(const [,href]of html.matchAll(/<a\b[^>]*href="([^"]+)"/g)){
+  if(!href.startsWith('/')||href.startsWith('//'))continue;const u=new URL(href.replace(/&amp;/g,'&'),'https://www.slumbazen.com');if(u.pathname==='/')continue;
+  const target='dist'+u.pathname.replace(/\/?$/,'/')+'index.html';assert(fs.existsSync(target),file+' broken '+href);if(u.hash)assert(fs.readFileSync(target,'utf8').includes('id="'+decodeURIComponent(u.hash.slice(1))+'"'),file+' anchor '+href);linkCount++;
+ }
+}
+const assets=fs.readdirSync('dist/assets');const entry=assets.find(p=>/^index-.*\.js$/.test(p))!;const css=assets.find(p=>/^index-.*\.css$/.test(p))!;const jsGzip=gzipSync(fs.readFileSync('dist/assets/'+entry)).length;const cssGzip=gzipSync(fs.readFileSync('dist/assets/'+css)).length;
+assert(jsGzip<150000,'Main JavaScript gzip budget');assert(cssGzip<15000,'CSS gzip budget');
+for(const name of ['quiet-bedroom','selection-details']){assert(fs.statSync('dist/assets/editorial/'+name+'.webp').size<120000);assert(fs.statSync('dist/assets/editorial/'+name+'-640.webp').size<40000)}
+const form=fs.readFileSync('dist/__forms.html','utf8');for(const field of ['form-name','name','email','message','language','bot-field'])assert(form.includes('name="'+field+'"'));assert(form.includes('data-netlify="true"'));
+console.log(JSON.stringify({internalLinks:linkCount,brokenLinks:0,metadataParity:true,mainJsGzip:jsGzip,cssGzip,formDefinition:true}));

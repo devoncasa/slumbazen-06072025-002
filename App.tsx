@@ -1,111 +1,60 @@
-import React, { useEffect } from 'react';
-import { HashRouter, Routes, Route, useLocation, useParams, Outlet, Navigate } from 'react-router-dom';
-import { I18nextProvider, useTranslation } from 'react-i18next';
-import i18n from './i18n';
-
-import Header from './components/Header';
-import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
-import CollectionsPage from './pages/CollectionsPage';
-import MaterialsPage from './pages/MaterialsPage';
-import HotelsPage from './pages/HotelsPage';
-import GalleryPage from './pages/GalleryPage';
-import SizesPage from './pages/SizesPage';
-import WhatIsTencelPage from './pages/WhatIsTencelPage';
-import DeliveryWarrantyPage from './pages/DeliveryWarrantyPage';
-import ContactPage from './pages/ContactPage';
-import TowelsPage from './pages/TowelsPage';
-import BlogPage from './pages/BlogPage';
-
-// Import new product category pages
-import WhiteSheetsPage from './pages/WhiteSheetsPage';
-import PremiumColorsPage from './pages/PremiumColorsPage';
-import BeddingSetsPage from './pages/BeddingSetsPage';
-
-const ScrollToTop: React.FC = () => {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  return null;
-};
-
-const LangWrapper: React.FC = () => {
-  const { lang } = useParams<{ lang: string }>();
-  const { i18n } = useTranslation();
-  
-  const supportedLngs = i18n.options.supportedLngs || [];
-  const isValidLang = lang && supportedLngs.includes(lang);
-
-  useEffect(() => {
-    if (isValidLang && i18n.language !== lang) {
-      i18n.changeLanguage(lang);
-    }
-  }, [lang, i18n, isValidLang]);
-  
-  useEffect(() => {
-    if (isValidLang) {
-      document.documentElement.lang = lang!;
-      document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-    }
-  }, [lang, isValidLang]);
-
-  if (!isValidLang) {
-    return <Navigate to="/th" replace />;
-  }
-
-  return <Outlet />;
-};
-
-const AppLayout: React.FC = () => (
-  <div className="flex flex-col min-h-screen font-sans bg-brand-light text-neutral-700">
-    <Header />
-    <main className="flex-grow">
-      <Outlet />
-    </main>
-    <Footer />
-  </div>
-);
-
-const AppContent: React.FC = () => {
-  return (
-    <HashRouter>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/:lang" element={<LangWrapper />}>
-          <Route element={<AppLayout />}>
-            <Route index element={<HomePage />} />
-            <Route path="collections" element={<CollectionsPage />} />
-            <Route path="materials" element={<MaterialsPage />} />
-            <Route path="hotels" element={<HotelsPage />} />
-            <Route path="gallery" element={<GalleryPage />} />
-            <Route path="sizes" element={<SizesPage />} />
-            <Route path="what-is-tencel" element={<WhatIsTencelPage />} />
-            <Route path="delivery" element={<DeliveryWarrantyPage />} />
-            <Route path="contact" element={<ContactPage />} />
-            <Route path="towels" element={<TowelsPage />} />
-            <Route path="blog" element={<BlogPage />} />
-            <Route path="products/white-sheets" element={<WhiteSheetsPage />} />
-            <Route path="products/premium-colors" element={<PremiumColorsPage />} />
-            <Route path="products/sets" element={<BeddingSetsPage />} />
-            <Route path="*" element={<Navigate to="" replace />} />
-          </Route>
-        </Route>
-        <Route path="/" element={<Navigate to="/th" replace />} />
-        <Route path="*" element={<Navigate to="/th" replace />} />
-      </Routes>
-    </HashRouter>
-  );
-};
-
-const App: React.FC = () => {
-  return (
-    <I18nextProvider i18n={i18n}>
-      <AppContent />
-    </I18nextProvider>
-  );
-};
-
-export default App;
+import React, {useEffect,useState} from 'react';
+import {BrowserRouter,Routes,Route,Link,useLocation,useNavigate,useParams,useSearchParams} from 'react-router-dom';
+import {copy,languages} from './content';
+import {products} from './products';
+import type {Product} from './data/galleryData';
+export const paths=['','collections','gallery','products/white-sheets','products/premium-colors','products/sets','towels','materials','what-is-tencel','sizes','hotels','delivery','contact','blog'];
+export const articleSlugs=['sheet-care','cotton-fabrics','hospitality-towels'];
+export const origin='https://www.slumbazen.com';
+const contact={phone:'+66818519922',email:'info@slumbazen.com',map:'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent('919/1 Jewelry Trade Center Silom Road Bang Rak Bangkok 10500 Thailand')};
+const locale=(lang:string)=>({th:'th-TH',en:'en-GB',zh:'zh-CN',ar:'ar',hi:'hi-IN'}[lang]||'en-GB');
+export function pageData(path:string,lang:string){const c=copy[lang]||copy.th;const i=paths.indexOf(path);const article=articleSlugs.indexOf(path.split('/')[1]);const p=path.startsWith('product/')?products.find(p=>p.id===path.slice(8)):null;return {c,i,article,p,title:p?`${p.productType[lang as 'en']} · ${p.id}`:article>=0?c.articles[article]:c.titles[i]||c.notFound};}
+function Photo({name,c,square=false}:{name:string,c:any,square?:boolean}){return <figure><img src={`/assets/editorial/${name}.webp`} alt={c.illustration} width={square?900:1200} height={square?900:675} loading="lazy" decoding="async" style={{aspectRatio:square?'1':'16/9',objectFit:'cover'}}/><figcaption>{c.illustration}</figcaption></figure>}
+function Enquiry({c,lang,p}:{c:any,lang:string,p?:Product|null}){const location=useLocation();const [kind,setKind]=useState('quote');const [quantity,setQuantity]=useState('1');const [requirements,setRequirements]=useState('');const [copied,setCopied]=useState(false);
+useEffect(()=>{try{const v=JSON.parse(sessionStorage.getItem('slumbazen-enquiry')||'{}');if(v.kind)setKind(v.kind);if(v.quantity)setQuantity(v.quantity);if(v.requirements)setRequirements(v.requirements);}catch{}},[]);
+function save(k:string,q:string,r:string){setKind(k);setQuantity(q);setRequirements(r);setCopied(false);try{sessionStorage.setItem('slumbazen-enquiry',JSON.stringify({kind:k,quantity:q,requirements:r}));}catch{}}
+const quantityValid=Number.isInteger(Number(quantity))&&Number(quantity)>=1&&Number(quantity)<=1000000;
+const text=[`SlumbaZEN — ${kind==='sample'?c.sample:c.quote}`,p?`${p.productType[lang as 'en']} | SKU: ${p.id}\n${c.material}: ${p.fabricType[lang as 'en']}\n${c.size}: ${p.size[lang as 'en']}\n${c.color}: ${c.white}\n${c.price}`:'',`${c.quantity}: ${quantity}`,requirements,origin+location.pathname,c.availability].filter(Boolean).join('\n');
+return <section className="enquiry panel" id="enquiry"><h2>{c.enquire}</h2><p>{c.availability}</p><div className="field-row"><label>{c.request}<select value={kind} onChange={e=>save(e.target.value,quantity,requirements)}><option value="quote">{c.quote}</option><option value="sample">{c.sample}</option></select></label><label>{c.quantity}<input type="number" min="1" max="1000000" value={quantity} onChange={e=>save(kind,e.target.value,requirements)}/></label></div><label>{c.requirements}<textarea rows={4} value={requirements} onChange={e=>save(kind,quantity,e.target.value)}/></label><div className="actions"><button type="button" disabled={!quantityValid} onClick={async()=>{try{await navigator.clipboard.writeText(text);setCopied(true)}catch{setCopied(false);window.prompt(c.copy,text)}}}>{copied?c.copied:c.copy}</button><a className="button secondary" aria-disabled={!quantityValid} onClick={e=>{if(!quantityValid)e.preventDefault()}} href={`mailto:${contact.email}?subject=${encodeURIComponent(`SlumbaZEN ${kind} ${p?.id||''}`)}&body=${encodeURIComponent(text)}`}>{c.email}</a></div><p role="status" className="small">{quantityValid?c.sendNote:c.quantity+' ≥ 1'}</p></section>}
+function Card({p,c,lang}:{p:Product,c:any,lang:string}){return <article className="product-card"><Link to={`/${lang}/product/${p.id}`}><img src={p.imageUrl} alt={`${p.productType[lang as 'en']} · ${p.pattern[lang as 'en']}`} width="640" height="480" loading="lazy" decoding="async"/><div className="card-body"><small className="sku" dir="ltr">{p.id}</small><h3>{p.productType[lang as 'en']}</h3><p>{p.fabricType[lang as 'en']} · {p.pattern[lang as 'en']}</p><p>{p.size[lang as 'en']}</p><strong>{c.price}</strong><span className="text-link">{c.details} →</span></div></Link></article>}
+function Catalogue({c,lang,white=false,towel=false}:{c:any,lang:string,white?:boolean,towel?:boolean}){const [search,setSearch]=useSearchParams();const type=search.get('productType')|| (towel?'towel':'all');const incoming=search.get('fabric')||'all';const fabric=['Cotton','cotton'].includes(incoming)?'cotton100':incoming;const size=search.get('size')||'all';const color=search.get('color')?.toLowerCase()||'all';const page=Math.max(1,Number(search.get('page'))||1);const set=(k:string,v:string)=>{const n=new URLSearchParams(search);v==='all'?n.delete(k):n.set(k,v);n.delete('page');setSearch(n)};
+const found=products.filter(p=>(!white||p.color.key==='white')&&(type==='all'||p.productType.key===type)&&(fabric==='all'||p.fabricType.key===fabric)&&(size==='all'||p.size.key===size)&&(color==='all'||p.color.key===color)).sort((a,b)=>Number(b.fabricType.key==='cotton100')-Number(a.fabricType.key==='cotton100'));
+const total=Math.max(1,Math.ceil(found.length/9));const current=Math.min(page,total);const options=(key:'productType'|'fabricType'|'size')=>Array.from(new Map(products.map(p=>[p[key].key,p[key]])).values());
+return <section className="catalogue"><details className="filters"><summary>{c.filter} · {new Intl.NumberFormat(locale(lang)).format(found.length)}</summary><div className="filter-grid">{([['productType',c.type,'productType'],['fabric',c.material,'fabricType'],['size',c.size,'size']] as const).map(([key,label,data])=><label key={key}>{label}<select value={key==='productType'?type:key==='fabric'?fabric:size} onChange={e=>set(key,e.target.value)}><option value="all">{c.all}</option>{options(data).map(v=><option key={v.key} value={v.key}>{v[lang as 'en']}</option>)}</select></label>)}<label>{c.color}<select value={color} onChange={e=>set('color',e.target.value)}><option value="all">{c.all}</option><option value="white">{c.white}</option></select></label><button onClick={()=>setSearch(towel?{productType:'towel'}:{})}>{c.reset}</button></div></details><p className="small">{c.representative}</p><p aria-live="polite">{new Intl.NumberFormat(locale(lang)).format(found.length)} {c.results}</p>{found.length?<div className="product-grid">{found.slice((current-1)*9,current*9).map(p=><Card key={p.id} p={p} c={c} lang={lang}/>)}</div>:<p className="panel">{c.empty}</p>}{total>1&&<nav className="pagination" aria-label={c.next}><button disabled={current===1} onClick={()=>{const n=new URLSearchParams(search);n.set('page',String(current-1));setSearch(n)}}>{c.previous}</button><span>{new Intl.NumberFormat(locale(lang)).format(current)} / {new Intl.NumberFormat(locale(lang)).format(total)}</span><button disabled={current===total} onClick={()=>{const n=new URLSearchParams(search);n.set('page',String(current+1));setSearch(n)}}>{c.next}</button></nav>}</section>}
+function Dimensions({c}:{c:any}){return <svg className="dimension" viewBox="0 0 600 320" role="img" aria-label={`${c.width} × ${c.length} × ${c.depth}`}><path d="M100 100L390 60L510 150L220 200Z M100 100V155L220 255L510 205V150 M220 200V255" fill="#e2d7c8" stroke="#73594b" strokeWidth="3"/><path d="M100 80L390 40 M410 60L530 150 M535 155V207" stroke="#34384a" strokeWidth="2"/><text x="190" y="35" textAnchor="middle">{c.width}</text><text x="465" y="65" textAnchor="middle">{c.length}</text><text x="350" y="300" textAnchor="middle">{c.depth}</text></svg>}
+export function Site(){const {lang='th','*':path=''}=useParams();const location=useLocation();const navigate=useNavigate();const valid=languages.includes(lang as any);const {c,i,article,p,title}=pageData(path,lang);useEffect(()=>{
+ if(!valid)return;
+ const canonical=origin+location.pathname;
+ const set=(selector:string,tag:string,attrs:Record<string,string>)=>{let e=document.head.querySelector(selector);if(!e){e=document.createElement(tag);document.head.appendChild(e)};for(const [k,v] of Object.entries(attrs))e.setAttribute(k,v)};
+ set('link[rel="canonical"]','link',{rel:'canonical',href:canonical});
+ for(const l of languages)set(`link[hreflang="${l==='zh'?'zh-Hans':l}"]`,'link',{rel:'alternate',hreflang:l==='zh'?'zh-Hans':l,href:origin+'/'+l+(path?'/'+path:'')});
+ set('meta[name="description"]','meta',{name:'description',content:p?`${p.productType[lang as 'en']} · ${p.size[lang as 'en']}. ${c.availability}`:title+'. '+c.intro});
+ set('meta[property="og:url"]','meta',{property:'og:url',content:canonical});
+ set('meta[property="og:title"]','meta',{property:'og:title',content:title});
+ set('meta[name="robots"]','meta',{name:'robots',content:['www.slumbazen.com','slumbazen.com'].includes(window.location.hostname)?'index, follow':'noindex, nofollow'});
+ document.head.querySelectorAll('script[type="application/ld+json"]').forEach(e=>e.remove());
+ const schema=document.createElement('script');schema.type='application/ld+json';schema.textContent=JSON.stringify({'@context':'https://schema.org','@type':p?'Product':'WebPage',name:title,url:canonical,...(p?{sku:p.id}:{}),inLanguage:lang});document.head.appendChild(schema);
+ document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';window.scrollTo(0,0);document.title=`${title} | SlumbaZEN`;},[lang,path,title]);if(!valid)return <h1>404</h1>;
+const link=(to:string)=>`/${lang}${to?'/'+to:''}`;const articleMode=path.startsWith('blog/')&&article>=0;const productMode=path.startsWith('product/')&&p;const sectionText:any={0:c.homeText,1:c.homeText,3:c.sizesText,4:c.colorText,5:c.setText,6:c.towelText,7:c.fabricText,8:c.tencelText,9:c.sizesText,10:c.b2bText,11:c.policyText,12:c.contactText};const navPaths=['','collections','gallery','materials','sizes','hotels','contact'];
+return <><a className="skip" href="#main">{c.shop}</a><header className="site-header"><Link className="wordmark" to={link('')} aria-label="SlumbaZEN">Slumba<span>ZEN</span></Link><nav className="desktop-nav" aria-label={c.nav[0]}>{navPaths.map((s,n)=><Link key={s} to={link(s)} aria-current={path===s?'page':undefined}>{c.nav[n]}</Link>)}</nav><div className="header-controls"><select aria-label={['ภาษา','Language','语言','اللغة','भाषा'][languages.indexOf(lang as any)]} value={lang} onChange={e=>navigate(`/${e.target.value}/${path}`.replace(/\/$/,'')+location.search+location.hash)}>{languages.map((l,n)=><option key={l} value={l}>{['ไทย','English','中文','العربية','हिन्दी'][n]}</option>)}</select><details className="mobile-nav"><summary aria-label={c.nav[0]}>☰</summary><nav>{navPaths.map((s,n)=><Link key={s} to={link(s)} onClick={e=>(e.currentTarget.closest('details') as HTMLDetailsElement).open=false}>{c.nav[n]}</Link>)}</nav></details></div></header>
+<main id="main"><div className="page-heading"><nav className="breadcrumbs"><Link to={link('')}>{c.nav[0]}</Link>{path&&<span> / {title}</span>}</nav><p className="eyebrow">SlumbaZEN</p><h1>{title}</h1>{i===0&&<p className="intro">{c.intro}</p>}</div>
+{i===0&&<><div className="home-hero"><img src="/assets/hero.webp" alt={c.titles[0]} width="1440" height="900" fetchPriority="high"/><div className="hero-copy"><p>{c.homeText}</p><Link className="button" to={link('gallery')}>{c.shop}</Link></div></div><div className="category-grid">{[3,4,5,6].map((n)=><Link className="panel category" key={n} to={link(paths[n])}><span>0{n-2}</span><h2>{c.titles[n]}</h2><p>{n===4?c.colorText:n===5?c.setText:n===6?c.towelText:c.homeText}</p><span className="text-link">{c.details} →</span></Link>)}</div><Catalogue c={c} lang={lang} white/></>}
+{i>0&&sectionText[i]&&<p className="lead">{sectionText[i]}</p>}
+{i===1&&<div className="category-grid">{[3,4,5,6].map(n=><Link className="panel category" key={n} to={link(paths[n])}><h2>{c.titles[n]}</h2><p>{n===4?c.colorText:n===5?c.setText:n===6?c.towelText:c.homeText}</p><span className="text-link">{c.details} →</span></Link>)}</div>}
+{[2,3,6].includes(i)&&<Catalogue c={c} lang={lang} white={i===3} towel={i===6}/>}
+{i===4&&<Photo c={c} name="colors" square/>}{i===5&&<><Photo c={c} name="set" square/><Link className="button" to={link('gallery')}>{c.shop}</Link></>}
+{i===7&&<><Photo c={c} name="textile"/><div className="panel"><h2>{c.titles[8]}</h2><p>{c.tencelText}</p><Link to={link('what-is-tencel')}>{c.details} →</Link></div><div className="panel"><h2>{c.articles[1]}</h2><p>{c.threadText}</p><a href="https://store.astm.org/d3775-17r23.html">ASTM D3775</a><p><Link to={link('gallery')+'?fabric=cotton100'}>{c.shop} · Cotton</Link></p></div></>}
+{i===8&&<><Photo c={c} name="care"/><p><a href="https://www.tencel.com/fibers" target="_blank" rel="noreferrer">TENCEL™ · Lenzing</a></p><Link to={link('blog/sheet-care')}>{c.articles[0]} →</Link></>}
+{i===9&&<><Dimensions c={c}/><div className="panel"><h2>{c.size}</h2><p>{c.sizesText}</p><Link to={link('gallery')}>{c.shop} →</Link></div></>}
+{i===10&&<div className="panel"><Link to={link('materials')}>{c.titles[7]} →</Link></div>}
+{i===11&&<div className="editorial-grid"><Photo c={c} name="packing"/><Photo c={c} name="care"/></div>}
+{i===12&&<section className="panel contact"><p>{c.address}</p><a href={`tel:${contact.phone}`}>{c.phone}: <bdi>{contact.phone}</bdi></a><a href={`mailto:${contact.email}`}><bdi>{contact.email}</bdi></a><a className="button secondary" href={contact.map} target="_blank" rel="noreferrer">{c.map} ↗</a></section>}
+{i===13&&<div className="category-grid">{articleSlugs.map((slug,n)=><article className="panel" key={slug}><Photo c={c} name={['care','textile','towels'][n]}/><h2><Link to={link('blog/'+slug)}>{c.articles[n]}</Link></h2><p>{[c.care,c.cotton,c.towels][n][0]}</p><Link className="text-link" to={link('blog/'+slug)}>{c.details} →</Link></article>)}</div>}
+{articleMode&&<article className="reading"><p className="small">{c.published}: <time dateTime="2026-10-25">{new Intl.DateTimeFormat(locale(lang),{dateStyle:'long',timeZone:'UTC'}).format(new Date('2026-10-25'))}</time></p><Photo c={c} name={['care','textile','towels'][article]}/>{[c.care,c.cotton,c.towels][article].map((p:string,n:number)=><section key={n}><h2>{String(n+1).padStart(2,'0')}</h2><p>{p}</p></section>)}<Link to={link(article===2?'towels':article===1?'materials':'delivery')}>{c.details} →</Link></article>}
+{productMode&&<div className="product-detail"><figure><img src={p.imageUrl} alt={p.productType[lang as 'en']} width="800" height="600"/><figcaption>{c.representative}</figcaption></figure><section><p className="sku" dir="ltr">{p.id}</p><h2>{p.productType[lang as 'en']}</h2><dl><dt>{c.material}</dt><dd>{p.fabricType[lang as 'en']}</dd><dt>{c.size}</dt><dd>{p.size[lang as 'en']}</dd><dt>{c.color}</dt><dd>{c.white} · {p.pattern[lang as 'en']}</dd></dl><p>{c.availability}</p><Link to={link('sizes')}>{c.titles[9]} →</Link></section></div>}
+{(i<0&&!articleMode&&!productMode)&&<section className="panel"><p>404</p><Link to={link('')}>{c.nav[0]}</Link></section>}
+{([4,5,6,8,10,11,12].includes(i)||productMode)&&<Enquiry key={path} c={c} lang={lang} p={p}/>}
+{(i===11)&&<p><a href={`tel:${contact.phone}`}>{c.phone} · <bdi>{contact.phone}</bdi></a></p>}
+<div className="related-links">{[7,9,11,12,13].filter(n=>n!==i).map(n=><Link key={n} to={link(paths[n])}>{c.titles[n]}</Link>)}</div></main><footer><Link className="wordmark" to={link('')}>Slumba<span>ZEN</span></Link><p>{c.intro}</p><p><a href={`tel:${contact.phone}`}><bdi>{contact.phone}</bdi></a> · <a href={`mailto:${contact.email}`}><bdi>{contact.email}</bdi></a></p><small>© {new Date().getFullYear()} SlumbaZEN</small></footer></>}
+export function SiteRoutes(){return <Routes><Route path="/:lang/*" element={<Site/>}/><Route path="*" element={<h1>404 · SlumbaZEN</h1>}/></Routes>}
+export default function App(){return <BrowserRouter><SiteRoutes/></BrowserRouter>}

@@ -19,7 +19,7 @@ Baseline: devoncasa/slumbazen-06072025-002, main, 9b2637f292815e8380fd441dc55282
 | Shipping unsupported promises/images | Written-quotation conditions instead of unconfirmed promises; packing and care illustrations; clickable phone | Initial HTML and images checked |
 | Contact map/phone | Address-search link instead of fictional map/pin; international +66818519922; no unsupported WhatsApp action | Destination syntax checked; owner channel confirmation outstanding |
 | Blog placeholders | Three complete localized articles with dedicated routes, 25 October 2026 publication dates and editorial thumbnails | Fifteen article routes checked |
-| Hash URLs and indexing | Browser migration, ordinary static routes, initial HTML, sitemap, reciprocal alternates, canonicals, schema without offers/ratings | 615 pages checked; preview direct navigation, refresh and legacy migration checked; production check pending |
+| Hash URLs and indexing | Browser migration, ordinary static routes, initial HTML, sitemap, reciprocal alternates, canonicals, schema without offers/ratings | 615 pages checked; preview direct navigation, refresh and legacy migration checked; production deployment 6addd014e3c423f4f58106db verified on slumbazen.netlify.app |
 | Assets/performance | Six reviewed generated editorial photographs; 59 original images downloaded and optimized; local WebP, explicit image dimensions, below-fold lazy loading; remove runtime Tailwind CDN | Build passes; no unmeasured performance scores claimed |
 | Translation coverage | Active content replaced with a 57-field complete five-language content source, plus five-language catalog labels; old fallback-heavy page modules are no longer used | Exact active-key parity and array-length tests pass |
 
@@ -52,3 +52,5 @@ Primary sources: https://rdap.verisign.com/com/v1/domain/slumbazen.com ; Spacesh
 
 
 Rendered preview matrix: 14 page types × five languages × five widths (350), plus three articles × five languages × five widths (75), plus one product × five languages × five widths (25): 450 checks passed. All 106 source product routes have lowercase/trailing-slash regression assertions. Browser tests also cover Cotton+size filtering, reset, query preservation during language switching and back/forward, B2B sample intent, quantity validation, copied product enquiry details, legacy hash migration, direct refresh, and preview noindex metadata. No customer enquiries were sent. Console observations showed browser-extension metadata noise, not application errors. No Lighthouse or real-user score is claimed.
+
+Public material labels use families (Cotton, CVC blend, Soft-Tex) rather than unverified composition percentages or anti-mite claims. Raw source labels remain available in the catalog source for supplier reconciliation. Existing CVC filter aliases are retained.

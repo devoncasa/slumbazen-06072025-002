@@ -152,9 +152,18 @@ const MAPPINGS = {
 
 // --- BUSINESS LOGIC ---
 
+// Public material families avoid unverified composition percentages and treatment claims.
+const publicMaterialLabels: Record<string,Partial<Product['fabricType']>> = {
+ cotton100:{th:'คอตตอน',en:'Cotton',zh:'棉',ar:'قطن',hi:'कॉटन'},
+ cottonTowel:{th:'ผ้าขนหนูคอตตอน',en:'Cotton towel',zh:'棉毛巾',ar:'منشفة قطن',hi:'कॉटन तौलिया'},
+ cottonAntiDust:{key:'cotton100',th:'คอตตอน',en:'Cotton',zh:'棉',ar:'قطن',hi:'कॉटन'},
+ cvc50:{key:'cvc',th:'ผ้าผสม CVC',en:'CVC blend',zh:'CVC 混纺',ar:'خليط CVC',hi:'CVC मिश्रण'},
+ cvc60:{key:'cvc',th:'ผ้าผสม CVC',en:'CVC blend',zh:'CVC 混纺',ar:'خليط CVC',hi:'CVC मिश्रण'}
+};
 export const products: Product[] = rawProductData.map(item => {
  const type=MAPPINGS.productType[item.type as keyof typeof MAPPINGS.productType];
- const fabric=MAPPINGS.fabricType[item.fabric as keyof typeof MAPPINGS.fabricType];
+ const sourceFabric=MAPPINGS.fabricType[item.fabric as keyof typeof MAPPINGS.fabricType];
+ const fabric={...sourceFabric,...publicMaterialLabels[sourceFabric.key]};
  const pattern=MAPPINGS.pattern[item.spec.toLowerCase().includes('stripe')?'Striped':'Plain'];
  const imageUrl=getDeterministicImage(item.type==='Towel'?'towel':item.type==='Bolster Case'?'bolster':pattern.key==='striped'?'white_striped':'white_plain', item.code);
  return {id:item.code,name:type,productType:type,fabricType:fabric,size:MAPPINGS.size[item.size as keyof typeof MAPPINGS.size],pattern,color:MAPPINGS.color.White,price:item.price,threadCount:0,description:type,imageUrl};

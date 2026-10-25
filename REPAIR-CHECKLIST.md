@@ -58,7 +58,7 @@ Public material labels use families (Cotton, CVC blend, Soft-Tex) rather than un
 
 ## Original-content restoration — 25 October 2026
 
-The earlier simplified release replaced too much original content. Original page components and navigation have now been restored from commit 9b2637f292815e8380fd441dc55282c72c361ca8. Full Thai/English source guides are restored; hotel and towel details are restored and edited in all five languages. Other Chinese/Arabic/Hindi pages retain their already-localized shorter versions; full-length translations of those restored guides remain outstanding. This is not described as a full five-language restoration.
+The earlier simplified release replaced too much original content. Original page components and navigation have now been restored from commit 9b2637f292815e8380fd441dc55282c72c361ca8. All restored source guides are now localized in Thai, English, Chinese, Arabic and Hindi, including the size tables, care details and policy sections. Locale dictionaries load on demand to avoid downloading all five long-form language payloads during the initial visit.
 
 - Original towel variants, bath mats, ten first-wash steps, five care sections and 23 original gallery images restored.
 - Original hotel selection cards, five use-case comparisons, quote/sample paths and nine gallery images restored.

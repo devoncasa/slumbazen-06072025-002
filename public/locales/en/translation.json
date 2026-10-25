@@ -167,9 +167,9 @@
     "returnPeriodTitle": "Timeframe for Requesting Exchange/Return",
     "returnPeriodDesc": "Confirm the reporting period applicable to the order in the quotation or written terms.",
     "returnConditionsTitle": "Conditions for Exchange/Return",
-    "returnCondition1": "The product must be in new, perfect condition.",
-    "returnCondition2": "It must be unwashed and unused.",
-    "returnCondition3": "All original packaging and tags must be intact.",
+    "returnCondition1": "Record the condition of the item on receipt.",
+    "returnCondition2": "Ask before washing or using the item while the issue is being reviewed.",
+    "returnCondition3": "Retain packaging, tags and order details for assessment.",
     "returnReasonTitle": "Note",
     "returnReasonDesc": "Report the issue with the order reference and photographs so the applicable terms can be checked.",
     "returnProcessTitle": "Exchange/Return Process",
@@ -481,10 +481,10 @@
     "care": {
       "title": "Caring for Your Tencel™ Fabric for Lasting Beauty",
       "intro": "To maintain the beauty and excellent properties of your Tencel™ fabric for a long time:",
-      "item1": "Washing: Wash in cool or warm water (up to 30-40°C) on a gentle cycle. Use a laundry bag to reduce friction.",
-      "item2": "Detergent: Use a mild detergent. Avoid chlorine bleach.",
-      "item3": "Drying: Tumble dry on low heat or line dry in a shaded, breezy area. Avoid prolonged direct sunlight.",
-      "item4": "Ironing: If necessary, iron on low to medium heat, preferably while slightly damp or using a pressing cloth."
+      "item1": "Wash at the temperature and program permitted by the care label; avoid unnecessary friction.",
+      "item2": "Use detergent suitable for the fabric; use bleach only if the label permits it.",
+      "item3": "Tumble or line dry according to the label and dry completely before storage.",
+      "item4": "Confirm ironing temperature and method; do not assume one setting suits every blend."
     }
   },
   "hotelsPage": {

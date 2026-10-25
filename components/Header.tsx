@@ -1,3 +1,4 @@
+import {loadLocale} from '../localeResources';
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation, Trans } from 'react-i18next';
@@ -62,7 +63,11 @@ const Header: React.FC = () => {
     setOpenDropdown(prev => (prev === id ? null : id));
   };
   
-  const changeLanguage = (lng: string) => {
+  const languageRequest=useRef(0);
+  const changeLanguage = async (lng: string) => {
+    const request=++languageRequest.current;
+    await loadLocale(lng);
+    if(request!==languageRequest.current)return;
     closeMenus();
     const currentPath = location.pathname; // e.g. /en/contact
     const pathParts = currentPath.split('/'); // e.g. ["", "en", "contact"]

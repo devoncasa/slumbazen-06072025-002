@@ -328,5 +328,466 @@
         "explanation": "根据顽固污渍、磨损、破损和洗涤效果评估；没有适用于所有酒店的统一更换期限。"
       }
     }
+  },
+  "homePage": {
+    "missionQuote": "选择床品，透明的信息比单看低价更重要。",
+    "missionExplanation": "选择床品时，应一起考虑纤维、尺寸、织法与护理，而非只看纱线密度。决定前请确认具体产品规格。",
+    "hero": {
+      "title": "用心选择床品，让休息更从容",
+      "ctaButton": "浏览全部系列",
+      "subtitle": "为舒适卧室和温馨客房挑选纺织品。浏览目录，咨询您关心的细节。"
+    },
+    "visualShowcase": {
+      "alt1": "床上整齐铺设的白色床品",
+      "alt2": "现代卧室中的灰色床品",
+      "alt3": "米色床单与织物纹理细节",
+      "alt4": "现代卧室中的蓝色床品",
+      "alt5": "搭配盖毯的床铺造型",
+      "alt6": "白灰色调的简约卧室",
+      "alt7": "多层床品的近景细节",
+      "alt8": "明亮房间中的白色床品",
+      "alt9": "床品织物纹理近景",
+      "alt10": "搭配多个枕头的床铺造型"
+    },
+    "brandStory": {
+      "mainTitle": "在自己的家中，感受休息的艺术",
+      "intro_p1": "Slumba ZEN 源于一个朴素的想法：舒适的休息是平衡生活的一部分。名字将 Slumber 与 Zen 结合，希望为卧室带来宁静。",
+      "quality_title": "从纤维到细节，认真比较",
+      "quality_point1": "用面料样品比较触感与透气性。",
+      "quality_point2": "让护理流程适合织物与用途。",
+      "quality_point3": "订购前检查尺寸、缝线和产品细节。",
+      "intro_p2": "先确定尺寸和外观，再浏览素色或条纹白色床单、单件床品及毛巾。准备好后即可整理咨询详情。",
+      "quality_intro": "棉是纤维名称，素色和条纹描述外观。CVC 是混纺类别，每款棉与涤纶的比例须单独确认。“Soft-Tex”是目录名称，不能据此确定纤维成分。请使用供应商同一基准的规格比较，并在有条件时查看实物样品。"
+    },
+    "whyUs": {
+      "mainTitle": "为什么了解 Slumba ZEN？",
+      "item1": {
+        "title": "1. 认识棉织物",
+        "linkText": "了解棉织物",
+        "description": "棉是纤维名称，素色和条纹描述外观。CVC 是混纺类别，每款棉与涤纶的比例须单独确认。“Soft-Tex”是目录名称，不能据此确定纤维成分。请使用供应商同一基准的规格比较，并在有条件时查看实物样品。"
+      },
+      "item2": {
+        "title": "2. 认识 TENCEL™ Lyocell",
+        "linkText": "TENCEL™ 是什么？",
+        "description": "TENCEL™ 是 Lenzing 的纤维素纤维品牌，包括莱赛尔和莫代尔。仅凭纤维名称不能确定成品面料的混纺比例、织法或保养要求。选购前请询问准确成分及产品资料。一般纤维知识不代表 SlumbaZEN 某款商品使用该纤维或获得认证。"
+      },
+      "item3": {
+        "title": "3. 比较 Soft-Tex 与 CVC",
+        "linkText": "了解 Soft-Tex 与 CVC",
+        "description": "棉是纤维名称，素色和条纹描述外观。CVC 是混纺类别，每款棉与涤纶的比例须单独确认。“Soft-Tex”是目录名称，不能据此确定纤维成分。请使用供应商同一基准的规格比较，并在有条件时查看实物样品。"
+      },
+      "item4": {
+        "title": "4. 清楚的规格与可靠信息",
+        "linkText": "了解织物品质",
+        "description": "纱线密度依据规定长度内的经纱与纬纱数量，应注明计数方法和单位。不同测量基准不能仅通过改变数字来比较。请咨询所选商品的供应商原始规格。"
+      },
+      "ctaButton": "查看面料指南",
+      "subTitle": "为舒适卧室和温馨客房挑选纺织品。浏览目录，咨询您关心的细节。"
+    },
+    "problems": {
+      "mainTitle": "兼顾舒适与实际使用",
+      "item1": {
+        "problem": "织物粗糙、触感不适",
+        "solution": "先触摸样品，并确认所选产品的纤维成分。"
+      },
+      "item2": {
+        "problem": "夜间感觉闷热",
+        "solution": "一起考虑纤维、织法、面料重量和房间条件。"
+      },
+      "item3": {
+        "problem": "床单容易滑脱",
+        "solution": "测量床垫宽度、长度及包含床褥垫的总厚度，再与具体床笠核对三项尺寸。当前目录的适配厚度包括 10 英寸和 12 英寸，并非所有商品均适用 14 英寸床垫。枕套、抱枕套和被套须分别测量。"
+      },
+      "item4": {
+        "problem": "颜色容易褪色",
+        "solution": "订购前核实实际颜色选项与洗护标签。"
+      }
+    },
+    "discoverWorld": {
+      "mainTitle": "探索 Slumba ZEN",
+      "item1": {
+        "title": "面料类别",
+        "description": "了解棉、TENCEL™ 与其他面料类别。",
+        "buttonText": "查看面料信息"
+      },
+      "item2": {
+        "title": "床品灵感图库",
+        "description": "浏览床品图片与目录细节。",
+        "buttonText": "浏览图库"
+      },
+      "item3": {
+        "title": "酒店与企业采购",
+        "description": "为酒店与合作伙伴规划床品需求。",
+        "buttonText": "查看企业采购信息"
+      },
+      "item4": {
+        "title": "联系我们",
+        "description": "讨论产品选择与报价要求。",
+        "buttonText": "联系咨询"
+      }
+    },
+    "consultation": {
+      "title": "讨论合适的床品选择",
+      "ctaButton1": "联系索取报价",
+      "ctaButton2": "浏览产品",
+      "description": "请说明住宿类型、客房数量、各单品数量、床铺尺寸、面料偏好及配送地点。下方可选择报价或样品咨询。供货、最低数量、样品条件及交货时间均须确认后才能承诺。"
+    }
+  },
+  "collectionsPage": {
+    "mainTitle": "按产品类别浏览",
+    "mainDescription": "按用途浏览床品类别，更方便地比较适合卧室的选择。",
+    "categoryWhite": {
+      "title": "白色床单",
+      "description": "白色床品风格简洁，便于搭配不同卧室与客房环境。",
+      "buttonText": "浏览白色床单"
+    },
+    "categorySets": {
+      "title": "床品搭配与套装咨询",
+      "description": "按需分别选择床笠、枕套及另购的被套。订购前请书面确认每一件商品、数量、尺寸和总价。被套不含被芯。",
+      "buttonText": "查看详情"
+    },
+    "cta": {
+      "title": "还不确定？了解面料再选择",
+      "description": "比较纤维、织法与护理要求。",
+      "button": "前往面料指南"
+    },
+    "categoryColors": {
+      "title": "咨询颜色",
+      "description": "当前目录列出的是白色商品。请告知颜色、尺寸和数量，以便核实是否有合适选项。提交咨询不代表该颜色有现货或可定制。",
+      "buttonText": "准备咨询"
+    }
+  },
+  "whiteSheetsPage": {
+    "mainTitle": "白色床单：简洁耐看的搭配",
+    "mainDescription": "Slumba ZEN 白色床品可搭配多种卧室风格。选择素色或条纹，并按具体产品核对尺寸与护理要求。",
+    "featuredTitle": "精选白色床单",
+    "benefitsTitle": "为什么考虑白色床品？",
+    "benefit1": "简洁耐看：白色可与不同卧室装饰协调搭配。",
+    "benefit2": "明亮观感：白色带来清爽视觉效果，但卫生仍取决于正确洗护。",
+    "benefit3": "细节搭配：可通过素色、条纹和枕套组合营造层次。",
+    "benefit4": "方便搭配：可与其他颜色的织物和房间配饰组合。",
+    "viewAllInGallery": "浏览全部白色床单",
+    "ctaTitle": "选择适合您的白色床品",
+    "ctaButtonContact": "咨询选购",
+    "ctaButtonCollections": "查看全部系列"
+  },
+  "premiumColorsPage": {
+    "featuredTitle": "颜色与搭配灵感",
+    "benefitsTitle": "用颜色规划卧室氛围",
+    "benefit1": "个人风格：以喜欢的色调规划卧室，具体产品颜色需另行确认。",
+    "benefit2": "空间层次：深浅色调会带来不同的视觉感受。",
+    "benefit3": "协调搭配：一起考虑窗帘、地毯与其他织物。",
+    "benefit4": "先看样品：实际颜色会受光线与屏幕影响。",
+    "ctaTitle": "告诉我们您希望的色调",
+    "ctaButtonContact": "询问颜色选择",
+    "ctaButtonCollections": "查看全部系列",
+    "mainTitle": "咨询颜色",
+    "mainDescription": "当前目录列出的是白色商品。请告知颜色、尺寸和数量，以便核实是否有合适选项。提交咨询不代表该颜色有现货或可定制。",
+    "viewAllInGallery": "浏览目录"
+  },
+  "beddingSetsPage": {
+    "mainTitle": "床品搭配与套装咨询",
+    "featuredTitle": "床品组合参考",
+    "benefitsTitle": "规划需要的床品组合",
+    "benefit1": "确认价格前，列明每类用品的数量。",
+    "benefit2": "逐件核对面料、颜色与图案是否协调。",
+    "benefit3": "按已确认内容比较总价，不自动包含折扣或保证。",
+    "componentsTitle": "选择所需用品，并在报价中确认内容",
+    "component1": "床笠：选择尺寸与适配厚度",
+    "component2": "枕套：确认尺寸和数量",
+    "component4": "被套：如需请另行询问，不表示包含被芯",
+    "viewAllInGallery": "浏览床品目录",
+    "ctaTitle": "规划适合您的床品组合",
+    "ctaButtonContact": "咨询所需用品",
+    "ctaButtonCollections": "查看全部系列",
+    "mainDescription": "按需分别选择床笠、枕套及另购的被套。订购前请书面确认每一件商品、数量、尺寸和总价。被套不含被芯。",
+    "ctaDescription": "按需分别选择床笠、枕套及另购的被套。订购前请书面确认每一件商品、数量、尺寸和总价。被套不含被芯。"
+  },
+  "materialsPage": {
+    "mainTitle": "床品面料指南",
+    "mainDescription": "了解不同面料的纤维、织法和护理要求，帮助您选择适合用途的床品。",
+    "qualityVsPrice": {
+      "title": "用清楚的规格比较面料",
+      "p3": "计量单位或计数方法不同的数值，不宜直接比较。请先索取供应商原始规格。",
+      "p4": "认证须由具体产品的文件支持；一般纤维信息不等于 SlumbaZEN 产品认证。",
+      "p6": "价格应结合使用、洗涤与长期更换成本一起比较。",
+      "p1": "棉是纤维名称，素色和条纹描述外观。CVC 是混纺类别，每款棉与涤纶的比例须单独确认。“Soft-Tex”是目录名称，不能据此确定纤维成分。请使用供应商同一基准的规格比较，并在有条件时查看实物样品。",
+      "p2": "纱线密度依据规定长度内的经纱与纬纱数量，应注明计数方法和单位。不同测量基准不能仅通过改变数字来比较。请咨询所选商品的供应商原始规格。",
+      "p5": "测量床垫宽度、长度及包含床褥垫的总厚度，再与具体床笠核对三项尺寸。当前目录的适配厚度包括 10 英寸和 12 英寸，并非所有商品均适用 14 英寸床垫。枕套、抱枕套和被套须分别测量。"
+    },
+    "cotton": {
+      "title": "棉：认识面料",
+      "intro": "棉是天然纤维。成品表现取决于纤维品质、纱线、织法与后整理；请逐款确认成分和结构。",
+      "advantagesTitle": "选择棉织物时应比较什么",
+      "advantage1": "以样品评估透气性和在温暖潮湿环境中的舒适感。",
+      "advantage2": "确认纤维成分，不只依赖商品名称。",
+      "advantage3": "检查缩水余量与产品洗护标签。",
+      "advantage4": "通过实际触摸选择自己喜欢的手感。",
+      "cta": "浏览棉类产品"
+    },
+    "softTex": {
+      "title": "Soft-Tex：按具体产品比较",
+      "advantagesTitle": "比较 Soft-Tex 时关注什么",
+      "advantage1": "用样品判断是否符合喜欢的柔软程度。",
+      "advantage2": "询问具体产品的洗涤与熨烫要求。",
+      "advantage3": "结合实际洗衣系统测试干燥表现。",
+      "advantage4": "一起比较购买、护理和更换成本。",
+      "description": "棉是纤维名称，素色和条纹描述外观。CVC 是混纺类别，每款棉与涤纶的比例须单独确认。“Soft-Tex”是目录名称，不能据此确定纤维成分。请使用供应商同一基准的规格比较，并在有条件时查看实物样品。"
+    },
+    "cvc": {
+      "title": "CVC：比较混纺织物",
+      "advantagesTitle": "比较 CVC 时关注什么",
+      "advantage1": "确认所选产品的纤维混纺比例。",
+      "advantage2": "用样品比较起皱、洗涤与干燥表现。",
+      "advantage3": "检查洗护标签及色牢度资料。",
+      "advantage4": "评估反复洗涤适用性和更换预算。",
+      "description": "棉是纤维名称，素色和条纹描述外观。CVC 是混纺类别，每款棉与涤纶的比例须单独确认。“Soft-Tex”是目录名称，不能据此确定纤维成分。请使用供应商同一基准的规格比较，并在有条件时查看实物样品。"
+    },
+    "tencel": {
+      "title": "认识 TENCEL™ Lyocell",
+      "advantage1": "可通过样品比较平滑度与柔软触感。",
+      "advantage2": "同时考虑纤维与成品织法对湿气和舒适感的影响。",
+      "advantage3": "不要未经具体测试便认定成品具有抗菌性能。",
+      "advantage4": "皮肤舒适感因人而异，请先感受样品。",
+      "description": "TENCEL™ 是 Lenzing 的纤维素纤维品牌，包括莱赛尔和莫代尔。仅凭纤维名称不能确定成品面料的混纺比例、织法或保养要求。选购前请询问准确成分及产品资料。一般纤维知识不代表 SlumbaZEN 某款商品使用该纤维或获得认证。",
+      "cta": "了解 TENCEL™"
+    },
+    "misconceptions": {
+      "title": "床品选择中的常见误解",
+      "item1": {
+        "title": "纱线密度越高就一定越好吗？",
+        "content": "不一定。品质还取决于纤维、纱线、织法与后整理。",
+        "point1": "纤维品质和长度只是比较因素的一部分，应结合成品评估。",
+        "point2": "纱线密度依据规定长度内的经纱与纬纱数量，应注明计数方法和单位。不同测量基准不能仅通过改变数字来比较。请咨询所选商品的供应商原始规格。"
+      },
+      "item2": {
+        "title": "TENCEL™ 等于人造丝吗？",
+        "content": "TENCEL™ 是 Lenzing 的纤维素纤维品牌，包括莱赛尔和莫代尔。仅凭纤维名称不能确定成品面料的混纺比例、织法或保养要求。选购前请询问准确成分及产品资料。一般纤维知识不代表 SlumbaZEN 某款商品使用该纤维或获得认证。"
+      },
+      "item3": {
+        "title": "白色床单一定难护理吗？",
+        "content": "应一起考虑实际织物与洗涤流程：",
+        "point1": "白色便于看到污迹，但颜色本身不保证卫生。洗涤与存放仍然重要。",
+        "point2": "仅在洗护标签和供应商允许时使用漂白剂。"
+      }
+    },
+    "shopTips": {
+      "title": "选择床品的实用建议",
+      "tip1": {
+        "segment1": "不要只凭照片或密度数字判断。如果有疑问，可",
+        "link": "联系我们",
+        "segment2": "，询问面料和厚度，尤其在大量采购前。"
+      },
+      "tip2": "不要只按纤维名称判断起球与耐用性。查看样品、洗涤测试及供应商资料。",
+      "tip3": "缎纹通常较平滑，平纹通常更清爽；具体手感仍应通过成品样品比较。",
+      "tip4": "比较纱线密度前先核对单位、计数方式和纤维品质，不将高数字当作唯一指标。",
+      "tip5": "测量床垫包含加垫的总厚度，并选择符合该产品标示深度的床笠。"
+    },
+    "faq": {
+      "title": "常见问题",
+      "item1": {
+        "q": "酒店床单的选购重点有什么不同？",
+        "a": "酒店选用应考虑反复洗涤、尺寸一致性、存放和更换预算，并通过样品与产品资料评估。"
+      },
+      "item2": {
+        "q": "哪类棉织物适合酒店？",
+        "a": "可以比较梳棉、纤维品质与不同织法，但最终应依据成品样品、洗涤表现和预算选择，不单凭产地名称。"
+      },
+      "item3": {
+        "q": "有没有不用熨烫的床单？",
+        "a": "起皱取决于成分、织法与后整理，而非纤维名称本身。请询问具体产品的护理方法。"
+      },
+      "item4": {
+        "q": "不同床品应该如何护理？",
+        "a": "以具体产品的洗护标签为准，确认水温、洗涤剂、漂白、干燥和熨烫要求。"
+      }
+    }
+  },
+  "whatIsTencelPage": {
+    "introSection": {
+      "title": "TENCEL™ 是什么？"
+    },
+    "whatIsIt": {
+      "intro": "TENCEL™ 是奥地利 Lenzing 的 Lyocell 和 Modal 纤维品牌。了解纤维信息时，也要核对成品规格。",
+      "point1": "这类纤维由木浆纤维素制成。请核对纤维种类与生产商资料。",
+      "point2": "Lenzing 将 TENCEL™ Lyocell 生产描述为闭环工艺；该信息不能单独确认每件成品的来源或认证。",
+      "point3": "成分、织法与后整理会影响成品，因此要查看具体产品资料。"
+    },
+    "featuresTitle": "理解纤维与成品表现",
+    "features": {
+      "item1": {
+        "title": "平滑与柔软触感",
+        "description": "以样品比较成品的平滑度和柔软度，不只依据纤维名称。"
+      },
+      "item2": {
+        "title": "湿气与使用舒适感",
+        "description": "纤维素纤维与湿气相互作用，但舒适感也取决于成分、织法和房间条件。"
+      },
+      "item3": {
+        "title": "护理与卫生",
+        "description": "未经具体测试，不应假设产品具有抗菌或防螨性能。洗涤与存放以标签为准。"
+      },
+      "item4": {
+        "title": "皮肤触感与个人偏好",
+        "description": "皮肤舒适感因人和面料而异。选择前请感受样品并确认成分。"
+      },
+      "item5": {
+        "title": "成品颜色与护理",
+        "description": "请确认实际颜色、洗涤要求与色牢度资料，不从纤维名称推断。"
+      }
+    },
+    "care": {
+      "title": "按成品说明护理 TENCEL™ 织物",
+      "intro": "下面是选用时的护理检查要点；具体温度与程序以产品标签为准。",
+      "item1": "洗涤：确认标签允许的水温与程序，避免不必要的摩擦。",
+      "item2": "洗涤剂：使用适合该织物的产品；仅在标签允许时使用漂白剂。",
+      "item3": "干燥：遵守标签的烘干或晾干要求，完全干燥后再存放。",
+      "item4": "熨烫：确认允许的温度与方法，不假设所有混纺织物适用同一设置。"
+    },
+    "mainTitle": "了解 TENCEL™",
+    "mainDescription": "TENCEL™ 是 Lenzing 的纤维素纤维品牌，包括莱赛尔和莫代尔。仅凭纤维名称不能确定成品面料的混纺比例、织法或保养要求。选购前请询问准确成分及产品资料。一般纤维知识不代表 SlumbaZEN 某款商品使用该纤维或获得认证。"
+  },
+  "deliveryWarrantyPage": {
+    "mainTitle": "运输、退换与护理",
+    "shippingPolicyTitle": "运输信息",
+    "domesticShippingTitle": "泰国内运输",
+    "domesticTimeTitle": "预计送达时间",
+    "domesticTimeDesc": "请在报价中确认所选产品、数量和目的地的预计送达时间。",
+    "domesticServicesTitle": "承运与付款方式",
+    "domesticServicesDesc": "订购前请确认承运商及支持的付款方式。",
+    "domesticFreeShippingTitle": "运费与免运条件",
+    "domesticFreeShippingDesc": "付款前请询问本订单运费，以及是否符合任何免运条件。",
+    "domesticPackagingTitle": "包装",
+    "domesticPackagingDesc": "请确认适合货品和目的地的包装。示意图片不是店铺实际包装。",
+    "internationalShippingTitle": "国际运输咨询",
+    "internationalCountriesTitle": "目的地",
+    "internationalCountriesDesc": "请提供国家、城市和邮编，以确认服务范围与限制。",
+    "internationalCompaniesTitle": "承运与追踪",
+    "internationalCompaniesDesc": "请在报价中确认承运、追踪方式和目的地手续的责任。",
+    "internationalCostTitle": "总费用",
+    "internationalCostDesc": "付款前请索取货品、运输、税费及相关费用的分项总价。",
+    "internationalDocsTitle": "运输文件",
+    "internationalDocsDesc": "请说明所需文件和进口方资料，以确认可提供的文件。",
+    "warrantyPolicyTitle": "保修与退换条件",
+    "returnExchangePolicyTitle": "退换咨询",
+    "returnPeriodTitle": "问题申报期限",
+    "returnPeriodDesc": "请在报价或书面条款中确认本订单适用的问题申报期限。",
+    "returnConditionsTitle": "核对退换条件",
+    "returnCondition1": "记录收到货品时的状态。",
+    "returnCondition2": "问题解决前先询问是否可以清洗或使用。",
+    "returnCondition3": "保留包装、标签及订单记录以便核查。",
+    "returnReasonTitle": "报告问题",
+    "returnReasonDesc": "请提供订单编号与清晰照片，以核对适用条件。",
+    "returnProcessTitle": "处理流程",
+    "returnProcessStep1": "联系团队，说明问题并附上清晰产品照片。",
+    "returnProcessStep2": "等待产品检查和处理结果通知。",
+    "returnProcessStep3": "以书面确认检查结果、退运费用责任、退款方式与时间。",
+    "careInstructionsTitle": "产品护理",
+    "careWashTitle": "洗涤",
+    "careWashDesc": "使用具体产品标签注明的洗涤程序与水温。",
+    "careBleachTitle": "漂白剂",
+    "careBleachDesc": "仅在标签允许时使用漂白剂，不自行混合化学品。",
+    "careDryTitle": "干燥",
+    "careDryDesc": "按照标签干燥，不存放潮湿织物。",
+    "careIronTitle": "熨烫",
+    "careIronDesc": "核对熨烫标识，以及适合该成分的温度。",
+    "moreQuestionsTitle": "还有其他问题？",
+    "moreQuestionsDesc": "可致电 +66 81 851 9922 讨论订单。",
+    "commitmentText": "清楚了解产品和书面条件，再确认您的选择。"
+  },
+  "sizesPage": {
+    "mainTitle": "尺寸指南",
+    "mainDescription": "测量宽、长及包含加垫的总厚度，再对照具体产品。",
+    "standardSizesTitle": "目录尺寸参考",
+    "sizeTable": {
+      "header1": "类型",
+      "header2": "尺寸",
+      "header3": "尺寸（英寸）",
+      "header4": "选购说明",
+      "footerNote": "测量床垫宽度、长度及包含床褥垫的总厚度，再与具体床笠核对三项尺寸。当前目录的适配厚度包括 10 英寸和 12 英寸，并非所有商品均适用 14 英寸床垫。枕套、抱枕套和被套须分别测量。",
+      "row1": {
+        "category": "床笠",
+        "size": "3.5 英尺",
+        "dimensions": "42 英寸宽；厚度 10 英寸",
+        "details": "确认所选产品长度"
+      },
+      "row2": {
+        "category": "床笠",
+        "size": "5 英尺",
+        "dimensions": "60 英寸宽；厚度 10 英寸",
+        "details": "测量厚度时包含加垫"
+      },
+      "row3": {
+        "category": "床笠",
+        "size": "6 英尺",
+        "dimensions": "72 英寸宽；厚度 12 英寸",
+        "details": "不能统一按14英寸适配"
+      },
+      "row4": {
+        "category": "枕套",
+        "size": "标准",
+        "dimensions": "20 × 30 英寸",
+        "details": "确认开口方式与枕芯尺寸"
+      },
+      "row5": {
+        "category": "平床单",
+        "size": "3.5 英尺",
+        "dimensions": "72 × 110 英寸",
+        "details": "布料尺寸，不是床垫尺寸"
+      },
+      "row6": {
+        "category": "长枕套",
+        "size": "按货号",
+        "dimensions": "14 × 44 / 27 × 40 英寸",
+        "details": "确认平铺尺寸或周长，不等于直径"
+      },
+      "row7": {
+        "category": "被套",
+        "size": "3.5 英尺",
+        "dimensions": "70 × 90 英寸",
+        "details": "不自动包含被芯"
+      },
+      "row8": {
+        "category": "平床单",
+        "size": "5 英尺",
+        "dimensions": "90 × 110 英寸",
+        "details": "预留塞入床垫下方的布料"
+      },
+      "row9": {
+        "category": "被套",
+        "size": "5 英尺",
+        "dimensions": "90 × 90 英寸",
+        "details": "与实际被芯尺寸匹配"
+      },
+      "row10": {
+        "category": "被套",
+        "size": "6 英尺",
+        "dimensions": "100 × 90 英寸",
+        "details": "确认宽度和长度方向"
+      },
+      "row11": {
+        "category": "平床单",
+        "size": "6 英尺",
+        "dimensions": "110 × 110 英寸",
+        "details": "布料尺寸，不是床垫尺寸"
+      },
+      "row12": {
+        "category": "浴巾",
+        "size": "按款式",
+        "dimensions": "27 × 54 / 30 × 60 英寸",
+        "details": "订购前确认每打重量与价格单位"
+      }
+    },
+    "mattressDepth": {
+      "title": "为什么床垫厚度很重要？",
+      "p1": "要让床笠合适，应测量床垫的总厚度。",
+      "p2": "测量床垫宽度、长度及包含床褥垫的总厚度，再与具体床笠核对三项尺寸。当前目录的适配厚度包括 10 英寸和 12 英寸，并非所有商品均适用 14 英寸床垫。枕套、抱枕套和被套须分别测量。",
+      "example": "例：厚12英寸的床垫不应选择仅适配10英寸的床笠。"
+    },
+    "customSizes": {
+      "title": "需要特殊尺寸？",
+      "description": "请提供宽、长和厚度，以便确认合适选项；询问不代表确认定制生产。",
+      "ctaButton": "咨询尺寸"
+    }
   }
 }

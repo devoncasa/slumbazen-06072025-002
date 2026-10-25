@@ -4,3 +4,5 @@
 .active-filters{display:flex;flex-wrap:wrap;gap:10px;margin-top:15px}.active-filters button{font-size:.8rem;padding:6px 12px}.filters summary{overflow-wrap:anywhere}
 .mobile-nav nav a{min-height:44px;padding:8px 0}.contact>a{padding-block:8px}.enquiry-preview{font-size:.85rem;white-space:pre-wrap}
 .comparison{width:100%;border-collapse:collapse;table-layout:fixed;font-size:.9rem}.comparison th,.comparison td{padding:15px 10px;border-bottom:1px solid var(--border);text-align:start;overflow-wrap:anywhere}.comparison th:first-child{width:30%}
+
+.site-header>.wordmark{display:flex;align-items:center;gap:10px}.brand-logo{width:44px;height:44px;flex:none}.wordmark .brand-name{font-size:1em;letter-spacing:normal;color:#34384a}@media(max-width:420px){.site-header .brand-name{display:none}}

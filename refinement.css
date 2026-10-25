@@ -27,3 +27,8 @@ html[lang=en] .editorial-hero h1{font-family:Georgia,'Times New Roman',serif;fon
 .brand-lockup{flex-shrink:0;white-space:nowrap}.brand-controls{flex-shrink:0}
 @media(max-width:767px){.legacy-site .section-navigation{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;max-width:100%;white-space:nowrap;scrollbar-width:thin;padding-block:8px}.section-navigation a{flex:none;min-height:44px;display:flex;align-items:center}.legacy-site>header .min-h-20{min-height:68px}}
 @media(max-width:420px){.brand-lockup{gap:7px}.brand-lockup img{height:34px;width:34px}.brand-lockup>span{font-size:16px;margin:0!important}.brand-controls .language-control{padding:0;margin:0;border:0}.brand-controls #language-menu-button{padding:7px 5px;gap:0}.brand-controls #language-menu-button>svg:first-child{display:none}.brand-controls #language-menu-button>span{margin-inline:3px}.brand-controls #language-menu-button>svg:last-child{width:16px}.legacy-site>header>.container{padding-inline:12px}}
+
+/* Let editorial frames follow each source image, without empty ratio boxes. */
+.legacy-site .inline-photo-frame{aspect-ratio:auto;line-height:0}
+.legacy-site .inline-photo-frame>.textile-photo-trigger{height:auto;aspect-ratio:auto;border-radius:inherit!important}
+.legacy-site .inline-photo-frame>.textile-photo-trigger>img{width:100%;height:auto!important;aspect-ratio:auto;object-fit:contain;transform:none}

@@ -31,4 +31,4 @@ html[lang=en] .editorial-hero h1{font-family:Georgia,'Times New Roman',serif;fon
 /* Let editorial frames follow each source image, without empty ratio boxes. */
 .legacy-site .inline-photo-frame{aspect-ratio:auto;line-height:0}
 .legacy-site .inline-photo-frame>.textile-photo-trigger{height:auto;aspect-ratio:auto;border-radius:inherit!important}
-.legacy-site .inline-photo-frame>.textile-photo-trigger>img{width:100%;height:auto!important;aspect-ratio:auto;object-fit:contain;transform:none}
+.legacy-site .inline-photo-frame>.textile-photo-trigger>img{width:100%;height:auto!important;object-fit:contain;transform:none}

@@ -1,3 +1,4 @@
+import {catalogueSizeDimensions,productFacts} from '../catalogueSpecs';
 import {loadLocale} from '../localeResources';
 import React from 'react';import {renderToString} from 'react-dom/server';import {MemoryRouter} from 'react-router-dom';import assert from 'node:assert/strict';import fs from 'node:fs';import {SiteRoutes,paths,articleSlugs} from '../App';import {copy,languages} from '../content';import {products} from '../products';
 await Promise.all(languages.map(loadLocale));
@@ -21,3 +22,5 @@ const flatten=(x:any,p=''):Record<string,any>=>x&&typeof x==='object'&&!Array.is
 const english=flatten(JSON.parse(fs.readFileSync('public/locales/en/translation.json','utf8')));const active=Object.keys(english).filter(k=>activeSections.includes(k.split('.')[0]));
 for(const lang of languages){const actual=flatten(JSON.parse(fs.readFileSync('public/locales/'+lang+'/translation.json','utf8')));for(const key of active){assert(key in actual,lang+' missing '+key);const variables=(s:string)=>[...String(s).matchAll(/{{(.*?)}}/g)].map(m=>m[1]).sort();assert.deepEqual(variables(actual[key]),variables(english[key]),lang+' interpolation '+key);}}
 console.log(JSON.stringify({restoredCustomerFacingKeys:active.length,restoredLocaleGaps:0,interpolationChecked:true}));
+
+for(const lang of languages){const dims=catalogueSizeDimensions(lang);assert.equal(dims.length,12);assert(dims.every(Boolean));assert(dims[3].includes('20'));assert(dims[3].includes('30'));}assert.equal(productFacts(products.find(p=>p.id==='PC-STD-ST370P-091')!).width,20);

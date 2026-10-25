@@ -2,3 +2,10 @@ node_modules/
 dist/
 .env*
 .prerender.mjs
+
+# Local verification artifacts
+.interaction-*.mjs
+.content.json
+.content.mjs
+.products.mjs
+.check.mjs

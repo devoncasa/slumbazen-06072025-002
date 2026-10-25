@@ -18,6 +18,7 @@ export function productFacts(p:Product){
  return {raw,fitted,nominal,fit,listed,weight,width:listed&&p.productType.key!=='bolsterCase'?listed[0]:undefined,length:listed&&p.productType.key!=='bolsterCase'?listed[1]:undefined};
 }
 export function measure(value:number,lang:string){const w=specWords[lang]||specWords.en;const fmt=new Intl.NumberFormat(lang,{maximumFractionDigits:1});return `${fmt.format(value)} ${w.inch} · ${fmt.format(value*2.54)} ${w.cm}`;}
+export function productSizeLabel(p:Product,lang:string){const f=productFacts(p);return f.listed?f.listed.map(n=>new Intl.NumberFormat(lang).format(n)).join(' × ')+' '+specWords[lang].inch:p.size[lang as 'en'];}
 export function productDescription(p:Product,lang:string){
  const c=copy[lang]||copy.en;const w=specWords[lang]||specWords.en;const f=productFacts(p);const size=f.listed?f.listed.map(n=>new Intl.NumberFormat(lang).format(n)).join(' × ')+' '+w.inch:p.size[lang as 'en'];const index=products.findIndex(x=>x.id===p.id);
  const facts=`${p.productType[lang as 'en']} · ${p.fabricType[lang as 'en']} · ${p.pattern[lang as 'en']} · ${size}`;
@@ -38,3 +39,15 @@ export function productDescription(p:Product,lang:string){
  return {description,selection,facts,meta:`${p.id} · ${facts}. ${lang==='th'?'ดูขนาด วิธีเลือก และเตรียมข้อมูลสอบถาม':lang==='zh'?'查看尺寸、选用建议与询价信息':lang==='ar'?'راجع المقاسات وإرشادات الاختيار والاستفسار':lang==='hi'?'माप, चयन के सुझाव और पूछताछ की जानकारी देखें':'Explore dimensions, selection guidance and enquiry details'}.`};
 }
 export function productSchema(p:Product,lang:string,origin:string){const f=productFacts(p);const d=productDescription(p,lang);const w=specWords[lang];return {'@context':'https://schema.org','@type':'Product',name:`${p.productType[lang as 'en']} · ${p.id}`,sku:p.id,url:origin+'/'+lang+'/product/'+p.id.toLowerCase()+'/',description:d.description,image:origin+p.imageUrl,brand:{'@type':'Brand',name:'SlumbaZEN'},material:p.fabricType[lang as 'en'],color:copy[lang].white,size:p.size[lang as 'en'],...(f.width?{width:{'@type':'QuantitativeValue',value:f.width,unitCode:'INH'}}:{}),additionalProperty:[...(f.length?[{'@type':'PropertyValue',name:w.length,value:f.length,unitCode:'INH'}]:[]),...(f.nominal?[{'@type':'PropertyValue',name:w.nominal,value:f.nominal,unitCode:'INH'}]:[]),...(f.fit?[{'@type':'PropertyValue',name:w.fit,value:f.fit,unitCode:'INH'}]:[])]};}
+
+/** Dimensions used by the public size guide, derived from catalogue records. */
+export function catalogueSizeDimensions(lang:string){
+ const w=specWords[lang];const find=(type:string,test:(f:ReturnType<typeof productFacts>)=>boolean)=>products.find(p=>p.productType.key===type&&test(productFacts(p)))!;
+ const fitted=[42,60,72].map(width=>{const f=productFacts(find('fittedSheet',f=>f.nominal===width));return `${w.nominal}: ${measure(f.nominal!,lang)}; ${w.fit}: ${measure(f.fit!,lang)}`});
+ const pair=(p:Product)=>{const f=productFacts(p);return f.listed?.map(n=>measure(n,lang)).join(' × ')||p.size[lang as 'en']};
+ const list=(type:string)=>[...new Set(products.filter(p=>p.productType.key===type).map(p=>productFacts(p).listed?.join(' × ')).filter(Boolean))].join(' / ')+' '+w.inch;
+ return [...fitted,pair(find('pillowCase',()=>true)),pair(find('flatSheet',f=>f.width===72)),list('bolsterCase'),pair(find('duvetCover',f=>f.width===70)),pair(find('flatSheet',f=>f.width===90)),pair(find('duvetCover',f=>f.width===90)),pair(find('duvetCover',f=>f.width===100)),pair(find('flatSheet',f=>f.width===110)),list('towel')];
+}
+
+// Retained bath-mat reference from the original towel page; no invented SKU or offer.
+export const bathMatReference={listed:[18,28],weight:8};

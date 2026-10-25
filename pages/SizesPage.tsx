@@ -1,3 +1,4 @@
+import {catalogueSizeDimensions} from '../catalogueSpecs';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -58,10 +59,11 @@ const SizesPage: React.FC = () => {
     ["sizesPage.sizeTable.row9.category", "sizesPage.sizeTable.row9.size", "sizesPage.sizeTable.row9.dimensions", "sizesPage.sizeTable.row9.details"], ["sizesPage.sizeTable.row10.category", "sizesPage.sizeTable.row10.size", "sizesPage.sizeTable.row10.dimensions", "sizesPage.sizeTable.row10.details"],
     ["sizesPage.sizeTable.row11.category", "sizesPage.sizeTable.row11.size", "sizesPage.sizeTable.row11.dimensions", "sizesPage.sizeTable.row11.details"], ["sizesPage.sizeTable.row12.category", "sizesPage.sizeTable.row12.size", "sizesPage.sizeTable.row12.dimensions", "sizesPage.sizeTable.row12.details"],
   ];
-  const translatedSizesData = commonSizesDataContent.map(row => 
+  const catalogueDimensions=catalogueSizeDimensions(currentLang);
+  const translatedSizesData = commonSizesDataContent.map((row,rowIndex) => 
     row.map((cellKey, index) => {
       const translatedCell = t(cellKey);
-      return index === 2 ? formatDimension(translatedCell) : translatedCell;
+      return index === 2 ? catalogueDimensions[rowIndex] : translatedCell;
     })
   );
 

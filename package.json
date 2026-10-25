@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "node scripts/restore-assets.mjs && vite build && node scripts/build.mjs",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check": "npm run build && tsc --noEmit && node scripts/check-all.mjs"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -23,6 +24,7 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "autoprefixer": "^10.6.1",
+    "jsdom": "^26.1.0",
     "postcss": "^8.5.31",
     "tailwindcss": "^3.4.19",
     "typescript": "~5.7.2",

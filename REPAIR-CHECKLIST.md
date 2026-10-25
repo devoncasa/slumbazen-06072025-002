@@ -69,3 +69,11 @@ The earlier simplified release replaced too much original content. Original page
 - Fine image frames and section borders, a subtle room background, active section guide, reading progress, session-local recently-viewed products and accessible image enlargement added. No messages are sent by these interactions.
 - Source image generation prompts: natural daylight, realistic textile loops/folds/stitching, warm ivory/clay palette, landscape 4:3, no brand/factory/customer-project claims, no logos/text. Built-in image generation used; final optimized assets stored under public/assets/editorial.
 - Recoverable previous release: backup/slumbazen-before-content-restoration-20261025.
+
+Final restoration verification:
+- Static production build and TypeScript checks pass.
+- 615 localized HTML routes checked; 530 localized product meta descriptions are unique.
+- 486 restored customer-facing source keys have no gaps in all five locales; interpolation variables checked.
+- Simulated-DOM component checks pass for 70 top-level routes, draft preservation, sample intent, asynchronous Arabic switching/RTL, copied product dimensions, quantity validation, recently-viewed storage, menu Escape and dialog component state. Native layout, native focus/clipboard and actual image decoding are not measured by these component checks.
+- Actual rendered preview spot checks confirmed the restored Thai towel/hotel/collections/size layouts at five widths, and the framed Thai product page. Two wider DOM readings during a subsequent Thai matrix disappeared after styles loaded; the material page settled at scrollWidth=clientWidth=345.
+- The cloud browser tool then failed with “native credential state cannot be safely resumed” and could not reopen tabs after reset. The final full viewport/language matrix and native dialog/focus checks remain unverified; no claim is made that these passed.

@@ -1,3 +1,7 @@
+import {products} from '../products';
+import {productFacts,specWords,bathMatReference} from '../catalogueSpecs';
+import {copy} from '../content';
+import Button from '../components/Button';
 
 
 
@@ -65,7 +69,10 @@ const towelProducts: TowelProduct[] = [
 ];
 
 const ProductCard: React.FC<{ product: TowelProduct }> = ({ product }) => {
-    const { t } = useTranslation();
+    const { t,i18n } = useTranslation();
+    const w=specWords[i18n.language]||specWords.en;
+    const c=copy[i18n.language]||copy.en;
+    const towelItems=products.filter(p=>p.productType.key==='towel');
 
     const isBathMat = product.key === 'bathMat';
     const bathMatDecorativeImages = [
@@ -104,19 +111,20 @@ const ProductCard: React.FC<{ product: TowelProduct }> = ({ product }) => {
                 )}
                 
                 <div className="space-y-4">
-                    {product.variants.map((variant: TowelVariant) => (
+                    {product.variants.map((variant: TowelVariant,index:number) => (
                         <div key={variant.nameKey} className="flex items-center justify-between p-4 rounded-lg bg-brand-light/70 border border-neutral-200/80">
                             <div>
                                 <p className="font-semibold text-brand-dark">{t(variant.nameKey)}</p>
-                                <p className="text-sm text-neutral-600">{t(variant.specKey)}</p>
+                                <p className="text-sm text-neutral-600">{(isBathMat?bathMatReference.listed:productFacts(towelItems[index]).listed)!.join(' × ')} {w.inch} · {w.weight}: {isBathMat?bathMatReference.weight:productFacts(towelItems[index]).weight} {w.lb}</p>
                             </div>
                             <div className="text-end">
                                 <p className="text-sm text-neutral-500">{t('towelsPage.suitability')}</p>
-                                <p className="font-medium text-neutral-800">{t(variant.suitabilityKey)}</p>
+                                <p className="font-medium text-neutral-800">{t(variant.suitabilityKey)}</p><Button to={isBathMat?`/${i18n.language}/contact?subject=BathMatInquiry&item=${encodeURIComponent(t(product.nameKey))}&dimensions=18x28in`:`/${i18n.language}/product/${towelItems[index].id.toLowerCase()}/`} variant="link" size="small">{isBathMat?c.enquire:c.details} →</Button>
                             </div>
                         </div>
                     ))}
                 </div>
+                <p className="small">{w.weightPending}</p>
                 <p className="mt-6 text-xs text-neutral-500 italic text-center">{t(product.techTipKey)}</p>
             </div>
         </div>

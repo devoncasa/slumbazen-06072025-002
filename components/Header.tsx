@@ -168,7 +168,7 @@ const Header: React.FC = () => {
                       <span className={`${isActive ? 'font-semibold' : ''}`}>{t(item.labelKey)}</span>
                       <svg className={`ms-1 h-4 w-4 transform transition-transform duration-200 ${openDropdown === item.id ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
                     </button>
-                    <div className={`absolute start-1/2 -translate-x-1/2 mt-3 w-60 rounded-xl shadow-2xl bg-white/80 backdrop-blur-lg ring-1 ring-black ring-opacity-5 p-2.5 z-20 transition-all duration-300 ease-in-out transform
+                    <div inert={openDropdown!==item.id} aria-hidden={openDropdown!==item.id} className={`absolute start-1/2 -translate-x-1/2 mt-3 w-60 rounded-xl shadow-2xl bg-white/80 backdrop-blur-lg ring-1 ring-black ring-opacity-5 p-2.5 z-20 transition-all duration-300 ease-in-out transform
                                      ${openDropdown === item.id ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
                         {item.subItems.map((subItem) => (
                           <Link key={subItem.to} to={`${langPrefix}${subItem.to}`} onClick={closeMenus}
@@ -201,6 +201,8 @@ const Header: React.FC = () => {
                 <div
                     className={`absolute end-0 mt-3 w-52 rounded-xl shadow-2xl bg-white/80 backdrop-blur-lg ring-1 ring-black ring-opacity-5 p-2.5 z-20 transition-all duration-300 ease-in-out transform
                                 ${isLangDropdownOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}
+                    inert={!isLangDropdownOpen}
+                    aria-hidden={!isLangDropdownOpen}
                     role="menu"
                     aria-orientation="vertical"
                     aria-labelledby="language-menu-button"
@@ -261,6 +263,8 @@ const Header: React.FC = () => {
                           </button>
                           <div
                             id={`mobile-submenu-${item.id}`}
+                            inert={openDropdown!==item.id}
+                            aria-hidden={openDropdown!==item.id}
                             className={`overflow-hidden transition-all duration-300 ease-in-out ${openDropdown === item.id ? 'max-h-screen' : 'max-h-0'}`}
                           >
                             <div className="ps-4 pt-2 pb-2 space-y-1 border-s-2 border-brand-secondary/70 ms-2 my-2">

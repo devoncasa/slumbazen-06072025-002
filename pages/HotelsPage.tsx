@@ -84,9 +84,58 @@ const HotelInfoTable: React.FC<{ headerKeys: string[]; data: (string | React.Rea
   );
 };
 
+const hospitalityGalleryCopy: Record<string, { title: string; intro: string; items: { title: string; alt: string; description: string }[] }> = {
+  th: {
+    title: 'ภาพบรรยากาศสำหรับงานบริการที่พัก',
+    intro: 'ภาพประกอบเพื่อช่วยให้เห็นบริบทการเลือกเครื่องนอนและผ้าห้องน้ำสำหรับที่พัก ภาพเหล่านี้สื่อบรรยากาศ ไม่ได้ระบุว่าเป็นผลงานของโรงแรมหรือภาพสินค้ารุ่นใดโดยเฉพาะ',
+    items: [
+      { title: 'ห้องพักพร้อมเตียงที่จัดเตรียมแล้ว', alt: 'ห้องพักโรงแรมโทนอบอุ่นพร้อมเตียงปูผ้าสีขาวและแสงธรรมชาติ', description: 'พิจารณาผิวสัมผัส สี และขนาดที่เหมาะกับภาพรวมของห้องพัก' },
+      { title: 'การจัดผ้าปูในห้องพัก', alt: 'มือพนักงานจัดผ้าปูสีขาวและสอดชายผ้าไว้ใต้ที่นอน', description: 'การเลือกผ้าปูควรคำนึงถึงขนาดเตียงและวิธีจัดเตียงที่ใช้งานจริง' },
+      { title: 'ผ้าขนหนูในห้องน้ำ', alt: 'ผ้าขนหนูสีขาวพับวางบนเคาน์เตอร์หินในห้องน้ำโรงแรม', description: 'เลือกขนาดและปริมาณให้สอดคล้องกับการใช้งานและรอบซักของที่พัก' },
+    ],
+  },
+  en: {
+    title: 'Hospitality settings, considered',
+    intro: 'Editorial images to help place bedding and bath linen choices in a guest accommodation context. These are illustrative scenes, not named hotel projects or photographs of a specific product SKU.',
+    items: [
+      { title: 'A guest room, ready for arrival', alt: 'Warm hotel guest room with a white made bed and natural window light', description: 'Consider how textile texture, color and scale sit within the room.' },
+      { title: 'Preparing the bed', alt: 'Room attendant’s hands tucking a white flat sheet beneath a mattress', description: 'Choose linen with the bed dimensions and your real bed-making routine in mind.' },
+      { title: 'Bath linen in context', alt: 'White towels folded on a stone counter in a hotel bathroom', description: 'Match towel dimensions and quantities to guest use and laundry cycles.' },
+    ],
+  },
+  zh: {
+    title: '酒店客房场景参考',
+    intro: '这些编辑摄影用于展示住宿空间中床品与浴室布草的使用情境。图片仅作氛围示意，不代表特定酒店项目或具体 SKU 商品实拍。',
+    items: [
+      { title: '准备妥当的客房', alt: '暖色调酒店客房，白色床铺与自然窗光', description: '结合房间整体效果考虑织物质感、颜色与尺寸比例。' },
+      { title: '铺床整理', alt: '客房工作人员将白色平铺床单塞入床垫下方', description: '选择床品时请结合床垫尺寸和实际铺床流程。' },
+      { title: '浴室布草情境', alt: '白色毛巾整齐叠放在酒店浴室石材台面上', description: '按宾客用途和洗涤周期确认毛巾尺寸与数量。' },
+    ],
+  },
+  ar: {
+    title: 'مشاهد إرشادية لقطاع الضيافة',
+    intro: 'صور تحريرية توضح سياق اختيار مفروشات الأسرّة ومناشف الحمام لأماكن الإقامة. الصور توضيحية ولا تمثل مشروع فندق محدداً أو تصويراً لرمز منتج بعينه.',
+    items: [
+      { title: 'غرفة جاهزة لاستقبال الضيوف', alt: 'غرفة فندقية دافئة بسرير أبيض وضوء طبيعي من النافذة', description: 'راعِ ملمس الأقمشة وألوانها ومقاسها ضمن تصميم الغرفة.' },
+      { title: 'ترتيب السرير', alt: 'يدا موظف يطويان شرشفاً أبيض مسطحاً تحت المرتبة', description: 'اختر المفروشات وفق مقاس السرير وطريقة ترتيبه الفعلية.' },
+      { title: 'مناشف الحمام في سياقها', alt: 'مناشف بيضاء مطوية على سطح حجري في حمام فندقي', description: 'طابق مقاسات المناشف وكمياتها مع استخدام الضيوف ودورات الغسيل.' },
+    ],
+  },
+  hi: {
+    title: 'आतिथ्य स्थलों के लिए दृश्य संदर्भ',
+    intro: 'ये संपादकीय चित्र ठहरने की जगहों में बिस्तर और स्नान लिनन के उपयोग का संदर्भ दिखाते हैं। ये केवल उदाहरणात्मक दृश्य हैं; किसी होटल परियोजना या विशिष्ट SKU की वास्तविक तस्वीर नहीं।',
+    items: [
+      { title: 'अतिथि के लिए तैयार कमरा', alt: 'सफेद बिस्तर और प्राकृतिक खिड़की की रोशनी वाला गर्मजोशी भरा होटल कमरा', description: 'कमरे में कपड़े की बनावट, रंग और आकार के मेल पर विचार करें।' },
+      { title: 'बिस्तर तैयार करना', alt: 'कर्मचारी के हाथ सफेद फ्लैट शीट को गद्दे के नीचे दबाते हुए', description: 'बिस्तर के माप और वास्तविक बिस्तर बनाने की प्रक्रिया के अनुसार लिनन चुनें।' },
+      { title: 'बाथ लिनन का संदर्भ', alt: 'होटल बाथरूम के पत्थर के काउंटर पर तह किए सफेद तौलिए', description: 'तौलियों का आकार और मात्रा अतिथि उपयोग तथा धुलाई चक्र से मिलाएँ।' },
+    ],
+  },
+};
+
 export default function HotelsPage() {
   const { t, i18n } = useTranslation();
   const langPrefix = `/${i18n.language}`;
+  const galleryCopy = hospitalityGalleryCopy[i18n.language] || hospitalityGalleryCopy.en;
   const siteName = "Slumbazen";
   const pageTitle = t('seo.hotels.title', { siteName });
   const pageDescription = t('seo.hotels.description');
@@ -192,6 +241,37 @@ export default function HotelsPage() {
             </section>
 
             <OriginalGallery images={slideshowImages} title={t('hotelsPage.whyChooseUs.slideshowAlt')} />
+            <section id="hospitality-gallery" aria-labelledby="hospitality-gallery-heading" className="mb-20 sm:mb-28 p-6 sm:p-8 relative overflow-hidden rounded-2xl border border-[#d7c8b4] bg-white/55">
+              <div className="relative z-10">
+                <h2 id="hospitality-gallery-heading" className="text-3xl sm:text-4xl font-semibold text-neutral-900 mb-4 text-center">{galleryCopy.title}</h2>
+                <p className="max-w-4xl mx-auto text-center text-neutral-700 mb-8">{galleryCopy.intro}</p>
+                <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8">
+                  {[
+                    { image: 'hotel-guest-room', item: galleryCopy.items[0] },
+                    { image: 'hotel-linen-prep', item: galleryCopy.items[1] },
+                    { image: 'hotel-bath-towels', item: galleryCopy.items[2] },
+                  ].map(({ image, item }) => (
+                    <figure key={image} className="overflow-hidden rounded-xl border border-[#d7c8b4] bg-white p-1 shadow-sm">
+                      <img
+                        src={`/assets/editorial/${image}.webp`}
+                        srcSet={`/assets/editorial/${image}-640.webp 640w, /assets/editorial/${image}.webp 1200w`}
+                        sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 33vw"
+                        alt={item.alt}
+                        width="1200"
+                        height="900"
+                        loading="lazy"
+                        decoding="async"
+                        className="aspect-[4/3] w-full rounded-lg object-cover"
+                      />
+                      <figcaption className="px-4 py-4">
+                        <h3 className="text-lg font-semibold text-neutral-900">{item.title}</h3>
+                        <p className="mt-2 text-sm leading-relaxed text-neutral-700">{item.description}</p>
+                      </figcaption>
+                    </figure>
+                  ))}
+                </div>
+              </div>
+            </section>
             <section id="expert-hotel-advice" aria-labelledby="expert-advice-heading" className="mb-20 sm:mb-28 p-8 -m-8 relative overflow-hidden rounded-2xl bg-brand-light/50">
               <div className="relative z-10">
                   <h2 id="expert-advice-heading" className="text-4xl sm:text-5xl font-bold text-neutral-900 mb-12 text-center">

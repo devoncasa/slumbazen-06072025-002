@@ -219,13 +219,15 @@ export default function HotelsPage() {
                     <h2 id="why-choose-us-heading" className="text-4xl sm:text-5xl font-bold text-neutral-900 mb-16 text-center">
                         {t('hotelsPage.whyChooseUs.title')}
                     </h2>
-                    <div className="grid lg:grid-cols-2 gap-12 items-center">
+                    <div className="grid lg:grid-cols-2 gap-12 items-start">
                         <div>
                             <InlineImage
                                 src="/assets/editorial/hospitality-room.webp"
                                 alt={t('hotelsPage.whyChooseUs.slideshowAlt')}
                                 aspectRatio="4/3"
                             />
+                            <InlineImage src="/assets/editorial/hotel-twin-room.webp" alt={galleryCopy.items[0].title} aspectRatio="4/3" />
+                            <InlineImage src="/assets/editorial/hotel-linen-shelf.webp" alt={galleryCopy.items[1].title} aspectRatio="4/3" />
                         </div>
                         <div className="grid md:grid-cols-2 gap-8">
                             {whyChooseUsCards.map(card => (
@@ -254,7 +256,7 @@ export default function HotelsPage() {
                     <figure key={image} className="overflow-hidden rounded-xl border border-[#d7c8b4] bg-white p-1 shadow-sm">
                       <img
                         src={`/assets/editorial/${image}.webp`}
-                        srcSet={`/assets/editorial/${image}-640.webp 640w, /assets/editorial/${image}.webp 1200w`}
+                        srcSet={image === 'hotel-bath-towels' ? undefined : `/assets/editorial/${image}-640.webp 640w, /assets/editorial/${image}.webp 1200w`}
                         sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 33vw"
                         alt={item.alt}
                         width="1200"

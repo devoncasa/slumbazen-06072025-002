@@ -50,3 +50,14 @@ console.log(JSON.stringify({internalLinks:linkCount,brokenLinks:0,metadataParity
 // Counts must match the original SKU record; towels never acquire a thread count.
 for(const p of products){const raw=productFacts(p).raw;const expected=Number(raw.spec.match(/(\d+)\s*Thread Count/i)?.[1]||0);assert.equal(p.threadCount,expected,p.id);for(const lang of languages){const html=fs.readFileSync('dist/'+lang+'/product/'+p.id.toLowerCase()+'/index.html','utf8');if(expected){assert(html.includes('threads per square inch'),p.id+' schema unit');assert(html.includes('"value":'+expected),p.id+' count');}else assert(!html.includes('"unitText":"threads per square inch"'),p.id+' no TC');}}
 console.log(JSON.stringify({catalogueThreadCounts:products.filter(p=>p.threadCount).length,ownerConfirmedUnit:'threads per square inch',localizedThreadCountPages:products.filter(p=>p.threadCount).length*languages.length}));
+
+// Each SKU has its own responsive illustration while supplier assets remain intact.
+assert.equal(new Set(products.map(p=>p.imageUrl)).size,products.length);
+for(const p of products){
+ assert(p.imageIllustrative&&p.originalImageUrl);
+ assert(fs.existsSync('public'+p.originalImageUrl));
+ assert(fs.existsSync('public'+p.imageUrl));
+ assert(fs.existsSync('public'+p.imageUrl!.replace('.webp','-400.webp')));
+ for(const lang of languages){const html=fs.readFileSync('dist/'+lang+'/product/'+p.id.toLowerCase()+'/index.html','utf8');assert(html.includes(p.imageUrl!));assert(html.includes('photo-disclosure'));}
+}
+console.log(JSON.stringify({uniqueSkuIllustrations:products.length,responsiveProductImages:products.length*2,originalAssetsPreserved:true,localizedImageDisclosure:true}));

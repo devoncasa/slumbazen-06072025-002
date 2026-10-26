@@ -1,0 +1,2038 @@
+{
+  "created": "2026-10-26",
+  "method": "built-in imagegen",
+  "illustrative": true,
+  "roomReferences": [
+    "Gemini_Generated_Image_mddt0smddt0smddt.jpeg",
+    "Gemini_Generated_Image_m5cqb6m5cqb6m5cq.jpeg",
+    "Gemini_Generated_Image_uu0ionuu0ionuu0i.jpeg"
+  ],
+  "products": [
+    {
+      "sku": "FS-S35-ST370P-001",
+      "originalImage": "/assets/catalogue-03.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "3.5 ฟุต x 10 นิ้ว",
+        "fabric": "Soft tex",
+        "spec": "370 Thread Count / Plain Pattern / White"
+      },
+      "camera": "three-quarter from foot-left at mattress height",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-7c02df32-1d91-4bdc-a5f2-8e73b74b2467.png",
+      "imageUrl": "/assets/products/fs-s35-st370p-001.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-S35-ST370S-002",
+      "originalImage": "/assets/catalogue-04.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "3.5 ฟุต x 10 นิ้ว",
+        "fabric": "Soft tex",
+        "spec": "370 Thread Count / Striped Pattern / White"
+      },
+      "camera": "elevated three-quarter from foot-right",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-0659fc49-5bb2-4c52-b38e-2bb89f1ad3d9.png",
+      "imageUrl": "/assets/products/fs-s35-st370s-002.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-S35-C260S-003",
+      "originalImage": "/assets/catalogue-00.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "3.5 ฟุต x 10 นิ้ว",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "low oblique view from window side",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-2a5bb345-affe-48e8-85b4-722b115c4cce.png",
+      "imageUrl": "/assets/products/fs-s35-c260s-003.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-S35-C230P-004",
+      "originalImage": "/assets/catalogue-30.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "3.5 ฟุต x 10 นิ้ว",
+        "fabric": "Cotton 100%",
+        "spec": "230 Thread Count / Plain Pattern"
+      },
+      "camera": "calm straight-on view from foot of bed",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-77ea2cc9-2198-4586-8297-1fb007e97395.png",
+      "imageUrl": "/assets/products/fs-s35-c230p-004.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-S35-C260P-005",
+      "originalImage": "/assets/catalogue-40.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "3.5 ฟุต x 10 นิ้ว",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / Plain Pattern"
+      },
+      "camera": "close three-quarter at bedside",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-d72fdd32-7249-4fad-8c4e-8dc4d36893c5.png",
+      "imageUrl": "/assets/products/fs-s35-c260p-005.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-S35-C260S-006",
+      "originalImage": "/assets/catalogue-09.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "3.5 ฟุต x 10 นิ้ว",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "elevated diagonal from doorway",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-fed66cde-9e2e-4bb5-b7a7-9ba4bf98a4b4.png",
+      "imageUrl": "/assets/products/fs-s35-c260s-006.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-S35-C310P-007",
+      "originalImage": "/assets/catalogue-37.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "3.5 ฟุต x 10 นิ้ว",
+        "fabric": "Cotton 100%",
+        "spec": "310 Thread Count / Plain Pattern"
+      },
+      "camera": "near-overhead diagonal showing the textile",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-619d2309-c818-4cc4-9c2e-8b87d4403837.png",
+      "imageUrl": "/assets/products/fs-s35-c310p-007.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-S35-C310S-008",
+      "originalImage": "/assets/catalogue-02.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "3.5 ฟุต x 10 นิ้ว",
+        "fabric": "Cotton 100%",
+        "spec": "310 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "longer lens through doorway with gentle foreground blur",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-6b8d275a-3d89-4be9-b022-42ac3b2f3f70.png",
+      "imageUrl": "/assets/products/fs-s35-c310s-008.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-S35-CVC50-195P-009",
+      "originalImage": "/assets/catalogue-37.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "3.5 ฟุต x 10 นิ้ว",
+        "fabric": "CVC 50/50",
+        "spec": "195 Thread Count / Plain Pattern"
+      },
+      "camera": "wide view from terrace doorway",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-af0d7b14-17e6-42ab-bd1c-70ee6bfceb49.png",
+      "imageUrl": "/assets/products/fs-s35-cvc50-195p-009.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-S35-CVC60-260S-010",
+      "originalImage": "/assets/catalogue-02.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "3.5 ฟุต x 10 นิ้ว",
+        "fabric": "CVC 60/40",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "intimate crop at the bed edge",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-847203c3-490f-4e92-b0d9-5a920abef9d6.png",
+      "imageUrl": "/assets/products/fs-s35-cvc60-260s-010.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-Q50-ST370P-011",
+      "originalImage": "/assets/catalogue-37.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "5 ฟุต x 10 นิ้ว",
+        "fabric": "Soft tex",
+        "spec": "370 Thread Count / Plain Pattern / White"
+      },
+      "camera": "three-quarter from foot-left at mattress height",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-688b80f8-9bfb-4578-b115-d5becdb88658.png",
+      "imageUrl": "/assets/products/fs-q50-st370p-011.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-Q50-ST370S-012",
+      "originalImage": "/assets/catalogue-23.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "5 ฟุต x 10 นิ้ว",
+        "fabric": "Soft tex",
+        "spec": "370 Thread Count / Striped Pattern / White"
+      },
+      "camera": "elevated three-quarter from foot-right",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-43994a33-faba-41b1-b1a9-dfdf2dcd1e79.png",
+      "imageUrl": "/assets/products/fs-q50-st370s-012.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-Q50-C260S-013",
+      "originalImage": "/assets/catalogue-18.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "5 ฟุต x 10 นิ้ว",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "low oblique view from window side",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-e162f31d-bac3-448a-be1a-8fc0ebe9d8df.png",
+      "imageUrl": "/assets/products/fs-q50-c260s-013.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-Q50-C230P-014",
+      "originalImage": "/assets/catalogue-07.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "5 ฟุต x 10 นิ้ว",
+        "fabric": "Cotton 100%",
+        "spec": "230 Thread Count / Plain Pattern"
+      },
+      "camera": "calm straight-on view from foot of bed",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-b304b125-684a-46d6-8502-03e274837a2b.png",
+      "imageUrl": "/assets/products/fs-q50-c230p-014.webp",
+      "revision": 4
+    },
+    {
+      "sku": "FS-Q50-C260P-015",
+      "originalImage": "/assets/catalogue-30.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "5 ฟุต x 10 นิ้ว",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / Plain Pattern"
+      },
+      "camera": "close three-quarter at bedside",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-0d1fde74-d071-47b5-a481-10ff84ce46b3.png",
+      "imageUrl": "/assets/products/fs-q50-c260p-015.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-Q50-C260S-016",
+      "originalImage": "/assets/catalogue-26.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "5 ฟุต x 10 นิ้ว",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "elevated diagonal from doorway",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-523576e6-476d-4d18-b48c-5d2baebc349d.png",
+      "imageUrl": "/assets/products/fs-q50-c260s-016.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-Q50-C310P-017",
+      "originalImage": "/assets/catalogue-28.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "5 ฟุต x 10 นิ้ว",
+        "fabric": "Cotton 100%",
+        "spec": "310 Thread Count / Plain Pattern"
+      },
+      "camera": "near-overhead diagonal showing the textile",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-4bae2244-30a8-4209-a93c-2f83347c3b12.png",
+      "imageUrl": "/assets/products/fs-q50-c310p-017.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-Q50-C310S-018",
+      "originalImage": "/assets/catalogue-21.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "5 ฟุต x 10 นิ้ว",
+        "fabric": "Cotton 100%",
+        "spec": "310 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "longer lens through doorway with gentle foreground blur",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-5aab7d90-7f55-4da1-8c6d-4dd907869a07.png",
+      "imageUrl": "/assets/products/fs-q50-c310s-018.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-Q50-CVC50-195P-019",
+      "originalImage": "/assets/catalogue-28.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "5 ฟุต x 10 นิ้ว",
+        "fabric": "CVC 50/50",
+        "spec": "195 Thread Count / Plain Pattern"
+      },
+      "camera": "wide view from terrace doorway",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-5ce969d9-cefe-453f-a5d0-e4ec48e81581.png",
+      "imageUrl": "/assets/products/fs-q50-cvc50-195p-019.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-Q50-CVC60-260S-020",
+      "originalImage": "/assets/catalogue-21.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "5 ฟุต x 10 นิ้ว",
+        "fabric": "CVC 60/40",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "intimate crop at the bed edge",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-dc559c6b-f7f0-405f-9fdb-c6424048d2d7.png",
+      "imageUrl": "/assets/products/fs-q50-cvc60-260s-020.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-K60-ST370P-021",
+      "originalImage": "/assets/catalogue-28.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "6 ฟุต x 12 นิ้ว",
+        "fabric": "Soft tex",
+        "spec": "370 Thread Count / Plain Pattern / White"
+      },
+      "camera": "three-quarter from foot-left at mattress height",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-84c3bc10-4c3b-4e23-b28b-2c2cd5f0032c.png",
+      "imageUrl": "/assets/products/fs-k60-st370p-021.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-K60-ST370S-022",
+      "originalImage": "/assets/catalogue-12.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "6 ฟุต x 12 นิ้ว",
+        "fabric": "Soft tex",
+        "spec": "370 Thread Count / Striped Pattern / White"
+      },
+      "camera": "elevated three-quarter from foot-right",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-63de7879-6c7e-4b84-86f3-e10e4aacca03.png",
+      "imageUrl": "/assets/products/fs-k60-st370s-022.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-K60-C260S-023",
+      "originalImage": "/assets/catalogue-09.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "6 ฟุต x 12 นิ้ว",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "low oblique view from window side",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-3ccd68ad-1f00-44c8-857e-e33411ea02e1.png",
+      "imageUrl": "/assets/products/fs-k60-c260s-023.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-K60-C230P-024",
+      "originalImage": "/assets/catalogue-40.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "6 ฟุต x 12 นิ้ว",
+        "fabric": "Cotton 100%",
+        "spec": "230 Thread Count / Plain Pattern"
+      },
+      "camera": "calm straight-on view from foot of bed",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-3d627444-19c1-4b70-b342-89341396f02b.png",
+      "imageUrl": "/assets/products/fs-k60-c230p-024.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-K60-C260P-025",
+      "originalImage": "/assets/catalogue-07.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "6 ฟุต x 12 นิ้ว",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / Plain Pattern"
+      },
+      "camera": "close three-quarter at bedside",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-28120253-136a-473f-b5d3-d64c2775fc0f.png",
+      "imageUrl": "/assets/products/fs-k60-c260p-025.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-K60-C260S-026",
+      "originalImage": "/assets/catalogue-15.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "6 ฟุต x 12 นิ้ว",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "elevated diagonal from doorway",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-7b99a329-4b44-44b3-a24c-b9f865ddc495.png",
+      "imageUrl": "/assets/products/fs-k60-c260s-026.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-K60-C310P-027",
+      "originalImage": "/assets/catalogue-03.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "6 ฟุต x 12 นิ้ว",
+        "fabric": "Cotton 100%",
+        "spec": "310 Thread Count / Plain Pattern"
+      },
+      "camera": "near-overhead diagonal showing the textile",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-ade8f9c6-27ae-4d01-af31-8e0aa8576427.png",
+      "imageUrl": "/assets/products/fs-k60-c310p-027.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-K60-C310S-028",
+      "originalImage": "/assets/catalogue-10.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "6 ฟุต x 12 นิ้ว",
+        "fabric": "Cotton 100%",
+        "spec": "310 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "longer lens through doorway with gentle foreground blur",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-3be9f9e5-fab3-4473-8546-dea15fdefe1c.png",
+      "imageUrl": "/assets/products/fs-k60-c310s-028.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-K60-CVC50-195P-029",
+      "originalImage": "/assets/catalogue-03.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "6 ฟุต x 12 นิ้ว",
+        "fabric": "CVC 50/50",
+        "spec": "195 Thread Count / Plain Pattern"
+      },
+      "camera": "wide view from terrace doorway",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-0f4f6d74-a54e-44ed-9fbd-32d3d77c2c59.png",
+      "imageUrl": "/assets/products/fs-k60-cvc50-195p-029.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FS-K60-CVC60-260S-030",
+      "originalImage": "/assets/catalogue-10.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Fitted Sheet",
+        "size": "6 ฟุต x 12 นิ้ว",
+        "fabric": "CVC 60/40",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "intimate crop at the bed edge",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-cba673a7-7973-49d7-982b-cc7e74f68194.png",
+      "imageUrl": "/assets/products/fs-k60-cvc60-260s-030.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FL-S35-ST370P-031",
+      "originalImage": "/assets/catalogue-37.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "72\" x 110\" (for 3.5 ft)",
+        "fabric": "Soft tex",
+        "spec": "370 Thread Count / Plain Pattern / White"
+      },
+      "camera": "three-quarter from foot-left at mattress height",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-77d9e76d-7b8d-482a-a47e-cffd96866d20.png",
+      "imageUrl": "/assets/products/fl-s35-st370p-031.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-K60-CVC60-260S-090",
+      "originalImage": "/assets/catalogue-09.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "100\"x90\" (for 6 ft)",
+        "fabric": "CVC 60/40",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "elevated three-quarter from foot-right",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-aba9d351-550e-4246-9733-d9ea4aaf6fad.png",
+      "imageUrl": "/assets/products/dc-k60-cvc60-260s-090.webp",
+      "revision": 2
+    },
+    {
+      "sku": "PC-STD-ST370P-091",
+      "originalImage": "/assets/catalogue-08.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Pillow Case",
+        "size": "20\"x30\"x6\"",
+        "fabric": "Soft tex",
+        "spec": "370 Thread Count / Plain Pattern / White"
+      },
+      "camera": "low oblique view from window side",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-8a5d53c7-bf4f-461e-afa8-5505316979fb.png",
+      "imageUrl": "/assets/products/pc-std-st370p-091.webp",
+      "revision": 2
+    },
+    {
+      "sku": "PC-STD-ST370S-092",
+      "originalImage": "/assets/catalogue-23.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Pillow Case",
+        "size": "20\"x30\"x6\"",
+        "fabric": "Soft tex",
+        "spec": "370 Thread Count / Striped Pattern / White"
+      },
+      "camera": "calm straight-on view from foot of bed",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-b586839e-8077-4b80-88f0-275a611ec2ed.png",
+      "imageUrl": "/assets/products/pc-std-st370s-092.webp",
+      "revision": 2
+    },
+    {
+      "sku": "PC-STD-C260S-093",
+      "originalImage": "/assets/catalogue-18.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Pillow Case",
+        "size": "20\"x30\"x6\"",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "close three-quarter at bedside",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-1fa30895-9fe9-4dde-b79e-47978f827c65.png",
+      "imageUrl": "/assets/products/pc-std-c260s-093.webp",
+      "revision": 2
+    },
+    {
+      "sku": "PC-STD-C230P-094",
+      "originalImage": "/assets/catalogue-39.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Pillow Case",
+        "size": "20\"x30\"x6\"",
+        "fabric": "Cotton 100%",
+        "spec": "230 Thread Count / Plain Pattern"
+      },
+      "camera": "elevated diagonal from doorway",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-8b616c66-c585-4a38-969d-8fa67e8b1e5a.png",
+      "imageUrl": "/assets/products/pc-std-c230p-094.webp",
+      "revision": 2
+    },
+    {
+      "sku": "PC-STD-C260P-095",
+      "originalImage": "/assets/catalogue-05.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Pillow Case",
+        "size": "20\"x30\"x6\"",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / Plain Pattern"
+      },
+      "camera": "near-overhead diagonal showing the textile",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-16be8f08-4a35-46e3-bf15-9145735db1c4.png",
+      "imageUrl": "/assets/products/pc-std-c260p-095.webp",
+      "revision": 2
+    },
+    {
+      "sku": "PC-STD-C260S-096",
+      "originalImage": "/assets/catalogue-26.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Pillow Case",
+        "size": "20\"x30\"x6\"",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "longer lens through doorway with gentle foreground blur",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-3f56f3ae-eceb-4918-ba69-d203302dacf3.png",
+      "imageUrl": "/assets/products/pc-std-c260s-096.webp",
+      "revision": 2
+    },
+    {
+      "sku": "PC-STD-C310P-097",
+      "originalImage": "/assets/catalogue-01.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Pillow Case",
+        "size": "20\"x30\"x6\"",
+        "fabric": "Cotton 100%",
+        "spec": "310 Thread Count / Plain Pattern"
+      },
+      "camera": "wide view from terrace doorway",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-faf0b98e-b3f6-4014-9271-f06d99fabcd4.png",
+      "imageUrl": "/assets/products/pc-std-c310p-097.webp",
+      "revision": 2
+    },
+    {
+      "sku": "PC-STD-C310S-098",
+      "originalImage": "/assets/catalogue-21.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Pillow Case",
+        "size": "20\"x30\"x6\"",
+        "fabric": "Cotton 100%",
+        "spec": "310 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "intimate crop at the bed edge",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-0e163d06-b5fc-47f5-9f46-7c5332a4e076.png",
+      "imageUrl": "/assets/products/pc-std-c310s-098.webp",
+      "revision": 2
+    },
+    {
+      "sku": "PC-STD-CVC50-195P-099",
+      "originalImage": "/assets/catalogue-01.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Pillow Case",
+        "size": "20\"x30\"x6\"",
+        "fabric": "CVC 50/50",
+        "spec": "195 Thread Count / Plain Pattern"
+      },
+      "camera": "three-quarter from foot-left at mattress height",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-25d9b09f-3167-47a9-a488-c637161d0414.png",
+      "imageUrl": "/assets/products/pc-std-cvc50-195p-099.webp",
+      "revision": 2
+    },
+    {
+      "sku": "PC-STD-CVC60-260S-100",
+      "originalImage": "/assets/catalogue-26.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Pillow Case",
+        "size": "20\"x30\"x6\"",
+        "fabric": "CVC 60/40",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "elevated three-quarter from foot-right",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-4a7b326b-3a41-4c52-badc-071478dd9653.png",
+      "imageUrl": "/assets/products/pc-std-cvc60-260s-100.webp",
+      "revision": 2
+    },
+    {
+      "sku": "FL-S35-ST370S-101",
+      "originalImage": "/assets/catalogue-15.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "72\" x 110\" (for 3.5 ft)",
+        "fabric": "Soft tex",
+        "spec": "370 Thread Count / Striped Pattern / White"
+      },
+      "camera": "low oblique view from window side",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-998e6a82-d22a-493c-bce1-75d63bad201b.png",
+      "imageUrl": "/assets/products/fl-s35-st370s-101.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-S35-C260S-102",
+      "originalImage": "/assets/catalogue-10.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "72\" x 110\" (for 3.5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "calm straight-on view from foot of bed",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-cdae2e11-98bf-4123-a7c0-ce41b3b67bbf.png",
+      "imageUrl": "/assets/products/fl-s35-c260s-102.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-S35-C230P-103",
+      "originalImage": "/assets/catalogue-01.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "72\" x 110\" (for 3.5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "230 Thread Count / Plain Pattern"
+      },
+      "camera": "close three-quarter at bedside",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-c86b56e7-3f27-407e-9477-61aee890dd45.png",
+      "imageUrl": "/assets/products/fl-s35-c230p-103.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-S35-C260P-104",
+      "originalImage": "/assets/catalogue-08.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "72\" x 110\" (for 3.5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / Plain Pattern"
+      },
+      "camera": "elevated diagonal from doorway",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-48b0d2af-e605-4839-9b28-cc8a227f01c9.png",
+      "imageUrl": "/assets/products/fl-s35-c260p-104.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-S35-C260S-105",
+      "originalImage": "/assets/catalogue-18.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "72\" x 110\" (for 3.5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "near-overhead diagonal showing the textile",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-a707072f-0881-4388-9841-ff0454325ced.png",
+      "imageUrl": "/assets/products/fl-s35-c260s-105.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-S35-C310P-106",
+      "originalImage": "/assets/catalogue-05.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "72\" x 110\" (for 3.5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "310 Thread Count / Plain Pattern"
+      },
+      "camera": "longer lens through doorway with gentle foreground blur",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-01fa56a6-5053-4b4c-89f3-1a9ed262d6be.png",
+      "imageUrl": "/assets/products/fl-s35-c310p-106.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-S35-C310S-107",
+      "originalImage": "/assets/catalogue-12.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "72\" x 110\" (for 3.5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "310 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "wide view from terrace doorway",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-652aa140-8190-49cb-9516-042d3e90ea83.png",
+      "imageUrl": "/assets/products/fl-s35-c310s-107.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-S35-CVC50P-108",
+      "originalImage": "/assets/catalogue-05.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "72\" x 110\" (for 3.5 ft)",
+        "fabric": "CVC 50/50",
+        "spec": "195 Thread Count / Plain Pattern"
+      },
+      "camera": "intimate crop at the bed edge",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-cbf98fc4-2b7c-4e10-909b-37098ac6a3dc.png",
+      "imageUrl": "/assets/products/fl-s35-cvc50p-108.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-S35-CVC60S-109",
+      "originalImage": "/assets/catalogue-10.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "72\" x 110\" (for 3.5 ft)",
+        "fabric": "CVC 60/40",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "three-quarter from foot-left at mattress height",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-1b13a699-14d2-493d-b0c6-9bdf177e67bf.png",
+      "imageUrl": "/assets/products/fl-s35-cvc60s-109.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-Q50-ST370P-110",
+      "originalImage": "/assets/catalogue-05.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "90\" x 110\" (for 5 ft)",
+        "fabric": "Soft tex",
+        "spec": "370 Thread Count / Plain Pattern / White"
+      },
+      "camera": "elevated three-quarter from foot-right",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-4b5ac7c7-0951-40a5-9734-6005bb3f533c.png",
+      "imageUrl": "/assets/products/fl-q50-st370p-110.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-Q50-ST370S-111",
+      "originalImage": "/assets/catalogue-04.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "90\" x 110\" (for 5 ft)",
+        "fabric": "Soft tex",
+        "spec": "370 Thread Count / Striped Pattern / White"
+      },
+      "camera": "low oblique view from window side",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-81d80745-86c0-42d7-be86-cd47f65ec47a.png",
+      "imageUrl": "/assets/products/fl-q50-st370s-111.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-Q50-C260S-112",
+      "originalImage": "/assets/catalogue-00.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "90\" x 110\" (for 5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "calm straight-on view from foot of bed",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-a4b386e0-2498-489d-9b78-32be5af9a72a.png",
+      "imageUrl": "/assets/products/fl-q50-c260s-112.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-Q50-C230P-113",
+      "originalImage": "/assets/catalogue-31.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "90\" x 110\" (for 5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "230 Thread Count / Plain Pattern"
+      },
+      "camera": "close three-quarter at bedside",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-5b6ddb5e-c780-4a51-a5a3-dd4d63fb6b98.png",
+      "imageUrl": "/assets/products/fl-q50-c230p-113.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-Q50-C260P-114",
+      "originalImage": "/assets/catalogue-01.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "90\" x 110\" (for 5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / Plain Pattern"
+      },
+      "camera": "elevated diagonal from doorway",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-d596de6e-3d88-475e-992d-cc02d33b1374.png",
+      "imageUrl": "/assets/products/fl-q50-c260p-114.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-Q50-C260S-115",
+      "originalImage": "/assets/catalogue-09.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "90\" x 110\" (for 5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "near-overhead diagonal showing the textile",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-0ca19503-1046-4f54-89ca-e45aa7c0f7d7.png",
+      "imageUrl": "/assets/products/fl-q50-c260s-115.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-Q50-C310P-116",
+      "originalImage": "/assets/catalogue-39.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "90\" x 110\" (for 5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "310 Thread Count / Plain Pattern"
+      },
+      "camera": "longer lens through doorway with gentle foreground blur",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-e91551b8-af25-4bfa-9e9a-2d78ca465a8e.png",
+      "imageUrl": "/assets/products/fl-q50-c310p-116.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-Q50-C310S-117",
+      "originalImage": "/assets/catalogue-02.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "90\" x 110\" (for 5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "310 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "wide view from terrace doorway",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-192da97a-b058-40b3-8226-e4efcd5a7981.png",
+      "imageUrl": "/assets/products/fl-q50-c310s-117.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-Q50-CVC50P-118",
+      "originalImage": "/assets/catalogue-39.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "90\" x 110\" (for 5 ft)",
+        "fabric": "CVC 50/50",
+        "spec": "195 Thread Count / Plain Pattern"
+      },
+      "camera": "intimate crop at the bed edge",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-d504d891-eb4a-4a32-bf2e-e945a0844e6c.png",
+      "imageUrl": "/assets/products/fl-q50-cvc50p-118.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-Q50-CVC60S-119",
+      "originalImage": "/assets/catalogue-00.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "90\" x 110\" (for 5 ft)",
+        "fabric": "CVC 60/40",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "three-quarter from foot-left at mattress height",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-715103ed-7c50-4b95-94d3-c4fd48bc1b18.png",
+      "imageUrl": "/assets/products/fl-q50-cvc60s-119.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-K60-ST370P-120",
+      "originalImage": "/assets/catalogue-39.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "110\" x 110\" (for 6 ft)",
+        "fabric": "Soft tex",
+        "spec": "370 Thread Count / Plain Pattern / White"
+      },
+      "camera": "elevated three-quarter from foot-right",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-3b6013fe-66ab-4559-9878-fb012f8ccb85.png",
+      "imageUrl": "/assets/products/fl-k60-st370p-120.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-K60-ST370S-121",
+      "originalImage": "/assets/catalogue-23.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "110\" x 110\" (for 6 ft)",
+        "fabric": "Soft tex",
+        "spec": "370 Thread Count / Striped Pattern / White"
+      },
+      "camera": "low oblique view from window side",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-153e0a40-9330-44b2-91c0-640ebe69e7d8.png",
+      "imageUrl": "/assets/products/fl-k60-st370s-121.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-K60-C260S-122",
+      "originalImage": "/assets/catalogue-18.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "110\" x 110\" (for 6 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "calm straight-on view from foot of bed",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-edc4d2ae-f195-4311-8793-c99851626d9c.png",
+      "imageUrl": "/assets/products/fl-k60-c260s-122.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-K60-C230P-123",
+      "originalImage": "/assets/catalogue-08.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "110\" x 110\" (for 6 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "230 Thread Count / Plain Pattern"
+      },
+      "camera": "close three-quarter at bedside",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-e22566c8-c9e3-4a00-8b61-dac227ae7451.png",
+      "imageUrl": "/assets/products/fl-k60-c230p-123.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-K60-C260P-124",
+      "originalImage": "/assets/catalogue-31.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "110\" x 110\" (for 6 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / Plain Pattern"
+      },
+      "camera": "elevated diagonal from doorway",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-0a6f689a-54ed-4454-bdc4-c310669c13fd.png",
+      "imageUrl": "/assets/products/fl-k60-c260p-124.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-K60-C260S-125",
+      "originalImage": "/assets/catalogue-26.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "110\" x 110\" (for 6 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "near-overhead diagonal showing the textile",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-ff0d9c25-0871-4bd5-bde7-d37e93f881a9.png",
+      "imageUrl": "/assets/products/fl-k60-c260s-125.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-K60-C310P-126",
+      "originalImage": "/assets/catalogue-29.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "110\" x 110\" (for 6 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "310 Thread Count / Plain Pattern"
+      },
+      "camera": "longer lens through doorway with gentle foreground blur",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-3c4faa18-f6cb-4e16-bab8-14749c064f09.png",
+      "imageUrl": "/assets/products/fl-k60-c310p-126.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-K60-C310S-127",
+      "originalImage": "/assets/catalogue-21.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "110\" x 110\" (for 6 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "310 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "wide view from terrace doorway",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-7ccece13-ef3f-424c-8b46-ebaf93536eb5.png",
+      "imageUrl": "/assets/products/fl-k60-c310s-127.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-K60-CVC50P-128",
+      "originalImage": "/assets/catalogue-29.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "110\" x 110\" (for 6 ft)",
+        "fabric": "CVC 50/50",
+        "spec": "195 Thread Count / Plain Pattern"
+      },
+      "camera": "intimate crop at the bed edge",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-8f736115-903f-4dff-b7dc-4dbc3f9d1ad1.png",
+      "imageUrl": "/assets/products/fl-k60-cvc50p-128.webp",
+      "revision": 3
+    },
+    {
+      "sku": "FL-K60-CVC60S-129",
+      "originalImage": "/assets/catalogue-18.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Flat Sheet",
+        "size": "110\" x 110\" (for 6 ft)",
+        "fabric": "CVC 60/40",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "three-quarter from foot-left at mattress height",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-e9f4e850-6625-4203-a4f2-ade685406374.png",
+      "imageUrl": "/assets/products/fl-k60-cvc60s-129.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-S35-ST370P-130",
+      "originalImage": "/assets/catalogue-39.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "70\"x90\" (for 3.5 ft)",
+        "fabric": "Soft tex",
+        "spec": "370 Thread Count / Plain Pattern / White"
+      },
+      "camera": "elevated three-quarter from foot-right",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-ae6c80cc-d18c-4ae8-a804-e9d58c7f8d21.png",
+      "imageUrl": "/assets/products/dc-s35-st370p-130.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-S35-ST370S-131",
+      "originalImage": "/assets/catalogue-23.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "70\"x90\" (for 3.5 ft)",
+        "fabric": "Soft tex",
+        "spec": "370 Thread Count / Striped Pattern / White"
+      },
+      "camera": "low oblique view from window side",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-9bf19f47-e346-4845-be8a-46ffaa69f0fd.png",
+      "imageUrl": "/assets/products/dc-s35-st370s-131.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-S35-C260S-132",
+      "originalImage": "/assets/catalogue-18.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "70\"x90\" (for 3.5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "calm straight-on view from foot of bed",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-16194567-4e75-4c66-a1b8-cb40337f83a2.png",
+      "imageUrl": "/assets/products/dc-s35-c260s-132.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-S35-C230P-133",
+      "originalImage": "/assets/catalogue-08.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "70\"x90\" (for 3.5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "230 Thread Count / Plain Pattern"
+      },
+      "camera": "close three-quarter at bedside",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-7e18c6c4-0d52-480a-add3-a97ed352dc0e.png",
+      "imageUrl": "/assets/products/dc-s35-c230p-133.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-S35-C260P-134",
+      "originalImage": "/assets/catalogue-31.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "70\"x90\" (for 3.5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / Plain Pattern"
+      },
+      "camera": "elevated diagonal from doorway",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-b71dec9c-6969-455e-9f83-aa3bf0ca88c5.png",
+      "imageUrl": "/assets/products/dc-s35-c260p-134.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-S35-C260S-135",
+      "originalImage": "/assets/catalogue-26.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "70\"x90\" (for 3.5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "near-overhead diagonal showing the textile",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-532460fe-3d0e-415e-a7ca-fd4994856362.png",
+      "imageUrl": "/assets/products/dc-s35-c260s-135.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-S35-C310P-136",
+      "originalImage": "/assets/catalogue-29.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "70\"x90\" (for 3.5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "310 Thread Count / Plain Pattern"
+      },
+      "camera": "longer lens through doorway with gentle foreground blur",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-e46ab8a1-0894-4e11-8164-7e2382b04cfd.png",
+      "imageUrl": "/assets/products/dc-s35-c310p-136.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-S35-C310S-137",
+      "originalImage": "/assets/catalogue-21.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "70\"x90\" (for 3.5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "310 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "wide view from terrace doorway",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-d0f3ab5e-1aee-4e34-9c8e-3151686e37a3.png",
+      "imageUrl": "/assets/products/dc-s35-c310s-137.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-S35-CVC50P-138",
+      "originalImage": "/assets/catalogue-29.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "70\"x90\" (for 3.5 ft)",
+        "fabric": "CVC 50/50",
+        "spec": "195 Thread Count / Plain Pattern"
+      },
+      "camera": "intimate crop at the bed edge",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-51d334b2-3d96-4931-8bb5-dbc0c3aab801.png",
+      "imageUrl": "/assets/products/dc-s35-cvc50p-138.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-S35-CVC60S-139",
+      "originalImage": "/assets/catalogue-18.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "70\"x90\" (for 3.5 ft)",
+        "fabric": "CVC 60/40",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "three-quarter from foot-left at mattress height",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-e7b19f19-456f-48ce-b496-de361c0be4ff.png",
+      "imageUrl": "/assets/products/dc-s35-cvc60s-139.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-Q50-ST370P-140",
+      "originalImage": "/assets/catalogue-29.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "90\"x90\" (for 5 ft)",
+        "fabric": "Soft tex",
+        "spec": "370 Thread Count / Plain Pattern / White"
+      },
+      "camera": "elevated three-quarter from foot-right",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-e240654a-f7c9-4d65-84b1-57a122c0fb20.png",
+      "imageUrl": "/assets/products/dc-q50-st370p-140.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-Q50-ST370S-141",
+      "originalImage": "/assets/catalogue-12.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "90\"x90\" (for 5 ft)",
+        "fabric": "Soft tex",
+        "spec": "370 Thread Count / Striped Pattern / White"
+      },
+      "camera": "low oblique view from window side",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-a6b81245-ac9a-45e2-a9bf-a5d53847b0eb.png",
+      "imageUrl": "/assets/products/dc-q50-st370s-141.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-Q50-C260S-142",
+      "originalImage": "/assets/catalogue-09.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "90\"x90\" (for 5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "calm straight-on view from foot of bed",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-1c3bd200-befa-4ecc-a782-7752547a68ed.png",
+      "imageUrl": "/assets/products/dc-q50-c260s-142.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-Q50-C230P-143",
+      "originalImage": "/assets/catalogue-01.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "90\"x90\" (for 5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "230 Thread Count / Plain Pattern"
+      },
+      "camera": "close three-quarter at bedside",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-ce53e208-b804-49c7-adc7-c5c2fe53fcff.png",
+      "imageUrl": "/assets/products/dc-q50-c230p-143.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-Q50-C260P-144",
+      "originalImage": "/assets/catalogue-08.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "90\"x90\" (for 5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / Plain Pattern"
+      },
+      "camera": "elevated diagonal from doorway",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-5b6ec711-9465-4207-a058-914d1ace8b13.png",
+      "imageUrl": "/assets/products/dc-q50-c260p-144.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-Q50-C260S-145",
+      "originalImage": "/assets/catalogue-15.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "90\"x90\" (for 5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "near-overhead diagonal showing the textile",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-fc2b53b6-6154-4575-ba83-6ab4db0b75a8.png",
+      "imageUrl": "/assets/products/dc-q50-c260s-145.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-Q50-C310P-146",
+      "originalImage": "/assets/catalogue-05.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "90\"x90\" (for 5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "310 Thread Count / Plain Pattern"
+      },
+      "camera": "longer lens through doorway with gentle foreground blur",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-3c5e4900-08fe-4168-92d6-c6ec7cc2c990.png",
+      "imageUrl": "/assets/products/dc-q50-c310p-146.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-Q50-C310S-147",
+      "originalImage": "/assets/catalogue-10.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "90\"x90\" (for 5 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "310 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "wide view from terrace doorway",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-1769ac9d-a54e-444e-934c-584537b96a5c.png",
+      "imageUrl": "/assets/products/dc-q50-c310s-147.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-Q50-CVC50P-148",
+      "originalImage": "/assets/catalogue-05.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "90\"x90\" (for 5 ft)",
+        "fabric": "CVC 50/50",
+        "spec": "195 Thread Count / Plain Pattern"
+      },
+      "camera": "intimate crop at the bed edge",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-065739db-5843-44d2-8291-9410b2e4bc03.png",
+      "imageUrl": "/assets/products/dc-q50-cvc50p-148.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-Q50-CVC60S-149",
+      "originalImage": "/assets/catalogue-09.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "90\"x90\" (for 5 ft)",
+        "fabric": "CVC 60/40",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "three-quarter from foot-left at mattress height",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-93d2c4aa-6bc5-4400-ae5f-f1e220303b87.png",
+      "imageUrl": "/assets/products/dc-q50-cvc60s-149.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-K60-ST370P-150",
+      "originalImage": "/assets/catalogue-05.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "100\"x90\" (for 6 ft)",
+        "fabric": "Soft tex",
+        "spec": "370 Thread Count / Plain Pattern / White"
+      },
+      "camera": "elevated three-quarter from foot-right",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-16f07059-37e5-499c-94ff-78c8e7805cb2.png",
+      "imageUrl": "/assets/products/dc-k60-st370p-150.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-K60-ST370S-151",
+      "originalImage": "/assets/catalogue-02.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "100\"x90\" (for 6 ft)",
+        "fabric": "Soft tex",
+        "spec": "370 Thread Count / Striped Pattern / White"
+      },
+      "camera": "low oblique view from window side",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-82d1b36f-6212-4e9f-b2ca-0e3b504d7312.png",
+      "imageUrl": "/assets/products/dc-k60-st370s-151.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-K60-C260S-152",
+      "originalImage": "/assets/catalogue-26.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "100\"x90\" (for 6 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "calm straight-on view from foot of bed",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-993711e1-7522-42d8-bb61-6f54c0e3ff85.png",
+      "imageUrl": "/assets/products/dc-k60-c260s-152.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-K60-C230P-153",
+      "originalImage": "/assets/catalogue-31.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "100\"x90\" (for 6 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "230 Thread Count / Plain Pattern"
+      },
+      "camera": "close three-quarter at bedside",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-b74af552-55a6-4217-8b77-d2ee809c8d70.png",
+      "imageUrl": "/assets/products/dc-k60-c230p-153.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-K60-C260P-154",
+      "originalImage": "/assets/catalogue-01.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "100\"x90\" (for 6 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / Plain Pattern"
+      },
+      "camera": "elevated diagonal from doorway",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-f9d91dae-2e8d-47f0-84a8-addd6b58570d.png",
+      "imageUrl": "/assets/products/dc-k60-c260p-154.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-K60-C260S-155",
+      "originalImage": "/assets/catalogue-04.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "100\"x90\" (for 6 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "260 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "near-overhead diagonal showing the textile",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-fc29cf83-a9b1-4ca2-818a-8eeb778d4228.png",
+      "imageUrl": "/assets/products/dc-k60-c260s-155.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-K60-C310P-156",
+      "originalImage": "/assets/catalogue-39.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "100\"x90\" (for 6 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "310 Thread Count / Plain Pattern"
+      },
+      "camera": "longer lens through doorway with gentle foreground blur",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-7e85a3c6-c4c4-4ec5-8ae5-79bf4d1eb85c.png",
+      "imageUrl": "/assets/products/dc-k60-c310p-156.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-K60-C310S-157",
+      "originalImage": "/assets/catalogue-00.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "100\"x90\" (for 6 ft)",
+        "fabric": "Cotton 100%",
+        "spec": "310 Thread Count / 1\" Striped Pattern"
+      },
+      "camera": "wide view from terrace doorway",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-6affc53e-2815-4a11-9bb9-0d238e5f149e.png",
+      "imageUrl": "/assets/products/dc-k60-c310s-157.webp",
+      "revision": 3
+    },
+    {
+      "sku": "DC-K60-CVC50P-158",
+      "originalImage": "/assets/catalogue-39.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Duvet Cover",
+        "size": "100\"x90\" (for 6 ft)",
+        "fabric": "CVC 50/50",
+        "spec": "195 Thread Count / Plain Pattern"
+      },
+      "camera": "intimate crop at the bed edge",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-8372a599-a07d-4299-9c0d-b8c00654cf22.png",
+      "imageUrl": "/assets/products/dc-k60-cvc50p-158.webp",
+      "revision": 3
+    },
+    {
+      "sku": "TWL-STD-12LBS-WHT-01",
+      "originalImage": "/assets/catalogue-47.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Towel",
+        "size": "27\" x 54\"",
+        "fabric": "Cotton 100% Towel",
+        "spec": "12 lbs / Plain Pattern / White"
+      },
+      "camera": "three-quarter from foot-left at mattress height",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-ab7a6ab8-5eeb-491f-a4b1-7505fedf7a43.png",
+      "imageUrl": "/assets/products/twl-std-12lbs-wht-01.webp",
+      "revision": 3
+    },
+    {
+      "sku": "TWL-MED-14LBS-WHT-02",
+      "originalImage": "/assets/catalogue-45.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Towel",
+        "size": "27\" x 54\"",
+        "fabric": "Cotton 100% Towel",
+        "spec": "14 lbs / Plain Pattern / White"
+      },
+      "camera": "elevated three-quarter from foot-right",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-9c78c7b4-64dd-40d7-802e-49848cb2964b.png",
+      "imageUrl": "/assets/products/twl-med-14lbs-wht-02.webp",
+      "revision": 3
+    },
+    {
+      "sku": "TWL-LRG-16LBS-WHT-03",
+      "originalImage": "/assets/catalogue-47.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Towel",
+        "size": "30\" x 60\"",
+        "fabric": "Cotton 100% Towel",
+        "spec": "16 lbs / Plain Pattern / White"
+      },
+      "camera": "low oblique view from window side",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-1c23166c-5f2f-4a29-b521-2730ecfac2c2.png",
+      "imageUrl": "/assets/products/twl-lrg-16lbs-wht-03.webp",
+      "revision": 3
+    },
+    {
+      "sku": "TWL-LUX-18LBS-WHT-04",
+      "originalImage": "/assets/catalogue-46.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Towel",
+        "size": "30\" x 60\"",
+        "fabric": "Cotton 100% Towel",
+        "spec": "18 lbs / Plain Pattern / White"
+      },
+      "camera": "calm straight-on view from foot of bed",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-2457fd9e-58fa-4479-9c2f-8f1d926661ca.png",
+      "imageUrl": "/assets/products/twl-lux-18lbs-wht-04.webp",
+      "revision": 3
+    },
+    {
+      "sku": "BC-C100-406S-01",
+      "originalImage": "/assets/catalogue-49.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Bolster Case",
+        "size": "14″ x 44″",
+        "fabric": "Cotton 100%",
+        "spec": "406 Thread Count / Striped Pattern / White"
+      },
+      "camera": "close three-quarter at bedside",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-d7bc8f7d-ef95-431f-b1c0-d8a147e9eebd.png",
+      "imageUrl": "/assets/products/bc-c100-406s-01.webp",
+      "revision": 3
+    },
+    {
+      "sku": "BC-CAD-500S-02",
+      "originalImage": "/assets/catalogue-49.webp",
+      "ratio": [
+        800,
+        476
+      ],
+      "facts": {
+        "type": "Bolster Case",
+        "size": "27″ x 40″",
+        "fabric": "Anti-Dust Mite Cotton",
+        "spec": "500 Thread Count / Striped Pattern / White"
+      },
+      "camera": "elevated diagonal from doorway",
+      "status": "integrated",
+      "source": "/workspace/scratch/461930323805/generated_images/exec-cc0d56fa-eabe-4b93-9de6-01e9f023fd17.png",
+      "imageUrl": "/assets/products/bc-cad-500s-02.webp",
+      "revision": 3
+    }
+  ],
+  "revision": 4,
+  "pillowRules": {
+    "standardPillowInches": [
+      20,
+      30
+    ],
+    "3.5ft": 1,
+    "5ft": 2,
+    "6ft": 2
+  },
+  "flatSheetStyling": "Flat sheet used as bottom sheet, fully tucked beneath mattress with hospital/envelope corners; no loose hanging hems",
+  "visualReview": "All 106 reviewed in six contact sheets; FS-Q50-C230P-014 corrected to oak frame. Flat sheets all tucked; pillow counts follow nominal bed width. Illustrations are not exact SKU photographs."
+}

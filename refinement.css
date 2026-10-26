@@ -58,3 +58,8 @@ html[lang=en] .editorial-hero h1{font-family:Georgia,'Times New Roman',serif;fon
 
 .legacy-site .reading>section>p{text-wrap:pretty}
 .legacy-site:lang(th) .reading>section>p{max-width:none}
+
+/* Product illustrations retain the catalog's original 800 × 476 proportions. */
+.legacy-site .product-card>a>img,.legacy-site .product-detail .textile-photo-trigger>img{width:100%;height:auto!important;aspect-ratio:800/476;object-fit:contain;transform:none}
+.legacy-site .photo-disclosure{display:block;color:#62564b;font-size:.72rem;line-height:1.7;letter-spacing:normal;margin-block:8px 12px;text-wrap:pretty}
+.legacy-site .product-detail figure{align-self:start}

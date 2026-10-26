@@ -165,6 +165,7 @@ export const products: Product[] = rawProductData.map(item => {
  const sourceFabric=MAPPINGS.fabricType[item.fabric as keyof typeof MAPPINGS.fabricType];
  const fabric={...sourceFabric,...publicMaterialLabels[sourceFabric.key]};
  const pattern=MAPPINGS.pattern[item.spec.toLowerCase().includes('stripe')?'Striped':'Plain'];
- const imageUrl=getDeterministicImage(item.type==='Towel'?'towel':item.type==='Bolster Case'?'bolster':pattern.key==='striped'?'white_striped':'white_plain', item.code);
- return {id:item.code,name:type,productType:type,fabricType:fabric,size:MAPPINGS.size[item.size as keyof typeof MAPPINGS.size],pattern,color:MAPPINGS.color.White,price:item.price,threadCount:Number(item.spec.match(/(\d+)\s*Thread Count/i)?.[1]||0),description:type,imageUrl};
+ const originalImageUrl=getDeterministicImage(item.type==='Towel'?'towel':item.type==='Bolster Case'?'bolster':pattern.key==='striped'?'white_striped':'white_plain', item.code);
+ const imageUrl=`/assets/products/${item.code.toLowerCase()}.webp`;
+ return {id:item.code,name:type,productType:type,fabricType:fabric,size:MAPPINGS.size[item.size as keyof typeof MAPPINGS.size],pattern,color:MAPPINGS.color.White,price:item.price,threadCount:Number(item.spec.match(/(\d+)\s*Thread Count/i)?.[1]||0),description:type,imageUrl,originalImageUrl,imageIllustrative:true};
 });

@@ -21,4 +21,6 @@ export interface Product {
   price: number;
   description: LocalizedString;
   imageUrl?: string;
+  originalImageUrl?: string;
+  imageIllustrative?: boolean;
 }

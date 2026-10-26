@@ -55,3 +55,6 @@ html[lang=en] .editorial-hero h1{font-family:Georgia,'Times New Roman',serif;fon
 .legacy-site .product-specifications dd{padding:8px 18px 18px}
 }
 @media(max-width:380px){.legacy-site .reading>section{grid-template-columns:1fr;gap:8px;padding:20px}}
+
+.legacy-site .reading>section>p{text-wrap:pretty}
+.legacy-site:lang(th) .reading>section>p{max-width:none}

@@ -8,13 +8,13 @@ import InlineImage from '../components/InlineImage';
 const SizeTableStyled: React.FC<{ headerKeys: string[]; data: (string | React.ReactElement)[][]; captionKey?: string }> = ({ headerKeys, data, captionKey }) => {
   const { t } = useTranslation();
   return (
-    <div className="overflow-x-auto shadow-2xl rounded-2xl border border-neutral-200/50">
-      <table className="min-w-full bg-white/80 backdrop-blur-sm text-base text-start">
+    <div role="region" tabIndex={0} aria-label={t(captionKey || headerKeys[0])} className="data-table-shell overflow-x-auto shadow-2xl rounded-2xl border border-neutral-200/50">
+      <table className="content-table min-w-full bg-white/80 backdrop-blur-sm text-base text-start">
         {captionKey && <caption className="p-5 text-xl font-semibold text-start text-neutral-900 bg-brand-light/90 rounded-t-2xl">{t(captionKey)}</caption>}
         <thead className="bg-brand-secondary/70 text-brand-dark">
           <tr>
             {headerKeys.map(headerKey => (
-              <th key={headerKey} className="text-start py-5 px-6 font-semibold tracking-wider">{t(headerKey)}</th>
+              <th scope="col" key={headerKey} className="text-start py-5 px-6 font-semibold tracking-wider">{t(headerKey)}</th>
             ))}
           </tr>
         </thead>

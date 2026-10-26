@@ -24,13 +24,13 @@ const MaterialDetailCard: React.FC<{ id: string; titleKey: string; children: Rea
 const InfoTable: React.FC<{ headerKeys: string[]; data: (string | React.ReactElement)[][]; captionKey?: string }> = ({ headerKeys, data, captionKey }) => {
   const { t } = useTranslation();
   return (
-    <div className="overflow-x-auto rounded-lg mb-8 border border-neutral-200/80">
-      <table className="min-w-full bg-white/80 backdrop-blur-sm text-base">
+    <div role="region" tabIndex={0} aria-label={t(captionKey || headerKeys[0])} className="data-table-shell overflow-x-auto rounded-lg mb-8 border border-neutral-200/80">
+      <table className="content-table min-w-full bg-white/80 backdrop-blur-sm text-base">
         {captionKey && <caption className="p-4 text-lg font-semibold text-start text-neutral-900 bg-brand-light/90 rounded-t-lg">{t(captionKey)}</caption>}
         <thead className="bg-brand-secondary/70 text-brand-dark">
           <tr>
             {headerKeys.map(headerKey => (
-              <th key={headerKey} className="text-start py-4 px-6 font-semibold tracking-wider">{t(headerKey)}</th>
+              <th scope="col" key={headerKey} className="text-start py-4 px-6 font-semibold tracking-wider">{t(headerKey)}</th>
             ))}
           </tr>
         </thead>

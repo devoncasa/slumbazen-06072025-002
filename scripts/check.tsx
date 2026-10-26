@@ -32,7 +32,7 @@ let linkCount=0;
 const esc=(s:string)=>s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
 for(const lang of languages)for(const route of [...paths,...articleSlugs.map(s=>'blog/'+s),...products.map(p=>'product/'+p.id.toLowerCase())]){
  const file='dist/'+lang+'/'+(route?route+'/':'')+'index.html';const html=fs.readFileSync(file,'utf8');const seo=pageSEO(route,lang);
- assert(html.includes('<meta name="description" content="'+esc(seo.description)+'">'));
+ assert(html.includes('<meta name="description" content="'+esc(seo.description)+'">'),file+' metadata: '+seo.description);
  assert(html.includes('<link rel="canonical" href="'+seo.canonical+'">'));
  assert(html.includes('<meta property="og:image" content="'+seo.image+'">'));
  assert(html.includes('data-prerendered="true"'));
@@ -46,3 +46,7 @@ assert(jsGzip<150000,'Main JavaScript gzip budget');assert(cssGzip<15000,'CSS gz
 for(const name of ['quiet-bedroom','selection-details']){assert(fs.statSync('dist/assets/editorial/'+name+'.webp').size<120000);assert(fs.statSync('dist/assets/editorial/'+name+'-640.webp').size<40000)}
 const form=fs.readFileSync('dist/__forms.html','utf8');for(const field of ['form-name','name','email','message','language','bot-field'])assert(form.includes('name="'+field+'"'));assert(form.includes('data-netlify="true"'));
 console.log(JSON.stringify({internalLinks:linkCount,brokenLinks:0,metadataParity:true,mainJsGzip:jsGzip,cssGzip,formDefinition:true}));
+
+// Counts must match the original SKU record; towels never acquire a thread count.
+for(const p of products){const raw=productFacts(p).raw;const expected=Number(raw.spec.match(/(\d+)\s*Thread Count/i)?.[1]||0);assert.equal(p.threadCount,expected,p.id);for(const lang of languages){const html=fs.readFileSync('dist/'+lang+'/product/'+p.id.toLowerCase()+'/index.html','utf8');if(expected){assert(html.includes('threads per square inch'),p.id+' schema unit');assert(html.includes('"value":'+expected),p.id+' count');}else assert(!html.includes('"unitText":"threads per square inch"'),p.id+' no TC');}}
+console.log(JSON.stringify({catalogueThreadCounts:products.filter(p=>p.threadCount).length,ownerConfirmedUnit:'threads per square inch',localizedThreadCountPages:products.filter(p=>p.threadCount).length*languages.length}));

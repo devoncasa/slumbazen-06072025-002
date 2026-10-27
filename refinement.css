@@ -68,3 +68,5 @@ html[lang=en] .editorial-hero h1{font-family:Georgia,'Times New Roman',serif;fon
 .legacy-site .product-recommendation p{margin:0;font-size:.88rem;line-height:1.8}
 
 .product-detail .product-image-note{margin:22px 0 0;padding:20px 4px 0;border-top:1px solid var(--border);max-width:64ch;font-size:.94rem;line-height:1.85;color:#65594f;text-align:start;overflow-wrap:anywhere}
+
+.product-pager{display:flex;justify-content:space-between;align-items:center;gap:16px;margin:0 0 18px}.product-pager>a,.product-pager>span{width:44px;height:44px;flex:0 0 44px}.product-pager>a{display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:#a48770;color:#fff;text-decoration:none;transition:background-color .15s ease}.product-pager>a:hover{background:#8d705b}.product-pager>a:focus-visible{outline:3px solid #73594b;outline-offset:4px}@media(max-width:767px){.product-pager{margin-bottom:10px}.product-pager>a{background:transparent;color:#9b7a63;border-radius:0}.product-pager>a:hover{background:transparent;color:#73594b}}

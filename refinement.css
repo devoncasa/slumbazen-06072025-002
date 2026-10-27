@@ -66,3 +66,5 @@ html[lang=en] .editorial-hero h1{font-family:Georgia,'Times New Roman',serif;fon
 .legacy-site .product-recommendation{margin:20px 0;padding:17px 20px;border-inline-start:2px solid #a58a7a;background:linear-gradient(105deg,#fffdf9 0%,#f1eae2 100%);border-radius:2px 10px 10px 2px}
 .legacy-site .product-recommendation h3{font-size:.92rem;color:#73594b;margin:0 0 6px}
 .legacy-site .product-recommendation p{margin:0;font-size:.88rem;line-height:1.8}
+
+.product-detail .product-image-note{margin:22px 0 0;padding:20px 4px 0;border-top:1px solid var(--border);max-width:64ch;font-size:.94rem;line-height:1.85;color:#65594f;text-align:start;overflow-wrap:anywhere}

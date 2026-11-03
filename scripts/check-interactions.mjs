@@ -29,11 +29,22 @@ await click(document.getElementById('language-menu-button'));const arabic=[...do
 await act(async()=>{arabic.click();await loadLocale('ar');await new Promise(r=>setTimeout(r,20))});assert.equal(document.documentElement.lang,'ar');assert.equal(document.documentElement.dir,'rtl');assert(window.location.pathname.startsWith('/ar/'));assert(window.location.search.includes('RequestSamplesB2B'));assert.equal(document.querySelector('.enquiry select').value,'sample');assert.equal(document.querySelector('.enquiry input').value,'20');assert(document.querySelector('.enquiry-preview').value.includes('Queen beds'));
 await click(document.querySelector('.enquiry button'));assert(copied.includes('Queen beds'));assert(copied.includes('20'));
 await mount('/en/product/pc-std-st370p-091/','en');assert(document.getElementById('product-specifications').textContent.includes('50.8'));assert(document.getElementById('product-specifications').textContent.includes('76.2'));assert(document.querySelector('.enquiry-preview').value.includes('20 × 30'));
+const pillowMessage=document.querySelector('.enquiry-preview').value;
+assert(pillowMessage.includes('20 × 30 × 6'));
+assert(pillowMessage.includes('Catalogue price: ฿50'));
+assert(pillowMessage.includes('Sales unit: Confirm whether'));
+assert(pillowMessage.includes('https://slumbazen.netlify.app/en/product/pc-std-st370p-091/'));
 const zoom=document.querySelector('.product-detail .textile-photo-trigger');const dialog=zoom.nextElementSibling;assert.equal(dialog.querySelectorAll('img').length,0);await click(zoom);assert(dialog.open);assert.equal(dialog.querySelectorAll('img').length,1);await click(dialog.querySelector('.lightbox-close'));assert(!dialog.open);assert.equal(dialog.querySelectorAll('img').length,0);
 await change(document.querySelector('.enquiry input'),'0');assert(document.querySelector('.enquiry button').disabled);
 assert(JSON.parse(sessionStorage.getItem('slumbazen-viewed')).includes('PC-STD-ST370P-091'));
 await click(document.querySelector('button[aria-label="Open main menu"]'));assert(document.querySelector('button[aria-label="Open main menu"]').getAttribute('aria-expanded')==='true');await act(async()=>document.dispatchEvent(new dom.window.KeyboardEvent('keydown',{key:'Escape',bubbles:true})));assert(document.querySelector('button[aria-label="Open main menu"]').getAttribute('aria-expanded')==='false');
 let clientRoutes=0;for(const lang of ['th','en','zh','ar','hi'])for(const route of ['','collections','gallery','products/white-sheets','products/premium-colors','products/sets','towels','materials','what-is-tencel','sizes','hotels','delivery','contact','blog','bedding-finder']){await mount('/'+lang+(route?'/'+route+'/':'/'),lang);assert(document.querySelector('main h1')?.textContent);assert(!/\b(homePage|materialsPage|towelsPage|nav|footer|sizesPage)\.[A-Za-z.]+/.test(document.querySelector('main').textContent));assert.equal(document.documentElement.dir,lang==='ar'?'rtl':'ltr');clientRoutes++;}
+await mount('/en/product/twl-std-12lbs-wht-01/','en');
+const towelMessage=document.querySelector('.enquiry-preview').value;
+assert(towelMessage.includes('12 lb'));
+assert(towelMessage.includes('per dozen (12 towels) or another unit'));
+assert(towelMessage.includes('Catalogue price: ฿220'));
+assert(towelMessage.includes('27 × 54'));
 await mount('/en/contact/?subject=BathMatInquiry&item=Hotel%20Bath%20Mat&dimensions=18x28in','en');assert(document.querySelector('.enquiry-preview').value.includes('Hotel Bath Mat'));assert(document.querySelector('.enquiry-preview').value.includes('18x28in'));
 await mount('/','th');assert.equal(window.location.pathname,'/th/');assert(document.querySelector('main h1')?.textContent);
 

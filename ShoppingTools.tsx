@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import {products} from './products';
 import type {Product} from './data/galleryData';
 import {copy} from './content';
-import {formatTHB,productFacts,productSizeLabel,specWords,measure,threadCountLabel} from './catalogueSpecs';
+import {productSpecificationRows,formatTHB,productFacts,productSizeLabel,specWords,measure,threadCountLabel} from './catalogueSpecs';
 import {shoppingCopy} from './shoppingCopy';
 
 const Selection=createContext<{ids:string[],toggle:(id:string)=>void,clear:()=>void}>({ids:[],toggle:()=>{},clear:()=>{}});
@@ -20,7 +20,9 @@ export function ComparisonDock({lang}:{lang:string}){
  useEffect(()=>{const el=dialog.current;if(open&&!el?.open)el?.showModal();if(!open&&el?.open)el.close()},[open]);
  useEffect(()=>{if(!ids.length)setOpen(false)},[ids.length]);
  function close(){setOpen(false);trigger.current?.focus()}
- const rows:[string,(p:Product)=>string][]=[['SKU',p=>p.id],[c.type,p=>p.productType[lang as 'en']],[c.material,p=>p.fabricType[lang as 'en']],[w.finish,p=>p.pattern[lang as 'en']],[s.size,p=>productSizeLabel(p,lang)],[s.fit,p=>productFacts(p).fit?measure(productFacts(p).fit!,lang):s.confirm],[s.thread,p=>p.productType.key==='towel'?'—':threadCountLabel(p,lang)],[s.weight,p=>{const f=productFacts(p);return f.weight?`${f.weight} ${s.lb} · ${s.weightPending}`:'—'}],[s.contents,()=>s.pack],[c.price,p=>formatTHB(p.price,lang)]];
+ const rows:[string,(p:Product)=>string][]=productSpecificationRows(products[0],lang).map(([label],index)=>[
+  label,p=>productSpecificationRows(p,lang)[index][1]
+ ]);
  return <>{items.length>0&&<div className="comparison-dock" role="region" aria-label={w.compareTitle}><span>{w.selected} <strong>{items.length}/3</strong></span><button ref={trigger} onClick={()=>setOpen(true)} aria-haspopup="dialog">{w.compare}</button><button className="secondary" onClick={clear}>{w.clear}</button><span className="dock-note">{w.sessionNote}</span></div>}<dialog className="comparison-dialog" ref={dialog} aria-labelledby="comparison-title" onCancel={close} onClose={close}><div className="comparison-heading"><h2 id="comparison-title">{w.compareTitle}</h2><button className="secondary" onClick={close}>{w.close} ×</button></div><p>{w.compareIntro}</p><div className="comparison-scroll" role="region" tabIndex={0} aria-label={w.compareTitle}><table><thead><tr><th scope="col">{w.confirmed}</th>{items.map(p=><th scope="col" key={p.id}><Link to={`/${lang}/product/${p.id.toLowerCase()}/`} onClick={close}>{p.productType[lang as 'en']}<small dir="ltr">{p.id}</small></Link><button className="secondary" onClick={()=>toggle(p.id)} aria-label={`${w.remove} ${p.id}`}>{w.remove}</button></th>)}</tr></thead><tbody>{rows.map(([label,value])=><tr key={label}><th scope="row">{label}</th>{items.map(p=><td key={p.id}>{value(p)}</td>)}</tr>)}</tbody></table></div><p className="small">{w.matchNote}</p><Link className="button" onClick={close} to={`/${lang}/hotels/?items=${encodeURIComponent(ids.join(','))}#enquiry`}>{w.quoteSelected}</Link><p className="small">{w.sessionNote}</p></dialog></>;
 }
 

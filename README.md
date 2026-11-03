@@ -52,3 +52,26 @@ Netlify support case 1153097 must reconcile this association with external DNS
 and issue a certificate for slumbazen.com and www.slumbazen.com. No purchase
 or auto-renewal of the obsolete registration is required by this work.
 Stage 1 is partially complete, pending that correction and live HTTPS tests.
+
+## Stage 2 catalogue consistency
+
+All 106 SKU records retain their original catalogue values in products.ts.
+The per-SKU review ledger is data/product-verification-gaps.json, with source
+references and unresolved supplier fields. Its status describes consistency,
+not a new supplier or laboratory confirmation. The bath mat remains a separate
+reference with no invented SKU or price.
+
+productSpecificationRows in catalogueSpecs.ts supplies the product table,
+comparison and enquiry message. It includes catalogue price, unknown sales unit,
+contents, dimensions, and towel weight basis. Pillowcase 20 x 30 x 6 dimensions
+are preserved with the meaning of the third value explicitly awaiting
+confirmation. Fitted-sheet mattress length remains unknown, and bolster
+measurements are not treated as circumference or diameter. Structured-data size
+and product metadata use the same dimension label.
+
+Supplier confirmations still needed: current prices/currency and sales units,
+availability, composition, care labels, finished dimensions and fit tolerances,
+pillow closures/third dimension, bolster measurement basis, towel weight basis,
+GSM, and every set's contents. The 26 October owner-confirmed square-inch
+thread-count basis is retained, without a claim of independent lab verification.
+No set total or towel GSM is calculated from unconfirmed sales/weight units.

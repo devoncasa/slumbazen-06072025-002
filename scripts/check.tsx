@@ -1,6 +1,6 @@
 import {pageSEO} from '../seo';
 import {gzipSync} from 'node:zlib';
-import {catalogueSizeDimensions,productFacts,productDescription} from '../catalogueSpecs';
+import {productSpecificationRows,productSizeLabel,catalogueWords,catalogueSizeDimensions,productFacts,productDescription} from '../catalogueSpecs';
 import {loadLocale} from '../localeResources';
 import React from 'react';import {renderToString} from 'react-dom/server';import {MemoryRouter} from 'react-router-dom';import assert from 'node:assert/strict';import fs from 'node:fs';import {SiteRoutes,paths,articleSlugs} from '../App';import {copy,languages} from '../content';import {products} from '../products';
 await Promise.all(languages.map(loadLocale));
@@ -61,3 +61,30 @@ for(const p of products){
  for(const lang of languages){const html=fs.readFileSync('dist/'+lang+'/product/'+p.id.toLowerCase()+'/index.html','utf8');assert(html.includes(p.imageUrl!));assert(html.includes('photo-disclosure'));}
 }
 console.log(JSON.stringify({uniqueSkuIllustrations:products.length,responsiveProductImages:products.length*2,originalAssetsPreserved:true,localizedImageDisclosure:true}));
+
+// Preserve every listed dimension and the sales-unit caveat across all consumers.
+const evidence=JSON.parse(fs.readFileSync('data/product-verification-gaps.json','utf8'));
+assert.equal(evidence.products.length,products.length);
+for(const p of products){
+ const f=productFacts(p);
+ const record=evidence.products.find((record:any)=>record.sku===p.id);
+ assert(record,p.id+' evidence record');
+ assert.equal(p.price,f.raw.price,p.id+' catalogue price preserved');
+ assert(record.unconfirmed.includes('salesPackContents'));
+ for(const lang of languages){
+  const rows=productSpecificationRows(p,lang);
+  assert.equal(new Set(rows.map(([label])=>label)).size,rows.length);
+  assert(rows.every(([label,value])=>label&&value&&!value.includes('undefined')));
+  assert(rows.some(([label,value])=>label===catalogueWords[lang].salesUnit&&value===catalogueWords[lang].salesPending));
+  assert.equal(productSchemaSize(p,lang),productSizeLabel(p,lang));
+  if(p.productType.key==='pillowCase')assert.equal(f.dimensions?.join(','),'20,30,6');
+  if(f.fitted){assert.equal(f.length,undefined);assert.equal(f.width,undefined);}
+  if(p.productType.key==='bolsterCase'){assert.equal(f.width,undefined);assert.equal(f.length,undefined);}
+ }
+}
+function productSchemaSize(p:typeof products[number],lang:string){
+ const html=fs.readFileSync('dist/'+lang+'/product/'+p.id.toLowerCase()+'/index.html','utf8');
+ const graph=JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/)![1]);
+ return graph['@graph'].find((node:any)=>node['@type']==='Product').size;
+}
+console.log(JSON.stringify({reviewedSkus:products.length,sharedSpecificationLocales:products.length*languages.length,pillowThirdDimensionPreserved:true,unknownSalesUnitsExplicit:true,sourcePricesPreserved:true}));

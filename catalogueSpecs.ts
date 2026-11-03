@@ -35,7 +35,7 @@ function productRecommendation(p:Product,lang:string,size:string,index:number,f:
  const separator=lang==='th'?' ':'. ';
  const tip=tips[p.productType.key]?.[lang]||fallback[lang];
  const check=checks[lang][index%5];
- const listing=lang==='th'?`${lead[lang]}: ${facts}`:lang==='zh'?`${lead[lang]}：${facts}`:`${lead[lang]}: ${facts}`;
+ const listing=lang==='th'?`${lead[lang]} ${facts}`:lang==='zh'?`${lead[lang]}：${facts}`:`${lead[lang]}: ${facts}`;
  const tail=lang==='th'?` · ${reference[lang]}`:lang==='zh'?`。${reference[lang]}。`:lang==='ar'?`؛ ${reference[lang]}.`:lang==='hi'?`। ${reference[lang]}।`:`. ${reference[lang]}.`;
  return `${tip}${connector[lang]}${check}${separator}${listing}${tail}`;
 }
@@ -43,16 +43,18 @@ function productRecommendation(p:Product,lang:string,size:string,index:number,f:
 export function productFacts(p:Product){
  const raw=rawProductData.find(r=>r.code===p.id)!;const fitted=p.productType.key==='fittedSheet';
  const pair=raw.size.replace(/[″“”]/g,'"').match(/(\d+(?:\.\d+)?)\s*"?\s*[x×]\s*(\d+(?:\.\d+)?)\s*"/i);
+ const dimensionText=raw.size.replace(/[″“”]/g,'"').match(/^\d+(?:\.\d+)?\s*"(?:\s*[x×]\s*\d+(?:\.\d+)?\s*")+/i)?.[0];
+ const dimensions=dimensionText?.match(/\d+(?:\.\d+)?/g)?.map(Number);
  const fit=fitted?Number(raw.size.match(/x\s*(\d+)/i)?.[1]):undefined;
  const nominal=fitted?Number(raw.size.match(/[\d.]+/)?.[0])*12:undefined;
  const listed=pair?[Number(pair[1]),Number(pair[2])]:undefined;
  const weight=p.productType.key==='towel'?Number(raw.spec.match(/[\d.]+/)?.[0]):undefined;
- return {raw,fitted,nominal,fit,listed,weight,width:listed&&p.productType.key!=='bolsterCase'?listed[0]:undefined,length:listed&&p.productType.key!=='bolsterCase'?listed[1]:undefined};
+ return {raw,fitted,nominal,fit,listed,dimensions,weight,width:listed&&p.productType.key!=='bolsterCase'?listed[0]:undefined,length:listed&&p.productType.key!=='bolsterCase'?listed[1]:undefined};
 }
 export function measure(value:number,lang:string){const w=specWords[lang]||specWords.en;const fmt=new Intl.NumberFormat(lang,{maximumFractionDigits:1});return `${fmt.format(value)} ${w.inch} · ${fmt.format(value*2.54)} ${w.cm}`;}
-export function productSizeLabel(p:Product,lang:string){const f=productFacts(p);return f.listed?f.listed.map(n=>new Intl.NumberFormat(lang).format(n)).join(' × ')+' '+specWords[lang].inch:p.size[lang as 'en'];}
+export function productSizeLabel(p:Product,lang:string){const f=productFacts(p);return f.dimensions?f.dimensions.map(n=>new Intl.NumberFormat(lang).format(n)).join(' × ')+' '+specWords[lang].inch:p.size[lang as 'en'];}
 export function productDescription(p:Product,lang:string){
- const c=copy[lang]||copy.en;const w=specWords[lang]||specWords.en;const f=productFacts(p);const size=f.listed?f.listed.map(n=>new Intl.NumberFormat(lang).format(n)).join(' × ')+' '+w.inch:p.size[lang as 'en'];const index=products.findIndex(x=>x.id===p.id);
+ const c=copy[lang]||copy.en;const w=specWords[lang]||specWords.en;const f=productFacts(p);const size=productSizeLabel(p,lang);const index=products.findIndex(x=>x.id===p.id);
  const facts=`${p.productType[lang as 'en']} · ${p.fabricType[lang as 'en']} · ${p.pattern[lang as 'en']} · ${size}${p.threadCount?' · '+threadCountLabel(p,lang):''}`;
  const introductions:Record<string,string[]>={
  th:[`รุ่น ${p.id} เป็น${p.productType.th}ในกลุ่ม${p.fabricType.th} ${p.pattern.th} ขนาด ${size}`,`สำหรับรุ่น ${p.id} จุดเริ่มต้นในการเลือกคือ${p.productType.th} ${p.pattern.th} กลุ่ม${p.fabricType.th} และขนาด ${size}`,`หากกำลังเปรียบเทียบ${p.productType.th} รุ่น ${p.id} ระบุกลุ่ม${p.fabricType.th} ${p.pattern.th} และขนาด ${size}`,`ตรวจสอบรุ่น ${p.id} จากรายละเอียด${p.productType.th} ${p.fabricType.th} ${p.pattern.th} ขนาด ${size}`],
@@ -61,14 +63,14 @@ export function productDescription(p:Product,lang:string){
  ar:[`الصنف ${p.id} هو ${p.productType.ar} من فئة ${p.fabricType.ar} بتصميم ${p.pattern.ar} ومقاس مدرج ${size}.`,`عند مقارنة ${p.productType.ar}، ابدأ بمقاس ${size} وفئة ${p.fabricType.ar} وتصميم ${p.pattern.ar} للصنف ${p.id}.`,`للمقارنة بين خيارات ${p.productType.ar}، يجمع المرجع ${p.id} فئة ${p.fabricType.ar} وتصميم ${p.pattern.ar} والمقاس ${size}.`,`استخدم المرجع ${p.id} للاستفسار عن ${p.productType.ar} بمقاس ${size}، من فئة ${p.fabricType.ar} وتصميم ${p.pattern.ar}.`],
  hi:[`${p.id}, ${p.fabricType.hi} श्रेणी का ${p.productType.hi} है। इसका स्वरूप ${p.pattern.hi} और दर्ज आकार ${size} है।`,`${p.productType.hi} की तुलना करते समय ${p.id} के ${size} आकार, ${p.fabricType.hi} श्रेणी और ${p.pattern.hi} स्वरूप से शुरुआत करें।`,`${p.id} में ${p.fabricType.hi} श्रेणी, ${p.pattern.hi} स्वरूप और ${size} का दर्ज आकार साथ मिलता है।`,`${size} के इस ${p.productType.hi} के बारे में पूछने के लिए ${p.id} संदर्भ दें। इसकी श्रेणी ${p.fabricType.hi} और स्वरूप ${p.pattern.hi} है।`]
  };
- const description=introductions[lang][index%4]+(p.threadCount?` ${w.thread}: ${threadCountLabel(p,lang)}.`:'');const selection=productRecommendation(p,lang,size,index,f);
+ const description=(lang==='th'?`${p.productType.th}${p.pattern.th} กลุ่ม${p.fabricType.th} ขนาดที่ระบุ ${size} รหัส ${p.id}`:introductions[lang][index%4])+(p.threadCount?` ${w.thread}: ${threadCountLabel(p,lang)}.`:'');const selection=productRecommendation(p,lang,size,index,f);
  const lead:Record<string,string>={th:`${p.productType.th} ${size} รุ่น ${p.id}`,en:`${p.productType.en} ${size} · ${p.id}`,zh:`${p.productType.zh} ${size} · ${p.id}`,ar:`${p.productType.ar} ${size} · ${p.id}`,hi:`${p.productType.hi} ${size} · ${p.id}`};
  const ending:Record<string,string>={th:p.productType.key==='towel'?'ตรวจสอบหน่วยน้ำหนักก่อนสอบถาม':p.productType.key==='fittedSheet'?'ตรวจความลึกที่นอนก่อนเลือก':'ดูขนาดและสอบถามรายละเอียด',en:p.productType.key==='towel'?'Confirm weight basis before enquiry':p.productType.key==='fittedSheet'?'Check mattress depth before choosing':'Check dimensions and request details',zh:p.productType.key==='fittedSheet'?'选购前核对床垫深度':'核对尺寸并询问详情',ar:'تحقق من المقاس واطلب التفاصيل',hi:'माप जाँचें और जानकारी पूछें'};
   const countText=p.threadCount?`, ${threadCountLabel(p,lang)}`:'';
   const meta=`${lead[lang]} — ${p.fabricType[lang as 'en']} ${p.pattern[lang as 'en']}${countText}. ${ending[lang]}.`;
  return {description,selection,facts,meta};
 }
-export function productSchema(p:Product,lang:string,origin:string){const f=productFacts(p);const d=productDescription(p,lang);const w=specWords[lang];return {'@context':'https://schema.org','@type':'Product',name:`${p.productType[lang as 'en']} · ${p.id}`,sku:p.id,url:origin+'/'+lang+'/product/'+p.id.toLowerCase()+'/',description:d.description+' '+d.selection,image:origin+p.imageUrl,brand:{'@type':'Brand',name:'SlumbaZEN'},...(p.fabricType.key==='softTex'?{}:{material:p.fabricType[lang as 'en']}),color:copy[lang].white,size:p.size[lang as 'en'],...(f.width?{width:{'@type':'QuantitativeValue',value:f.width,unitCode:'INH'}}:{}),additionalProperty:[...(p.threadCount?[{'@type':'PropertyValue',name:w.thread,value:p.threadCount,unitText:'threads per square inch'}]:[]),...(f.length?[{'@type':'PropertyValue',name:w.length,value:f.length,unitCode:'INH'}]:[]),...(f.nominal?[{'@type':'PropertyValue',name:w.nominal,value:f.nominal,unitCode:'INH'}]:[]),...(f.fit?[{'@type':'PropertyValue',name:w.fit,value:f.fit,unitCode:'INH'}]:[])]};}
+export function productSchema(p:Product,lang:string,origin:string){const f=productFacts(p);const d=productDescription(p,lang);const w=specWords[lang];return {'@context':'https://schema.org','@type':'Product',name:`${p.productType[lang as 'en']} · ${p.id}`,sku:p.id,url:origin+'/'+lang+'/product/'+p.id.toLowerCase()+'/',description:d.description+' '+d.selection,image:origin+p.imageUrl,brand:{'@type':'Brand',name:'SlumbaZEN'},...(p.fabricType.key==='softTex'?{}:{material:p.fabricType[lang as 'en']}),color:copy[lang].white,size:productSizeLabel(p,lang),...(f.width?{width:{'@type':'QuantitativeValue',value:f.width,unitCode:'INH'}}:{}),additionalProperty:[...(p.threadCount?[{'@type':'PropertyValue',name:w.thread,value:p.threadCount,unitText:'threads per square inch'}]:[]),...(f.length?[{'@type':'PropertyValue',name:w.length,value:f.length,unitCode:'INH'}]:[]),...(f.nominal?[{'@type':'PropertyValue',name:w.nominal,value:f.nominal,unitCode:'INH'}]:[]),...(f.fit?[{'@type':'PropertyValue',name:w.fit,value:f.fit,unitCode:'INH'}]:[])]};}
 
 /** Dimensions used by the public size guide, derived from catalogue records. */
 export function catalogueSizeDimensions(lang:string){
@@ -81,3 +83,39 @@ export function catalogueSizeDimensions(lang:string){
 
 // Retained bath-mat reference from the original towel page; no invented SKU or offer.
 export const bathMatReference={listed:[18,28],weight:8};
+
+
+export const catalogueWords:Record<string,Record<string,string>>={
+ th:{price:'ราคาตามแค็ตตาล็อก',salesUnit:'หน่วยขาย',salesPending:'สอบถามว่าราคานี้คิดต่อชิ้น ต่อแพ็ก หรือต่อโหล',note:'สิ่งที่ควรตรวจสอบ',pillowNote:'แค็ตตาล็อกระบุ 20 × 30 × 6 นิ้ว กรุณาให้ร้านยืนยันว่าตัวเลข 6 นิ้วหมายถึงส่วนใดของปลอกก่อนเทียบกับหมอน',fittedNote:'ขนาดเรียกบอกความกว้างที่นอน ควรวัดความยาวและความสูงรวมท็อปเปอร์ แล้วให้ร้านตรวจขนาดผ้าปูอีกครั้ง',countBasis:'จำนวนเส้นด้ายใช้ตัวเลขจากแค็ตตาล็อก หน่วยต่อตารางนิ้วตามที่ร้านยืนยัน โปรดขอวิธีนับจากผู้ผลิตเมื่อต้องการเทียบข้ามรุ่น'},
+ en:{price:'Catalogue price',salesUnit:'Sales unit',salesPending:'Confirm whether the price is per piece, pack or dozen.',note:'Details to confirm',pillowNote:'The catalogue lists 20 × 30 × 6 inches. Confirm what the 6-inch measurement describes before matching a pillow.',fittedNote:'The nominal size describes mattress width. Measure mattress length and total depth including any topper, then confirm finished sheet dimensions.',countBasis:'Counts come from the catalogue, with the square-inch reporting unit confirmed by the owner. Ask for the supplier counting method when comparing items.'},
+ zh:{price:'目录价格',salesUnit:'销售单位',salesPending:'请确认价格按件、包还是打计算。',note:'需确认的细节',pillowNote:'目录标示为20 × 30 × 6英寸。与枕芯匹配前，请确认6英寸指枕套的哪个部位。',fittedNote:'标称尺寸表示床垫宽度。请测量床垫长度及含垫层的总厚度，并确认床笠成品尺寸。',countBasis:'纱线数来自目录，每平方英寸的标示单位由店方确认。跨款比较时请询问供应商的计数方法。'},
+ ar:{price:'السعر المدرج في الكتالوج',salesUnit:'وحدة البيع',salesPending:'أكد إن كان السعر للقطعة أو العبوة أو الدزينة.',note:'تفاصيل تحتاج إلى تأكيد',pillowNote:'المقاس المدرج 20 × 30 × 6 بوصات. أكد ما الذي يمثله قياس 6 بوصات قبل مطابقة الوسادة.',fittedNote:'المقاس الاسمي يشير إلى عرض المرتبة. قس الطول والسمك الإجمالي مع الطبقة العلوية وأكد أبعاد الشرشف النهائية.',countBasis:'الأعداد من الكتالوج، وقد أكد المتجر وحدة العرض لكل بوصة مربعة. اطلب طريقة العد من المورد عند مقارنة الأصناف.'},
+ hi:{price:'कैटलॉग मूल्य',salesUnit:'बिक्री इकाई',salesPending:'पुष्टि करें कि कीमत प्रति वस्तु, पैक या दर्जन है।',note:'पुष्टि करने योग्य विवरण',pillowNote:'कैटलॉग में 20 × 30 × 6 इंच दर्ज है। तकिये से मिलान से पहले पूछें कि 6 इंच किस हिस्से का माप है।',fittedNote:'नाममात्र आकार गद्दे की चौड़ाई दर्शाता है। टॉपर सहित कुल गहराई और लंबाई मापकर चादर के तैयार माप की पुष्टि करें।',countBasis:'धागों की संख्या कैटलॉग से है और प्रति वर्ग इंच की इकाई दुकान ने पुष्ट की है। तुलना के लिए आपूर्तिकर्ता की गिनती विधि पूछें।'}
+};
+
+/** Shared display and enquiry facts. An unknown sales unit never becomes a price total. */
+export function productSpecificationRows(p:Product,lang:string):[string,string][]{
+ const c=copy[lang];
+ const w=specWords[lang];
+ const v=catalogueWords[lang];
+ const f=productFacts(p);
+ const note=p.productType.key==='pillowCase'?v.pillowNote:
+  p.productType.key==='bolsterCase'?w.bolster:f.fitted?v.fittedNote:w.careText;
+ return [
+  ['SKU',p.id],
+  [c.type,p.productType[lang as 'en']],
+  [c.material,p.fabricType[lang as 'en']],
+  [c.color,p.color[lang as 'en']],
+  [c.plain+' / '+c.striped,p.pattern[lang as 'en']],
+  [w.size,productSizeLabel(p,lang)],
+  [w.width,f.width?measure(f.width,lang):f.nominal?measure(f.nominal,lang)+' · '+w.nominal:w.confirm],
+  [w.length,f.length?measure(f.length,lang):w.confirm],
+  [w.fit,f.fit?measure(f.fit,lang):'—'],
+  [w.thread,p.threadCount?threadCountLabel(p,lang):'—'],
+  [w.weight,f.weight?new Intl.NumberFormat(lang).format(f.weight)+' '+w.lb+' · '+w.weightPending:'—'],
+  [v.price,formatTHB(p.price,lang)],
+  [v.salesUnit,v.salesPending],
+  [w.contents,w.pack],
+  [v.note,note]
+ ];
+}

@@ -1,6 +1,6 @@
 {
   "source": "Legacy catalog in products.ts; no supplier specification sheet supplied. Pending values are not inferred or published as verified.",
-  "reviewDate": "2026-10-25",
+  "reviewDate": "2026-11-03",
   "products": [
     {
       "sku": "FS-S35-ST370P-001",
@@ -18,7 +18,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[0]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-S35-ST370S-002",
@@ -36,7 +38,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[1]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-S35-C260S-003",
@@ -54,7 +58,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[2]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-S35-C230P-004",
@@ -72,7 +78,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[3]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-S35-C260P-005",
@@ -90,7 +98,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[4]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-S35-C260S-006",
@@ -108,7 +118,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[5]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-S35-C310P-007",
@@ -126,7 +138,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[6]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-S35-C310S-008",
@@ -144,7 +158,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[7]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-S35-CVC50-195P-009",
@@ -162,7 +178,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[8]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-S35-CVC60-260S-010",
@@ -180,7 +198,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[9]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-Q50-ST370P-011",
@@ -198,7 +218,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[10]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-Q50-ST370S-012",
@@ -216,7 +238,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[11]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-Q50-C260S-013",
@@ -234,7 +258,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[12]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-Q50-C230P-014",
@@ -252,7 +278,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[13]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-Q50-C260P-015",
@@ -270,7 +298,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[14]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-Q50-C260S-016",
@@ -288,7 +318,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[15]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-Q50-C310P-017",
@@ -306,7 +338,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[16]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-Q50-C310S-018",
@@ -324,7 +358,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[17]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-Q50-CVC50-195P-019",
@@ -342,7 +378,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[18]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-Q50-CVC60-260S-020",
@@ -360,7 +398,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[19]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-K60-ST370P-021",
@@ -378,7 +418,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[20]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-K60-ST370S-022",
@@ -396,7 +438,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[21]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-K60-C260S-023",
@@ -414,7 +458,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[22]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-K60-C230P-024",
@@ -432,7 +478,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[23]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-K60-C260P-025",
@@ -450,7 +498,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[24]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-K60-C260S-026",
@@ -468,7 +518,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[25]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-K60-C310P-027",
@@ -486,7 +538,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[26]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-K60-C310S-028",
@@ -504,7 +558,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[27]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-K60-CVC50-195P-029",
@@ -522,7 +578,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[28]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FS-K60-CVC60-260S-030",
@@ -540,7 +598,9 @@
         "mattressLength",
         "finishedTextileDimensions",
         "fitTolerance"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[29]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-S35-ST370P-031",
@@ -555,7 +615,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[30]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-K60-CVC60-260S-090",
@@ -571,7 +633,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[31]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "PC-STD-ST370P-091",
@@ -586,8 +650,11 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms",
-        "closure"
-      ]
+        "closure",
+        "thirdListedDimensionMeaning"
+      ],
+      "sourceReference": "products.ts rawProductData[32]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "PC-STD-ST370S-092",
@@ -602,8 +669,11 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms",
-        "closure"
-      ]
+        "closure",
+        "thirdListedDimensionMeaning"
+      ],
+      "sourceReference": "products.ts rawProductData[33]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "PC-STD-C260S-093",
@@ -618,8 +688,11 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms",
-        "closure"
-      ]
+        "closure",
+        "thirdListedDimensionMeaning"
+      ],
+      "sourceReference": "products.ts rawProductData[34]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "PC-STD-C230P-094",
@@ -634,8 +707,11 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms",
-        "closure"
-      ]
+        "closure",
+        "thirdListedDimensionMeaning"
+      ],
+      "sourceReference": "products.ts rawProductData[35]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "PC-STD-C260P-095",
@@ -650,8 +726,11 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms",
-        "closure"
-      ]
+        "closure",
+        "thirdListedDimensionMeaning"
+      ],
+      "sourceReference": "products.ts rawProductData[36]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "PC-STD-C260S-096",
@@ -666,8 +745,11 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms",
-        "closure"
-      ]
+        "closure",
+        "thirdListedDimensionMeaning"
+      ],
+      "sourceReference": "products.ts rawProductData[37]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "PC-STD-C310P-097",
@@ -682,8 +764,11 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms",
-        "closure"
-      ]
+        "closure",
+        "thirdListedDimensionMeaning"
+      ],
+      "sourceReference": "products.ts rawProductData[38]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "PC-STD-C310S-098",
@@ -698,8 +783,11 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms",
-        "closure"
-      ]
+        "closure",
+        "thirdListedDimensionMeaning"
+      ],
+      "sourceReference": "products.ts rawProductData[39]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "PC-STD-CVC50-195P-099",
@@ -714,8 +802,11 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms",
-        "closure"
-      ]
+        "closure",
+        "thirdListedDimensionMeaning"
+      ],
+      "sourceReference": "products.ts rawProductData[40]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "PC-STD-CVC60-260S-100",
@@ -730,8 +821,11 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms",
-        "closure"
-      ]
+        "closure",
+        "thirdListedDimensionMeaning"
+      ],
+      "sourceReference": "products.ts rawProductData[41]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-S35-ST370S-101",
@@ -746,7 +840,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[42]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-S35-C260S-102",
@@ -761,7 +857,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[43]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-S35-C230P-103",
@@ -776,7 +874,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[44]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-S35-C260P-104",
@@ -791,7 +891,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[45]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-S35-C260S-105",
@@ -806,7 +908,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[46]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-S35-C310P-106",
@@ -821,7 +925,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[47]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-S35-C310S-107",
@@ -836,7 +942,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[48]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-S35-CVC50P-108",
@@ -851,7 +959,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[49]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-S35-CVC60S-109",
@@ -866,7 +976,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[50]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-Q50-ST370P-110",
@@ -881,7 +993,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[51]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-Q50-ST370S-111",
@@ -896,7 +1010,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[52]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-Q50-C260S-112",
@@ -911,7 +1027,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[53]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-Q50-C230P-113",
@@ -926,7 +1044,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[54]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-Q50-C260P-114",
@@ -941,7 +1061,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[55]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-Q50-C260S-115",
@@ -956,7 +1078,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[56]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-Q50-C310P-116",
@@ -971,7 +1095,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[57]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-Q50-C310S-117",
@@ -986,7 +1112,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[58]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-Q50-CVC50P-118",
@@ -1001,7 +1129,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[59]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-Q50-CVC60S-119",
@@ -1016,7 +1146,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[60]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-K60-ST370P-120",
@@ -1031,7 +1163,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[61]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-K60-ST370S-121",
@@ -1046,7 +1180,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[62]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-K60-C260S-122",
@@ -1061,7 +1197,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[63]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-K60-C230P-123",
@@ -1076,7 +1214,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[64]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-K60-C260P-124",
@@ -1091,7 +1231,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[65]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-K60-C260S-125",
@@ -1106,7 +1248,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[66]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-K60-C310P-126",
@@ -1121,7 +1265,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[67]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-K60-C310S-127",
@@ -1136,7 +1282,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[68]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-K60-CVC50P-128",
@@ -1151,7 +1299,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[69]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "FL-K60-CVC60S-129",
@@ -1166,7 +1316,9 @@
         "originIfClaimed",
         "certificationIfClaimed",
         "warrantyTerms"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[70]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-S35-ST370P-130",
@@ -1182,7 +1334,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[71]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-S35-ST370S-131",
@@ -1198,7 +1352,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[72]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-S35-C260S-132",
@@ -1214,7 +1370,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[73]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-S35-C230P-133",
@@ -1230,7 +1388,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[74]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-S35-C260P-134",
@@ -1246,7 +1406,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[75]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-S35-C260S-135",
@@ -1262,7 +1424,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[76]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-S35-C310P-136",
@@ -1278,7 +1442,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[77]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-S35-C310S-137",
@@ -1294,7 +1460,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[78]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-S35-CVC50P-138",
@@ -1310,7 +1478,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[79]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-S35-CVC60S-139",
@@ -1326,7 +1496,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[80]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-Q50-ST370P-140",
@@ -1342,7 +1514,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[81]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-Q50-ST370S-141",
@@ -1358,7 +1532,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[82]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-Q50-C260S-142",
@@ -1374,7 +1550,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[83]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-Q50-C230P-143",
@@ -1390,7 +1568,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[84]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-Q50-C260P-144",
@@ -1406,7 +1586,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[85]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-Q50-C260S-145",
@@ -1422,7 +1604,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[86]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-Q50-C310P-146",
@@ -1438,7 +1622,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[87]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-Q50-C310S-147",
@@ -1454,7 +1640,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[88]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-Q50-CVC50P-148",
@@ -1470,7 +1658,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[89]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-Q50-CVC60S-149",
@@ -1486,7 +1676,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[90]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-K60-ST370P-150",
@@ -1502,7 +1694,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[91]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-K60-ST370S-151",
@@ -1518,7 +1712,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[92]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-K60-C260S-152",
@@ -1534,7 +1730,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[93]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-K60-C230P-153",
@@ -1550,7 +1748,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[94]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-K60-C260P-154",
@@ -1566,7 +1766,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[95]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-K60-C260S-155",
@@ -1582,7 +1784,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[96]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-K60-C310P-156",
@@ -1598,7 +1802,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[97]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-K60-C310S-157",
@@ -1614,7 +1820,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[98]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "DC-K60-CVC50P-158",
@@ -1630,7 +1838,9 @@
         "certificationIfClaimed",
         "warrantyTerms",
         "closure"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[99]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "TWL-STD-12LBS-WHT-01",
@@ -1647,7 +1857,9 @@
         "warrantyTerms",
         "weightUnitBasis",
         "GSM"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[100]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "TWL-MED-14LBS-WHT-02",
@@ -1664,7 +1876,9 @@
         "warrantyTerms",
         "weightUnitBasis",
         "GSM"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[101]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "TWL-LRG-16LBS-WHT-03",
@@ -1681,7 +1895,9 @@
         "warrantyTerms",
         "weightUnitBasis",
         "GSM"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[102]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "TWL-LUX-18LBS-WHT-04",
@@ -1698,7 +1914,9 @@
         "warrantyTerms",
         "weightUnitBasis",
         "GSM"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[103]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "BC-C100-406S-01",
@@ -1715,7 +1933,9 @@
         "warrantyTerms",
         "closure",
         "flatWidthOrCircumferenceBasis"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[104]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     },
     {
       "sku": "BC-CAD-500S-02",
@@ -1732,12 +1952,28 @@
         "warrantyTerms",
         "closure",
         "flatWidthOrCircumferenceBasis"
-      ]
+      ],
+      "sourceReference": "products.ts rawProductData[105]",
+      "reviewStatus": "catalogue-consistency-checked; supplier confirmation pending"
     }
   ],
   "threadCountBasis": {
     "unit": "threads per square inch",
     "source": "Original catalogue counts; reporting unit confirmed by owner instruction on 2026-10-26",
     "independentLaboratoryVerification": false
+  },
+  "reviewScope": "All 106 source SKU records checked against shared specification rows, comparison, enquiries and structured data. This is a catalogue consistency review, not supplier verification.",
+  "bathMatReference": {
+    "sourceReference": "catalogueSpecs.ts bathMatReference and restored towel page",
+    "status": "reference only; no verified SKU or price",
+    "unconfirmed": [
+      "weightUnitBasis",
+      "GSM",
+      "salesUnit",
+      "currentPriceAndCurrency",
+      "currentAvailability",
+      "supplierComposition",
+      "careLabel"
+    ]
   }
 }

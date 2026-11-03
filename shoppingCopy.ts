@@ -1,4 +1,4 @@
-const keys = ['finder','finderIntro','width','depth','family','finish','any','show','match','matchNote','noMatch','compare','selected','remove','clear','compareTitle','compareIntro','limit','close','quoteSelected','recentClear','sessionNote','property','rooms','destination','timing','dimensions','optional','hotel','resort','apartment','home','other','choose','search','searchPlaceholder','clearDraft','draftNote','selection','quantityError','copyError','heroKicker','heroTitle','heroIntro','heroShop','heroHotel','heroAlt','finderAlt','widthMatch','depthMatch','category','viewAll','confirmed','prepare','emptyCompare','fitNote','finderLength','finderLengthNote'] as const;
+const keys = ['finder','finderIntro','width','depth','family','finish','any','show','match','matchNote','noMatch','compare','selected','remove','clear','compareTitle','compareIntro','limit','close','quoteSelected','recentClear','sessionNote','property','rooms','destination','timing','dimensions','optional','hotel','resort','apartment','home','other','choose','search','searchPlaceholder','clearDraft','draftNote','selection','quantityError','copyError','heroKicker','heroTitle','heroIntro','heroShop','heroHotel','heroAlt','finderAlt','widthMatch','depthMatch','category','viewAll','confirmed','prepare','emptyCompare','fitNote','finderLength','finderLengthNote','comparisonScroll'] as const;
 type ShoppingWords = Record<typeof keys[number],string>;
 const values:Record<string,string[]> = {
 en:[
@@ -22,4 +22,6 @@ hi:[
 "गद्दे की लंबाई (सेमी)","यह लंबाई पूछताछ में शामिल होगी। किसी विकल्प को ऑर्डर करने से पहले चादर की वास्तविक लंबाई पुष्ट करें।"
 ]
 };
+const comparisonScroll:Record<string,string>={th:'เลื่อนตารางไปด้านข้างเพื่อดูสินค้ารายการอื่น',en:'Scroll sideways to view the other products.',zh:'左右滑动表格，查看其他商品。',ar:'مرّر الجدول أفقيًا لعرض المنتجات الأخرى.',hi:'दूसरे उत्पाद देखने के लिए तालिका को दाएँ-बाएँ खिसकाएँ।'};
+for(const [lang,words] of Object.entries(values))words.push(comparisonScroll[lang]);
 export const shoppingCopy:Record<string,ShoppingWords> = Object.fromEntries(Object.entries(values).map(([lang,v])=>{if(v.length!==keys.length)throw Error('Shopping translation mismatch: '+lang);return [lang,Object.fromEntries(keys.map((k,i)=>[k,v[i]])) as ShoppingWords]}));

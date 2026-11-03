@@ -4,7 +4,7 @@ import {JSDOM} from 'jsdom';
 import {build} from 'esbuild';
 import assert from 'node:assert/strict';
 const dom=new JSDOM('<!doctype html><html><head></head><body><div id="root"></div></body></html>',{url:'https://slumbazen.netlify.app/en/hotels?subject=RequestSamplesB2B'});
-for(const key of ['window','document','HTMLElement','HTMLInputElement','HTMLTextAreaElement','HTMLSelectElement','HTMLDialogElement','Event','MouseEvent','KeyboardEvent','sessionStorage','localStorage'])Object.defineProperty(globalThis,key,{value:dom.window[key],configurable:true});
+for(const key of ['window','document','HTMLElement','HTMLInputElement','HTMLTextAreaElement','HTMLSelectElement','HTMLDialogElement','Event','MouseEvent','KeyboardEvent','sessionStorage','localStorage','FormData'])Object.defineProperty(globalThis,key,{value:dom.window[key],configurable:true});
 Object.defineProperty(globalThis,'navigator',{value:dom.window.navigator,configurable:true});
 globalThis.IS_REACT_ACT_ENVIRONMENT=true;
 globalThis.requestAnimationFrame=fn=>setTimeout(fn,0);globalThis.cancelAnimationFrame=clearTimeout;globalThis.innerHeight=900;globalThis.scrollY=0;

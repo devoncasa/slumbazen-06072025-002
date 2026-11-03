@@ -252,3 +252,57 @@ Final laboratory medians (three cold runs each):
 Mobile home LCP is effectively unchanged (+12 ms), with 50.6% fewer bytes.
 Raw runs and resource-level image transfers are in stage6-performance.json.
 Stage 7 remains the final acceptance/release batch; production is unchanged.
+
+## Stage 7 acceptance — source passed; release blocked
+
+A fresh Git checkout and npm ci verified the locked dependencies. A production
+npm run check passed all 620 localized routes and 33,520 internal links. The
+additional npm run check:release-artifact checks sitemap entries, referenced
+assets and production indexing controls; it never publishes or submits a form.
+
+The final browser matrix covered 315 page/language/viewport combinations: 15
+main routes and six product types in five languages at 360, 820 and 1440 px.
+No overflow, missing image alternative, broken loaded image or runtime error
+was reported. The matrix included 31 automated axe scans. A separate 15-flow
+suite added 75 scans of recently-viewed items, selected compare buttons,
+one- and three-product comparisons and native photo dialogs. Neither final
+suite reported axe violations. Native browser-toolbar focus is permitted;
+modal backgrounds cannot receive focus. Desktop cards downloaded 400 px WebP;
+a high-density phone downloaded 800 px WebP. These automated, keyboard and
+visual spot checks are not a full WCAG or physical-device certification.
+Axe incomplete rules remain manual-review signals. Remote font CSS and a WOFF2
+font source for each of the five languages also returned 200.
+
+Acceptance fixes make accessible names match visible language codes, recent
+counts and compare selections. One-product tables now fit a narrow dialog;
+multi-product tables use sticky row labels and a localized scroll hint. The
+DOM test harness uses DOM FormData instead of Node's incompatible constructor.
+
+**Release decision: NO-GO. Stage 7 and the seven-stage programme are not marked
+complete. No deployment or deployment-triggering pull request was created.**
+
+Authenticated Netlify inspection still shows the certificate expired on
+24 September 2026, the historical 26 October ACME failure and the obsolete
+Netlify registration/DNS association. Public authoritative DNS remains
+Spaceship. There is no Delete DNS zone control on that registration page.
+Both custom names failed HTTPS from the checking environment; the Netlify
+fallback returned 200. This is not a measured worldwide outage. Support case
+1153097 must reconcile the obsolete association and provision valid HTTPS.
+The previous follow-up was sent on 3 November; no new message was sent here.
+Do not enable renewal of the obsolete registration or delete external records.
+
+The existing enquiry form is registered, with its expected fields and honeypot.
+Historical submissions do not prove the new build's receipt or notifications.
+After the domain blocker is resolved, verify HTTPS and the path/query-preserving
+canonical redirect. A permitted release must then be checked for its actual
+commit, CDN headers, controlled form receipt and notifications. Netlify is
+linked to the correct GitHub repository; main is production, builds are active,
+and Node 22.x / npm run build / dist match the source configuration.
+
+Evidence: verification/stage7-checks.json, stage7-domain.json and
+stage7-browser.json. Resume with the domain blocker and any new support reply.
+Do not rerun unchanged source QA or deploy merely because source checks pass.
+
+Bundle budgets read the active entry and stylesheet from built HTML, so leftover
+unused files cannot skew reported transfer sizes. The final check suite passed
+again after this test-harness correction; no application behavior changed.

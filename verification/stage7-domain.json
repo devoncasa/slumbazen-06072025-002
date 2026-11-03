@@ -1,0 +1,203 @@
+{
+  "date": "2026-11-03",
+  "publicChecks": [
+    {
+      "url": "https://www.slumbazen.com/th/",
+      "status": 503,
+      "error": "upstream connect error or disconnect/reset before headers. reset reason: remote connection failure"
+    },
+    {
+      "url": "https://slumbazen.com/th/",
+      "status": 503,
+      "error": "upstream connect error or disconnect/reset before headers. reset reason: remote connection failure"
+    },
+    {
+      "url": "https://slumbazen.netlify.app/th/",
+      "status": 200,
+      "finalUrl": "https://slumbazen.netlify.app/th/"
+    }
+  ],
+  "dns": [
+    {
+      "url": "https://dns.google/resolve?name=slumbazen.com&type=NS",
+      "status": 200,
+      "dns": {
+        "Status": 0,
+        "TC": false,
+        "RD": true,
+        "RA": true,
+        "AD": true,
+        "CD": false,
+        "Question": [
+          {
+            "name": "slumbazen.com.",
+            "type": 2
+          }
+        ],
+        "Answer": [
+          {
+            "name": "slumbazen.com.",
+            "type": 2,
+            "TTL": 1800,
+            "data": "launch2.spaceship.net."
+          },
+          {
+            "name": "slumbazen.com.",
+            "type": 2,
+            "TTL": 1800,
+            "data": "launch1.spaceship.net."
+          }
+        ],
+        "Comment": "Response from 162.159.26.38."
+      }
+    },
+    {
+      "url": "https://dns.google/resolve?name=www.slumbazen.com&type=CNAME",
+      "status": 200,
+      "dns": {
+        "Status": 0,
+        "TC": false,
+        "RD": true,
+        "RA": true,
+        "AD": true,
+        "CD": false,
+        "Question": [
+          {
+            "name": "www.slumbazen.com.",
+            "type": 5
+          }
+        ],
+        "Answer": [
+          {
+            "name": "www.slumbazen.com.",
+            "type": 5,
+            "TTL": 1800,
+            "data": "slumbazen.netlify.app."
+          }
+        ],
+        "Comment": "Response from 162.159.27.32."
+      }
+    },
+    {
+      "url": "https://dns.google/resolve?name=slumbazen.com&type=A",
+      "status": 200,
+      "dns": {
+        "Status": 0,
+        "TC": false,
+        "RD": true,
+        "RA": true,
+        "AD": true,
+        "CD": false,
+        "Question": [
+          {
+            "name": "slumbazen.com.",
+            "type": 1
+          }
+        ],
+        "Answer": [
+          {
+            "name": "slumbazen.com.",
+            "type": 1,
+            "TTL": 1800,
+            "data": "75.2.60.5"
+          },
+          {
+            "name": "slumbazen.com.",
+            "type": 1,
+            "TTL": 1800,
+            "data": "99.83.231.61"
+          }
+        ],
+        "Comment": "Response from 162.159.27.32."
+      }
+    }
+  ],
+  "dnsAdditional": [
+    {
+      "name": "slumbazen.com",
+      "type": "AAAA",
+      "status": 0,
+      "answers": [],
+      "authenticatedData": true
+    },
+    {
+      "name": "www.slumbazen.com",
+      "type": "AAAA",
+      "status": 0,
+      "answers": [
+        {
+          "name": "www.slumbazen.com.",
+          "type": 5,
+          "TTL": 1305,
+          "data": "slumbazen.netlify.app."
+        },
+        {
+          "name": "slumbazen.netlify.app.",
+          "type": 28,
+          "TTL": 311,
+          "data": "2a05:d014:58f:6200::258"
+        },
+        {
+          "name": "slumbazen.netlify.app.",
+          "type": 28,
+          "TTL": 311,
+          "data": "2a05:d014:58f:6200::259"
+        }
+      ],
+      "authenticatedData": false
+    },
+    {
+      "name": "slumbazen.com",
+      "type": "CAA",
+      "status": 0,
+      "answers": [],
+      "authenticatedData": true
+    },
+    {
+      "name": "slumbazen.com",
+      "type": "DS",
+      "status": 0,
+      "answers": [
+        {
+          "name": "slumbazen.com.",
+          "type": 43,
+          "TTL": 21600,
+          "data": "8530 13 2 7B9B65AC67CD3F01C44D4531D77BC066713C077B754D03463A2E77DA2EB4452A"
+        }
+      ],
+      "authenticatedData": true
+    }
+  ],
+  "authenticatedNetlifyUI": {
+    "domainManagementUrl": "https://app.netlify.com/projects/slumbazen/domain-management",
+    "primary": "www.slumbazen.com",
+    "apexRedirectConfigured": true,
+    "certificateNames": [
+      "*.slumbazen.com",
+      "slumbazen.com"
+    ],
+    "certificateExpiry": "2026-09-24",
+    "certificateUpdated": "2026-10-25",
+    "historicalAuthorizationFailureRetryDate": "2026-10-26 06:28:33 UTC",
+    "historicalRateLimitStillDisplayed": true,
+    "bothAliasesStillLabelledNetlifyDNS": true,
+    "dnsZoneStillShowsObsoleteRegistrationExpiry": "2026-06-30",
+    "dnsZoneDeletionControlAvailable": false,
+    "publicDelegation": "Spaceship",
+    "repository": "devoncasa/slumbazen-06072025-002",
+    "productionBranch": "main",
+    "buildCommand": "npm run build",
+    "publishDirectory": "dist",
+    "nodeVersion": "22.x",
+    "builds": "Active",
+    "branchDeploys": "production branch only",
+    "deployPreviews": "pull requests against production/branch deploy branches"
+  },
+  "support": {
+    "case": 1153097,
+    "latestFollowup": "2026-11-03",
+    "newFollowupSentThisStage": false
+  },
+  "mutationsApplied": [],
+  "interpretation": "The 503 came from the checking environment with an upstream connection failure. The authenticated Netlify panel independently confirms its expired certificate and stale DNS association. This is not a worldwide uptime measurement or a freshly measured served certificate. The historical one-hour rate limit is not claimed to be active today."
+}

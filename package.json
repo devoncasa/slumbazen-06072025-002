@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "node scripts/restore-assets.mjs && vite build && node scripts/build.mjs",
     "preview": "vite preview",
-    "check": "npm run build && tsc --noEmit && node scripts/check-all.mjs"
+    "check": "npm run build && tsc --noEmit && node scripts/check-all.mjs",
+    "check:release-artifact": "node scripts/check-release-artifact.mjs"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",

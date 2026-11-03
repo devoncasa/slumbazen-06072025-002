@@ -1,0 +1,113 @@
+{
+  "stage": 7,
+  "date": "2026-11-03",
+  "status": "blocked-on-dns-ssl",
+  "sourceAcceptance": "passed",
+  "allSevenStagesComplete": false,
+  "releaseDecision": "NO-GO",
+  "deployed": false,
+  "baseSourceCommit": "0ae489880fe090ce7bdcbe9891e0eb75b71bcbfa",
+  "unchangedProduction": {
+    "branch": "main",
+    "commit": "ca6ac1bba6d8f630397c6a0fa88654e406a33f21",
+    "deployId": "6ae04b184de987df542dc369"
+  },
+  "sourceChecks": {
+    "freshGitClone": true,
+    "npmCiFromLockfile": "passed",
+    "productionNpmRunCheck": "passed",
+    "localizedRoutes": 620,
+    "internalLinks": 33520,
+    "brokenLinks": 0,
+    "mainJsGzipBytes": 112915,
+    "cssGzipBytes": 13844,
+    "productionArtifact": {
+      "localizedPages": 620,
+      "sitemapUrls": 620,
+      "referencedAssets": 385,
+      "missingAssets": 0,
+      "previewIndexingControlsAbsent": true,
+      "noJavaScriptLanguageLinks": 5,
+      "networkOrDeploymentPerformed": false
+    },
+    "dependencyAudit": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "browserLayouts": 315,
+    "broadAxeScans": 31,
+    "statefulFlows": 15,
+    "statefulAxeScans": 75,
+    "reportedAxeViolations": 0,
+    "responsiveImageChecks": 2,
+    "remoteFontChecks": [
+      {
+        "language": "th",
+        "cssStatus": 200,
+        "fontStatus": 200,
+        "woff2": true,
+        "fontDisplaySwap": true
+      },
+      {
+        "language": "en",
+        "cssStatus": 200,
+        "fontStatus": 200,
+        "woff2": true,
+        "fontDisplaySwap": true
+      },
+      {
+        "language": "zh",
+        "cssStatus": 200,
+        "fontStatus": 200,
+        "woff2": true,
+        "fontDisplaySwap": true
+      },
+      {
+        "language": "ar",
+        "cssStatus": 200,
+        "fontStatus": 200,
+        "woff2": true,
+        "fontDisplaySwap": true
+      },
+      {
+        "language": "hi",
+        "cssStatus": 200,
+        "fontStatus": 200,
+        "woff2": true,
+        "fontDisplaySwap": true
+      }
+    ],
+    "exactEntryBundleCheck": "passed"
+  },
+  "changes": [
+    "Accessible names include visible language codes, recent-item counts and selected compare labels.",
+    "One-product comparisons fit the dialog; multi-product tables have sticky row labels and a localized scroll hint.",
+    "The simulated-DOM harness now uses DOM FormData, avoiding a Node/DOM constructor mismatch.",
+    "A production artifact check validates sitemap/indexing controls and referenced assets without publishing.",
+    "Bundle budgets inspect the active entry referenced by built HTML, so old unused files cannot skew the result."
+  ],
+  "blockingItems": [
+    {
+      "id": "DOMAIN-SSL",
+      "owner": "Netlify DNS/SSL support; case 1153097",
+      "detail": "Reconcile obsolete Netlify registration/DNS metadata with current Spaceship authoritative DNS and provision a valid certificate for apex and www. Preserve external email and verification records."
+    }
+  ],
+  "pendingLiveChecks": [
+    "Valid HTTPS for slumbazen.com and www.slumbazen.com without bypassing certificate checks.",
+    "Apex-to-www redirect preserving language/product path and query.",
+    "After a permitted release, verify the deployed SHA and CDN caching/security response headers.",
+    "After a permitted release, verify controlled form receipt and notifications."
+  ],
+  "limitations": [
+    "No deployment, DNS deletion, certificate renewal, registration purchase or support message was performed in Stage 7.",
+    "Viewport emulation does not certify physical iOS/Android or screen-reader behavior. Axe incomplete results remain manual-review signals.",
+    "Known non-failing simulated-DOM act and build use-client directive warnings remain.",
+    "Unverified supplier facts remain disclosed; no fake offers, availability or reviews were added."
+  ],
+  "resume": "Resolve DOMAIN-SSL and inspect any new support reply first. Retest the domain; do not repeat unchanged source QA or deploy while this release gate is blocked."
+}

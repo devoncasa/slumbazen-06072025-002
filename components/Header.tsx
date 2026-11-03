@@ -210,7 +210,7 @@ const Header: React.FC = () => {
                   id="language-menu-button"
                   aria-haspopup="true"
                   aria-expanded={isLangDropdownOpen}
-                  aria-label={t('nav.languageSwitcher')}
+                  aria-label={`${currentLanguage.label} · ${t('nav.languageSwitcher')}`}
                 >
                   <GlobeAltIcon className="h-5 w-5 text-neutral-600" />
                   <span className="mx-2">{currentLanguage.label}</span>

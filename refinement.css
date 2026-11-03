@@ -95,3 +95,15 @@ html[lang=en] .editorial-hero h1{font-family:Georgia,'Times New Roman',serif;fon
 /* Keep the first visible hero discoverable in CSS with a width-appropriate source. */
 .legacy-site .responsive-background{background-image:var(--background-large)}
 @media(max-width:767px){.legacy-site .responsive-background{background-image:var(--background-small)}}
+
+/* Keep one-item comparisons readable without a horizontal swipe. */
+.legacy-site .comparison-dialog table[data-items="1"]{min-width:0}
+.legacy-site .comparison-dialog th:first-child{width:150px;position:sticky;inset-inline-start:0;background:#eee7df;z-index:1}
+.legacy-site .comparison-dialog thead th:first-child{z-index:2}
+.legacy-site .comparison-dialog table[data-items="1"] th:first-child{width:40%}
+.comparison-scroll-hint{display:none}
+@media(max-width:767px){
+ .comparison-scroll-hint{display:block}
+ .legacy-site .comparison-dialog table:not([data-items="1"]){min-width:calc(110px + 150px * var(--comparison-count))}
+ .legacy-site .comparison-dialog table:not([data-items="1"]) th:first-child{width:110px}
+}

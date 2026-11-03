@@ -51,7 +51,7 @@ for(const lang of languages)for(const route of [...paths,...articleSlugs.map(s=>
   const target='dist'+u.pathname.replace(/\/?$/,'/')+'index.html';assert(fs.existsSync(target),file+' broken '+href);if(u.hash)assert(fs.readFileSync(target,'utf8').includes('id="'+decodeURIComponent(u.hash.slice(1))+'"'),file+' anchor '+href);linkCount++;
  }
 }
-const assets=fs.readdirSync('dist/assets');const entry=assets.find(p=>/^index-.*\.js$/.test(p))!;const css=assets.find(p=>/^index-.*\.css$/.test(p))!;const jsGzip=gzipSync(fs.readFileSync('dist/assets/'+entry)).length;const cssGzip=gzipSync(fs.readFileSync('dist/assets/'+css)).length;
+const entryHtml=fs.readFileSync('dist/index.html','utf8');const entry=entryHtml.match(/src="\/assets\/(index-[^"]+\.js)"/)?.[1];const css=entryHtml.match(/href="\/assets\/(index-[^"]+\.css)"/)?.[1];assert(entry&&css,'Built HTML must reference its current bundles');const jsGzip=gzipSync(fs.readFileSync('dist/assets/'+entry)).length;const cssGzip=gzipSync(fs.readFileSync('dist/assets/'+css)).length;
 assert(jsGzip<120000,'Main JavaScript gzip budget');assert(cssGzip<15000,'CSS gzip budget');
 for(const name of ['quiet-bedroom','selection-details']){assert(fs.statSync('dist/assets/editorial/'+name+'.webp').size<120000);assert(fs.statSync('dist/assets/editorial/'+name+'-640.webp').size<40000)}
 const form=fs.readFileSync('dist/__forms.html','utf8');for(const field of ['form-name','name','email','message','language','bot-field'])assert(form.includes('name="'+field+'"'));assert(form.includes('data-netlify="true"'));

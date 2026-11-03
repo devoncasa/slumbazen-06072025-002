@@ -1,0 +1,3653 @@
+{
+  "layoutCoverage": {
+    "pages": 315,
+    "languages": [
+      "th",
+      "en",
+      "zh",
+      "ar",
+      "hi"
+    ],
+    "viewportWidths": [
+      360,
+      820,
+      1440
+    ],
+    "mainRoutes": 15,
+    "representativeProductTypes": 6,
+    "runtimeErrors": [],
+    "axeScans": 31,
+    "reportedAxeViolations": 0,
+    "results": [
+      {
+        "width": 360,
+        "language": "th",
+        "route": "home",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "th",
+        "route": "collections",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "th",
+        "route": "gallery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "th",
+        "route": "products/white-sheets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "th",
+        "route": "products/premium-colors",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "th",
+        "route": "products/sets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "th",
+        "route": "towels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "th",
+        "route": "materials",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "th",
+        "route": "what-is-tencel",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "th",
+        "route": "sizes",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "th",
+        "route": "hotels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "th",
+        "route": "delivery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "th",
+        "route": "contact",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "th",
+        "route": "blog",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "th",
+        "route": "bedding-finder",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "th",
+        "route": "product/fs-s35-st370p-001",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "th",
+        "route": "product/fl-s35-st370p-031",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "th",
+        "route": "product/dc-k60-cvc60-260s-090",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "th",
+        "route": "product/pc-std-st370p-091",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "th",
+        "route": "product/twl-std-12lbs-wht-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "th",
+        "route": "product/bc-c100-406s-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "en",
+        "route": "home",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "en",
+        "route": "collections",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "en",
+        "route": "gallery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "en",
+        "route": "products/white-sheets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "en",
+        "route": "products/premium-colors",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "en",
+        "route": "products/sets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "en",
+        "route": "towels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "en",
+        "route": "materials",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "en",
+        "route": "what-is-tencel",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "en",
+        "route": "sizes",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "en",
+        "route": "hotels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "en",
+        "route": "delivery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "en",
+        "route": "contact",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "en",
+        "route": "blog",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "en",
+        "route": "bedding-finder",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "en",
+        "route": "product/fs-s35-st370p-001",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "en",
+        "route": "product/fl-s35-st370p-031",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "en",
+        "route": "product/dc-k60-cvc60-260s-090",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "en",
+        "route": "product/pc-std-st370p-091",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "en",
+        "route": "product/twl-std-12lbs-wht-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "en",
+        "route": "product/bc-c100-406s-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "zh",
+        "route": "home",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "zh",
+        "route": "collections",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "zh",
+        "route": "gallery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "zh",
+        "route": "products/white-sheets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "zh",
+        "route": "products/premium-colors",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "zh",
+        "route": "products/sets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "zh",
+        "route": "towels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "zh",
+        "route": "materials",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "zh",
+        "route": "what-is-tencel",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "zh",
+        "route": "sizes",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "zh",
+        "route": "hotels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "zh",
+        "route": "delivery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "zh",
+        "route": "contact",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "zh",
+        "route": "blog",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "zh",
+        "route": "bedding-finder",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "zh",
+        "route": "product/fs-s35-st370p-001",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "zh",
+        "route": "product/fl-s35-st370p-031",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "zh",
+        "route": "product/dc-k60-cvc60-260s-090",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "zh",
+        "route": "product/pc-std-st370p-091",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "zh",
+        "route": "product/twl-std-12lbs-wht-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "zh",
+        "route": "product/bc-c100-406s-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "ar",
+        "route": "home",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "ar",
+        "route": "collections",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "ar",
+        "route": "gallery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "ar",
+        "route": "products/white-sheets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "ar",
+        "route": "products/premium-colors",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "ar",
+        "route": "products/sets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "ar",
+        "route": "towels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "ar",
+        "route": "materials",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "ar",
+        "route": "what-is-tencel",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "ar",
+        "route": "sizes",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "ar",
+        "route": "hotels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "ar",
+        "route": "delivery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "ar",
+        "route": "contact",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "ar",
+        "route": "blog",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "ar",
+        "route": "bedding-finder",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "ar",
+        "route": "product/fs-s35-st370p-001",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "ar",
+        "route": "product/fl-s35-st370p-031",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "ar",
+        "route": "product/dc-k60-cvc60-260s-090",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "ar",
+        "route": "product/pc-std-st370p-091",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "ar",
+        "route": "product/twl-std-12lbs-wht-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "ar",
+        "route": "product/bc-c100-406s-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "hi",
+        "route": "home",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "hi",
+        "route": "collections",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "hi",
+        "route": "gallery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "hi",
+        "route": "products/white-sheets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "hi",
+        "route": "products/premium-colors",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "hi",
+        "route": "products/sets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "hi",
+        "route": "towels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "hi",
+        "route": "materials",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "hi",
+        "route": "what-is-tencel",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "hi",
+        "route": "sizes",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "hi",
+        "route": "hotels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "hi",
+        "route": "delivery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "hi",
+        "route": "contact",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "hi",
+        "route": "blog",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "hi",
+        "route": "bedding-finder",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "hi",
+        "route": "product/fs-s35-st370p-001",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "hi",
+        "route": "product/fl-s35-st370p-031",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "hi",
+        "route": "product/dc-k60-cvc60-260s-090",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "hi",
+        "route": "product/pc-std-st370p-091",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "hi",
+        "route": "product/twl-std-12lbs-wht-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 360,
+        "language": "hi",
+        "route": "product/bc-c100-406s-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "th",
+        "route": "home",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "th",
+        "route": "collections",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "th",
+        "route": "gallery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "th",
+        "route": "products/white-sheets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "th",
+        "route": "products/premium-colors",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "th",
+        "route": "products/sets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "th",
+        "route": "towels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "th",
+        "route": "materials",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "th",
+        "route": "what-is-tencel",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "th",
+        "route": "sizes",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "th",
+        "route": "hotels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "th",
+        "route": "delivery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "th",
+        "route": "contact",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "th",
+        "route": "blog",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "th",
+        "route": "bedding-finder",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "th",
+        "route": "product/fs-s35-st370p-001",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "th",
+        "route": "product/fl-s35-st370p-031",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "th",
+        "route": "product/dc-k60-cvc60-260s-090",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "th",
+        "route": "product/pc-std-st370p-091",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "th",
+        "route": "product/twl-std-12lbs-wht-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "th",
+        "route": "product/bc-c100-406s-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "en",
+        "route": "home",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "en",
+        "route": "collections",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "en",
+        "route": "gallery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "en",
+        "route": "products/white-sheets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "en",
+        "route": "products/premium-colors",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "en",
+        "route": "products/sets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "en",
+        "route": "towels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "en",
+        "route": "materials",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "en",
+        "route": "what-is-tencel",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "en",
+        "route": "sizes",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "en",
+        "route": "hotels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "en",
+        "route": "delivery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "en",
+        "route": "contact",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "en",
+        "route": "blog",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "en",
+        "route": "bedding-finder",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "en",
+        "route": "product/fs-s35-st370p-001",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "en",
+        "route": "product/fl-s35-st370p-031",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "en",
+        "route": "product/dc-k60-cvc60-260s-090",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "en",
+        "route": "product/pc-std-st370p-091",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "en",
+        "route": "product/twl-std-12lbs-wht-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "en",
+        "route": "product/bc-c100-406s-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "zh",
+        "route": "home",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "zh",
+        "route": "collections",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "zh",
+        "route": "gallery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "zh",
+        "route": "products/white-sheets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "zh",
+        "route": "products/premium-colors",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "zh",
+        "route": "products/sets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "zh",
+        "route": "towels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "zh",
+        "route": "materials",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "zh",
+        "route": "what-is-tencel",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "zh",
+        "route": "sizes",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "zh",
+        "route": "hotels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "zh",
+        "route": "delivery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "zh",
+        "route": "contact",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "zh",
+        "route": "blog",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "zh",
+        "route": "bedding-finder",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "zh",
+        "route": "product/fs-s35-st370p-001",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "zh",
+        "route": "product/fl-s35-st370p-031",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "zh",
+        "route": "product/dc-k60-cvc60-260s-090",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "zh",
+        "route": "product/pc-std-st370p-091",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "zh",
+        "route": "product/twl-std-12lbs-wht-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "zh",
+        "route": "product/bc-c100-406s-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "ar",
+        "route": "home",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "ar",
+        "route": "collections",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "ar",
+        "route": "gallery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "ar",
+        "route": "products/white-sheets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "ar",
+        "route": "products/premium-colors",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "ar",
+        "route": "products/sets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "ar",
+        "route": "towels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "ar",
+        "route": "materials",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "ar",
+        "route": "what-is-tencel",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "ar",
+        "route": "sizes",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "ar",
+        "route": "hotels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "ar",
+        "route": "delivery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "ar",
+        "route": "contact",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "ar",
+        "route": "blog",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "ar",
+        "route": "bedding-finder",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "ar",
+        "route": "product/fs-s35-st370p-001",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "ar",
+        "route": "product/fl-s35-st370p-031",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "ar",
+        "route": "product/dc-k60-cvc60-260s-090",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "ar",
+        "route": "product/pc-std-st370p-091",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "ar",
+        "route": "product/twl-std-12lbs-wht-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "ar",
+        "route": "product/bc-c100-406s-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "hi",
+        "route": "home",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "hi",
+        "route": "collections",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "hi",
+        "route": "gallery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "hi",
+        "route": "products/white-sheets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "hi",
+        "route": "products/premium-colors",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "hi",
+        "route": "products/sets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "hi",
+        "route": "towels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "hi",
+        "route": "materials",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "hi",
+        "route": "what-is-tencel",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "hi",
+        "route": "sizes",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "hi",
+        "route": "hotels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "hi",
+        "route": "delivery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "hi",
+        "route": "contact",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "hi",
+        "route": "blog",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "hi",
+        "route": "bedding-finder",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "hi",
+        "route": "product/fs-s35-st370p-001",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "hi",
+        "route": "product/fl-s35-st370p-031",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "hi",
+        "route": "product/dc-k60-cvc60-260s-090",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "hi",
+        "route": "product/pc-std-st370p-091",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "hi",
+        "route": "product/twl-std-12lbs-wht-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 820,
+        "language": "hi",
+        "route": "product/bc-c100-406s-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "th",
+        "route": "home",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "th",
+        "route": "collections",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "th",
+        "route": "gallery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "th",
+        "route": "products/white-sheets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "th",
+        "route": "products/premium-colors",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "th",
+        "route": "products/sets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "th",
+        "route": "towels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "th",
+        "route": "materials",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "th",
+        "route": "what-is-tencel",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "th",
+        "route": "sizes",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "th",
+        "route": "hotels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "th",
+        "route": "delivery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "th",
+        "route": "contact",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "th",
+        "route": "blog",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "th",
+        "route": "bedding-finder",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "th",
+        "route": "product/fs-s35-st370p-001",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "th",
+        "route": "product/fl-s35-st370p-031",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "th",
+        "route": "product/dc-k60-cvc60-260s-090",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "th",
+        "route": "product/pc-std-st370p-091",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "th",
+        "route": "product/twl-std-12lbs-wht-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "th",
+        "route": "product/bc-c100-406s-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "en",
+        "route": "home",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "en",
+        "route": "collections",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "en",
+        "route": "gallery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "en",
+        "route": "products/white-sheets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "en",
+        "route": "products/premium-colors",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "en",
+        "route": "products/sets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "en",
+        "route": "towels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "en",
+        "route": "materials",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "en",
+        "route": "what-is-tencel",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "en",
+        "route": "sizes",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "en",
+        "route": "hotels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "en",
+        "route": "delivery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "en",
+        "route": "contact",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "en",
+        "route": "blog",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "en",
+        "route": "bedding-finder",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "en",
+        "route": "product/fs-s35-st370p-001",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "en",
+        "route": "product/fl-s35-st370p-031",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "en",
+        "route": "product/dc-k60-cvc60-260s-090",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "en",
+        "route": "product/pc-std-st370p-091",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "en",
+        "route": "product/twl-std-12lbs-wht-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "en",
+        "route": "product/bc-c100-406s-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "route": "home",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "route": "collections",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "route": "gallery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "route": "products/white-sheets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "route": "products/premium-colors",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "route": "products/sets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "route": "towels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "route": "materials",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "route": "what-is-tencel",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "route": "sizes",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "route": "hotels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "route": "delivery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "route": "contact",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "route": "blog",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "route": "bedding-finder",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "route": "product/fs-s35-st370p-001",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "route": "product/fl-s35-st370p-031",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "route": "product/dc-k60-cvc60-260s-090",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "route": "product/pc-std-st370p-091",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "route": "product/twl-std-12lbs-wht-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "zh",
+        "route": "product/bc-c100-406s-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "ar",
+        "route": "home",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "ar",
+        "route": "collections",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "ar",
+        "route": "gallery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "ar",
+        "route": "products/white-sheets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "ar",
+        "route": "products/premium-colors",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "ar",
+        "route": "products/sets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "ar",
+        "route": "towels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "ar",
+        "route": "materials",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "ar",
+        "route": "what-is-tencel",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "ar",
+        "route": "sizes",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "ar",
+        "route": "hotels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "ar",
+        "route": "delivery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "ar",
+        "route": "contact",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "ar",
+        "route": "blog",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "ar",
+        "route": "bedding-finder",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "ar",
+        "route": "product/fs-s35-st370p-001",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "ar",
+        "route": "product/fl-s35-st370p-031",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "ar",
+        "route": "product/dc-k60-cvc60-260s-090",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "ar",
+        "route": "product/pc-std-st370p-091",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "ar",
+        "route": "product/twl-std-12lbs-wht-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "ar",
+        "route": "product/bc-c100-406s-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "hi",
+        "route": "home",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "hi",
+        "route": "collections",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "hi",
+        "route": "gallery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "hi",
+        "route": "products/white-sheets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "hi",
+        "route": "products/premium-colors",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "hi",
+        "route": "products/sets",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "hi",
+        "route": "towels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "hi",
+        "route": "materials",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "hi",
+        "route": "what-is-tencel",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "hi",
+        "route": "sizes",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "hi",
+        "route": "hotels",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "hi",
+        "route": "delivery",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "hi",
+        "route": "contact",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "hi",
+        "route": "blog",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "hi",
+        "route": "bedding-finder",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "hi",
+        "route": "product/fs-s35-st370p-001",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "hi",
+        "route": "product/fl-s35-st370p-031",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "hi",
+        "route": "product/dc-k60-cvc60-260s-090",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "hi",
+        "route": "product/pc-std-st370p-091",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "hi",
+        "route": "product/twl-std-12lbs-wht-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      },
+      {
+        "width": 1440,
+        "language": "hi",
+        "route": "product/bc-c100-406s-01",
+        "h1Count": 1,
+        "overflowPx": 0,
+        "brokenImages": 0,
+        "missingImageAlt": 0
+      }
+    ]
+  },
+  "statefulCoverage": {
+    "flows": 15,
+    "axeScans": 75,
+    "axeVersion": "4.14.0",
+    "reportedViolations": 0,
+    "results": [
+      {
+        "width": 360,
+        "lang": "th",
+        "keyboardFocusContained": true,
+        "escapeAndFocusRestoration": true,
+        "runtimeErrors": [],
+        "scans": [
+          {
+            "state": "product-with-recent-items",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "selected-comparison-button",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "comparison-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "three-item-comparison",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "photo-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          }
+        ]
+      },
+      {
+        "width": 360,
+        "lang": "en",
+        "keyboardFocusContained": true,
+        "escapeAndFocusRestoration": true,
+        "runtimeErrors": [],
+        "scans": [
+          {
+            "state": "product-with-recent-items",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "selected-comparison-button",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "comparison-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "three-item-comparison",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "photo-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          }
+        ]
+      },
+      {
+        "width": 360,
+        "lang": "zh",
+        "keyboardFocusContained": true,
+        "escapeAndFocusRestoration": true,
+        "runtimeErrors": [],
+        "scans": [
+          {
+            "state": "product-with-recent-items",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "selected-comparison-button",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "comparison-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "three-item-comparison",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "photo-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          }
+        ]
+      },
+      {
+        "width": 360,
+        "lang": "ar",
+        "keyboardFocusContained": true,
+        "escapeAndFocusRestoration": true,
+        "runtimeErrors": [],
+        "scans": [
+          {
+            "state": "product-with-recent-items",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "selected-comparison-button",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "comparison-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "three-item-comparison",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "photo-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          }
+        ]
+      },
+      {
+        "width": 360,
+        "lang": "hi",
+        "keyboardFocusContained": true,
+        "escapeAndFocusRestoration": true,
+        "runtimeErrors": [],
+        "scans": [
+          {
+            "state": "product-with-recent-items",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "selected-comparison-button",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "comparison-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "three-item-comparison",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "photo-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          }
+        ]
+      },
+      {
+        "width": 820,
+        "lang": "th",
+        "keyboardFocusContained": true,
+        "escapeAndFocusRestoration": true,
+        "runtimeErrors": [],
+        "scans": [
+          {
+            "state": "product-with-recent-items",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "selected-comparison-button",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "comparison-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "three-item-comparison",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "photo-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          }
+        ]
+      },
+      {
+        "width": 820,
+        "lang": "en",
+        "keyboardFocusContained": true,
+        "escapeAndFocusRestoration": true,
+        "runtimeErrors": [],
+        "scans": [
+          {
+            "state": "product-with-recent-items",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "selected-comparison-button",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "comparison-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "three-item-comparison",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "photo-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          }
+        ]
+      },
+      {
+        "width": 820,
+        "lang": "zh",
+        "keyboardFocusContained": true,
+        "escapeAndFocusRestoration": true,
+        "runtimeErrors": [],
+        "scans": [
+          {
+            "state": "product-with-recent-items",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "selected-comparison-button",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "comparison-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "three-item-comparison",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "photo-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          }
+        ]
+      },
+      {
+        "width": 820,
+        "lang": "ar",
+        "keyboardFocusContained": true,
+        "escapeAndFocusRestoration": true,
+        "runtimeErrors": [],
+        "scans": [
+          {
+            "state": "product-with-recent-items",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "selected-comparison-button",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "comparison-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "three-item-comparison",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "photo-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          }
+        ]
+      },
+      {
+        "width": 820,
+        "lang": "hi",
+        "keyboardFocusContained": true,
+        "escapeAndFocusRestoration": true,
+        "runtimeErrors": [],
+        "scans": [
+          {
+            "state": "product-with-recent-items",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "selected-comparison-button",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "comparison-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "three-item-comparison",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "photo-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          }
+        ]
+      },
+      {
+        "width": 1440,
+        "lang": "th",
+        "keyboardFocusContained": true,
+        "escapeAndFocusRestoration": true,
+        "runtimeErrors": [],
+        "scans": [
+          {
+            "state": "product-with-recent-items",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "selected-comparison-button",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "comparison-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "three-item-comparison",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "photo-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          }
+        ]
+      },
+      {
+        "width": 1440,
+        "lang": "en",
+        "keyboardFocusContained": true,
+        "escapeAndFocusRestoration": true,
+        "runtimeErrors": [],
+        "scans": [
+          {
+            "state": "product-with-recent-items",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "selected-comparison-button",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "comparison-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "three-item-comparison",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "photo-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          }
+        ]
+      },
+      {
+        "width": 1440,
+        "lang": "zh",
+        "keyboardFocusContained": true,
+        "escapeAndFocusRestoration": true,
+        "runtimeErrors": [],
+        "scans": [
+          {
+            "state": "product-with-recent-items",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "selected-comparison-button",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "comparison-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "three-item-comparison",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "photo-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          }
+        ]
+      },
+      {
+        "width": 1440,
+        "lang": "ar",
+        "keyboardFocusContained": true,
+        "escapeAndFocusRestoration": true,
+        "runtimeErrors": [],
+        "scans": [
+          {
+            "state": "product-with-recent-items",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "selected-comparison-button",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "comparison-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "three-item-comparison",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "photo-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          }
+        ]
+      },
+      {
+        "width": 1440,
+        "lang": "hi",
+        "keyboardFocusContained": true,
+        "escapeAndFocusRestoration": true,
+        "runtimeErrors": [],
+        "scans": [
+          {
+            "state": "product-with-recent-items",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "selected-comparison-button",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast",
+              "label-content-name-mismatch"
+            ]
+          },
+          {
+            "state": "comparison-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "three-item-comparison",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          },
+          {
+            "state": "photo-dialog",
+            "version": "4.14.0",
+            "violations": [],
+            "incomplete": [
+              "color-contrast"
+            ]
+          }
+        ]
+      },
+      {
+        "responsiveCardSource": {
+          "width": 1440,
+          "dpr": 1,
+          "expected": "-400.webp",
+          "actual": "/assets/products/fs-s35-c260s-003-400.webp"
+        }
+      },
+      {
+        "responsiveCardSource": {
+          "width": 390,
+          "dpr": 2,
+          "expected": ".webp",
+          "actual": "/assets/products/fs-s35-c260s-003.webp"
+        }
+      }
+    ]
+  },
+  "interpretation": "Browser viewport and keyboard checks with reproducible local fonts, not full WCAG or physical-device certification. Axe incomplete rules remain manual-review signals. Native browser-toolbar focus is permitted while modal backgrounds remain inert.",
+  "visualSpotChecks": [
+    "Thai product page at 360 px",
+    "Thai one-item comparison at 360 px; values now visible without horizontal scrolling"
+  ]
+}

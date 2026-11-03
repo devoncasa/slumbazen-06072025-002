@@ -126,3 +126,11 @@ html[lang=en] .editorial-hero h1{font-family:Georgia,'Times New Roman',serif;fon
 .contact-details-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:28px;align-items:stretch}.legacy-site main .contact-details-card{margin:0;padding:36px;background:#fffdf9;border:1px solid #d8cbbd;border-radius:8px;box-shadow:none}.contact-details-card>h2{font-size:1.5rem;margin:0 0 28px}.contact-details-card>div{margin-bottom:24px}.contact-details-card h3{font-size:.85rem;letter-spacing:normal;margin:0 0 6px;color:#73594b}.contact-details-card p{font-size:.95rem;line-height:1.85;margin:0;max-width:50ch}.contact-map-link{border-top:1px solid #d8cbbd;padding-top:24px;margin-top:26px}.contact-map-link .button{font-size:.82rem;margin-top:10px}
 .contact-preparation{border:1px solid #d8cbbd;border-radius:8px;overflow:hidden;background:#e8dfd2}.contact-preparation figure{aspect-ratio:16/9}.contact-preparation>div{padding:24px 28px}.contact-preparation h2{font-size:1.2rem;line-height:1.5;margin:0 0 12px}.contact-preparation p{font-size:.9rem;line-height:1.85;margin:0}
 @media(max-width:767px){.legacy-site .contact-editorial{padding:16px 16px 24px}.contact-welcome,.contact-details-grid{grid-template-columns:1fr}.contact-welcome{margin-bottom:20px}.contact-welcome-copy{padding:30px 26px}.contact-welcome-copy .contact-eyebrow{margin-bottom:18px}.contact-hero-photo{min-height:0;aspect-ratio:3/2}.contact-details-grid{gap:20px}.legacy-site main .contact-details-card{padding:26px 22px}.contact-details-card>h2{font-size:1.4rem!important}.contact-preparation>div{padding:24px 22px}}
+
+/* Selected signature wordmark: transparent artwork, no duplicate text or symbol. */
+.legacy-site .brand-lockup img.brand-wordmark{width:180px;height:auto;max-width:none;flex:none}
+.legacy-site .footer-wordmark img{width:220px;height:auto;max-width:100%}
+@media(max-width:420px){.legacy-site .brand-lockup img.brand-wordmark{width:145px;height:auto}}
+
+.legacy-site .journey-guide{top:97px}
+@media(max-width:420px){.legacy-site .journey-guide{top:84px}}

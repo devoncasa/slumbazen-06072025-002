@@ -25,17 +25,8 @@ const Footer: React.FC = () => {
           
           {/* Column 1: Brand */}
           <div className="lg:col-span-5 text-center lg:text-start">
-            <Link to={langPrefix} className="inline-flex items-center space-x-3 rtl:space-x-reverse mb-6">
-              <img src="/assets/logo.webp" alt={t('footer.companyName')} width={200} height={199} className="h-12 w-auto" loading="lazy" />
-              <span className="font-brand-base text-2xl md:text-3xl text-neutral-900 inline-flex items-baseline">
-                <Trans 
-                    i18nKey="footer.companyNameRich" 
-                    components={{ 
-                        1: <span className="font-brand-zen text-brand-primary text-[1.3em] ms-1 tracking-wide" /> 
-                    }} 
-                    defaults="Slumba <1>ZEN</1>" 
-                />
-              </span>
+            <Link to={langPrefix} className="footer-wordmark inline-flex mb-6">
+              <img src="/assets/slumbazen-wordmark-360.webp" srcSet="/assets/slumbazen-wordmark-360.webp 360w, /assets/slumbazen-wordmark-720.webp 720w" sizes="220px" alt="Slumba ZEN" width={1997} height={788} loading="lazy" />
             </Link>
             <p className="text-sm text-neutral-700 max-w-sm mb-8 mx-auto lg:mx-0">
               {t('footer.aboutUsSnippet', {defaultValue: "Premium hotel-quality bedding, direct from our factory."})}

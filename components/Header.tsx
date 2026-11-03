@@ -1,7 +1,7 @@
 import {loadLocale} from '../localeResources';
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { useTranslation, Trans } from 'react-i18next';
+import { useTranslation } from 'react-i18next';
 import { XMarkIcon, Bars3Icon, GlobeAltIcon } from '@heroicons/react/24/solid';
 
 // --- Main Header Component ---
@@ -159,17 +159,8 @@ const Header: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between min-h-20 py-3">
             
-            <Link to={langPrefix} className="brand-lockup flex items-center space-x-3 rtl:space-x-reverse" onClick={closeMenus}>
-               <img src="/assets/logo.webp" alt={t('footer.companyName')} width={200} height={199} className="h-12 w-auto" />
-               <span className="font-brand-base text-xl sm:text-2xl text-neutral-900 inline-flex items-baseline">
-                 <Trans 
-                     i18nKey="footer.companyNameRich" 
-                     components={{ 
-                         1: <span className="font-brand-zen text-brand-primary text-[1.3em] ms-1 tracking-wide" /> 
-                     }} 
-                     defaults="Slumba <1>ZEN</1>" 
-                 />
-               </span>
+            <Link to={langPrefix} className="brand-lockup flex items-center" onClick={closeMenus}>
+              <img src="/assets/slumbazen-wordmark-360.webp" srcSet="/assets/slumbazen-wordmark-360.webp 360w, /assets/slumbazen-wordmark-720.webp 720w" sizes="(max-width:420px) 145px, 180px" alt="Slumba ZEN" width={1997} height={788} className="brand-wordmark" />
             </Link>
 
             <nav className="hidden min-[1440px]:flex items-center space-x-2 rtl:space-x-reverse" aria-label={t('nav.mainNavigation')}>

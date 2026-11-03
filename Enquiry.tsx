@@ -1,24 +1,58 @@
 import InquiryDelivery from './InquiryDelivery';
 import React,{useEffect,useState} from 'react';
-import {useLocation} from 'react-router-dom';
+import {useLocation,useNavigate} from 'react-router-dom';
 import type {Product} from './data/galleryData';
 import {products} from './products';
 import {productSpecificationRows} from './catalogueSpecs';
 import {shoppingCopy} from './shoppingCopy';
-type Draft={kind:string,quantity:string,requirements:string,property:string,rooms:string,destination:string,timing:string,dimensions:string,items:string[],quantities:Record<string,string>};
-const empty:Draft={kind:'quote',quantity:'1',requirements:'',property:'',rooms:'',destination:'',timing:'',dimensions:'',items:[],quantities:{}};
+type Draft={senderName:string,senderEmail:string,kind:string,quantity:string,requirements:string,property:string,rooms:string,destination:string,timing:string,dimensions:string,items:string[],quantities:Record<string,string>};
+const empty:Draft={senderName:'',senderEmail:'',kind:'quote',quantity:'1',requirements:'',property:'',rooms:'',destination:'',timing:'',dimensions:'',items:[],quantities:{}};
 const validQuantity=(n:string)=>/^\d+$/.test(n)&&Number(n)>=1&&Number(n)<=1000000;
 export default function Enquiry({c,lang,p}:{c:any,lang:string,p?:Product|null}){
  const [enquiryOrigin,setEnquiryOrigin]=useState('https://www.slumbazen.com');
  useEffect(()=>{setEnquiryOrigin(window.location.origin)},[]);
+ const navigate=useNavigate();
  const location=useLocation();const w=shoppingCopy[lang];const [draft,setDraft]=useState<Draft>(empty);const [copied,setCopied]=useState(false);const [copyFailed,setCopyFailed]=useState(false);
- useEffect(()=>{let v:Partial<Draft>={};try{v=JSON.parse(sessionStorage.getItem('slumbazen-enquiry')||'{}')}catch{};const params=new URLSearchParams(location.search);const subject=params.get('subject')||'';const clean:Draft={...empty};for(const k of ['kind','quantity','requirements','property','rooms','destination','timing','dimensions'] as const)if(typeof v[k]==='string')clean[k]=v[k]!;clean.quantities=v.quantities&&typeof v.quantities==='object'?v.quantities:{};clean.kind=/sample/i.test(subject)?'sample':subject?'quote':clean.kind;clean.items=(params.has('items')?(params.get('items')||'').split(','):Array.isArray(v.items)?v.items:[]).filter(id=>products.some(x=>x.id===id)).slice(0,3);if(p)clean.items=[];if(params.has('dimensions'))clean.dimensions=params.get('dimensions')||'';setDraft(clean);setCopied(false)},[location.search,p?.id]);
+ useEffect(()=>{
+  let saved:Partial<Draft>={};
+  try{const value=JSON.parse(sessionStorage.getItem('slumbazen-enquiry')||'{}');if(value&&typeof value==='object'&&!Array.isArray(value))saved=value}catch{}
+  const params=new URLSearchParams(location.search);
+  const subject=params.get('subject')||'';
+  const clean:Draft={...empty,items:[],quantities:{}};
+  for(const key of ['senderName','senderEmail','kind','quantity','requirements','property','rooms','destination','timing','dimensions'] as const){if(typeof saved[key]==='string')clean[key]=saved[key]!;}
+  clean.kind=subject?(/sample/i.test(subject)?'sample':'quote'):saved.kind==='sample'?'sample':'quote';
+  const requested=params.has('items')?(params.get('items')||'').split(','):Array.isArray(saved.items)?saved.items:[];
+  clean.items=[...new Set(requested.map(id=>typeof id==='string'?products.find(item=>item.id.toLowerCase()===id.trim().toLowerCase())?.id:undefined).filter((id):id is string=>!!id))].slice(0,3);
+  if(saved.quantities&&typeof saved.quantities==='object')for(const item of products){const value=saved.quantities[item.id];if(typeof value==='string')clean.quantities[item.id]=value;}
+  if(p)clean.items=[];
+  if(params.has('dimensions'))clean.dimensions=(params.get('dimensions')||'').slice(0,500);
+  setDraft(clean);setCopied(false);
+ },[location.search,p?.id]);
  function update(change:Partial<Draft>){setDraft(prev=>{const next={...prev,...change};try{sessionStorage.setItem('slumbazen-enquiry',JSON.stringify(next))}catch{}return next});setCopied(false);setCopyFailed(false)}
+ function clearDraft(){
+  const params=new URLSearchParams(location.search);
+  for(const key of ['subject','items','item','dimensions'])params.delete(key);
+  update({...empty,items:[],quantities:{}});
+  navigate({pathname:location.pathname,search:params.toString(),hash:location.hash},{replace:true});
+ }
+ function changeKind(kind:string){
+  update({kind});
+  const params=new URLSearchParams(location.search);params.delete('subject');
+  navigate({pathname:location.pathname,search:params.toString(),hash:location.hash},{replace:true});
+ }
+ function removeItem(id:string){
+  const items=draft.items.filter(item=>item!==id);
+  update({items});
+  const params=new URLSearchParams(location.search);
+  params.set('items',items.join(','));
+  navigate({pathname:location.pathname,search:params.toString(),hash:location.hash},{replace:true});
+ }
+
  const selected=draft.items.map(id=>products.find(x=>x.id===id)!).filter(Boolean);const valid=(selected.length?selected.every(x=>validQuantity(draft.quantities[x.id]??'1')):validQuantity(draft.quantity))&&(!draft.rooms||validQuantity(draft.rooms));
  const describe=(item:Product,q:string)=>[
   ...productSpecificationRows(item,lang).map(([label,value])=>`${label}: ${value}`),
   `${c.quantity}: ${q}`
  ].join('\n');
  const params=new URLSearchParams(location.search);const text=[`SlumbaZEN — ${draft.kind==='sample'?c.sample:c.quote}`,params.get('item'),p?describe(p,draft.quantity):selected.length?selected.map(x=>describe(x,draft.quantities[x.id]??'1')).join('\n\n'):`${c.quantity}: ${draft.quantity}`,...(['property','rooms','destination','timing','dimensions'] as const).filter(k=>draft[k]).map(k=>`${w[k]}: ${k==='property'?(w[draft[k] as keyof typeof w]||draft[k]):draft[k]}`),draft.requirements,enquiryOrigin+location.pathname.replace(/\/?$/,'/'),c.availability].filter(Boolean).join('\n');
- return <section className="enquiry panel" id="enquiry"><p className="eyebrow">SlumbaZEN / {w.prepare}</p><h2>{c.enquire}</h2><p>{w.draftNote}</p><div className="field-row"><label>{c.request}<select value={draft.kind} onChange={e=>update({kind:e.target.value})}><option value="quote">{c.quote}</option><option value="sample">{c.sample}</option></select></label>{!selected.length&&<label>{c.quantity}<input type="number" min="1" max="1000000" step="1" aria-invalid={!validQuantity(draft.quantity)} aria-describedby={!valid?'enquiry-validation':undefined} value={draft.quantity} onChange={e=>update({quantity:e.target.value})}/></label>}</div>{selected.length>0&&<fieldset className="quote-items"><legend>{w.selection}</legend>{selected.map(x=><label key={x.id}><span dir="ltr">{x.id}</span> · {x.productType[lang as 'en']}<input aria-label={`${c.quantity} ${x.id}`} aria-invalid={!validQuantity(draft.quantities[x.id]??'1')} aria-describedby={!valid?'enquiry-validation':undefined} type="number" min="1" max="1000000" step="1" value={draft.quantities[x.id]??'1'} onChange={e=>update({quantities:{...draft.quantities,[x.id]:e.target.value}})}/></label>)}</fieldset>}<label>{c.requirements}<textarea rows={4} value={draft.requirements} onChange={e=>update({requirements:e.target.value})}/></label><details className="hospitality-fields" open={location.pathname.includes('/hotels')}><summary>{w.property} / {w.optional}</summary><div className="field-row"><label>{w.property}<select value={draft.property} onChange={e=>update({property:e.target.value})}><option value="">{w.choose}</option>{['hotel','resort','apartment','home','other'].map(k=><option value={k} key={k}>{w[k as keyof typeof w]}</option>)}</select></label><label>{w.rooms}<input type="number" min="1" max="1000000" step="1" value={draft.rooms} onChange={e=>update({rooms:e.target.value})}/></label><label>{w.destination}<input type="text" maxLength={200} value={draft.destination} onChange={e=>update({destination:e.target.value})}/></label><label>{w.timing}<input type="date" value={draft.timing} onChange={e=>update({timing:e.target.value})}/></label></div></details><label>{w.dimensions}<input maxLength={500} value={draft.dimensions} onChange={e=>update({dimensions:e.target.value})}/></label><label className="small">{c.copy}<textarea id="enquiry-message" className="enquiry-preview" readOnly value={text} rows={8}/></label><div className="actions"><button type="button" disabled={!valid} onClick={async()=>{try{await navigator.clipboard.writeText(text);setCopied(true);setCopyFailed(false)}catch{setCopied(false);setCopyFailed(true);const box=document.getElementById('enquiry-message') as HTMLTextAreaElement;box?.focus();box?.select()}}}>{copied?c.copied:c.copy}</button><a className="button secondary" href="tel:+66818519922">{c.phone} · <bdi>+66 81 851 9922</bdi></a><button type="button" className="secondary" onClick={()=>update({...empty})}>{w.clearDraft}</button></div><p id="enquiry-validation" role="status" className="small">{!valid?w.quantityError:copyFailed?w.copyError:copied?c.copied:w.sessionNote}</p><InquiryDelivery lang={lang} message={text} valid={valid}/></section>;
+ return <section className="enquiry panel" id="enquiry"><p className="eyebrow">SlumbaZEN / {w.prepare}</p><h2>{c.enquire}</h2><p>{w.draftNote}</p><div className="field-row"><label>{c.request}<select value={draft.kind} onChange={e=>changeKind(e.target.value)}><option value="quote">{c.quote}</option><option value="sample">{c.sample}</option></select></label>{!selected.length&&<label>{c.quantity}<input type="number" min="1" max="1000000" step="1" aria-invalid={!validQuantity(draft.quantity)} aria-describedby={!valid?'enquiry-validation':undefined} value={draft.quantity} onChange={e=>update({quantity:e.target.value})}/></label>}</div>{selected.length>0&&<fieldset className="quote-items"><legend>{w.selection}</legend>{selected.map(x=><div className="quote-item" key={x.id}><label><span dir="ltr">{x.id}</span> · {x.productType[lang as 'en']}<input aria-label={`${c.quantity} ${x.id}`} aria-invalid={!validQuantity(draft.quantities[x.id]??'1')} aria-describedby={!valid?'enquiry-validation':undefined} type="number" min="1" max="1000000" step="1" value={draft.quantities[x.id]??'1'} onChange={e=>update({quantities:{...draft.quantities,[x.id]:e.target.value}})}/></label><button type="button" className="secondary" onClick={()=>removeItem(x.id)} aria-label={`${w.remove} ${x.id}`}>{w.remove}</button></div>)}</fieldset>}<label>{c.requirements}<textarea rows={4} value={draft.requirements} onChange={e=>update({requirements:e.target.value})}/></label><details className="hospitality-fields" open={location.pathname.includes('/hotels')}><summary>{w.property} / {w.optional}</summary><div className="field-row"><label>{w.property}<select value={draft.property} onChange={e=>update({property:e.target.value})}><option value="">{w.choose}</option>{['hotel','resort','apartment','home','other'].map(k=><option value={k} key={k}>{w[k as keyof typeof w]}</option>)}</select></label><label>{w.rooms}<input type="number" min="1" max="1000000" step="1" value={draft.rooms} onChange={e=>update({rooms:e.target.value})}/></label><label>{w.destination}<input type="text" maxLength={200} value={draft.destination} onChange={e=>update({destination:e.target.value})}/></label><label>{w.timing}<input type="date" value={draft.timing} onChange={e=>update({timing:e.target.value})}/></label></div></details><label>{w.dimensions}<input maxLength={500} value={draft.dimensions} onChange={e=>update({dimensions:e.target.value})}/></label><label className="small">{c.copy}<textarea id="enquiry-message" className="enquiry-preview" readOnly value={text} rows={8}/></label><div className="actions"><button type="button" disabled={!valid} onClick={async()=>{try{await navigator.clipboard.writeText(text);setCopied(true);setCopyFailed(false)}catch{setCopied(false);setCopyFailed(true);const box=document.getElementById('enquiry-message') as HTMLTextAreaElement;box?.focus();box?.select()}}}>{copied?c.copied:c.copy}</button><a className="button secondary" href="tel:+66818519922">{c.phone} · <bdi>+66 81 851 9922</bdi></a><button type="button" className="secondary" onClick={clearDraft}>{w.clearDraft}</button></div><p id="enquiry-validation" role="status" className="small">{!valid?w.quantityError:copyFailed?w.copyError:copied?c.copied:w.sessionNote}</p><InquiryDelivery lang={lang} message={text} valid={valid} contact={{name:draft.senderName,email:draft.senderEmail}} onContactChange={contact=>update({senderName:contact.name,senderEmail:contact.email})}/></section>;
 }

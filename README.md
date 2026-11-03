@@ -99,3 +99,30 @@ The final cold-load local lab shows an increased mobile towel payload after addi
 the editorial section and a lower desktop payload. LCP remains close to the
 baseline. These results are not real-user metrics. Stage 6 must reduce shared
 JavaScript, backgrounds and fonts and repeat the measured customer flow.
+
+## Stage 4 selection and enquiry flow
+
+Catalogue search matches all typed terms across SKU, thread count, colour and
+localized product attributes. Searches remain meaningful after language changes.
+Finder selections use URL query fields fit/width/depth/length/fabric/pattern.
+Length is optional and carried into the product enquiry; it is not used to
+claim a confirmed fit while catalogue mattress length remains unverified.
+Invalid numeric measurements return no candidates.
+
+Quote URLs normalize case and duplicate SKUs. Visitors can remove quote items,
+change a samples request to a quotation and clear the saved draft together with
+its query fields. Draft name/email are kept only in the existing tab-session
+storage and cleared by Clear enquiry draft. Existing older/corrupt draft data
+is handled without crashing. Comparison selections remain a separate tool.
+
+Delivery snapshots the message and contact signature at submission. Duplicate
+submits during the pending request are blocked, failed requests remain retryable,
+and changing email while a request is pending does not mark the edited request
+as already sent. Native contact validity and enquiry quantity validity are both
+checked before sending. This is client state handling, not a guarantee of
+server-side deduplication after a lost network acknowledgement.
+
+Verification details are in verification/stage4-checks.json. Browser tests
+intercepted form POSTs locally, including a 503 response and a delayed success.
+No production enquiry was sent. Real form receipt/notification checks remain
+part of Stage 7 before release.

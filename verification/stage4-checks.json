@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-03",
+  "baseCommit": "312a7ef2ec1d979b56a56e7c153bd4c260b58a56",
+  "stage": 4,
+  "scope": [
+    "catalogue multi-term search",
+    "finder URL restoration and measurement handoff",
+    "quote item removal and URL clearing",
+    "contact persistence within browser tab",
+    "delivery state and pending-submit protection"
+  ],
+  "build": "npm run check passed from clean generated output",
+  "staticRoutes": 620,
+  "localizedProductPages": 530,
+  "internalLinks": 33520,
+  "mainJavascriptGzipBytes": 137092,
+  "cssGzipBytes": 13771,
+  "componentRegressions": [
+    "Malformed saved drafts recover",
+    "Duplicate/mixed-case quote SKUs normalize",
+    "Removed items disappear from quote",
+    "Clear draft removes quote query fields",
+    "Sample to quotation choice survives reload",
+    "Finder dimensions survive direct URL and reload",
+    "Invalid measurement ranges return no candidates",
+    "Multi-word search spans product attributes and language changes"
+  ],
+  "renderedBrowserFlows": [
+    {
+      "width": 390,
+      "initialLanguage": "th",
+      "switchedLanguage": "en",
+      "finderRefresh": true,
+      "measurementHandoff": true,
+      "quantityAndContactPreserved": true,
+      "clipboardStub": true,
+      "failureRetry": true,
+      "pendingDoubleSubmitBlocked": true,
+      "changedEmailWhilePending": true,
+      "invalidQuantityBlocked": true,
+      "mockedPostCount": 3,
+      "horizontalOverflow": 0,
+      "runtimeErrors": 0
+    },
+    {
+      "width": 390,
+      "initialLanguage": "ar",
+      "switchedLanguage": "en",
+      "finderRefresh": true,
+      "measurementHandoff": true,
+      "quantityAndContactPreserved": true,
+      "clipboardStub": true,
+      "failureRetry": true,
+      "pendingDoubleSubmitBlocked": true,
+      "changedEmailWhilePending": true,
+      "invalidQuantityBlocked": true,
+      "mockedPostCount": 3,
+      "horizontalOverflow": 0,
+      "runtimeErrors": 0
+    },
+    {
+      "width": 1440,
+      "initialLanguage": "th",
+      "switchedLanguage": "en",
+      "finderRefresh": true,
+      "measurementHandoff": true,
+      "quantityAndContactPreserved": true,
+      "clipboardStub": true,
+      "failureRetry": true,
+      "pendingDoubleSubmitBlocked": true,
+      "changedEmailWhilePending": true,
+      "invalidQuantityBlocked": true,
+      "mockedPostCount": 3,
+      "horizontalOverflow": 0,
+      "runtimeErrors": 0
+    },
+    {
+      "width": 1440,
+      "initialLanguage": "ar",
+      "switchedLanguage": "en",
+      "finderRefresh": true,
+      "measurementHandoff": true,
+      "quantityAndContactPreserved": true,
+      "clipboardStub": true,
+      "failureRetry": true,
+      "pendingDoubleSubmitBlocked": true,
+      "changedEmailWhilePending": true,
+      "invalidQuantityBlocked": true,
+      "mockedPostCount": 3,
+      "horizontalOverflow": 0,
+      "runtimeErrors": 0
+    }
+  ],
+  "limitations": [
+    "Headless Chromium with simulated desktop and mobile viewports",
+    "Submission responses intercepted locally; no real Netlify enquiry sent",
+    "Clipboard API stubbed for copy-payload assertions",
+    "Current Netlify form notification delivery remains to be verified in Stage 7",
+    "Catalogue supplier facts and custom-domain certificate remain pending as recorded in earlier stages"
+  ],
+  "release": "No deploy before completion of Stage 7"
+}

@@ -88,3 +88,13 @@ function productSchemaSize(p:typeof products[number],lang:string){
  return graph['@graph'].find((node:any)=>node['@type']==='Product').size;
 }
 console.log(JSON.stringify({reviewedSkus:products.length,sharedSpecificationLocales:products.length*languages.length,pillowThirdDimensionPreserved:true,unknownSalesUnitsExplicit:true,sourcePricesPreserved:true}));
+
+// Search terms can span attributes and remain meaningful after changing language.
+const multiTermSearch=render('/en/gallery?q=white%20towel');
+assert(multiTermSearch.includes('TWL-STD-12LBS-WHT-01'));
+assert(!multiTermSearch.includes('class="sku" dir="ltr">FS-'));
+const thaiSearch=render('/th/gallery?q='+encodeURIComponent('ผ้าปู รัดมุม 5 ฟุต'));
+assert(thaiSearch.includes('FS-Q50-'));
+assert(!thaiSearch.includes('class="sku" dir="ltr">FS-K60-'));
+assert(render('/ar/gallery?q=white%20towel').includes('TWL-STD-12LBS-WHT-01'));
+console.log(JSON.stringify({multiTermSearchAcrossAttributes:true,searchRetainedAcrossLanguages:true}));

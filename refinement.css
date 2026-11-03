@@ -89,3 +89,5 @@ html[lang=en] .editorial-hero h1{font-family:Georgia,'Times New Roman',serif;fon
 
 /* Opaque navigation keeps underlying headings from showing through while scrolling. */
 .legacy-site>header{background-color:#faf7f2!important;backdrop-filter:none}.legacy-site .journey-guide{background-color:#faf7f2}
+
+.quote-item{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:16px}.quote-item>label{margin:0}.quote-item>button{align-self:end;margin-bottom:10px}@media(max-width:600px){.quote-item{grid-template-columns:1fr;gap:4px;margin-bottom:20px}.quote-item>button{justify-self:start;margin-bottom:0}}

@@ -63,6 +63,41 @@ let received;await deliverInquiry({'form-name':'slumbazen-enquiry',message:'SKU 
 await assert.rejects(()=>deliverInquiry({},async()=>new Response('Unavailable',{status:503})));
 await assert.rejects(()=>deliverInquiry({},async()=>new Response('<body data-form-definition>',{status:200})));
 await assert.rejects(()=>deliverInquiry({},async()=>{throw new Error('offline')}));
+// Customer flow regressions: URL restoration, corrupt drafts and deliberate clearing.
+for(const malformed of ['null','[]','42','"old"','{broken']){
+ sessionStorage.setItem('slumbazen-enquiry',malformed);
+ await mount('/en/contact/','en');
+ assert(document.querySelector('.enquiry-preview').value.includes('Quotation'));
+}
+await mount('/en/hotels/?items=twl-std-12lbs-wht-01,TWL-STD-12LBS-WHT-01,PC-STD-ST370P-091','en');
+assert.equal(document.querySelectorAll('.quote-item').length,2);
+await change(document.querySelector('.quote-items input'),'24');
+await change(document.querySelector('.inquiry-delivery input[name="name"]'),'QA Customer');
+await change(document.querySelector('.inquiry-delivery input[name="email"]'),'qa@example.invalid');
+await click(document.querySelector('.quote-item button'));
+assert.equal(document.querySelectorAll('.quote-item').length,1);
+assert(!document.querySelector('.enquiry-preview').value.includes('TWL-STD-12LBS-WHT-01'));
+await mount(window.location.pathname+window.location.search,'en');
+assert.equal(document.querySelector('.inquiry-delivery input[name="email"]').value,'qa@example.invalid');
+await click(document.querySelector('.enquiry .actions button.secondary'));
+assert(!window.location.search.includes('items='));
+assert.equal(document.querySelectorAll('.quote-item').length,0);
+assert.equal(document.querySelector('.inquiry-delivery input[name="email"]').value,'');
+await mount('/en/hotels/?subject=RequestSamplesB2B','en');
+await change(document.querySelector('.enquiry select'),'quote');
+assert(!window.location.search.includes('subject='));
+await mount(window.location.pathname+window.location.search,'en');
+assert.equal(document.querySelector('.enquiry select').value,'quote');
+await mount('/en/bedding-finder/?width=60&depth=25&length=200&fit=1','en');
+assert.equal(document.querySelector('.finder-fields input').value,'25');
+assert.equal(document.querySelectorAll('.finder-fields input')[1].value,'200');
+assert(document.querySelector('.finder-results .product-card'));
+await click(document.querySelector('.finder-results .product-card a'));
+assert(document.querySelector('.enquiry-preview').value.includes('200'));
+assert(document.querySelector('.enquiry-preview').value.includes('25'));
+assert.equal(findBedding({...baseFit,depth:'-1'}).length,0);
+assert.equal(findBedding({...baseFit,length:'NaN'}).length,0);
+console.log(JSON.stringify({corruptDraftRecovery:true,quoteSkuDeduplication:true,removeQuoteItem:true,contactRestoration:true,clearQuoteUrl:true,changedSampleIntentRetained:true,finderRefreshAndMeasurementHandoff:true,invalidMeasurementsRejected:true}));
 // Client metadata updates with navigation and matches the same source as prerender.
 await mount('/zh/hotels/','zh');const expected=pageSEO('hotels','zh');assert.equal(document.head.querySelector('meta[property="og:image"]').content,expected.image);assert.equal(document.head.querySelector('meta[name="description"]').content,expected.description);assert.equal(document.head.querySelector('link[rel="canonical"]').href,expected.canonical);assert.deepEqual(JSON.parse(document.head.querySelector('script[type="application/ld+json"]').textContent),expected.graph);
 await act(async()=>root.unmount());

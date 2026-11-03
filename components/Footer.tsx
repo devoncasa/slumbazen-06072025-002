@@ -1,25 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation, Trans } from 'react-i18next';
-import { PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
+import { PhoneIcon } from '@heroicons/react/24/outline';
 
 const Footer: React.FC = () => {
   const { t, i18n } = useTranslation();
   const langPrefix = `/${i18n.language}`;
 
-  const socialMediaLinks = [
-    { name: 'Facebook', href: 'https://www.facebook.com/slumbazen', ariaLabelKey: 'footer.followOnFacebook', iconUrl: '/assets/restored-329d9616045b.webp' },
-    { name: 'Instagram', href: 'https://www.instagram.com/slumbazen', ariaLabelKey: 'footer.followOnInstagram', iconUrl: '/assets/restored-5ee9d798d621.webp' },
-    { name: 'TikTok', href: 'https://www.tiktok.com/@slumbazen', ariaLabelKey: 'footer.followOnTikTok', iconUrl: '/assets/restored-e867858b0593.webp' },
-    { name: 'YouTube', href: 'https://www.youtube.com/@slumbazen', ariaLabelKey: 'footer.followOnYouTube', iconUrl: '/assets/restored-e871bccc486e.webp' },
-    { name: 'Twitter', href: 'https://x.com/slumbazen', ariaLabelKey: 'footer.followOnTwitter', iconUrl: '/assets/restored-4ca6f5f3cc26.webp' },
-    { name: 'LinkedIn', href: 'https://www.linkedin.com/company/slumbazen', ariaLabelKey: 'footer.followOnLinkedIn', iconUrl: '/assets/restored-da8719142f3d.webp' },
-    { name: 'Pinterest', href: 'https://www.pinterest.com/slumbazen', ariaLabelKey: 'footer.followOnPinterest', iconUrl: '/assets/restored-36229d2cb992.webp' },
-  ];
-  
   const phone = t('contactPage.phone1');
   const phoneHref = 'tel:+66818519922';
-  const email = t('contactPage.emailValue');
 
   return (
     <footer className="bg-brand-secondary text-neutral-700 relative overflow-hidden">
@@ -34,7 +23,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-10 relative">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
           
-          {/* Column 1: Brand & Social */}
+          {/* Column 1: Brand */}
           <div className="lg:col-span-5 text-center lg:text-start">
             <Link to={langPrefix} className="inline-flex items-center space-x-3 rtl:space-x-reverse mb-6">
               <img src="/assets/logo.webp" alt={t('footer.companyName')} width={200} height={199} className="h-12 w-auto" loading="lazy" />
@@ -51,20 +40,6 @@ const Footer: React.FC = () => {
             <p className="text-sm text-neutral-700 max-w-sm mb-8 mx-auto lg:mx-0">
               {t('footer.aboutUsSnippet', {defaultValue: "Premium hotel-quality bedding, direct from our factory."})}
             </p>
-            <div className="flex flex-wrap gap-5 items-center justify-center lg:justify-start">
-              {socialMediaLinks.map(social => (
-                <a
-                  key={social.name}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-transform duration-300 ease-in-out hover:scale-110"
-                  aria-label={t(social.ariaLabelKey, {platform: social.name})}
-                >
-                  <img src={social.iconUrl} alt={t(social.ariaLabelKey, {platform: social.name})} className="h-8 w-8 object-contain" loading="lazy" />
-                </a>
-              ))}
-            </div>
           </div>
 
           {/* Column 2: Explore */}

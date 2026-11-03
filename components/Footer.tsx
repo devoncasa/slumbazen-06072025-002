@@ -58,8 +58,22 @@ const Footer: React.FC = () => {
             <h4 className="text-base font-semibold text-brand-primary uppercase tracking-wider mb-5">{t('footer.contactUs')}</h4>
             <ul className="space-y-4">
               <li className="flex items-center justify-center lg:justify-start">
-                 <PhoneIcon className="h-5 w-5 text-brand-primary flex-shrink-0 me-3" aria-hidden="true" />
-                 <a href={phoneHref} className="text-sm text-neutral-700 hover:text-brand-primary transition-colors">{phone}</a>
+                <a href={phoneHref} className="text-sm text-neutral-700 hover:text-brand-primary transition-colors" style={{display:'inline-flex',alignItems:'center',gap:12,minHeight:44}}>
+                  <PhoneIcon className="h-5 w-5 text-brand-primary flex-shrink-0" aria-hidden="true" />
+                  <span dir="ltr">{phone}</span>
+                </a>
+              </li>
+              <li className="flex items-center justify-center lg:justify-start">
+                <a href="https://wa.me/66818519922" target="_blank" rel="noopener noreferrer" className="text-sm text-neutral-700 hover:text-brand-primary transition-colors" style={{display:'inline-flex',alignItems:'center',gap:12,minHeight:44}}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-brand-primary flex-shrink-0" aria-hidden="true"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.5L3 20.5l1.3-4.8A8.5 8.5 0 1 1 20.5 11.7Z"/><path d="m8.4 7.4 1.2-.2 1 2.4-.8 1a7.2 7.2 0 0 0 2.8 2.8l1-.8 2.4 1-.2 1.2c-.2 1.4-1.8 1.8-3.2 1.2-2.6-1-4.6-3-5.6-5.6-.6-1.4-.2-2.8 1.4-3Z" strokeLinejoin="round"/></svg>
+                  <span>WhatsApp · <bdi>+66 81 851 9922</bdi></span>
+                </a>
+              </li>
+              <li className="flex items-center justify-center lg:justify-start">
+                <a href="https://line.me/ti/p/~kris.bkk" target="_blank" rel="noopener noreferrer" className="text-sm text-neutral-700 hover:text-brand-primary transition-colors" style={{display:'inline-flex',alignItems:'center',gap:12,minHeight:44}}>
+                  <svg width="20" height="20" viewBox="0 0 24 24" className="text-brand-primary flex-shrink-0" aria-hidden="true"><path d="M21.5 10.3c0-4.3-4.2-7.8-9.5-7.8s-9.5 3.5-9.5 7.8c0 3.9 3.3 7.1 7.8 7.7.3.1.7.2.6.7l-.3 1.8c-.1.5.1.7.6.5 1.6-.7 6.7-3.9 9-6.5a6.6 6.6 0 0 0 1.3-4.2Z" fill="none" stroke="currentColor" strokeWidth="1.5"/><text x="12" y="12.8" textAnchor="middle" fill="currentColor" fontFamily="Arial,sans-serif" fontWeight="700" fontSize="6.4">LINE</text></svg>
+                  <span>LINE · <bdi>kris.bkk</bdi></span>
+                </a>
               </li>
               
                <li className="flex items-start justify-center lg:justify-start">

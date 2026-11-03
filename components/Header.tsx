@@ -172,7 +172,7 @@ const Header: React.FC = () => {
                </span>
             </Link>
 
-            <nav className="hidden min-[1600px]:flex items-center space-x-2 rtl:space-x-reverse" aria-label={t('nav.mainNavigation')}>
+            <nav className="hidden min-[1440px]:flex items-center space-x-2 rtl:space-x-reverse" aria-label={t('nav.mainNavigation')}>
               {navItems.map((item) => {
                 const itemPath = item.to === '/' ? langPrefix : `${langPrefix}${item.to}`;
                 const isActive = (item.to && activePath === itemPath) || 
@@ -244,7 +244,7 @@ const Header: React.FC = () => {
                     </div>
                 </div>
               </div>
-              <button ref={mobileMenuTriggerRef} onClick={toggleMobileMenu} className="min-[1600px]:hidden text-neutral-900 focus:outline-none" aria-label={t('nav.openMenu')} aria-expanded={isMobileMenuOpen}>
+              <button ref={mobileMenuTriggerRef} onClick={toggleMobileMenu} className="min-[1440px]:hidden text-neutral-900 focus:outline-none" aria-label={t('nav.openMenu')} aria-expanded={isMobileMenuOpen}>
                 <Bars3Icon className="h-6 w-6" />
               </button>
             </div>
@@ -253,7 +253,7 @@ const Header: React.FC = () => {
       </header>
 
       {/* Mobile Navigation Menu */}
-      <div inert={!isMobileMenuOpen} aria-hidden={!isMobileMenuOpen} style={{visibility:isMobileMenuOpen?'visible':'hidden'}} className={`fixed inset-0 z-50 min-[1600px]:hidden transition-opacity duration-300 ${isMobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+      <div inert={!isMobileMenuOpen} aria-hidden={!isMobileMenuOpen} style={{visibility:isMobileMenuOpen?'visible':'hidden'}} className={`fixed inset-0 z-50 min-[1440px]:hidden transition-opacity duration-300 ${isMobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
         <div className="absolute inset-0 bg-black/40 backdrop-blur-sm" onClick={closeMenus}></div>
         <div ref={mobileMenuPanelRef} role="dialog" aria-modal="true" aria-label={t('nav.mobileNavigation')} className={`absolute top-0 end-0 h-full w-full max-w-sm bg-brand-light shadow-2xl transition-transform duration-300 ease-in-out flex flex-col ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full rtl:-translate-x-full'}`}>
           <div className="flex justify-between items-center p-5 border-b border-neutral-200 flex-shrink-0">

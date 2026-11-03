@@ -107,3 +107,11 @@ html[lang=en] .editorial-hero h1{font-family:Georgia,'Times New Roman',serif;fon
  .legacy-site .comparison-dialog table:not([data-items="1"]){min-width:calc(110px + 150px * var(--comparison-count))}
  .legacy-site .comparison-dialog table:not([data-items="1"]) th:first-child{width:110px}
 }
+
+/* Compact navigation: readable labels, single-line desktop items and generous hit areas. */
+.legacy-site>header nav[aria-label]>a,.legacy-site>header nav[aria-label]>div>button{font-size:15px;line-height:1.5;font-weight:500;white-space:nowrap;padding:10px 9px;min-height:44px}
+.legacy-site>header nav[aria-label]>div>div a{font-size:14px;line-height:1.6;min-height:44px;display:flex;align-items:center}
+.legacy-site>header nav[aria-label]>div>button svg{width:16px;height:16px;flex-shrink:0}
+.legacy-site [role="dialog"] nav>ul>li>a,.legacy-site [role="dialog"] nav>ul>li>div>button{font-size:16px;line-height:1.6;font-weight:500;padding-block:12px;min-height:48px}
+.legacy-site [role="dialog"] nav a{line-height:1.6}.legacy-site [role="dialog"] nav>ul>li>div>div a{font-size:15px}
+@media(min-width:1440px){.legacy-site>header>.container{max-width:1440px}.legacy-site>header nav[aria-label]{gap:2px}.legacy-site>header nav[aria-label]>*{margin-inline:0}}

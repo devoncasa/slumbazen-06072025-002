@@ -126,3 +126,46 @@ Verification details are in verification/stage4-checks.json. Browser tests
 intercepted form POSTs locally, including a 503 response and a delayed success.
 No production enquiry was sent. Real form receipt/notification checks remain
 part of Stage 7 before release.
+
+## Stage 5 localized copy and search presentation
+
+The 18 main-page/article metadata entries in each language now use complete,
+page-specific sentences instead of a truncated generic introduction. Thai
+introductory copy uses direct, natural wording and keeps unverified commercial
+claims as enquiries. Existing article paragraphs and original product assets
+remain intact. Each article has three meaningful localized headings, with a
+single-column reading layout suited to longer Thai and Arabic headings.
+
+Prerendered titles, social titles and client navigation share pageSEO. Share
+images follow the page topic; all image paths are checked. Language tags use
+zh-Hans consistently, and every localized HTML page and sitemap entry has the
+same five reciprocal alternatives plus x-default. Unknown pages have no
+language alternatives and are marked noindex. Preview builds include noindex
+HTML metadata, the noindex response-header file and a blocked robots.txt.
+
+The neutral root provides five native language links without JavaScript. With
+JavaScript it chooses a saved language, then a supported browser language, then
+Thai. Explicit language URLs always win. Header choices are saved locally;
+search parameters and anchors survive language changes. The forced root-to-Thai
+Netlify rule is removed in source; this configuration has not been deployed.
+
+AI/search discovery follows ordinary crawlable content, clear headings,
+internal links and accurate schema. No speculative AI-only files or fabricated
+reviews/offers were added. Product schema is descriptive: Google Product rich
+results require additional eligible offer/review data. Verified sales units,
+prices and availability are still prerequisites for adding transactional offers.
+
+Reference guidance reviewed for this stage:
+- https://developers.google.com/search/docs/specialty/international/localized-versions
+- https://developers.google.com/search/docs/appearance/ai-features
+- https://developers.google.com/search/docs/appearance/snippet
+- https://developers.google.com/search/docs/appearance/structured-data/product-snippet
+
+Verification is recorded in verification/stage5-checks.json. Local browser tests
+cover 30 rendered page/viewport/language combinations plus root-language and
+JavaScript-disabled journeys. Search indexing, production headers, SSL and real
+form receipt remain release checks in Stage 7. The user has authorized creating
+additional matching imagery wherever needed; existing imagery covers this
+stage's content, so no new images were generated in Stage 5. All work remains
+on the work branch, without deployment. Stage 6 is the remaining performance
+and technical-hardening batch before Stage 7 release verification.

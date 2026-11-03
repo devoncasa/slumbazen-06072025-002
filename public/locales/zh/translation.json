@@ -150,74 +150,109 @@
   },
   "seo": {
     "home": {
-      "title": "Slumba ZEN: 奢华酒店床上用品和毛巾 | 泰国制造",
-      "description": "与 Slumba ZEN 一起体验五星级酒店的奢华。选购为舒适而生的优质泰国棉床单和毛巾。全球配送。",
-      "keywords": "酒店床上用品, 奢华床单, Slumba ZEN, 100%纯棉床单, 天丝莱赛尔床单, 工厂直销床上用品, 透气床单, 防过敏床上用品, B2B酒店供应商, 长绒棉, 可持续床上用品"
+      "title": "家用与酒店床品及毛巾",
+      "description": "按尺寸与规格浏览床笠、枕套、被套和毛巾，比较目录商品，再把所需细节发送给 SlumbaZEN 询价。",
+      "keywords": "家用与酒店床品及毛巾"
     },
     "collections": {
-      "title": "按类别选购床上用品: 白色, 彩色, 套件 | Slumba ZEN",
-      "description": "按类别浏览我们的酒店品质床上用品系列。从Slumba ZEN以工厂直销价购买永恒的白色床单、鲜艳的优质彩色床单或方便的全套床上用品。",
-      "keywords": "床上用品系列, 选购床上用品, 白色床单, 彩色床上用品, 床上用品套件, 酒店品质床品, Slumba ZEN, 购买床单"
+      "title": "按品类选择床品",
+      "description": "浏览白色床单、自选床品单件和客房毛巾，结合尺寸测量与面料指南，准备您的咨询。",
+      "keywords": "按品类选择床品"
     },
     "materials": {
-      "title": "床上用品材料指南 | 棉, 天丝™ 等 | Slumba ZEN",
-      "description": "酒店床上用品材料指南：了解棉、天丝™、Soft-Tex™、CVC的纱线密度，并获取Slumba ZEN的专家提示，以获得卓越的睡眠体验。",
-      "keywords": "床上用品材料, 什么是棉, 什么是天丝, 纱线密度, 面料指南, Soft-Tex, CVC, 纤维质量, 选择酒店床单, Slumba ZEN, 纯棉床单, 天丝好吗"
+      "title": "棉、CVC与床品面料指南",
+      "description": "分清纤维、外观与纱线密度，了解棉、CVC及目录中的 Soft-Tex 名称，并查看选购前应询问的规格。",
+      "keywords": "棉、CVC与床品面料指南"
     },
     "hotels": {
-      "title": "B2B酒店床上用品 Slumba ZEN | 工厂价, 出口品质",
-      "description": "Slumba ZEN，B2B酒店床上用品制造商和供应商。高品质棉、天丝™、Soft-Tex™。可定制规格、刺绣标志、工厂价格。免费咨询。",
-      "keywords": "B2B酒店床上用品, Slumba ZEN, 酒店床上用品制造商, 批发床品, 定制床上用品, 床单刺绣标志, B2B工厂价, 泰国床上用品供应商, 酒店布草"
+      "title": "酒店床品与毛巾询价",
+      "description": "准备房间数、床的尺寸、布草品类、数量与收货地，选择报价或样品咨询，向 SlumbaZEN 说明需求。",
+      "keywords": "酒店床品与毛巾询价"
     },
     "gallery": {
-      "title": "床上用品图库 | 酒店床单创意与风格 | Slumba ZEN",
-      "description": "在Slumba ZEN的床上用品图库中寻找灵感。查看各种颜色和设计的酒店品质棉、天丝™、Soft-Tex™床单。以工厂价订购。",
-      "keywords": "床上用品图库, 床上用品创意, 床单设计, Slumba ZEN, 棉质床上用品, 天丝床上用品, 彩色床单, 酒店床品, 床单图片"
+      "title": "床品与毛巾产品目录",
+      "description": "按货号、材质或尺寸搜索并筛选目录，最多比较三款商品，再向 SlumbaZEN 提交详细询价。",
+      "keywords": "床品与毛巾产品目录"
     },
     "sizes": {
-      "title": "标准床上用品尺寸: 单人, 双人, 特大号 & 定制 | Slumbazen",
-      "description": "适用于3.5、5和6英尺床的床单、被套和枕套尺寸表。Slumbazen工厂为您的床垫尺寸提供定制剪裁服务。保证贴合，带来极致舒适。",
-      "keywords": "床上用品尺寸, 床上用品尺寸表, 3.5英尺床单, 5英尺床单, 6英尺床单, 被套尺寸, 枕套尺寸, 定制床上用品, Slumbazen"
+      "title": "测量床垫并比较床品尺寸",
+      "description": "测量宽、长及含垫层的厚度，按货号核对10或12英寸床笠深度，并查看枕套、长枕套及被套的目录尺寸。",
+      "keywords": "测量床垫并比较床品尺寸"
     },
     "whatIsTencel": {
-      "title": "什么是天丝™莱赛尔纤维面料？优点、护理与棉的比较",
-      "description": "天丝™莱赛尔纤维深度指南：独特性能、柔软性、环保性。与棉进行比较，并从Slumbazen专家那里学习天丝™的护理技巧，以实现持久使用。",
-      "keywords": "什么是天丝, 天丝面料, 莱赛尔, 天丝性能, 天丝优点, 天丝与棉, 天丝护理说明, 天丝床单, Slumbazen, 天然纤维"
+      "title": "认识TENCEL™与床品成品",
+      "description": "了解 TENCEL™ 纤维名称，区分一般纤维信息与具体成品，订购前核对成分与洗护标签。",
+      "keywords": "认识TENCEL™与床品成品"
     },
     "deliveryWarranty": {
-      "title": "Slumbazen床上用品的运输与保修政策",
-      "description": "关于Slumbazen床上用品运输政策（泰国和国际）、产品保修、退货条件以及为让您满意而设的优质面料护理说明的详细信息。",
-      "keywords": "运输政策, 产品保修, 退货, 床上用品护理, Slumbazen, 免费送货, 国际运费, 送货信息, 产品保证"
+      "title": "配送、退货与订单处理",
+      "description": "付款前确认运费、预计送达时间和退货条件，并保留订单咨询所需文件。",
+      "keywords": "配送、退货与订单处理"
     },
     "contact": {
-      "title": "联系Slumbazen - 订购酒店床上用品并获取报价",
-      "description": "联系Slumbazen工厂咨询、订购B2B酒店床上用品、出口品质产品，或参观我们的陈列室。电话：081-851-9922，LINE：kris.bkk。我们随时为您服务。",
-      "keywords": "联系Slumbazen, 电话号码, LINE ID, 工厂地图, 订购床单, B2B价格咨询, 联系我们, 泰国床上用品制造商"
+      "title": "联系SlumbaZEN咨询产品报价",
+      "description": "提供床品或毛巾的货号、尺寸与数量，查看联系电话和地址，出行前请先预约。",
+      "keywords": "联系SlumbaZEN咨询产品报价"
     },
     "whiteSheets": {
-      "title": "白色酒店床单 | 优质棉、天丝™品质 | Slumbazen",
-      "description": "选购Slumbazen独家白色床单。酒店品质的棉和天丝™面料。洁净、舒适、永恒的优雅。工厂价格。",
-      "keywords": "白色床单, 白色酒店床上用品, 白色棉床单, 白色天丝床单, Slumbazen, 奢华白色床单, 酒店系列白色"
+      "title": "素面与条纹白色床单",
+      "description": "查看白色床笠和平铺床单的目录尺寸、材质与价格。选择前请测量含垫层的床垫。",
+      "keywords": "素面与条纹白色床单"
     },
     "premiumColors": {
-      "title": "优质彩色床单 - 时尚设计，酒店品质 | Slumbazen",
-      "description": "用Slumbazen的优质彩色床单为您的卧室增添风格。各种色调的优质棉、天丝™面料。以工厂价定制订单。",
-      "keywords": "彩色床单, 优质彩色床上用品, 设计师床品, Slumbazen彩色床单, 纯色床单, 奢华彩色床上用品, 工厂品质"
+      "title": "咨询所需床品颜色",
+      "description": "当前目录为白色商品。如需其他颜色，请告诉 SlumbaZEN 色调、尺寸与数量，以便在报价前核查选项。",
+      "keywords": "咨询所需床品颜色"
     },
     "beddingSets": {
-      "title": "全套床上用品 - 酒店品质，工厂价格 | Slumbazen",
-      "description": "选择Slumbazen的全套酒店品质床上用品。包括床单、枕套和被套，完美搭配，提供卓越的舒适度和风格。工厂直销。",
-      "keywords": "床上用品套件, 全套床品, 酒店床上用品套餐, Slumbazen床上用品套件, 袋中床, 奢华床上用品组合, 工厂品质"
+      "title": "自选床单、枕套与被套组合",
+      "description": "按用途选择各件床品，分别核对尺寸，并在报价中确认包含内容、数量与总价。",
+      "keywords": "自选床单、枕套与被套组合"
     },
     "towels": {
-      "title": "酒店毛巾指南：选择尺寸、重量和洗涤方法 | Slumbazen",
-      "description": "关于100%纯棉酒店毛巾和浴垫的深入指南。如何为3-5星级酒店选择合适的重量（磅）和尺寸，以及Slumbazen的首次洗涤说明。",
-      "keywords": "酒店毛巾, 浴巾, 浴垫, 毛巾尺寸, 毛巾重量, 如何洗毛巾, 12磅毛巾, 16磅毛巾, 精梳棉, Slumbazen"
+      "title": "酒店浴巾与浴室地垫",
+      "description": "比较浴巾与浴室地垫的尺寸、标示重量及计量单位，阅读客房使用前的首次洗涤与护理指南。",
+      "keywords": "酒店浴巾与浴室地垫"
     },
     "blog": {
-      "title": "博客：酒店床上用品技巧、见解与护理指南 | Slumbazen",
-      "description": "浏览Slumbazen博客，获取关于酒店品质床上用品护理的专家技巧、材料见解以及最新的酒店业趋势。",
-      "keywords": "床上用品博客, 床单护理技巧, 毛巾指南, 酒店品质, Slumbazen, 床上用品文章"
+      "title": "床单与酒店毛巾实用指南",
+      "description": "阅读床单洗护、棉与纱线密度，以及客房毛巾选择指南，并查看相关目录商品。",
+      "keywords": "床单与酒店毛巾实用指南"
+    },
+    "beddingFinder": {
+      "title": "按床垫实测尺寸寻找床笠",
+      "description": "输入宽度、总厚度与长度，再选择面料及外观。测量数据会随咨询交给店方核查。",
+      "keywords": "按床垫实测尺寸寻找床笠"
+    },
+    "sheetCare": {
+      "title": "如何护理床单",
+      "description": "先看洗护标签，分类洗涤，选择合适洗涤剂与温度，晾干后再收纳，并了解购买前应问哪些问题。",
+      "keywords": "如何护理床单",
+      "headings": [
+        "分类并阅读洗护标签",
+        "选择洗涤剂与水温",
+        "晾干后再收纳"
+      ]
+    },
+    "cottonFabrics": {
+      "title": "棉、织法与纱线密度",
+      "description": "了解纤维与织法的区别，核对纱线密度的单位和计数方法，再结合尺寸、洗护要求与样品选择。",
+      "keywords": "棉、织法与纱线密度",
+      "headings": [
+        "区分纤维与织法",
+        "比较纱线密度的单位与方法",
+        "核对尺寸、洗护与样品"
+      ]
+    },
+    "hospitalityTowels": {
+      "title": "为客房选择毛巾",
+      "description": "按尺寸、用途和洗衣能力选择毛巾，理解每打磅重与GSM，并准备毛巾询价所需信息。",
+      "keywords": "为客房选择毛巾",
+      "headings": [
+        "从尺寸与用途开始",
+        "了解每打磅重与GSM",
+        "准备询价信息"
+      ]
     }
   },
   "galleryPage": {
@@ -248,7 +283,7 @@
   },
   "towelsPage": {
     "mainTitle": "酒店毛巾与浴室地垫",
-    "mainDescription": "比较毛巾和地垫的尺寸、重量、织物表面与洗涤要求，并查看首次洗涤和日常保养指南。",
+    "mainDescription": "比较浴巾与浴室地垫的尺寸、标示重量及计量单位，阅读客房使用前的首次洗涤与护理指南。",
     "suitability": "选用参考",
     "bathTowel": {
       "name": "酒店浴巾",
@@ -332,8 +367,8 @@
     }
   },
   "homePage": {
-    "missionQuote": "选择床品，透明的信息比单看低价更重要。",
-    "missionExplanation": "选择床品时，应一起考虑纤维、尺寸、织法与护理，而非只看纱线密度。决定前请确认具体产品规格。",
+    "missionQuote": "家用与酒店床品及毛巾",
+    "missionExplanation": "按尺寸与规格浏览床笠、枕套、被套和毛巾，比较目录商品，再把所需细节发送给 SlumbaZEN 询价。",
     "hero": {
       "title": "用心选择床品，让休息更从容",
       "ctaButton": "浏览全部系列",
@@ -461,7 +496,7 @@
   },
   "whiteSheetsPage": {
     "mainTitle": "白色床单：简洁耐看的搭配",
-    "mainDescription": "Slumba ZEN 白色床品可搭配多种卧室风格。选择素色或条纹，并按具体产品核对尺寸与护理要求。",
+    "mainDescription": "查看白色床笠和平铺床单的目录尺寸、材质与价格。选择前请测量含垫层的床垫。",
     "featuredTitle": "精选白色床单",
     "benefitsTitle": "为什么考虑白色床品？",
     "benefit1": "简洁耐看：白色可与不同卧室装饰协调搭配。",
@@ -507,7 +542,7 @@
   },
   "materialsPage": {
     "mainTitle": "床品面料指南",
-    "mainDescription": "了解不同面料的纤维、织法和护理要求，帮助您选择适合用途的床品。",
+    "mainDescription": "分清纤维、外观与纱线密度，了解棉、CVC及目录中的 Soft-Tex 名称，并查看选购前应询问的规格。",
     "qualityVsPrice": {
       "title": "用清楚的规格比较面料",
       "p3": "计量单位或计数方法不同的数值，不宜直接比较。请先索取供应商原始规格。",

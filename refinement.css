@@ -35,8 +35,8 @@ html[lang=en] .editorial-hero h1{font-family:Georgia,'Times New Roman',serif;fon
 
 /* Shared reading rhythm and accessible, spacious data presentation. */
 .legacy-site .reading{width:100%;max-width:920px;margin-inline:auto}
-.legacy-site .reading>section{display:grid;grid-template-columns:2.8rem minmax(0,1fr);gap:24px;padding:30px 34px;margin:20px 0;border:1px solid var(--border);background:#fffdf9;border-radius:8px}
-.legacy-site .reading>section>h2{margin:3px 0 0;font-size:1.1rem!important;line-height:1.8;font-variant-numeric:tabular-nums;font-weight:500}
+.legacy-site .reading>section{display:grid;grid-template-columns:minmax(0,1fr);gap:10px;padding:30px 34px;margin:20px 0;border:1px solid var(--border);background:#fffdf9;border-radius:8px}
+.legacy-site .reading>section>h2{margin:3px 0 0;font-size:1.15rem!important;line-height:1.65;font-weight:600;text-wrap:pretty}
 .legacy-site .reading>section>p{margin:0;max-width:64ch;font-size:1rem;line-height:1.95;text-align:start;word-break:normal;overflow-wrap:break-word}
 .legacy-site .reading>.small{margin-bottom:24px}.legacy-site .reading>a{display:inline-block;margin-top:20px}
 .legacy-site .data-table-shell{max-width:100%;margin-block:24px;overscroll-behavior-inline:contain;scrollbar-width:thin}
@@ -47,7 +47,7 @@ html[lang=en] .editorial-hero h1{font-family:Georgia,'Times New Roman',serif;fon
 .legacy-site .product-specifications{grid-template-columns:minmax(150px,1fr) minmax(0,2fr);margin-block:24px;line-height:1.85}
 .legacy-site .product-specifications dt,.legacy-site .product-specifications dd{padding:18px 22px;overflow-wrap:break-word;word-break:normal}
 @media(max-width:767px){
-.legacy-site .reading>section{grid-template-columns:2rem minmax(0,1fr);gap:14px;padding:24px 20px;margin-block:16px}
+.legacy-site .reading>section{grid-template-columns:minmax(0,1fr);gap:8px;padding:24px 20px;margin-block:16px}
 .legacy-site .reading>section>p{font-size:.95rem;line-height:1.9}
 .legacy-site main table th,.legacy-site main table td{padding:16px 18px!important;font-size:.88rem;line-height:1.85}
 .legacy-site .product-specifications{grid-template-columns:1fr}

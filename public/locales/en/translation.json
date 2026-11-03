@@ -217,8 +217,8 @@
     "callLabel": "Call"
   },
   "homePage": {
-    "missionQuote": "“Cheap and good might exist — but without knowledge and transparency, it could become the most expensive trap you ever fall into.”",
-    "missionExplanation": "Choose bedding by considering fiber, size, weave and care together—not a thread-count number alone. Ask for the specification of the particular item before making a decision.",
+    "missionQuote": "Bedding and towels for homes and hospitality",
+    "missionExplanation": "Explore fitted sheets, pillowcases, duvet covers and towels by size and specification. Compare catalogue items and send SlumbaZEN the details for a quotation.",
     "hero": {
       "title": "Thoughtful bedding for a calmer stay",
       "subtitle": "Considered textiles for restful bedrooms and welcoming guest spaces. Explore the catalogue and enquire about the details that matter to you.",
@@ -346,7 +346,7 @@
   },
   "materialsPage": {
     "mainTitle": "Bedding Fabric Guide",
-    "mainDescription": "Get an in-depth understanding of each bedding fabric to help you choose the perfect bedding for your needs. What is the best material for bed sheets?",
+    "mainDescription": "Separate fibre type, appearance and thread count. Understand cotton, CVC and the Soft-Tex catalogue name, with specifications to ask about before choosing.",
     "qualityVsPrice": {
       "title": "Compare fabrics using clear specifications",
       "p1": "Cotton is a fiber; plain and striped describe a fabric’s appearance. CVC is a blend category, so the exact cotton/polyester proportions must be checked for each item. “Soft-Tex” is a catalogue name and does not establish fiber composition. Compare like-for-like using the supplier’s specification and a physical sample where available.",
@@ -561,7 +561,7 @@
   },
   "whiteSheetsPage": {
     "mainTitle": "White Bed Sheets Collection: Timeless Elegance",
-    "mainDescription": "Experience the classic charm and pristine purity of high-quality white bed sheets from Slumba ZEN. Perfect for any bedroom style, creating an atmosphere of cleanliness, visual comfort, and true luxury. Make every night a perfect retreat.",
+    "mainDescription": "Explore white fitted and flat sheets, listed dimensions, materials and catalogue prices. Measure your mattress with its topper before choosing a candidate.",
     "featuredTitle": "Featured White Bed Sheets to Elevate Your Bedroom",
     "benefitsTitle": "Why are White Bed Sheets the Right Choice?",
     "benefit1": "Timeless Classic: White is an immortal color that never goes out of style, perfectly complementing any bedroom decor.",
@@ -702,79 +702,114 @@
   },
   "seo": {
     "home": {
-      "title": "Slumbazen: Luxury Hotel Bedding & Towels | Made in Thailand",
-      "description": "Experience 5-star hotel luxury with Slumbazen. Shop premium Thai cotton sheets & towels, crafted for comfort. Worldwide delivery.",
-      "keywords": "hotel bedding, luxury bed sheets, Slumbazen, 100% cotton sheets, tencel lyocell sheets, factory direct bedding, breathable sheets, hypoallergenic bedding, B2B hotel supplier, long-staple cotton, sustainable bedding, premium linens"
+      "title": "Bedding and towels for homes and hospitality",
+      "description": "Explore fitted sheets, pillowcases, duvet covers and towels by size and specification. Compare catalogue items and send SlumbaZEN the details for a quotation.",
+      "keywords": "Bedding and towels for homes and hospitality"
     },
     "collections": {
-      "title": "Shop Bedding by Category: White, Colors, Sets | Slumbazen",
-      "description": "Browse our hotel-quality bedding collections by category. Shop for timeless white sheets, vibrant premium colors, or convenient complete sets from Slumbazen at factory-direct prices.",
-      "keywords": "bedding collections, shop bedding, white bed sheets, colored bedding, bedding sets, hotel quality linen, Slumbazen, buy bed sheets, linen categories"
+      "title": "Choose bedding by product type",
+      "description": "Browse white sheets, select individual pieces for a bedding set or explore guest-room towels. Use measurement and fabric guides to prepare your enquiry.",
+      "keywords": "Choose bedding by product type"
     },
     "materials": {
-      "title": "Bedding Material Guide | Cotton, Tencel™ & More | Slumbazen",
-      "description": "Hotel Bedding Materials Guide: Learn about thread density of Cotton, Tencel™, Soft-Tex™, CVC, with tips from Slumbazen, for superior sleep.",
-      "keywords": "bedding materials, what is cotton, what is tencel, thread density, fabric guide, Soft-Tex, CVC, fiber quality, choosing hotel sheets, Slumbazen, pure cotton sheets, is tencel good, bed linen info"
+      "title": "Cotton, CVC and bedding fabric guide",
+      "description": "Separate fibre type, appearance and thread count. Understand cotton, CVC and the Soft-Tex catalogue name, with specifications to ask about before choosing.",
+      "keywords": "Cotton, CVC and bedding fabric guide"
     },
     "hotels": {
-      "title": "B2B Hotel Bedding Slumbazen | Factory Prices, Export Quality",
-      "description": "Slumbazen, a manufacturer and supplier of B2B hotel bedding. High-quality Cotton, Tencel™, Soft-Tex™. Custom specs, logo embroidery, factory prices. Free consultation.",
-      "keywords": "B2B hotel bedding, Slumbazen, hotel bedding manufacturer, wholesale bed linen, custom bedding production, logo embroidery sheets, B2B factory price, Thailand bedding supplier, hotel linen, B2B bedding solutions, linen for hospitality"
+      "title": "Request bedding and towel quotations for hotels",
+      "description": "Prepare room counts, bed sizes, linen items, quantities and destination. Choose a quotation or samples enquiry and send your requirements to SlumbaZEN.",
+      "keywords": "Request bedding and towel quotations for hotels"
     },
     "gallery": {
-      "title": "Bedding Gallery | Hotel Sheet Ideas & Styles | Slumbazen",
-      "description": "Find inspiration in the bedding gallery of Slumbazen. See hotel-quality Cotton, Tencel™, Soft-Tex™ sheets in various colors and designs. Order at factory prices.",
-      "keywords": "bedding gallery, bedding ideas, bed sheet designs, Slumbazen, cotton bedding, tencel bedding, beautiful colored sheets, hotel bed linen, sheet photos, bedding examples, bedding design inspiration"
+      "title": "Bedding and towel catalogue",
+      "description": "Search by SKU, material or dimensions, filter the catalogue and compare up to three items. Prepare a detailed product enquiry with SlumbaZEN.",
+      "keywords": "Bedding and towel catalogue"
     },
     "sizes": {
-      "title": "Standard Bedding Sizes: Twin, Queen, King & Custom | Slumbazen",
-      "description": "Size chart for sheets, duvet covers, and pillowcases for 3.5, 5, and 6 ft beds. Custom tailoring service for your mattress size by Slumbazen factory. Guaranteed fit for maximum comfort.",
-      "keywords": "bedding sizes, bedding size chart, 3.5 ft sheets, 5 ft sheets, 6 ft sheets, duvet cover sizes, pillowcase sizes, custom size bedding, mattress depth, Slumbazen, fitted sheet dimensions"
+      "title": "Measure your mattress and compare bedding sizes",
+      "description": "Measure width, length and depth including a topper. Check listed 10- or 12-inch pockets by SKU, plus catalogue pillowcase, bolster-case and duvet-cover sizes.",
+      "keywords": "Measure your mattress and compare bedding sizes"
     },
     "whatIsTencel": {
-      "title": "What is Tencel™ Lyocell Fabric? Benefits, Care & vs. Cotton",
-      "description": "In-depth guide to Tencel™ Lyocell: unique properties, softness, eco-friendliness. Compare it with Cotton and learn Tencel™ care tips from Slumbazen experts for long-lasting use.",
-      "keywords": "what is tencel, tencel fabric, lyocell, tencel properties, tencel benefits, tencel vs cotton, tencel care instructions, tencel bed sheets, Slumbazen, natural fiber, cooling fabric, tencel bedding guide"
+      "title": "Understanding TENCEL™ and finished bedding",
+      "description": "Learn about the TENCEL™ fibre name and how general fibre information differs from a finished product. Check composition and care labels before ordering.",
+      "keywords": "Understanding TENCEL™ and finished bedding"
     },
     "deliveryWarranty": {
-      "title": "Shipping & Warranty Policy for Slumbazen Bedding",
-      "description": "Details on Slumbazen's bedding shipping policy (Thailand and international), product warranty, return conditions, and quality fabric care instructions for your satisfaction.",
-      "keywords": "shipping policy, product warranty, returns, bedding care, Slumbazen, free delivery, Kerry, Flash Express, DHL, international shipping cost, delivery information, product guarantee"
+      "title": "Shipping, returns and order care",
+      "description": "Review the details to confirm before payment, including shipping charges, delivery estimates and return terms. Keep the documents needed for order enquiries.",
+      "keywords": "Shipping, returns and order care"
     },
     "contact": {
-      "title": "Contact Slumbazen - Order Hotel Bedding & Get a Quote",
-      "description": "Contact the Slumbazen factory to inquire, order B2B hotel bedding, export quality, or visit our showroom. Call 081-851-9922, LINE: kris.bkk. We are ready to serve you.",
-      "keywords": "contact Slumbazen, phone number, LINE ID, factory map, order bed sheets, B2B price inquiry, Bang Bo bedding showroom, contact us, Thai bedding manufacturer"
+      "title": "Contact SlumbaZEN for a product quotation",
+      "description": "Discuss sheets and towels with the SKU, dimensions and quantities you need. Find the phone contact and location, and arrange a visit before travelling.",
+      "keywords": "Contact SlumbaZEN for a product quotation"
     },
     "whiteSheets": {
-      "title": "White Hotel Bed Sheets | Premium Cotton, Tencel™ | Slumbazen",
-      "description": "Shop exclusive white bed sheets from Slumbazen. Hotel-quality Cotton & Tencel™ fabric. Clean, comforting, timeless elegance. Factory prices.",
-      "keywords": "white sheets, white hotel bedding, white cotton sheets, white tencel sheets, white linen sets, Slumbazen, luxury white sheets, hotel collection white, factory quality"
+      "title": "Plain and striped white sheets",
+      "description": "Explore white fitted and flat sheets, listed dimensions, materials and catalogue prices. Measure your mattress with its topper before choosing a candidate.",
+      "keywords": "Plain and striped white sheets"
     },
     "premiumColors": {
-      "title": "Premium Color Bed Sheets - Stylish Designs, Hotel Quality",
-      "description": "Style your bedroom with premium color bed sheets from Slumbazen. Various shades in quality Cotton, Tencel™ fabrics. Custom orders at factory prices.",
-      "keywords": "colored sheets, premium color bedding, designer bed linen, Slumbazen color sheets, solid color sheets, luxury color bedding, factory quality, cotton color sheets, tencel color sheets"
+      "title": "Enquire about bedding colours",
+      "description": "The current catalogue lists white products. Tell SlumbaZEN the shade, dimensions and quantities you need so suitable options can be checked before quotation.",
+      "keywords": "Enquire about bedding colours"
     },
     "beddingSets": {
-      "title": "Complete Bedding Sets - Hotel Quality, Factory Prices | Slumbazen",
-      "description": "Choose complete, hotel-quality bedding sets from Slumbazen. Includes fitted sheet, pillowcases, and duvet cover, perfectly coordinated for superior comfort and style. Factory direct.",
-      "keywords": "bedding sets, complete bed linen, hotel bedding package, Slumbazen bedding sets, bed in a bag, luxury bedding ensemble, factory quality, sheet and duvet cover sets"
+      "title": "Choose sheets, pillowcases and duvet covers together",
+      "description": "Select individual bedding pieces for your use. Match each size and ask for the included items, quantities and total price to be confirmed in your quotation.",
+      "keywords": "Choose sheets, pillowcases and duvet covers together"
     },
     "towels": {
-      "title": "Hotel Towel Guide: Choose Size, Weight & Washing Method",
-      "description": "In-depth guide on 100% cotton hotel towels and bath mats. How to choose the right weight (lbs) and size for 3-5 star hotels, with first-wash instructions from Slumbazen.",
-      "keywords": "hotel towels, bath towel, bath mat, towel size, towel weight, how to wash towels, 12 lbs towel, 16 lbs towel, combed cotton, Slumbazen"
+      "title": "Hotel bath towels and bath mats",
+      "description": "Compare bath-towel and bath-mat dimensions, listed weights and weight-unit questions. Read first-wash and care guidance for guest-room use.",
+      "keywords": "Hotel bath towels and bath mats"
     },
     "blog": {
-      "title": "Blog: Hotel Bedding Tips, Insights & Care Guides | Slumbazen",
-      "description": "Explore the Slumbazen blog for expert tips on hotel-quality bedding care, material insights, and the latest hospitality trends.",
-      "keywords": "bedding blog, sheet care tips, towel guide, hotel quality, Slumbazen, bedding articles"
+      "title": "Practical guides to sheets and hospitality towels",
+      "description": "Read sheet-care guidance, understand cotton and thread count, and choose towels for guest rooms. Follow links to related guides and catalogue items.",
+      "keywords": "Practical guides to sheets and hospitality towels"
+    },
+    "beddingFinder": {
+      "title": "Find sheets by your mattress measurements",
+      "description": "Enter mattress width, total depth and length, then choose fabric and appearance. Carry your measurements into an enquiry for the shop to check.",
+      "keywords": "Find sheets by your mattress measurements"
+    },
+    "sheetCare": {
+      "title": "How to care for your sheets",
+      "description": "Start with the care label, sort your laundry, choose suitable detergent and temperatures, then dry thoroughly before storage. Know what to ask before buying.",
+      "keywords": "How to care for your sheets",
+      "headings": [
+        "Sort laundry and read the care label",
+        "Choose detergent and temperature",
+        "Dry thoroughly before storing"
+      ]
+    },
+    "cottonFabrics": {
+      "title": "Cotton, weave and thread count",
+      "description": "Understand fibre and weave, compare thread-count units and counting methods, then consider dimensions, care requirements and samples when selecting bedding.",
+      "keywords": "Cotton, weave and thread count",
+      "headings": [
+        "Fibre and weave describe different things",
+        "Compare thread-count units and methods",
+        "Check dimensions, care and samples"
+      ]
+    },
+    "hospitalityTowels": {
+      "title": "Choosing towels for guest rooms",
+      "description": "Choose for dimensions, intended use and laundry capacity. Understand pounds per dozen and GSM, and prepare the information needed for a towel quotation.",
+      "keywords": "Choosing towels for guest rooms",
+      "headings": [
+        "Start with size and intended use",
+        "Understand pounds per dozen and GSM",
+        "Prepare your quotation requirements"
+      ]
     }
   },
   "towelsPage": {
     "mainTitle": "Hotel Towels",
-    "mainDescription": "An in-depth look at every detail of hotel towels and bath mats for the best selection and to make the ultimate impression on your guests.",
+    "mainDescription": "Compare bath-towel and bath-mat dimensions, listed weights and weight-unit questions. Read first-wash and care guidance for guest-room use.",
     "suitability": "Suitability",
     "bathTowel": {
       "name": "Hotel Bath Towel",

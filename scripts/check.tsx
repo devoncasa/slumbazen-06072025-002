@@ -1,3 +1,4 @@
+import {languageTag,preferredLanguage} from '../localization';
 import {pageSEO} from '../seo';
 import {gzipSync} from 'node:zlib';
 import {productSpecificationRows,productSizeLabel,catalogueWords,catalogueSizeDimensions,productFacts,productDescription} from '../catalogueSpecs';
@@ -6,7 +7,7 @@ import React from 'react';import {renderToString} from 'react-dom/server';import
 await Promise.all(languages.map(loadLocale));
 const keys=Object.keys(copy.en).sort();for(const lang of languages){assert.deepEqual(Object.keys(copy[lang]).sort(),keys,lang+' translation keys');for(const key of keys){assert.notEqual(copy[lang][key],undefined);if(Array.isArray(copy.en[key]))assert.equal(copy[lang][key].length,copy.en[key].length,lang+key)}}
 assert.equal(new Set(products.map(p=>p.id)).size,products.length);
-let count=0;for(const lang of languages)for(const route of [...paths,...articleSlugs.map(s=>'blog/'+s),...products.map(p=>'product/'+p.id.toLowerCase())]){const url='/'+lang+(route?'/'+route:'');const html=fs.readFileSync('dist'+url+'/index.html','utf8');assert.match(html,/<h1\b/);assert.match(html,new RegExp(`<html lang="${lang}"`));assert(!html.includes('cimode'));assert(!html.includes('threads per 10 cm'));assert(!html.includes('Article Coming Soon'));assert(!html.includes('line.me/R/msg'));const schemas=[...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/g)];for(const [,data]of schemas){const d=JSON.parse(data);for(const node of d['@graph']||[d]){assert(!node.offers);assert(!node.aggregateRating)}}for(const [,src]of html.matchAll(/<img[^>]*src="([^"]+)"/g)){assert(src.startsWith('/assets/'),src);assert(fs.existsSync('dist'+src),src)}count++;}
+let count=0;for(const lang of languages)for(const route of [...paths,...articleSlugs.map(s=>'blog/'+s),...products.map(p=>'product/'+p.id.toLowerCase())]){const url='/'+lang+(route?'/'+route:'');const html=fs.readFileSync('dist'+url+'/index.html','utf8');assert.match(html,/<h1\b/);assert.match(html,new RegExp(`<html lang="${languageTag(lang)}"`));assert(!html.includes('cimode'));assert(!html.includes('threads per 10 cm'));assert(!html.includes('Article Coming Soon'));assert(!html.includes('line.me/R/msg'));const schemas=[...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/g)];for(const [,data]of schemas){const d=JSON.parse(data);for(const node of d['@graph']||[d]){assert(!node.offers);assert(!node.aggregateRating)}}for(const [,src]of html.matchAll(/<img[^>]*src="([^"]+)"/g)){assert(src.startsWith('/assets/'),src);assert(fs.existsSync('dist'+src),src)}count++;}
 const render=(url:string)=>renderToString(<MemoryRouter initialEntries={[url]}><SiteRoutes/></MemoryRouter>);
 const cotton=render('/en/gallery?fabric=Cotton');assert(cotton.includes('Cotton'));assert(!cotton.includes('Cotton 100%'));assert(!cotton.includes('class="sku" dir="ltr">FS-S35-ST'));
 const none=render('/en/gallery?color=red');assert(none.includes(copy.en.empty));assert(!none.includes('class="product-card"'));
@@ -19,7 +20,7 @@ console.log(JSON.stringify({localizedRoutes:count,products:products.length,langu
 const metaByLang:Record<string,Set<string>>={};const recommendationsByLang:Record<string,Set<string>>={};for(const lang of languages){const set=new Set<string>();const recs=new Set<string>();metaByLang[lang]=set;recommendationsByLang[lang]=recs;for(const p of products){const html=fs.readFileSync('dist/'+lang+'/product/'+p.id.toLowerCase()+'/index.html','utf8');const meta=html.match(/<meta name="description" content="([^"]+)"/)![1];assert(!set.has(meta),lang+' duplicate product meta '+p.id);set.add(meta);const recommendation=productDescription(p,lang).selection;assert(!recs.has(recommendation),lang+' duplicate product recommendation '+p.id);recs.add(recommendation);assert(html.includes('product-recommendation'));assert(html.includes('product-specifications'));assert(html.includes('product-questions'));assert(html.includes(p.id));assert(!html.includes('AI-generated styling illustration'));assert(!html.includes('threads per 10cm'));}assert.equal(recs.size,products.length,lang+' recommendation coverage');for(const route of ['towels','hotels']){const html=fs.readFileSync('dist/'+lang+'/'+route+'/index.html','utf8');assert(html.includes('original-gallery'));if(route==='towels'){assert(html.includes('first-wash'));assert(html.includes('towel-care'));assert(html.includes('27'));assert(html.includes('54'));}else assert(html.includes('expert-hotel-advice'));}}
 console.log(JSON.stringify({uniqueLocalizedProductMeta:products.length*languages.length,restoredTowelsAndHotelsInFiveLanguages:true}));
 
-const activeSections=['selectionGuide','homePage','collectionsPage','whiteSheetsPage','premiumColorsPage','beddingSetsPage','materialsPage','whatIsTencelPage','sizesPage','deliveryWarrantyPage','hotelsPage','towelsPage','nav','footer','contactPage'];
+const activeSections=['seo','selectionGuide','homePage','collectionsPage','whiteSheetsPage','premiumColorsPage','beddingSetsPage','materialsPage','whatIsTencelPage','sizesPage','deliveryWarrantyPage','hotelsPage','towelsPage','nav','footer','contactPage'];
 const flatten=(x:any,p=''):Record<string,any>=>x&&typeof x==='object'&&!Array.isArray(x)?Object.fromEntries(Object.entries(x).flatMap(([k,v])=>Object.entries(flatten(v,p?p+'.'+k:k)))):{[p]:x};
 const english=flatten(JSON.parse(fs.readFileSync('public/locales/en/translation.json','utf8')));const active=Object.keys(english).filter(k=>activeSections.includes(k.split('.')[0]));
 for(const lang of languages){const actual=flatten(JSON.parse(fs.readFileSync('public/locales/'+lang+'/translation.json','utf8')));for(const key of active){assert(key in actual,lang+' missing '+key);const variables=(s:string)=>[...String(s).matchAll(/{{(.*?)}}/g)].map(m=>m[1]).sort();assert.deepEqual(variables(actual[key]),variables(english[key]),lang+' interpolation '+key);}}
@@ -35,6 +36,12 @@ for(const lang of languages)for(const route of [...paths,...articleSlugs.map(s=>
  assert(html.includes('<meta name="description" content="'+esc(seo.description)+'">'),file+' metadata: '+seo.description);
  assert(html.includes('<link rel="canonical" href="'+seo.canonical+'">'));
  assert(html.includes('<meta property="og:image" content="'+seo.image+'">'));
+ assert(html.includes('<title>'+esc(seo.title)+' | SlumbaZEN</title>'));
+ assert(html.includes('<meta property="og:title" content="'+esc(seo.title)+'">'));
+ assert(html.includes('<meta name="twitter:title" content="'+esc(seo.title)+'">'));
+ assert(fs.existsSync('dist'+new URL(seo.image).pathname),file+' missing social image');
+ assert.equal(seo.alternates.length,6);
+ for(const alt of seo.alternates){assert(html.includes('<link rel="alternate" hreflang="'+alt.lang+'" href="'+alt.url+'">'));assert(fs.readFileSync('dist/sitemap.xml','utf8').includes('<xhtml:link rel="alternate" hreflang="'+alt.lang+'" href="'+alt.url+'"/>'));}
  assert(html.includes('data-prerendered="true"'));
  for(const [,href]of html.matchAll(/<a\b[^>]*href="([^"]+)"/g)){
   if(!href.startsWith('/')||href.startsWith('//'))continue;const u=new URL(href.replace(/&amp;/g,'&'),'https://www.slumbazen.com');if(u.pathname==='/')continue;
@@ -98,3 +105,14 @@ assert(thaiSearch.includes('FS-Q50-'));
 assert(!thaiSearch.includes('class="sku" dir="ltr">FS-K60-'));
 assert(render('/ar/gallery?q=white%20towel').includes('TWL-STD-12LBS-WHT-01'));
 console.log(JSON.stringify({multiTermSearchAcrossAttributes:true,searchRetainedAcrossLanguages:true}));
+
+for(const lang of languages){assert.equal(preferredLanguage('/'+lang+'/contact/','en',['ar']),lang);assert.equal(preferredLanguage('/',lang,['en-US']),lang);}
+assert.equal(preferredLanguage('/',null,['fr-FR','zh-Hans-CN']),'zh');
+assert.equal(preferredLanguage('/','invalid',['ar-SA']),'ar');
+assert.equal(preferredLanguage('/',null,['fr-FR']),'th');
+assert.equal(preferredLanguage('/en/hotels/',null,['th-TH']),'en');
+assert.deepEqual(pageSEO('unknown','th').alternates,[]);
+assert(fs.readFileSync('dist/404.html','utf8').includes('content="noindex, follow"'));
+assert(fs.readFileSync('dist/index.html','utf8').includes('aria-label="Choose language"'));
+for(const lang of languages)for(const slug of articleSlugs){const seo=pageSEO('blog/'+slug,lang);assert.equal(seo.headings.length,3);assert(seo.headings.every((v:string)=>v.length>3));}
+console.log(JSON.stringify({stage5:{metadataRoutes:count,reciprocalAlternates:6,articleHeadings:45,languagePriority:true,socialImagesExist:true}}));

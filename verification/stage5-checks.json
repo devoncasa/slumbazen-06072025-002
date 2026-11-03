@@ -1,0 +1,282 @@
+{
+  "stage": 5,
+  "status": "complete-in-work-branch",
+  "date": "2026-11-03",
+  "deployed": false,
+  "checks": {
+    "npmRunCheck": "passed",
+    "localizedRoutes": 620,
+    "productPages": 530,
+    "internalLinks": 33520,
+    "brokenLinks": 0,
+    "localizedCustomerFacingKeys": 570,
+    "metadataAndSocialTitleParity": true,
+    "alternatesPerPage": 6,
+    "previewNoindexPages": 620,
+    "articleHeadings": 45,
+    "mainJsGzipBytes": 137746,
+    "cssGzipBytes": 13737,
+    "runtimeErrorsInBrowser": 0
+  },
+  "browser": [
+    {
+      "width": 390,
+      "language": "th",
+      "route": "home",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "language": "th",
+      "route": "blog/cotton-fabrics/",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "language": "th",
+      "route": "towels/",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "route": "home",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "route": "blog/cotton-fabrics/",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "language": "en",
+      "route": "towels/",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "language": "zh",
+      "route": "home",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "language": "zh",
+      "route": "blog/cotton-fabrics/",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "language": "zh",
+      "route": "towels/",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "language": "ar",
+      "route": "home",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "language": "ar",
+      "route": "blog/cotton-fabrics/",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "language": "ar",
+      "route": "towels/",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "language": "hi",
+      "route": "home",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "language": "hi",
+      "route": "blog/cotton-fabrics/",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 390,
+      "language": "hi",
+      "route": "towels/",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "language": "th",
+      "route": "home",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "language": "th",
+      "route": "blog/cotton-fabrics/",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "language": "th",
+      "route": "towels/",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "language": "en",
+      "route": "home",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "language": "en",
+      "route": "blog/cotton-fabrics/",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "language": "en",
+      "route": "towels/",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "language": "zh",
+      "route": "home",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "language": "zh",
+      "route": "blog/cotton-fabrics/",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "language": "zh",
+      "route": "towels/",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "language": "ar",
+      "route": "home",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "language": "ar",
+      "route": "blog/cotton-fabrics/",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "language": "ar",
+      "route": "towels/",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "language": "hi",
+      "route": "home",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "language": "hi",
+      "route": "blog/cotton-fabrics/",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "width": 1440,
+      "language": "hi",
+      "route": "towels/",
+      "metadataParity": true,
+      "alternates": 6,
+      "overflow": 0
+    },
+    {
+      "rootBrowserLanguage": true,
+      "rootSavedLanguage": true,
+      "explicitRoutePriority": true,
+      "queryAndHashPreserved": true
+    },
+    {
+      "noJavaScriptLanguageLinks": 5,
+      "crawlableArticleHeadings": true
+    }
+  ],
+  "limitations": [
+    "Local laboratory checks; no production deployment or search-indexing guarantee.",
+    "No new product offers, reviews or availability claims; unverified business facts remain explicit.",
+    "Browser screenshot fonts served locally for reproducible Thai/Arabic rendering.",
+    "Existing React Router future warnings and a simulated-DOM act warning remain non-failing; the browser found no runtime errors.",
+    "SSL/domain and real form receipt require Stage 7 checks."
+  ],
+  "newImagesGenerated": 0,
+  "existingImagesPreserved": true
+}

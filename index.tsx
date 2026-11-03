@@ -1,3 +1,4 @@
+import {browserPreferredLanguage} from './localization';
 import {loadLocale} from './localeResources';
 import './restored.css';
 import './refinement.css';
@@ -8,6 +9,7 @@ const migratedHash=/^#\/(th|en|zh|ar|hi)(?:\/|$)/.test(window.location.hash);
 if (migratedHash) {
  window.history.replaceState(null,'',window.location.hash.slice(1));
 }
+if(window.location.pathname==='/'){window.history.replaceState(null,'','/'+browserPreferredLanguage('/')+'/'+window.location.search+window.location.hash)}
 const initialLocale=window.location.pathname.split('/')[1]||'th';
 loadLocale(initialLocale).then(()=>{
  const root=document.getElementById('root')!;

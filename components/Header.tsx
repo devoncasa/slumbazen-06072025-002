@@ -70,6 +70,7 @@ const Header: React.FC = () => {
     const request=++languageRequest.current;
     await loadLocale(lng);
     if(request!==languageRequest.current)return;
+    try{window.localStorage.setItem('i18nextLng',lng)}catch{}
     closeMenus();
     const currentPath = location.pathname; // e.g. /en/contact
     const pathParts = currentPath.split('/'); // e.g. ["", "en", "contact"]

@@ -1,3 +1,4 @@
+import {languageTag,browserPreferredLanguage} from './localization';
 import {photographyCopy} from './productPhotography';
 import {pageSEO} from './seo';
 import React, {useEffect,useState} from 'react';
@@ -33,27 +34,28 @@ const active=([['productType',type,'productType'],['fabric',fabric,'fabricType']
 return <section className="catalogue"><div className="catalogue-tools"><label>{shoppingCopy[lang].search}<input type="search" placeholder={shoppingCopy[lang].searchPlaceholder} value={search.get('q')||''} onChange={e=>set('q',e.target.value)}/></label><Link className="button secondary" to={`/${lang}/bedding-finder/`}>{shoppingCopy[lang].finder} →</Link></div><details className="filters"><summary>{c.filter} · {new Intl.NumberFormat(locale(lang)).format(found.length)}</summary><div className="filter-grid">{([['productType',c.type,'productType'],['fabric',c.material,'fabricType'],['size',c.size,'size']] as const).map(([key,label,data])=><label key={key}>{label}<select value={key==='productType'?type:key==='fabric'?fabric:size} onChange={e=>set(key,e.target.value)}><option value="all">{c.all}</option>{options(data).map(v=><option key={v.key} value={v.key}>{v[lang as 'en']}</option>)}</select></label>)}<label>{c.color}<select value={color} onChange={e=>set('color',e.target.value)}><option value="all">{c.all}</option><option value="white">{c.white}</option></select></label><button onClick={()=>setSearch(towel?{productType:'towel'}:{})}>{c.reset}</button></div></details><div className="active-filters">{active.map(f=><button className="secondary" key={f.key} onClick={()=>set(f.key,'all')}>{f.label} ×</button>)}{color!=='all'&&<button className="secondary" onClick={()=>set('color','all')}>{color==='white'?c.white:color} ×</button>}</div><p className="small">{photographyCopy[lang].detail}</p><p aria-live="polite">{new Intl.NumberFormat(locale(lang)).format(found.length)} {resultUnit}</p>{found.length?<div className="product-grid">{found.slice((current-1)*9,current*9).map(p=><Card key={p.id} p={p} c={c} lang={lang}/>)}</div>:<p className="panel">{c.empty}</p>}{total>1&&<nav className="pagination" aria-label={({th:'การแบ่งหน้า',en:'Pagination',zh:'分页',ar:'التنقل بين الصفحات',hi:'पृष्ठ नेविगेशन'} as Record<string,string>)[lang]}><button disabled={current===1} onClick={()=>{const n=new URLSearchParams(search);n.set('page',String(current-1));setSearch(n)}}>{c.previous}</button><span>{new Intl.NumberFormat(locale(lang)).format(current)} / {new Intl.NumberFormat(locale(lang)).format(total)}</span><button disabled={current===total} onClick={()=>{const n=new URLSearchParams(search);n.set('page',String(current+1));setSearch(n)}}>{c.next}</button></nav>}</section>}
 export function Dimensions({c}:{c:any}){return <svg className="dimension" viewBox="0 0 600 320" role="img" aria-label={`${c.width} × ${c.length} × ${c.depth}`}><path d="M100 100L390 60L510 150L220 200Z M100 100V155L220 255L510 205V150 M220 200V255" fill="#e2d7c8" stroke="#73594b" strokeWidth="3"/><path d="M100 80L390 40 M410 60L530 150 M535 155V207" stroke="#34384a" strokeWidth="2"/><text x="190" y="35" textAnchor="middle">{c.width}</text><text x="465" y="65" textAnchor="middle">{c.length}</text><text x="350" y="300" textAnchor="middle">{c.depth}</text></svg>}
 export function Site(){const {lang='th','*':rawPath=''}=useParams();const path=rawPath.replace(/\/+$/,'');const location=useLocation();const navigate=useNavigate();const valid=languages.includes(lang as any);const {c,i,article,p,title}=pageData(path,lang);useEffect(()=>{
- if(!valid)return;
+ if(!valid){document.head.querySelectorAll('link[hreflang],script[type="application/ld+json"]').forEach(e=>e.remove());let robots=document.head.querySelector('meta[name="robots"]');if(!robots){robots=document.createElement('meta');robots.setAttribute('name','robots');document.head.appendChild(robots)}robots.setAttribute('content','noindex, follow');return;}
  const meta=pageSEO(path,lang);
  const canonical=meta.canonical;
  const set=(selector:string,tag:string,attrs:Record<string,string>)=>{let e=document.head.querySelector(selector);if(!e){e=document.createElement(tag);document.head.appendChild(e)};for(const [k,v] of Object.entries(attrs))e.setAttribute(k,v)};
  set('link[rel="canonical"]','link',{rel:'canonical',href:canonical});
- set('link[hreflang="x-default"]','link',{rel:'alternate',hreflang:'x-default',href:origin+'/th/'+(path?path+'/':'')});
- for(const l of languages)set(`link[hreflang="${l==='zh'?'zh-Hans':l}"]`,'link',{rel:'alternate',hreflang:l==='zh'?'zh-Hans':l,href:origin+'/'+l+'/'+(path?path+'/':'')});
+ document.head.querySelectorAll('link[hreflang]').forEach(e=>e.remove());
+ for(const alternate of meta.alternates)set(`link[hreflang="${alternate.lang}"]`,'link',{rel:'alternate',hreflang:alternate.lang,href:alternate.url});
  set('meta[name="description"]','meta',{name:'description',content:meta.description});
  set('meta[property="og:url"]','meta',{property:'og:url',content:canonical});
- set('meta[property="og:title"]','meta',{property:'og:title',content:title});
+ set('meta[property="og:title"]','meta',{property:'og:title',content:meta.title});
  set('meta[name="robots"]','meta',{name:'robots',content:meta.exists&&['www.slumbazen.com','slumbazen.com'].includes(window.location.hostname)&&!new URLSearchParams(location.search).has('q')?'index, follow':'noindex, follow'});
  set('meta[property="og:description"]','meta',{property:'og:description',content:meta.description});
  set('meta[property="og:image"]','meta',{property:'og:image',content:meta.image});
- set('meta[name="twitter:title"]','meta',{name:'twitter:title',content:title});
+ set('meta[name="twitter:title"]','meta',{name:'twitter:title',content:meta.title});
  set('meta[name="twitter:description"]','meta',{name:'twitter:description',content:meta.description});
  document.head.querySelectorAll('script[type="application/ld+json"]').forEach(e=>e.remove());
  const schema=document.createElement('script');schema.type='application/ld+json';schema.textContent=JSON.stringify(meta.graph).replace(/</g,'\\u003c');document.head.appendChild(schema);
  set('meta[property="og:locale"]','meta',{property:'og:locale',content:meta.locale});
  set('meta[property="og:type"]','meta',{property:'og:type',content:meta.article>=0?'article':'website'});
+ set('meta[name="twitter:card"]','meta',{name:'twitter:card',content:'summary_large_image'});
  set('meta[name="twitter:image"]','meta',{name:'twitter:image',content:meta.image});
- document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';document.title=`${meta.title} | SlumbaZEN`;
+ document.documentElement.lang=languageTag(lang);document.documentElement.dir=lang==='ar'?'rtl':'ltr';document.title=`${meta.title} | SlumbaZEN`;
  },[lang,path,title,location.search]);
  useEffect(()=>{const frame=requestAnimationFrame(()=>{let id='';try{id=decodeURIComponent(location.hash.slice(1))}catch{};const target=id?document.getElementById(id):null;if(target)target.scrollIntoView({block:'start'});else window.scrollTo(0,0)});return()=>cancelAnimationFrame(frame)},[lang,path,location.hash]);
  if(!valid)return <h1>404</h1>;
@@ -75,11 +77,12 @@ return <RestorationFrame lang={lang} path={path}>
 {i===11&&<div className="editorial-grid"><Photo c={c} name="packing"/><Photo c={c} name="care"/></div>}
 {i===12&&<section className="panel contact"><p>{c.address}</p><a href={`tel:${contact.phone}`}>{c.phone}: <bdi>{contact.phone}</bdi></a><a className="button secondary" href={contact.map} target="_blank" rel="noreferrer">{c.map} ↗</a></section>}
 {i===13&&<div className="category-grid">{articleSlugs.map((slug,n)=><article className="panel" key={slug}><Photo c={c} name={['care','textile','towels'][n]}/><h2><Link to={link('blog/'+slug)}>{c.articles[n]}</Link></h2><p>{[c.care,c.cotton,c.towels][n][0]}</p><Link className="text-link" to={link('blog/'+slug)}>{c.details} →</Link></article>)}</div>}
-{articleMode&&<article className="reading"><p className="small">{c.published}: <time dateTime="2026-10-25">{new Intl.DateTimeFormat(locale(lang),{dateStyle:'long',timeZone:'UTC'}).format(new Date('2026-10-25'))}</time></p><Photo c={c} name={['care','textile','towels'][article]}/>{[c.care,c.cotton,c.towels][article].map((p:string,n:number)=><section key={n}><h2>{String(n+1).padStart(2,'0')}</h2><p>{p}</p></section>)}{article===1&&<p className="small"><a href="https://store.astm.org/d3775-17r23.html" target="_blank" rel="noreferrer">ASTM D3775 · {c.articles[1]}</a></p>}<Link to={link(article===2?'towels':article===1?'materials':'delivery')}>{c.details} →</Link></article>}
+{articleMode&&<article className="reading"><p className="small">{c.published}: <time dateTime="2026-10-25">{new Intl.DateTimeFormat(locale(lang),{dateStyle:'long',timeZone:'UTC'}).format(new Date('2026-10-25'))}</time></p><Photo c={c} name={['care','textile','towels'][article]}/>{[c.care,c.cotton,c.towels][article].map((p:string,n:number)=><section key={n}><h2>{pageSEO(path,lang).headings[n]||String(n+1).padStart(2,'0')}</h2><p>{p}</p></section>)}{article===1&&<p className="small"><a href="https://store.astm.org/d3775-17r23.html" target="_blank" rel="noreferrer">ASTM D3775 · {c.articles[1]}</a></p>}<Link to={link(article===2?'towels':article===1?'materials':'delivery')}>{c.details} →</Link></article>}
 {productMode&&<ProductDetails p={p} lang={lang}/>}
 {(i<0&&!articleMode&&!productMode)&&<section className="panel"><p>404</p><Link to={link('')}>{c.nav[0]}</Link></section>}
 {([4,5,6,8,10,11,12].includes(i)||productMode)&&<Enquiry key={path} c={c} lang={lang} p={p}/>}
 {(i===11)&&<p><a href={`tel:${contact.phone}`}>{c.phone} · <bdi>{contact.phone}</bdi></a></p>}
 <div className="related-links">{[7,9,11,12,13].filter(n=>n!==i).map(n=><Link key={n} to={link(paths[n])}>{c.titles[n]}</Link>)}</div></main></RestorationFrame>}
-export function SiteRoutes(){return <SelectionProvider><Routes><Route path="/" element={<Navigate to="/th/" replace/>}/><Route path="/:lang/*" element={<Site/>}/><Route path="*" element={<h1>404 · SlumbaZEN</h1>}/></Routes></SelectionProvider>}
+function RootRoute(){const location=useLocation();const lang=typeof window==='undefined'?'th':browserPreferredLanguage('/');return <Navigate to={'/'+lang+'/'+location.search+location.hash} replace/>}
+export function SiteRoutes(){return <SelectionProvider><Routes><Route path="/" element={<RootRoute/>}/><Route path="/:lang/*" element={<Site/>}/><Route path="*" element={<h1>404 · SlumbaZEN</h1>}/></Routes></SelectionProvider>}
 export default function App(){return <BrowserRouter><SiteRoutes/></BrowserRouter>}

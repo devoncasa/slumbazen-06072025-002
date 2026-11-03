@@ -588,10 +588,10 @@
     "ctaButtonCollections": "View All Collections"
   },
   "beddingSetsPage": {
-    "mainTitle": "Complete Bedding Sets: The Perfect Ensemble for Your Rest",
-    "mainDescription": "Choose the pieces you need individually: fitted sheet, pillowcases and, if required, a separate duvet cover. Ask us to confirm every included piece, its size and the total price in writing before ordering. A duvet cover does not include a duvet insert.",
+    "mainTitle": "Choose the pieces for your bedding set",
+    "mainDescription": "Start with a sheet that fits, then choose the pillowcases and duvet cover you need. Ask for each quantity in the quotation.",
     "featuredTitle": "Sample Bedding Sets to Transform Your Bedroom into a Paradise",
-    "benefitsTitle": "Why Choose Our Complete Bedding Sets?",
+    "benefitsTitle": "Choose the pieces for your bedding set",
     "benefit1": "Specify the quantity of each piece before confirming the price.",
     "benefit2": "Check matching fabric, color and pattern for every piece.",
     "benefit3": "Compare the total for confirmed contents. No automatic discount or warranty is implied.",
@@ -998,5 +998,33 @@
     "TWL-LUX-18LBS-WHT-04": "Towel · Cotton towel · Plain · 30 × 60 in. Request this item’s care label and check its instructions against your washing and drying equipment.",
     "BC-C100-406S-01": "Bolster Case · Cotton · Striped · 14 × 44 in · 406 threads per square inch. Measure the mattress or insert you actually use before selecting a size; regional bed names can differ.",
     "BC-CAD-500S-02": "Bolster Case · Cotton · Striped · 27 × 40 in · 500 threads per square inch. For replacement purchases, compare the material and finish with your existing linen under the same light."
+  },
+  "selectionGuide": {
+    "fitTitle": "Will this fitted sheet fit your mattress?",
+    "fitIntro": "Measure all three sides, including any topper, before comparing a listed sheet.",
+    "width": "Width",
+    "length": "Length",
+    "depth": "Depth including topper",
+    "fitNote": "The 3.5, 5 and 6 ft labels describe width. Check length and total depth separately.",
+    "fitAction": "Find sheets by your measurements",
+    "diagram": "Diagram showing mattress width, length and depth measurement positions",
+    "setTitle": "Choose the pieces for your bedding set",
+    "setIntro": "Start with a sheet that fits, then choose the pillowcases and duvet cover you need. Ask for each quantity in the quotation.",
+    "sheet": "Choose a fitted sheet",
+    "pillow": "Choose pillowcases",
+    "duvet": "Choose a duvet cover",
+    "sheetNote": "Match mattress dimensions and total depth including a topper.",
+    "pillowNote": "Measure each pillow insert and specify how many cases you need.",
+    "duvetNote": "Match your duvet insert. The cover and insert are separate items.",
+    "browse": "Browse options",
+    "setAction": "Tell us the pieces and quantities",
+    "setNote": "Line drawings illustrate the piece types. Included contents and prices require a confirmed quotation.",
+    "towelTitle": "Choose towels for the way you use them",
+    "towelIntro": "Compare unfolded dimensions, listed weight and laundry requirements, then check a physical sample.",
+    "texture": "A closer look at terry loops and hems",
+    "textureNote": "Illustrative terry texture, not a photograph of a specific SKU. Check an actual sample before choosing.",
+    "towelAction": "Compare bath towels and bath mats",
+    "careAction": "Read the first-wash guide",
+    "steps": "Choose bedding pieces"
   }
 }

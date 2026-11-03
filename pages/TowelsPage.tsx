@@ -1,3 +1,5 @@
+import imageDimensions from '../data/imageDimensions.json';
+import {TowelSelectionGuide} from '../SelectionGuides';
 import {products} from '../products';
 import {productFacts,specWords,bathMatReference} from '../catalogueSpecs';
 import {copy} from '../content';
@@ -74,6 +76,7 @@ const ProductCard: React.FC<{ product: TowelProduct }> = ({ product }) => {
     const c=copy[i18n.language]||copy.en;
     const towelItems=products.filter(p=>p.productType.key==='towel');
 
+    const [imageWidth,imageHeight]=(imageDimensions as Record<string,number[]>)[product.imageUrl];
     const isBathMat = product.key === 'bathMat';
     const bathMatDecorativeImages = [
         '/assets/restored-56972c41d04d.webp',
@@ -85,7 +88,7 @@ const ProductCard: React.FC<{ product: TowelProduct }> = ({ product }) => {
         <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-1 overflow-hidden">
             <div className="bg-brand-gold p-0.5">
                 <div className="relative">
-                    <img src={product.imageUrl} alt={t(product.nameKey)} loading="lazy" className="w-full h-64 object-cover rounded-t-xl" />
+                    <img src={product.imageUrl} srcSet={`${product.imageUrl.replace('.webp','-640.webp')} 640w, ${product.imageUrl} ${imageWidth}w`} sizes="(max-width:1023px) calc(100vw - 48px), 46vw" width={imageWidth} height={imageHeight} alt={t(product.nameKey)} loading="lazy" className="w-full h-64 object-cover rounded-t-xl" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                     <h3 className="absolute bottom-0 p-6 text-3xl font-bold text-white">{t(product.nameKey)}</h3>
                 </div>
@@ -100,6 +103,8 @@ const ProductCard: React.FC<{ product: TowelProduct }> = ({ product }) => {
                                 <div className="w-24 h-24 rounded-full overflow-hidden">
                                   <img
                                       src={img}
+                                      width={96} height={96}
+                                      srcSet={`${img.replace('.webp','-640.webp')} 640w, ${img} 1280w`} sizes="96px"
                                       alt={`${t(product.nameKey)} · ${index + 1}`}
                                       className="w-full h-full object-cover"
                                       loading="lazy"
@@ -112,7 +117,7 @@ const ProductCard: React.FC<{ product: TowelProduct }> = ({ product }) => {
                 
                 <div className="space-y-4">
                     {product.variants.map((variant: TowelVariant,index:number) => (
-                        <div key={variant.nameKey} className="flex items-center justify-between p-4 rounded-lg bg-brand-light/70 border border-neutral-200/80">
+                        <div key={variant.nameKey} className="towel-variant flex items-center justify-between p-4 rounded-lg bg-brand-light/70 border border-neutral-200/80">
                             <div>
                                 <p className="font-semibold text-brand-dark">{t(variant.nameKey)}</p>
                                 <p className="text-sm text-neutral-600">{(isBathMat?bathMatReference.listed:productFacts(towelItems[index]).listed)!.join(' × ')} {w.inch} · {w.weight}: {isBathMat?bathMatReference.weight:productFacts(towelItems[index]).weight} {w.lb}</p>
@@ -286,6 +291,7 @@ const TowelsPage: React.FC = () => {
                         <p className="mt-4 text-lg text-neutral-200 max-w-3xl mx-auto">{t('towelsPage.mainDescription')}</p>
                     </div>
                 </header>
+        <TowelSelectionGuide/>
 
                 <div className="py-16 sm:py-24 space-y-16 sm:space-y-24">
                     <section id="towel-products" className="container mx-auto px-4">

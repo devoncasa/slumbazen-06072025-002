@@ -1,0 +1,13 @@
+{
+  "generated": "2026-11-03",
+  "tool": "built-in imagegen",
+  "original": "generated_images/exec-f00128a1-3c84-42a6-b157-6211f1fea616.png",
+  "classification": "illustrative editorial texture; no SKU or material specification claim",
+  "prompt": "Use case photorealistic-natural. Create exactly one editorial macro documentary photograph, landscape 4:3 composition, for a hotel towel education section of SlumbaZEN. A single clean white terry towel drapes softly over pale warm oak, camera close enough to clearly see realistically irregular fine cotton terry loops, one neatly sewn hem in the lower third, tiny natural shadows between loops. Soft window daylight from upper right, warm neutral whites, restrained contrast, naturally soft edges and realistic focus plane. No room, no people, no labels, no logos, no numbers, no text, no packaging. This is an illustrative texture study, not an exact commercial product. Avoid plastic gloss, oversharpened loops, synthetic fur, repeated cloned texture, elaborate luxury props.",
+  "derivatives": [
+    "public/assets/editorial/terry-detail.webp",
+    "public/assets/editorial/terry-detail-640.webp"
+  ],
+  "originalSha256": "15a327ea0db652cdbf32a2ed2c62afbcf383a924f26d64cb2b8b03ee28738e08",
+  "originalRetention": "Original PNG retained by image generation in this conversation. Derivatives reconstructed by scripts/restore-assets.mjs from asset-source/editorial-terry-detail.json."
+}

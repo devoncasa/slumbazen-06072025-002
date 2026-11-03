@@ -75,3 +75,27 @@ pillow closures/third dimension, bolster measurement basis, towel weight basis,
 GSM, and every set's contents. The 26 October owner-confirmed square-inch
 thread-count basis is retained, without a claim of independent lab verification.
 No set total or towel GSM is calculated from unconfirmed sales/weight units.
+
+## Stage 3 selection guides and images
+
+Added localized mattress measurement diagram on White Sheets, piece-type
+selection cards on Bedding Sets, and a towel selection introduction with
+illustrative terry-loop detail on Towels. Existing products and guides remain.
+The SVG labels are translated HTML so dimensions are not baked into photos.
+Set cards link to real catalogue filters. Thin frames and the existing faded
+bedroom background are reused. Opaque navigation prevents headings showing
+through while scrolling. Towel variant rows stack on narrow screens.
+
+One generated editorial texture has 640/1200 px WebP variants. The full prompt,
+source digest and original-retention note are in data/editorial-terry-detail-source.json.
+It is labelled as illustrative, with no claim to depict a particular SKU.
+Twenty-seven existing towel-page images now have 640 px WebP derivatives.
+OriginalGallery and InlineImage use measured dimensions and available responsive
+sources, while zooming still opens the full image. Encoded project assets in
+asset-source are restored by the existing build script.
+
+Stage 3 verification and performance conditions are in verification/stage3-checks.json.
+The final cold-load local lab shows an increased mobile towel payload after adding
+the editorial section and a lower desktop payload. LCP remains close to the
+baseline. These results are not real-user metrics. Stage 6 must reduce shared
+JavaScript, backgrounds and fonts and repeat the measured customer flow.

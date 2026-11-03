@@ -22,7 +22,7 @@ const InlineImage: React.FC<InlineImageProps> = ({ src, alt, className = '', asp
     <figure className={`my-8 sm:my-10 ${className}`}>
       <div className={`group relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 inline-photo-frame p-0.5 bg-brand-gold`}>
         <TextilePhoto
-          src={src} srcSet={src.includes('/editorial/')?`${src.replace('.webp','-640.webp')} 640w, ${src} 1200w`:undefined} sizes="(max-width:767px) 100vw, 50vw"
+          src={src} srcSet={src.replace('.webp','-640.webp') in dimensions?`${src.replace('.webp','-640.webp')} 640w, ${src} ${width}w`:undefined} sizes="(max-width:767px) 100vw, 50vw"
           alt={src.includes('/editorial/')?alt+' — '+caption:alt}
           loading="lazy" width={width} height={height}
           className="w-full h-full object-cover transition-transform duration-500 ease-in-out  rounded-xl"

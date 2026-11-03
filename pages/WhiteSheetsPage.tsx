@@ -1,3 +1,4 @@
+import {FitGuide} from '../SelectionGuides';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
@@ -55,6 +56,7 @@ const WhiteSheetsPage: React.FC = () => {
               </p>
             </div>
         </header>
+        <FitGuide/>
 
         <div className="pb-20 sm:pb-28">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,0 +1,94 @@
+{
+  "date": "2026-11-03",
+  "baseCommit": "137aefa418552e3e30374797b39bb904cc7be2ce",
+  "scope": [
+    "products/white-sheets",
+    "products/sets",
+    "towels"
+  ],
+  "build": "npm run check passed; clean generated output",
+  "localization": "New guide copy in th/en/zh/ar/hi; 15 generated guide sections checked",
+  "layout": {
+    "firstMatrix": 45,
+    "finalArtifactRecheck": 18,
+    "languages": [
+      "th",
+      "en",
+      "ar"
+    ],
+    "viewportsFirstMatrix": [
+      360,
+      390,
+      768,
+      1024,
+      1440
+    ],
+    "viewportsFinal": [
+      390,
+      1440
+    ],
+    "horizontalOverflow": 0,
+    "brokenLoadedImages": 0,
+    "runtimeErrors": [],
+    "browser": "Headless Chromium 153, simulated devices",
+    "fonts": "Locally routed Sarabun Regular and Noto Sans Arabic Regular for reproducible layout. Remaining production font loading to be checked at Stage 6."
+  },
+  "interactions": [
+    "Set piece link opens fitted-sheet filtered catalogue",
+    "Terry texture native zoom dialog opens and closes with Escape"
+  ],
+  "performance": {
+    "kind": "One cold-load local lab run per version and viewport; not field data or Lighthouse",
+    "networkMbps": 1.6,
+    "latencyMs": 80,
+    "cpuSlowdown": 4,
+    "servers": "Python static HTTP; uncompressed transfer including locally routed fonts, same before/after conditions",
+    "results": [
+      {
+        "width": 390,
+        "route": "towels",
+        "version": "before",
+        "lcp": 3488,
+        "transfer": 1520760
+      },
+      {
+        "width": 390,
+        "route": "towels",
+        "version": "after",
+        "lcp": 3560,
+        "transfer": 1615279,
+        "photo": "http://127.0.0.1:8782/assets/editorial/terry-detail-640.webp"
+      },
+      {
+        "width": 1440,
+        "route": "towels",
+        "version": "before",
+        "lcp": 5724,
+        "transfer": 2079584
+      },
+      {
+        "width": 1440,
+        "route": "towels",
+        "version": "after",
+        "lcp": 5776,
+        "transfer": 1805809,
+        "photo": "http://127.0.0.1:8782/assets/editorial/terry-detail-640.webp"
+      }
+    ]
+  },
+  "assets": {
+    "newEditorialImages": 1,
+    "newWebPWidths": [
+      640,
+      1200
+    ],
+    "terryImageBytes": [
+      42308,
+      103064
+    ],
+    "existingImageResponsiveDerivatives": 27,
+    "existingSourcePhotosPreserved": true,
+    "generatedImageIsIllustrative": true
+  },
+  "release": "No deploy before completion of Stage 7"
+}

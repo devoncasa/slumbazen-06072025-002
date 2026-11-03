@@ -1,3 +1,5 @@
+import {loadRoute} from '../routeResources';
+import {fontStylesheet} from '../fonts';
 import {languageTag,preferredLanguage} from '../localization';
 import {pageSEO} from '../seo';
 import {gzipSync} from 'node:zlib';
@@ -5,6 +7,7 @@ import {productSpecificationRows,productSizeLabel,catalogueWords,catalogueSizeDi
 import {loadLocale} from '../localeResources';
 import React from 'react';import {renderToString} from 'react-dom/server';import {MemoryRouter} from 'react-router-dom';import assert from 'node:assert/strict';import fs from 'node:fs';import {SiteRoutes,paths,articleSlugs} from '../App';import {copy,languages} from '../content';import {products} from '../products';
 await Promise.all(languages.map(loadLocale));
+await Promise.all(paths.map(loadRoute));
 const keys=Object.keys(copy.en).sort();for(const lang of languages){assert.deepEqual(Object.keys(copy[lang]).sort(),keys,lang+' translation keys');for(const key of keys){assert.notEqual(copy[lang][key],undefined);if(Array.isArray(copy.en[key]))assert.equal(copy[lang][key].length,copy.en[key].length,lang+key)}}
 assert.equal(new Set(products.map(p=>p.id)).size,products.length);
 let count=0;for(const lang of languages)for(const route of [...paths,...articleSlugs.map(s=>'blog/'+s),...products.map(p=>'product/'+p.id.toLowerCase())]){const url='/'+lang+(route?'/'+route:'');const html=fs.readFileSync('dist'+url+'/index.html','utf8');assert.match(html,/<h1\b/);assert.match(html,new RegExp(`<html lang="${languageTag(lang)}"`));assert(!html.includes('cimode'));assert(!html.includes('threads per 10 cm'));assert(!html.includes('Article Coming Soon'));assert(!html.includes('line.me/R/msg'));const schemas=[...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/g)];for(const [,data]of schemas){const d=JSON.parse(data);for(const node of d['@graph']||[d]){assert(!node.offers);assert(!node.aggregateRating)}}for(const [,src]of html.matchAll(/<img[^>]*src="([^"]+)"/g)){assert(src.startsWith('/assets/'),src);assert(fs.existsSync('dist'+src),src)}count++;}
@@ -49,7 +52,7 @@ for(const lang of languages)for(const route of [...paths,...articleSlugs.map(s=>
  }
 }
 const assets=fs.readdirSync('dist/assets');const entry=assets.find(p=>/^index-.*\.js$/.test(p))!;const css=assets.find(p=>/^index-.*\.css$/.test(p))!;const jsGzip=gzipSync(fs.readFileSync('dist/assets/'+entry)).length;const cssGzip=gzipSync(fs.readFileSync('dist/assets/'+css)).length;
-assert(jsGzip<150000,'Main JavaScript gzip budget');assert(cssGzip<15000,'CSS gzip budget');
+assert(jsGzip<120000,'Main JavaScript gzip budget');assert(cssGzip<15000,'CSS gzip budget');
 for(const name of ['quiet-bedroom','selection-details']){assert(fs.statSync('dist/assets/editorial/'+name+'.webp').size<120000);assert(fs.statSync('dist/assets/editorial/'+name+'-640.webp').size<40000)}
 const form=fs.readFileSync('dist/__forms.html','utf8');for(const field of ['form-name','name','email','message','language','bot-field'])assert(form.includes('name="'+field+'"'));assert(form.includes('data-netlify="true"'));
 console.log(JSON.stringify({internalLinks:linkCount,brokenLinks:0,metadataParity:true,mainJsGzip:jsGzip,cssGzip,formDefinition:true}));
@@ -116,3 +119,16 @@ assert(fs.readFileSync('dist/404.html','utf8').includes('content="noindex, follo
 assert(fs.readFileSync('dist/index.html','utf8').includes('aria-label="Choose language"'));
 for(const lang of languages)for(const slug of articleSlugs){const seo=pageSEO('blog/'+slug,lang);assert.equal(seo.headings.length,3);assert(seo.headings.every((v:string)=>v.length>3));}
 console.log(JSON.stringify({stage5:{metadataRoutes:count,reciprocalAlternates:6,articleHeadings:45,languagePriority:true,socialImagesExist:true}}));
+
+// Route splitting must retain real HTML, localized fonts and retry-safe module caches.
+for(const lang of languages)for(const route of paths){const html=fs.readFileSync('dist/'+lang+'/'+(route?route+'/':'')+'index.html','utf8');assert(html.includes('id="locale-font"'));assert(html.includes(esc(fontStylesheet(lang))));assert(!html.includes('family=Sarabun:wght@400;500;600;700&amp;family='));}
+assert(!fs.readFileSync('dist/assets/'+css,'utf8').includes('@import'));
+assert(fs.existsSync('dist/assets/logo.webp'));assert(fs.existsSync('dist/assets/logo.png'));
+assert(fs.statSync('dist/assets/logo.webp').size<fs.statSync('dist/assets/logo.png').size);
+const allFiles:string[]=[];function outputFiles(dir:string){for(const entry of fs.readdirSync(dir,{withFileTypes:true})){const dest=dir+'/'+entry.name;if(entry.isDirectory())outputFiles(dest);else allFiles.push(dest);}}outputFiles('dist');
+assert(!allFiles.some(file=>file.endsWith('.map')),'No production source maps');
+const secretPattern=/(?:AKIA[0-9A-Z]{16}|sk-(?:proj-)?[a-zA-Z0-9_-]{30,}|-----BEGIN [A-Z ]*PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9]{36})/;
+for(const file of allFiles.filter(file=>/\.(?:html|js|css|json|txt)$/.test(file)))assert(!secretPattern.test(fs.readFileSync(file,'utf8')),'Possible secret in '+file);
+const config=fs.readFileSync('netlify.toml','utf8');assert(config.includes('max-age=31536000, immutable'));assert(!/for = "\/assets\/\*"/.test(config),'Stable image URLs must not be cached immutably');
+assert(render('/en/constructor/').includes('404'));assert(render('/en/__proto__/').includes('404'));
+console.log(JSON.stringify({stage6:{mainJsBudget:120000,fontsByLanguage:true,routeHTMLPreserved:620,originalLogoPreserved:true,productionSourceMaps:0,credentialPatternMatches:0,stableImageCacheSafe:true}}));

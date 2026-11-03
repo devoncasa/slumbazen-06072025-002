@@ -170,7 +170,7 @@ const FirstWashGuide: React.FC<{randomImages: string[]}> = ({ randomImages }) =>
         <section 
             id="first-wash" 
             className="py-16 sm:py-20 bg-brand-secondary/40 relative overflow-hidden bg-cover bg-center"
-            style={{ backgroundImage: `url('${sectionBgImage}')` }}
+            data-background={`url('${sectionBgImage.replace('.webp','-640.webp')}')`}
         >
             <div className="absolute inset-0 bg-brand-secondary/80 backdrop-blur-sm"></div>
             <div className="container mx-auto px-4 relative z-10">
@@ -278,12 +278,12 @@ const TowelsPage: React.FC = () => {
         <>
             
             <div className="bg-brand-light relative isolate overflow-hidden">
-                <div className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10" style={{ backgroundImage: `url('${pageBgImage}')` }}></div>
+                <div className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10" style={{ backgroundImage: `url('${pageBgImage.replace('.webp','-640.webp')}')` }}></div>
                 <div className="absolute inset-0 -z-10 h-full w-full bg-brand-light/80 backdrop-blur-sm" />
 
                 <header
-                    className="py-24 sm:py-32 text-center text-white relative bg-cover bg-center"
-                    style={{ backgroundImage: `url(${defaultOgImage})` }}
+                    className="py-24 sm:py-32 text-center text-white relative bg-cover bg-center responsive-background"
+                    style={{'--background-small': `url('${defaultOgImage.replace('.webp','-640.webp')}')`, '--background-large': `url('${defaultOgImage}')`} as React.CSSProperties}
                 >
                     <div className="absolute inset-0 bg-brand-dark/60"></div>
                     <div className="container mx-auto px-4 relative z-10">

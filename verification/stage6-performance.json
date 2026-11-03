@@ -1,0 +1,1586 @@
+{
+  "conditions": {
+    "kind": "local laboratory; not field data",
+    "network": "1.6 Mbps down / 750 Kbps up / 80 ms latency",
+    "cpuSlowdown": 4,
+    "repeats": 3,
+    "cache": "cold",
+    "server": "gzip HTML, JavaScript and CSS; WebP unchanged",
+    "font": "fixed local Sarabun TTF; remote font latency excluded",
+    "viewportHeight": 900
+  },
+  "results": [
+    {
+      "version": "before",
+      "width": 390,
+      "route": "home",
+      "run": 1,
+      "lcp": 968,
+      "lcpElement": "<img src=\"/assets/editorial/quiet-bedroom.webp\" srcset=\"/assets/editorial/quiet-bedroom-640.webp 640w, /assets/editorial/quiet-bedroom.webp 1200w\" sizes=\"(max-width:767px) 100vw, 57vw\" alt=\"ภาพบรรยากา",
+      "cls": 0.043566081038303256,
+      "transferBytes": 640751,
+      "jsBytes": 228226,
+      "images": [
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/logo.png",
+          "bytes": 28512
+        },
+        {
+          "path": "/assets/restored-75c85586a273.webp",
+          "bytes": 56420
+        },
+        {
+          "path": "/assets/restored-c4d60195df9d.webp",
+          "bytes": 61268
+        },
+        {
+          "path": "/assets/restored-3009995b2299.webp",
+          "bytes": 45328
+        },
+        {
+          "path": "/assets/restored-fe78379afdf9.webp",
+          "bytes": 54048
+        },
+        {
+          "path": "/assets/restored-1e33fdaa5ef7.webp",
+          "bytes": 54610
+        },
+        {
+          "path": "/assets/restored-1c64547b1d6a.webp",
+          "bytes": 55798
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "after",
+      "width": 390,
+      "route": "home",
+      "run": 1,
+      "lcp": 956,
+      "lcpElement": "<img src=\"/assets/editorial/quiet-bedroom.webp\" srcset=\"/assets/editorial/quiet-bedroom-640.webp 640w, /assets/editorial/quiet-bedroom.webp 1200w\" sizes=\"(max-width:767px) 100vw, 57vw\" alt=\"ภาพบรรยากา",
+      "cls": 0.04268027856916745,
+      "transferBytes": 316225,
+      "jsBytes": 215769,
+      "images": [
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/logo.webp",
+          "bytes": 20238
+        },
+        {
+          "path": "/assets/restored-75c85586a273-640.webp",
+          "bytes": 23440
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "before",
+      "width": 390,
+      "route": "home",
+      "run": 2,
+      "lcp": 956,
+      "lcpElement": "<img src=\"/assets/editorial/quiet-bedroom.webp\" srcset=\"/assets/editorial/quiet-bedroom-640.webp 640w, /assets/editorial/quiet-bedroom.webp 1200w\" sizes=\"(max-width:767px) 100vw, 57vw\" alt=\"ภาพบรรยากา",
+      "cls": 0.043566081038303256,
+      "transferBytes": 640751,
+      "jsBytes": 228226,
+      "images": [
+        {
+          "path": "/assets/logo.png",
+          "bytes": 28512
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273.webp",
+          "bytes": 56420
+        },
+        {
+          "path": "/assets/restored-c4d60195df9d.webp",
+          "bytes": 61268
+        },
+        {
+          "path": "/assets/restored-3009995b2299.webp",
+          "bytes": 45328
+        },
+        {
+          "path": "/assets/restored-fe78379afdf9.webp",
+          "bytes": 54048
+        },
+        {
+          "path": "/assets/restored-1e33fdaa5ef7.webp",
+          "bytes": 54610
+        },
+        {
+          "path": "/assets/restored-1c64547b1d6a.webp",
+          "bytes": 55798
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "after",
+      "width": 390,
+      "route": "home",
+      "run": 2,
+      "lcp": 968,
+      "lcpElement": "<img src=\"/assets/editorial/quiet-bedroom.webp\" srcset=\"/assets/editorial/quiet-bedroom-640.webp 640w, /assets/editorial/quiet-bedroom.webp 1200w\" sizes=\"(max-width:767px) 100vw, 57vw\" alt=\"ภาพบรรยากา",
+      "cls": 0.04268027856916745,
+      "transferBytes": 316225,
+      "jsBytes": 215769,
+      "images": [
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/logo.webp",
+          "bytes": 20238
+        },
+        {
+          "path": "/assets/restored-75c85586a273-640.webp",
+          "bytes": 23440
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "before",
+      "width": 390,
+      "route": "home",
+      "run": 3,
+      "lcp": 956,
+      "lcpElement": "<img src=\"/assets/editorial/quiet-bedroom.webp\" srcset=\"/assets/editorial/quiet-bedroom-640.webp 640w, /assets/editorial/quiet-bedroom.webp 1200w\" sizes=\"(max-width:767px) 100vw, 57vw\" alt=\"ภาพบรรยากา",
+      "cls": 0.043566081038303256,
+      "transferBytes": 640751,
+      "jsBytes": 228226,
+      "images": [
+        {
+          "path": "/assets/logo.png",
+          "bytes": 28512
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273.webp",
+          "bytes": 56420
+        },
+        {
+          "path": "/assets/restored-c4d60195df9d.webp",
+          "bytes": 61268
+        },
+        {
+          "path": "/assets/restored-3009995b2299.webp",
+          "bytes": 45328
+        },
+        {
+          "path": "/assets/restored-fe78379afdf9.webp",
+          "bytes": 54048
+        },
+        {
+          "path": "/assets/restored-1e33fdaa5ef7.webp",
+          "bytes": 54610
+        },
+        {
+          "path": "/assets/restored-1c64547b1d6a.webp",
+          "bytes": 55798
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "after",
+      "width": 390,
+      "route": "home",
+      "run": 3,
+      "lcp": 1084,
+      "lcpElement": "<img src=\"/assets/editorial/quiet-bedroom.webp\" srcset=\"/assets/editorial/quiet-bedroom-640.webp 640w, /assets/editorial/quiet-bedroom.webp 1200w\" sizes=\"(max-width:767px) 100vw, 57vw\" alt=\"ภาพบรรยากา",
+      "cls": 0.04268027856916745,
+      "transferBytes": 316225,
+      "jsBytes": 215769,
+      "images": [
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/logo.webp",
+          "bytes": 20238
+        },
+        {
+          "path": "/assets/restored-75c85586a273-640.webp",
+          "bytes": 23440
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "before",
+      "width": 390,
+      "route": "gallery/",
+      "run": 1,
+      "lcp": 2284,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273.webp')\"></div>",
+      "cls": 0.03704736219927192,
+      "transferBytes": 393608,
+      "jsBytes": 228226,
+      "images": [
+        {
+          "path": "/assets/logo.png",
+          "bytes": 28512
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273.webp",
+          "bytes": 56420
+        },
+        {
+          "path": "/assets/products/fs-s35-c260s-003-400.webp",
+          "bytes": 13860
+        },
+        {
+          "path": "/assets/products/fs-s35-c230p-004-400.webp",
+          "bytes": 13422
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "after",
+      "width": 390,
+      "route": "gallery/",
+      "run": 1,
+      "lcp": 1700,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273-640.webp')\"></div>",
+      "cls": 0.03704736219927192,
+      "transferBytes": 333580,
+      "jsBytes": 209323,
+      "images": [
+        {
+          "path": "/assets/logo.webp",
+          "bytes": 20238
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273-640.webp",
+          "bytes": 23440
+        },
+        {
+          "path": "/assets/products/fs-s35-c260s-003-400.webp",
+          "bytes": 13860
+        },
+        {
+          "path": "/assets/products/fs-s35-c230p-004-400.webp",
+          "bytes": 13422
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "before",
+      "width": 390,
+      "route": "gallery/",
+      "run": 2,
+      "lcp": 2136,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273.webp')\"></div>",
+      "cls": 0.03704736219927192,
+      "transferBytes": 393608,
+      "jsBytes": 228226,
+      "images": [
+        {
+          "path": "/assets/logo.png",
+          "bytes": 28512
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273.webp",
+          "bytes": 56420
+        },
+        {
+          "path": "/assets/products/fs-s35-c230p-004-400.webp",
+          "bytes": 13422
+        },
+        {
+          "path": "/assets/products/fs-s35-c260s-003-400.webp",
+          "bytes": 13860
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "after",
+      "width": 390,
+      "route": "gallery/",
+      "run": 2,
+      "lcp": 1628,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273-640.webp')\"></div>",
+      "cls": 0.03704736219927192,
+      "transferBytes": 333580,
+      "jsBytes": 209323,
+      "images": [
+        {
+          "path": "/assets/logo.webp",
+          "bytes": 20238
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273-640.webp",
+          "bytes": 23440
+        },
+        {
+          "path": "/assets/products/fs-s35-c260s-003-400.webp",
+          "bytes": 13860
+        },
+        {
+          "path": "/assets/products/fs-s35-c230p-004-400.webp",
+          "bytes": 13422
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "before",
+      "width": 390,
+      "route": "gallery/",
+      "run": 3,
+      "lcp": 2104,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273.webp')\"></div>",
+      "cls": 0.03704736219927192,
+      "transferBytes": 393608,
+      "jsBytes": 228226,
+      "images": [
+        {
+          "path": "/assets/logo.png",
+          "bytes": 28512
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273.webp",
+          "bytes": 56420
+        },
+        {
+          "path": "/assets/products/fs-s35-c260s-003-400.webp",
+          "bytes": 13860
+        },
+        {
+          "path": "/assets/products/fs-s35-c230p-004-400.webp",
+          "bytes": 13422
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "after",
+      "width": 390,
+      "route": "gallery/",
+      "run": 3,
+      "lcp": 1568,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273-640.webp')\"></div>",
+      "cls": 0.03704736219927192,
+      "transferBytes": 333580,
+      "jsBytes": 209323,
+      "images": [
+        {
+          "path": "/assets/logo.webp",
+          "bytes": 20238
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273-640.webp",
+          "bytes": 23440
+        },
+        {
+          "path": "/assets/products/fs-s35-c260s-003-400.webp",
+          "bytes": 13860
+        },
+        {
+          "path": "/assets/products/fs-s35-c230p-004-400.webp",
+          "bytes": 13422
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "before",
+      "width": 390,
+      "route": "towels/",
+      "run": 1,
+      "lcp": 4176,
+      "lcpElement": "<header class=\"py-24 sm:py-32 text-center text-white relative bg-cover bg-center\" style=\"background-image:url(/assets/restored-34cf1950f5ab.webp)\"><div class=\"absolute inset-0 bg-brand-dark/60\"></div>",
+      "cls": 0.04693703703703704,
+      "transferBytes": 811620,
+      "jsBytes": 228226,
+      "images": [
+        {
+          "path": "/assets/logo.png",
+          "bytes": 28512
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273.webp",
+          "bytes": 56420
+        },
+        {
+          "path": "/assets/restored-1ca368effb6a.webp",
+          "bytes": 134960
+        },
+        {
+          "path": "/assets/restored-34cf1950f5ab.webp",
+          "bytes": 104092
+        },
+        {
+          "path": "/assets/restored-c8cfe349790b.webp",
+          "bytes": 126330
+        },
+        {
+          "path": "/assets/editorial/terry-detail-640.webp",
+          "bytes": 42608
+        },
+        {
+          "path": "/assets/restored-1ca368effb6a-640.webp",
+          "bytes": 30444
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "after",
+      "width": 390,
+      "route": "towels/",
+      "run": 1,
+      "lcp": 960,
+      "lcpElement": "<header class=\"py-24 sm:py-32 text-center text-white relative bg-cover bg-center responsive-background\" style=\"--background-small:url('/assets/restored-34cf1950f5ab-640.webp');--background-large:url('",
+      "cls": 0.04693703703703704,
+      "transferBytes": 425478,
+      "jsBytes": 221215,
+      "images": [
+        {
+          "path": "/assets/restored-34cf1950f5ab-640.webp",
+          "bytes": 27174
+        },
+        {
+          "path": "/assets/logo.webp",
+          "bytes": 20238
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273-640.webp",
+          "bytes": 23440
+        },
+        {
+          "path": "/assets/restored-1ca368effb6a-640.webp",
+          "bytes": 30444
+        },
+        {
+          "path": "/assets/editorial/terry-detail-640.webp",
+          "bytes": 42608
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "before",
+      "width": 390,
+      "route": "towels/",
+      "run": 2,
+      "lcp": 4140,
+      "lcpElement": "<header class=\"py-24 sm:py-32 text-center text-white relative bg-cover bg-center\" style=\"background-image:url(/assets/restored-34cf1950f5ab.webp)\"><div class=\"absolute inset-0 bg-brand-dark/60\"></div>",
+      "cls": 0.04693703703703704,
+      "transferBytes": 811620,
+      "jsBytes": 228226,
+      "images": [
+        {
+          "path": "/assets/logo.png",
+          "bytes": 28512
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273.webp",
+          "bytes": 56420
+        },
+        {
+          "path": "/assets/restored-1ca368effb6a.webp",
+          "bytes": 134960
+        },
+        {
+          "path": "/assets/restored-34cf1950f5ab.webp",
+          "bytes": 104092
+        },
+        {
+          "path": "/assets/restored-c8cfe349790b.webp",
+          "bytes": 126330
+        },
+        {
+          "path": "/assets/restored-1ca368effb6a-640.webp",
+          "bytes": 30444
+        },
+        {
+          "path": "/assets/editorial/terry-detail-640.webp",
+          "bytes": 42608
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "after",
+      "width": 390,
+      "route": "towels/",
+      "run": 2,
+      "lcp": 1020,
+      "lcpElement": "<header class=\"py-24 sm:py-32 text-center text-white relative bg-cover bg-center responsive-background\" style=\"--background-small:url('/assets/restored-34cf1950f5ab-640.webp');--background-large:url('",
+      "cls": 0.04693703703703704,
+      "transferBytes": 425478,
+      "jsBytes": 221215,
+      "images": [
+        {
+          "path": "/assets/restored-34cf1950f5ab-640.webp",
+          "bytes": 27174
+        },
+        {
+          "path": "/assets/logo.webp",
+          "bytes": 20238
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273-640.webp",
+          "bytes": 23440
+        },
+        {
+          "path": "/assets/restored-1ca368effb6a-640.webp",
+          "bytes": 30444
+        },
+        {
+          "path": "/assets/editorial/terry-detail-640.webp",
+          "bytes": 42608
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "before",
+      "width": 390,
+      "route": "towels/",
+      "run": 3,
+      "lcp": 4156,
+      "lcpElement": "<header class=\"py-24 sm:py-32 text-center text-white relative bg-cover bg-center\" style=\"background-image:url(/assets/restored-34cf1950f5ab.webp)\"><div class=\"absolute inset-0 bg-brand-dark/60\"></div>",
+      "cls": 0.04693703703703704,
+      "transferBytes": 811620,
+      "jsBytes": 228226,
+      "images": [
+        {
+          "path": "/assets/logo.png",
+          "bytes": 28512
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273.webp",
+          "bytes": 56420
+        },
+        {
+          "path": "/assets/restored-1ca368effb6a.webp",
+          "bytes": 134960
+        },
+        {
+          "path": "/assets/restored-34cf1950f5ab.webp",
+          "bytes": 104092
+        },
+        {
+          "path": "/assets/restored-c8cfe349790b.webp",
+          "bytes": 126330
+        },
+        {
+          "path": "/assets/editorial/terry-detail-640.webp",
+          "bytes": 42608
+        },
+        {
+          "path": "/assets/restored-1ca368effb6a-640.webp",
+          "bytes": 30444
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "after",
+      "width": 390,
+      "route": "towels/",
+      "run": 3,
+      "lcp": 1076,
+      "lcpElement": "<header class=\"py-24 sm:py-32 text-center text-white relative bg-cover bg-center responsive-background\" style=\"--background-small:url('/assets/restored-34cf1950f5ab-640.webp');--background-large:url('",
+      "cls": 0.04693703703703704,
+      "transferBytes": 425478,
+      "jsBytes": 221215,
+      "images": [
+        {
+          "path": "/assets/restored-34cf1950f5ab-640.webp",
+          "bytes": 27174
+        },
+        {
+          "path": "/assets/logo.webp",
+          "bytes": 20238
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273-640.webp",
+          "bytes": 23440
+        },
+        {
+          "path": "/assets/restored-1ca368effb6a-640.webp",
+          "bytes": 30444
+        },
+        {
+          "path": "/assets/editorial/terry-detail-640.webp",
+          "bytes": 42608
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "before",
+      "width": 1440,
+      "route": "home",
+      "run": 1,
+      "lcp": 2656,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273.webp')\"></div>",
+      "cls": 0.031034316459833677,
+      "transferBytes": 742693,
+      "jsBytes": 228226,
+      "images": [
+        {
+          "path": "/assets/logo.png",
+          "bytes": 28512
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom.webp",
+          "bytes": 101942
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273.webp",
+          "bytes": 56420
+        },
+        {
+          "path": "/assets/restored-c4d60195df9d.webp",
+          "bytes": 61268
+        },
+        {
+          "path": "/assets/restored-3009995b2299.webp",
+          "bytes": 45328
+        },
+        {
+          "path": "/assets/restored-fe78379afdf9.webp",
+          "bytes": 54048
+        },
+        {
+          "path": "/assets/restored-1e33fdaa5ef7.webp",
+          "bytes": 54610
+        },
+        {
+          "path": "/assets/restored-1c64547b1d6a.webp",
+          "bytes": 55798
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "after",
+      "width": 1440,
+      "route": "home",
+      "run": 1,
+      "lcp": 1716,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273-640.webp')\"></div>",
+      "cls": 0.030840107783564816,
+      "transferBytes": 479435,
+      "jsBytes": 215769,
+      "images": [
+        {
+          "path": "/assets/editorial/quiet-bedroom.webp",
+          "bytes": 101942
+        },
+        {
+          "path": "/assets/logo.webp",
+          "bytes": 20238
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273-640.webp",
+          "bytes": 23440
+        },
+        {
+          "path": "/assets/restored-c4d60195df9d.webp",
+          "bytes": 61268
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "before",
+      "width": 1440,
+      "route": "home",
+      "run": 2,
+      "lcp": 2664,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273.webp')\"></div>",
+      "cls": 0.031034316459833677,
+      "transferBytes": 742693,
+      "jsBytes": 228226,
+      "images": [
+        {
+          "path": "/assets/logo.png",
+          "bytes": 28512
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom.webp",
+          "bytes": 101942
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273.webp",
+          "bytes": 56420
+        },
+        {
+          "path": "/assets/restored-c4d60195df9d.webp",
+          "bytes": 61268
+        },
+        {
+          "path": "/assets/restored-3009995b2299.webp",
+          "bytes": 45328
+        },
+        {
+          "path": "/assets/restored-fe78379afdf9.webp",
+          "bytes": 54048
+        },
+        {
+          "path": "/assets/restored-1e33fdaa5ef7.webp",
+          "bytes": 54610
+        },
+        {
+          "path": "/assets/restored-1c64547b1d6a.webp",
+          "bytes": 55798
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "after",
+      "width": 1440,
+      "route": "home",
+      "run": 2,
+      "lcp": 1732,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273-640.webp')\"></div>",
+      "cls": 0.030840107783564816,
+      "transferBytes": 479435,
+      "jsBytes": 215769,
+      "images": [
+        {
+          "path": "/assets/editorial/quiet-bedroom.webp",
+          "bytes": 101942
+        },
+        {
+          "path": "/assets/logo.webp",
+          "bytes": 20238
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273-640.webp",
+          "bytes": 23440
+        },
+        {
+          "path": "/assets/restored-c4d60195df9d.webp",
+          "bytes": 61268
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "before",
+      "width": 1440,
+      "route": "home",
+      "run": 3,
+      "lcp": 2700,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273.webp')\"></div>",
+      "cls": 0.031034316459833677,
+      "transferBytes": 742693,
+      "jsBytes": 228226,
+      "images": [
+        {
+          "path": "/assets/logo.png",
+          "bytes": 28512
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom.webp",
+          "bytes": 101942
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273.webp",
+          "bytes": 56420
+        },
+        {
+          "path": "/assets/restored-c4d60195df9d.webp",
+          "bytes": 61268
+        },
+        {
+          "path": "/assets/restored-3009995b2299.webp",
+          "bytes": 45328
+        },
+        {
+          "path": "/assets/restored-fe78379afdf9.webp",
+          "bytes": 54048
+        },
+        {
+          "path": "/assets/restored-1e33fdaa5ef7.webp",
+          "bytes": 54610
+        },
+        {
+          "path": "/assets/restored-1c64547b1d6a.webp",
+          "bytes": 55798
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "after",
+      "width": 1440,
+      "route": "home",
+      "run": 3,
+      "lcp": 1696,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273-640.webp')\"></div>",
+      "cls": 0.030840107783564816,
+      "transferBytes": 479435,
+      "jsBytes": 215769,
+      "images": [
+        {
+          "path": "/assets/editorial/quiet-bedroom.webp",
+          "bytes": 101942
+        },
+        {
+          "path": "/assets/logo.webp",
+          "bytes": 20238
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273-640.webp",
+          "bytes": 23440
+        },
+        {
+          "path": "/assets/restored-c4d60195df9d.webp",
+          "bytes": 61268
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "before",
+      "width": 1440,
+      "route": "gallery/",
+      "run": 1,
+      "lcp": 2672,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273.webp')\"></div>",
+      "cls": 0.02590854003236454,
+      "transferBytes": 637868,
+      "jsBytes": 228226,
+      "images": [
+        {
+          "path": "/assets/logo.png",
+          "bytes": 28512
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273.webp",
+          "bytes": 56420
+        },
+        {
+          "path": "/assets/products/fs-s35-c260s-003.webp",
+          "bytes": 46054
+        },
+        {
+          "path": "/assets/products/fs-s35-c230p-004.webp",
+          "bytes": 42134
+        },
+        {
+          "path": "/assets/products/fs-s35-c260p-005.webp",
+          "bytes": 47628
+        },
+        {
+          "path": "/assets/products/fs-s35-c260s-006.webp",
+          "bytes": 45430
+        },
+        {
+          "path": "/assets/products/fs-s35-c310s-008.webp",
+          "bytes": 37344
+        },
+        {
+          "path": "/assets/products/fs-s35-c310p-007.webp",
+          "bytes": 52952
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "after",
+      "width": 1440,
+      "route": "gallery/",
+      "run": 1,
+      "lcp": 1788,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273-640.webp')\"></div>",
+      "cls": 0.02590854003236454,
+      "transferBytes": 388970,
+      "jsBytes": 209323,
+      "images": [
+        {
+          "path": "/assets/logo.webp",
+          "bytes": 20238
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273-640.webp",
+          "bytes": 23440
+        },
+        {
+          "path": "/assets/products/fs-s35-c260s-003-400.webp",
+          "bytes": 13860
+        },
+        {
+          "path": "/assets/products/fs-s35-c230p-004-400.webp",
+          "bytes": 13422
+        },
+        {
+          "path": "/assets/products/fs-s35-c260p-005-400.webp",
+          "bytes": 14012
+        },
+        {
+          "path": "/assets/products/fs-s35-c260s-006-400.webp",
+          "bytes": 13844
+        },
+        {
+          "path": "/assets/products/fs-s35-c310p-007-400.webp",
+          "bytes": 15204
+        },
+        {
+          "path": "/assets/products/fs-s35-c310s-008-400.webp",
+          "bytes": 12330
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "before",
+      "width": 1440,
+      "route": "gallery/",
+      "run": 2,
+      "lcp": 2636,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273.webp')\"></div>",
+      "cls": 0.02590854003236454,
+      "transferBytes": 637868,
+      "jsBytes": 228226,
+      "images": [
+        {
+          "path": "/assets/logo.png",
+          "bytes": 28512
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273.webp",
+          "bytes": 56420
+        },
+        {
+          "path": "/assets/products/fs-s35-c260s-003.webp",
+          "bytes": 46054
+        },
+        {
+          "path": "/assets/products/fs-s35-c230p-004.webp",
+          "bytes": 42134
+        },
+        {
+          "path": "/assets/products/fs-s35-c260p-005.webp",
+          "bytes": 47628
+        },
+        {
+          "path": "/assets/products/fs-s35-c260s-006.webp",
+          "bytes": 45430
+        },
+        {
+          "path": "/assets/products/fs-s35-c310p-007.webp",
+          "bytes": 52952
+        },
+        {
+          "path": "/assets/products/fs-s35-c310s-008.webp",
+          "bytes": 37344
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "after",
+      "width": 1440,
+      "route": "gallery/",
+      "run": 2,
+      "lcp": 1696,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273-640.webp')\"></div>",
+      "cls": 0.02590854003236454,
+      "transferBytes": 388970,
+      "jsBytes": 209323,
+      "images": [
+        {
+          "path": "/assets/logo.webp",
+          "bytes": 20238
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273-640.webp",
+          "bytes": 23440
+        },
+        {
+          "path": "/assets/products/fs-s35-c260s-003-400.webp",
+          "bytes": 13860
+        },
+        {
+          "path": "/assets/products/fs-s35-c230p-004-400.webp",
+          "bytes": 13422
+        },
+        {
+          "path": "/assets/products/fs-s35-c260p-005-400.webp",
+          "bytes": 14012
+        },
+        {
+          "path": "/assets/products/fs-s35-c260s-006-400.webp",
+          "bytes": 13844
+        },
+        {
+          "path": "/assets/products/fs-s35-c310p-007-400.webp",
+          "bytes": 15204
+        },
+        {
+          "path": "/assets/products/fs-s35-c310s-008-400.webp",
+          "bytes": 12330
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "before",
+      "width": 1440,
+      "route": "gallery/",
+      "run": 3,
+      "lcp": 2688,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273.webp')\"></div>",
+      "cls": 0.02590854003236454,
+      "transferBytes": 637868,
+      "jsBytes": 228226,
+      "images": [
+        {
+          "path": "/assets/logo.png",
+          "bytes": 28512
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273.webp",
+          "bytes": 56420
+        },
+        {
+          "path": "/assets/products/fs-s35-c260s-003.webp",
+          "bytes": 46054
+        },
+        {
+          "path": "/assets/products/fs-s35-c230p-004.webp",
+          "bytes": 42134
+        },
+        {
+          "path": "/assets/products/fs-s35-c260p-005.webp",
+          "bytes": 47628
+        },
+        {
+          "path": "/assets/products/fs-s35-c260s-006.webp",
+          "bytes": 45430
+        },
+        {
+          "path": "/assets/products/fs-s35-c310p-007.webp",
+          "bytes": 52952
+        },
+        {
+          "path": "/assets/products/fs-s35-c310s-008.webp",
+          "bytes": 37344
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "after",
+      "width": 1440,
+      "route": "gallery/",
+      "run": 3,
+      "lcp": 1628,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273-640.webp')\"></div>",
+      "cls": 0.02590854003236454,
+      "transferBytes": 388970,
+      "jsBytes": 209323,
+      "images": [
+        {
+          "path": "/assets/logo.webp",
+          "bytes": 20238
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273-640.webp",
+          "bytes": 23440
+        },
+        {
+          "path": "/assets/products/fs-s35-c260s-003-400.webp",
+          "bytes": 13860
+        },
+        {
+          "path": "/assets/products/fs-s35-c230p-004-400.webp",
+          "bytes": 13422
+        },
+        {
+          "path": "/assets/products/fs-s35-c260p-005-400.webp",
+          "bytes": 14012
+        },
+        {
+          "path": "/assets/products/fs-s35-c260s-006-400.webp",
+          "bytes": 13844
+        },
+        {
+          "path": "/assets/products/fs-s35-c310p-007-400.webp",
+          "bytes": 15204
+        },
+        {
+          "path": "/assets/products/fs-s35-c310s-008-400.webp",
+          "bytes": 12330
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "before",
+      "width": 1440,
+      "route": "towels/",
+      "run": 1,
+      "lcp": 2820,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273.webp')\"></div>",
+      "cls": 0.028296104483480154,
+      "transferBytes": 1002150,
+      "jsBytes": 228226,
+      "images": [
+        {
+          "path": "/assets/logo.png",
+          "bytes": 28512
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273.webp",
+          "bytes": 56420
+        },
+        {
+          "path": "/assets/restored-1ca368effb6a.webp",
+          "bytes": 134960
+        },
+        {
+          "path": "/assets/restored-34cf1950f5ab.webp",
+          "bytes": 104092
+        },
+        {
+          "path": "/assets/restored-c8cfe349790b.webp",
+          "bytes": 126330
+        },
+        {
+          "path": "/assets/editorial/terry-detail-640.webp",
+          "bytes": 42608
+        },
+        {
+          "path": "/assets/restored-56972c41d04d-640.webp",
+          "bytes": 37874
+        },
+        {
+          "path": "/assets/restored-fce9ea172c2e.webp",
+          "bytes": 94282
+        },
+        {
+          "path": "/assets/restored-ba25005abbfb-640.webp",
+          "bytes": 44396
+        },
+        {
+          "path": "/assets/restored-30dc767e8c29-640.webp",
+          "bytes": 44422
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "after",
+      "width": 1440,
+      "route": "towels/",
+      "run": 1,
+      "lcp": 1764,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273-640.webp')\"></div>",
+      "cls": 0.028296104483480154,
+      "transferBytes": 858330,
+      "jsBytes": 221215,
+      "images": [
+        {
+          "path": "/assets/restored-34cf1950f5ab.webp",
+          "bytes": 104092
+        },
+        {
+          "path": "/assets/logo.webp",
+          "bytes": 20238
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273-640.webp",
+          "bytes": 23440
+        },
+        {
+          "path": "/assets/restored-1ca368effb6a-640.webp",
+          "bytes": 30444
+        },
+        {
+          "path": "/assets/editorial/terry-detail-640.webp",
+          "bytes": 42608
+        },
+        {
+          "path": "/assets/restored-1ca368effb6a.webp",
+          "bytes": 134960
+        },
+        {
+          "path": "/assets/restored-fce9ea172c2e.webp",
+          "bytes": 94282
+        },
+        {
+          "path": "/assets/restored-56972c41d04d-640.webp",
+          "bytes": 37874
+        },
+        {
+          "path": "/assets/restored-ba25005abbfb-640.webp",
+          "bytes": 44396
+        },
+        {
+          "path": "/assets/restored-30dc767e8c29-640.webp",
+          "bytes": 44422
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "before",
+      "width": 1440,
+      "route": "towels/",
+      "run": 2,
+      "lcp": 2720,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273.webp')\"></div>",
+      "cls": 0.028296104483480154,
+      "transferBytes": 1002150,
+      "jsBytes": 228226,
+      "images": [
+        {
+          "path": "/assets/logo.png",
+          "bytes": 28512
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273.webp",
+          "bytes": 56420
+        },
+        {
+          "path": "/assets/restored-1ca368effb6a.webp",
+          "bytes": 134960
+        },
+        {
+          "path": "/assets/restored-34cf1950f5ab.webp",
+          "bytes": 104092
+        },
+        {
+          "path": "/assets/restored-c8cfe349790b.webp",
+          "bytes": 126330
+        },
+        {
+          "path": "/assets/editorial/terry-detail-640.webp",
+          "bytes": 42608
+        },
+        {
+          "path": "/assets/restored-fce9ea172c2e.webp",
+          "bytes": 94282
+        },
+        {
+          "path": "/assets/restored-56972c41d04d-640.webp",
+          "bytes": 37874
+        },
+        {
+          "path": "/assets/restored-ba25005abbfb-640.webp",
+          "bytes": 44396
+        },
+        {
+          "path": "/assets/restored-30dc767e8c29-640.webp",
+          "bytes": 44422
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "after",
+      "width": 1440,
+      "route": "towels/",
+      "run": 2,
+      "lcp": 1756,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273-640.webp')\"></div>",
+      "cls": 0.028296104483480154,
+      "transferBytes": 858330,
+      "jsBytes": 221215,
+      "images": [
+        {
+          "path": "/assets/restored-34cf1950f5ab.webp",
+          "bytes": 104092
+        },
+        {
+          "path": "/assets/logo.webp",
+          "bytes": 20238
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273-640.webp",
+          "bytes": 23440
+        },
+        {
+          "path": "/assets/restored-1ca368effb6a-640.webp",
+          "bytes": 30444
+        },
+        {
+          "path": "/assets/editorial/terry-detail-640.webp",
+          "bytes": 42608
+        },
+        {
+          "path": "/assets/restored-fce9ea172c2e.webp",
+          "bytes": 94282
+        },
+        {
+          "path": "/assets/restored-1ca368effb6a.webp",
+          "bytes": 134960
+        },
+        {
+          "path": "/assets/restored-56972c41d04d-640.webp",
+          "bytes": 37874
+        },
+        {
+          "path": "/assets/restored-ba25005abbfb-640.webp",
+          "bytes": 44396
+        },
+        {
+          "path": "/assets/restored-30dc767e8c29-640.webp",
+          "bytes": 44422
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "before",
+      "width": 1440,
+      "route": "towels/",
+      "run": 3,
+      "lcp": 2692,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273.webp')\"></div>",
+      "cls": 0.028296104483480154,
+      "transferBytes": 1002150,
+      "jsBytes": 228226,
+      "images": [
+        {
+          "path": "/assets/logo.png",
+          "bytes": 28512
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273.webp",
+          "bytes": 56420
+        },
+        {
+          "path": "/assets/restored-1ca368effb6a.webp",
+          "bytes": 134960
+        },
+        {
+          "path": "/assets/restored-34cf1950f5ab.webp",
+          "bytes": 104092
+        },
+        {
+          "path": "/assets/restored-c8cfe349790b.webp",
+          "bytes": 126330
+        },
+        {
+          "path": "/assets/editorial/terry-detail-640.webp",
+          "bytes": 42608
+        },
+        {
+          "path": "/assets/restored-fce9ea172c2e.webp",
+          "bytes": 94282
+        },
+        {
+          "path": "/assets/restored-56972c41d04d-640.webp",
+          "bytes": 37874
+        },
+        {
+          "path": "/assets/restored-ba25005abbfb-640.webp",
+          "bytes": 44396
+        },
+        {
+          "path": "/assets/restored-30dc767e8c29-640.webp",
+          "bytes": 44422
+        }
+      ],
+      "overflow": 0
+    },
+    {
+      "version": "after",
+      "width": 1440,
+      "route": "towels/",
+      "run": 3,
+      "lcp": 1752,
+      "lcpElement": "<div class=\"absolute inset-0 -z-10 bg-cover bg-center opacity-20\" style=\"background-image:url('/assets/restored-75c85586a273-640.webp')\"></div>",
+      "cls": 0.028296104483480154,
+      "transferBytes": 858330,
+      "jsBytes": 221215,
+      "images": [
+        {
+          "path": "/assets/restored-34cf1950f5ab.webp",
+          "bytes": 104092
+        },
+        {
+          "path": "/assets/logo.webp",
+          "bytes": 20238
+        },
+        {
+          "path": "/assets/editorial/quiet-bedroom-640.webp",
+          "bytes": 30464
+        },
+        {
+          "path": "/assets/restored-75c85586a273-640.webp",
+          "bytes": 23440
+        },
+        {
+          "path": "/assets/restored-1ca368effb6a-640.webp",
+          "bytes": 30444
+        },
+        {
+          "path": "/assets/editorial/terry-detail-640.webp",
+          "bytes": 42608
+        },
+        {
+          "path": "/assets/restored-1ca368effb6a.webp",
+          "bytes": 134960
+        },
+        {
+          "path": "/assets/restored-56972c41d04d-640.webp",
+          "bytes": 37874
+        },
+        {
+          "path": "/assets/restored-fce9ea172c2e.webp",
+          "bytes": 94282
+        },
+        {
+          "path": "/assets/restored-ba25005abbfb-640.webp",
+          "bytes": 44396
+        },
+        {
+          "path": "/assets/restored-30dc767e8c29-640.webp",
+          "bytes": 44422
+        }
+      ],
+      "overflow": 0
+    }
+  ]
+}

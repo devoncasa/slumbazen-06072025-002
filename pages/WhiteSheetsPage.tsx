@@ -103,7 +103,7 @@ const WhiteSheetsPage: React.FC = () => {
               id="white-sheets-cta" 
               aria-labelledby="white-sheets-cta-heading" 
               className="text-center py-16 relative overflow-hidden rounded-2xl bg-brand-dark bg-cover bg-center"
-              style={{ backgroundImage: "url('/assets/restored-32d0351b5a31.webp')" }}
+              data-background="url('/assets/restored-32d0351b5a31.webp')"
             >
               <div className="absolute inset-0 bg-brand-dark/70"></div>
               <div className="relative z-10 text-white">

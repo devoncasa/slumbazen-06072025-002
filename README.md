@@ -169,3 +169,86 @@ additional matching imagery wherever needed; existing imagery covers this
 stage's content, so no new images were generated in Stage 5. All work remains
 on the work branch, without deployment. Stage 6 is the remaining performance
 and technical-hardening batch before Stage 7 release verification.
+
+## Stage 6 performance and technical hardening
+
+Page modules are loaded by routeResources rather than importing every original
+page at startup. The initial locale and page load in parallel before hydration;
+prerendering explicitly prepares the page first, so all 620 routes keep their
+complete crawlable HTML. The Vite manifest supplies preload links for the active
+page and its shared imports. Client navigation rejects stale async completions.
+A failed route-module request offers a reload of that same URL, which also
+recovers from stale asset references after a future release. Initial failures
+leave the prerendered content visible with a localized status message.
+
+Home and towel hero images have early responsive image preloads. The towel hero
+uses its existing 640 px derivative on narrow screens. Offscreen decorative
+backgrounds activate within 300 px of the viewport through IntersectionObserver;
+content photos remain native responsive images and all original assets remain.
+Decorative backgrounds may be absent without JavaScript; buyer information and
+content photos remain in HTML. Product card sizes reflect the 390 px maximum
+card width, avoiding unnecessary 800 px downloads on ordinary desktop screens
+while retaining the larger source for high-density screens. The logo has a
+lossless WebP version and explicit intrinsic dimensions; its PNG is preserved.
+The header background has a smaller WebP derivative. Added encoded assets are
+restored by scripts/restore-assets.mjs during a clean build.
+
+Font CSS requests only the active language family. The HTML and client use the
+same language-to-font mapping, with font-display=swap. Hashed JavaScript/CSS files
+have immutable caching rules in netlify.toml; stable image URLs do not. Nosniff
+and strict-origin-when-cross-origin response headers are configured in source.
+Actual Netlify response headers remain a Stage 7 release check.
+
+An npm advisory scan found moderate findings in the old router and translation
+HTTP backend. react-router-dom is now pinned to 7.18.5 and i18next-http-backend to
+4.0.9; package-lock.json records the dependency graph. The build uses Node 22 on
+Netlify (minimum Node 20). Both production-only and full npm audit then reported
+zero known findings on 2026-11-03; this is not a general security guarantee. The
+browser and simulated-DOM journeys were rerun against the upgraded packages.
+Credential-pattern checks cover built HTML/JS/CSS/JSON/text; production output contains no
+source maps. Public catalogue prices remain ordinary public catalogue data; this
+site has no proprietary pricing calculator or custom payment write endpoint.
+
+Verification: verification/stage6-checks.json and stage6-dependencies.json.
+The performance comparison uses three cold runs per page/viewport/version,
+interleaved before and after, under the same local gzip server, 1.6 Mbps download,
+80 ms latency and 4x CPU slowdown. It uses a fixed local Sarabun TTF so remote
+font-service latency is excluded. This is laboratory data on local HTTP, not
+Netlify/HTTP2 field data; no field INP, LCP or CLS data was available. Form POSTs
+were intercepted, including a 503 retry and an in-flight contact correction.
+No real customer enquiry was sent.
+
+To reproduce the performance lab, provide a Chromium executable and local
+Sarabun font through SLUMBA_CHROMIUM and SLUMBA_LAB_FONT. The script uses
+Playwright from CODEX_PRIMARY_RUNTIME_NODE_MODULES. After a clean build, run:
+
+```sh
+node scripts/performance-lab.cjs dist /tmp/slumbazen-paired.json /path/to/before-dist
+```
+
+Rollback for this batch: restore the Stage 5 source commit
+b9ad654c4b5bfa24170f760c4db2612184faf8f9 on a separate work branch, reinstall with
+npm ci and rebuild; do not modify the current production branch as a shortcut.
+No deploy or deployment-triggering pull request was created for Stage 6.
+
+Technical references:
+- https://v6.vite.dev/guide/features
+- https://web.dev/articles/browser-level-image-lazy-loading
+- https://reactrouter.com/changelog
+- https://github.com/remix-run/react-router/security/advisories/GHSA-wrjc-x8rr-h8h6
+- https://github.com/i18next/i18next-http-backend/blob/master/CHANGELOG.md
+
+Final laboratory medians (three cold runs each):
+
+| Viewport | Page | LCP before → after | Transfer before → after |
+|---|---|---|---|
+| 390 px | home | 0.96 → 0.97 s | 641 → 316 kB |
+| 390 px | gallery | 2.14 → 1.63 s | 394 → 334 kB |
+| 390 px | towels | 4.16 → 1.02 s | 812 → 425 kB |
+| 1440 px | home | 2.66 → 1.72 s | 743 → 479 kB |
+| 1440 px | gallery | 2.67 → 1.70 s | 638 → 389 kB |
+| 1440 px | towels | 2.72 → 1.76 s | 1002 → 858 kB |
+
+Mobile home LCP is effectively unchanged (+12 ms), with 50.6% fewer bytes.
+Raw runs and resource-level image transfers are in stage6-performance.json.
+Stage 7 remains the final acceptance/release batch; production is unchanged.

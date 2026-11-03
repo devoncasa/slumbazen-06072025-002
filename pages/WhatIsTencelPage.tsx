@@ -77,7 +77,7 @@ export default function WhatIsTencelPage() {
                   <div className="bg-white/80 backdrop-blur-sm p-8 sm:p-12 rounded-2xl shadow-xl max-w-4xl mx-auto relative overflow-hidden text-start">
                     <div 
                       className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10"
-                      style={{ backgroundImage: "url('/assets/restored-e4ea03f2ddb9.webp')" }}
+                      data-background="url('/assets/restored-e4ea03f2ddb9.webp')"
                     ></div>
                     <div className="relative z-10">
                       <h2 id="tencel-intro-heading" className="text-4xl sm:text-5xl font-bold text-neutral-900 mb-8 text-center">
@@ -97,7 +97,7 @@ export default function WhatIsTencelPage() {
                 </section>
 
                 <section id="tencel-features" aria-labelledby="tencel-features-heading" className="mb-20 sm:mb-24 py-16 bg-brand-secondary/50 rounded-2xl relative overflow-hidden bg-cover bg-center"
-                    style={{ backgroundImage: "url('/assets/restored-a0d4e67b7e5f.webp')" }}>
+                    data-background="url('/assets/restored-a0d4e67b7e5f.webp')">
                     <div className="absolute inset-0 bg-brand-secondary/70"></div>
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                       <h2 id="tencel-features-heading" className="text-4xl sm:text-5xl font-bold text-neutral-900 mb-12 text-center">

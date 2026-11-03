@@ -1,3 +1,5 @@
+import {loadRoute,routeModules} from '../routeResources';
+import {fontStylesheet} from '../fonts';
 import {languageTag} from '../localization';
 import {pageSEO} from '../seo';
 import React from 'react';
@@ -10,18 +12,22 @@ import {SiteRoutes,paths,articleSlugs,origin} from '../App';
 import {languages} from '../content';
 import {products} from '../products';
 const template=fs.readFileSync('dist/index.html','utf8');
+const manifest=fs.existsSync('dist/.vite/manifest.json')?JSON.parse(fs.readFileSync('dist/.vite/manifest.json','utf8')):{};
+function routePreloads(route:string){const files=new Set<string>();const visit=(key:string)=>{const chunk=manifest[key];if(!chunk||files.has(chunk.file))return;files.add(chunk.file);for(const imported of chunk.imports||[])visit(imported)};visit(routeModules[route]);return [...files].filter(file=>file.endsWith('.js')).map(file=>`<link rel="modulepreload" href="/${file}">`).join('')}
 const routes=[...paths,...articleSlugs.map(s=>'blog/'+s),...products.map(p=>'product/'+p.id.toLowerCase())];
 const escape=(s:string)=>s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
 const map=[];
 const preview=!!process.env.CONTEXT&&process.env.CONTEXT!=='production';
 const robotsMeta=preview?'<meta name="robots" content="noindex, nofollow">':'';
 for(const lang of languages){await loadLocale(lang);for(const route of routes){
+ await loadRoute(route);
  const url=`/${lang}${route?'/'+route:''}`;
  const seo=pageSEO(route,lang);const description=seo.description;const canonical=seo.canonical;
  const alternates=seo.alternates.map(v=>`<link rel="alternate" hreflang="${v.lang}" href="${v.url}">`).join('');
-  const meta=`<title>${escape(seo.title)} | SlumbaZEN</title><meta name="description" content="${escape(description)}"><link rel="canonical" href="${canonical}">${alternates}${robotsMeta}<meta property="og:title" content="${escape(seo.title)}"><meta property="og:description" content="${escape(description)}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="${seo.article>=0?'article':'website'}"><meta property="og:image" content="${seo.image}"><meta property="og:locale" content="${seo.locale}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escape(seo.title)}"><meta name="twitter:description" content="${escape(description)}"><meta name="twitter:image" content="${seo.image}"><script type="application/ld+json">${JSON.stringify(seo.graph).replace(/</g,'\\u003c')}</script>`;
+  const heroPreload=route===''?'<link rel="preload" as="image" href="/assets/editorial/quiet-bedroom.webp" imagesrcset="/assets/editorial/quiet-bedroom-640.webp 640w, /assets/editorial/quiet-bedroom.webp 1200w" imagesizes="(max-width:767px) 100vw, 57vw" fetchpriority="high">':route==='towels'?'<link rel="preload" as="image" href="/assets/restored-34cf1950f5ab.webp" imagesrcset="/assets/restored-34cf1950f5ab-640.webp 640w, /assets/restored-34cf1950f5ab.webp 1280w" imagesizes="100vw" fetchpriority="high">':'';
+  const meta=`<link id="locale-font" rel="stylesheet" href="${escape(fontStylesheet(lang))}">${routePreloads(route)}<title>${escape(seo.title)} | SlumbaZEN</title><meta name="description" content="${escape(description)}"><link rel="canonical" href="${canonical}">${alternates}${robotsMeta}<meta property="og:title" content="${escape(seo.title)}"><meta property="og:description" content="${escape(description)}"><meta property="og:url" content="${canonical}"><meta property="og:type" content="${seo.article>=0?'article':'website'}"><meta property="og:image" content="${seo.image}"><meta property="og:locale" content="${seo.locale}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${escape(seo.title)}"><meta name="twitter:description" content="${escape(description)}"><meta name="twitter:image" content="${seo.image}"><script type="application/ld+json">${JSON.stringify(seo.graph).replace(/</g,'\\u003c')}</script>`;
  const body=renderToString(<MemoryRouter initialEntries={[url]}><SiteRoutes/></MemoryRouter>);
- const html=template.replace(/<title>.*?<\/title>/,'').replace('<html lang="en">',`<html lang="${languageTag(lang)}" dir="${lang==='ar'?'rtl':'ltr'}">`).replace('</head>',meta+'</head>').replace('<div id="root"></div>',`<div id="root" data-prerendered="true">${body}</div>`);
+ const html=template.replace('<head>','<head>'+heroPreload).replace(/<title>.*?<\/title>/,'').replace('<html lang="en">',`<html lang="${languageTag(lang)}" dir="${lang==='ar'?'rtl':'ltr'}">`).replace('</head>',meta+'</head>').replace('<div id="root"></div>',`<div id="root" data-prerendered="true">${body}</div>`);
  const dest=path.join('dist',url,'index.html');fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,html);
  map.push(`<url><loc>${canonical}</loc>${seo.alternates.map(v=>`<xhtml:link rel="alternate" hreflang="${v.lang}" href="${v.url}"/>`).join('')}</url>`);
 }
@@ -32,3 +38,4 @@ if(process.env.CONTEXT&&process.env.CONTEXT!=='production')fs.writeFileSync('dis
 fs.writeFileSync('dist/index.html',template.replace('</head>','<meta name="robots" content="noindex, follow"></head>').replace('<div id="root"></div>', '<div id="root"><nav aria-label="Choose language">'+languages.map(l=>`<a href="/${l}/" lang="${languageTag(l)}">${({th:'ภาษาไทย',en:'English',zh:'简体中文',ar:'العربية',hi:'हिन्दी'} as Record<string,string>)[l]}</a>`).join(' · ')+'</nav></div>'));
 fs.writeFileSync('dist/404.html',template.replace('</head>','<meta name="robots" content="noindex, follow"></head>').replace('<div id="root"></div>','<div id="root"><h1>404 · SlumbaZEN</h1><a href="/th">SlumbaZEN</a></div>'));
 console.log(`Prerendered ${routes.length*languages.length} localized routes.`);
+

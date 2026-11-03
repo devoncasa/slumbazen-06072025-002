@@ -8,21 +8,12 @@ import {shoppingCopy} from './shoppingCopy';
 import JourneyGuide from './JourneyGuide';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Home from './pages/HomePage';
-import Collections from './pages/CollectionsPage';
-import White from './pages/WhiteSheetsPage';
-import Colors from './pages/PremiumColorsPage';
-import Sets from './pages/BeddingSetsPage';
-import Towels from './pages/TowelsPage';
-import Materials from './pages/MaterialsPage';
-import Tencel from './pages/WhatIsTencelPage';
-import Sizes from './pages/SizesPage';
-import Hotels from './pages/HotelsPage';
-import Delivery from './pages/DeliveryWarrantyPage';
-import Contact from './pages/ContactPage';
 import {copy} from './content';
-export const restoredPages:Record<string,React.ComponentType>={'':Home,collections:Collections,'products/white-sheets':White,'products/premium-colors':Colors,'products/sets':Sets,towels:Towels,materials:Materials,'what-is-tencel':Tencel,sizes:Sizes,hotels:Hotels,delivery:Delivery,contact:Contact};
+import {restoredPages} from './routeResources';
+export {restoredPages} from './routeResources';
+import {useDeferredBackgrounds} from './useDeferredBackgrounds';
 export function RestorationFrame({lang,path,children}:{lang:string,path:string,children:React.ReactNode}){
+ useDeferredBackgrounds(path,lang);
  const instance=useMemo(()=>{const i=createInstance();i.init({lng:lang,fallbackLng:'en',supportedLngs:['th','en','zh','ar','hi'],initImmediate:false,resources:{en:{translation:localeDictionary('en')},[lang]:{translation:localeDictionary(lang)}},interpolation:{escapeValue:false},react:{useSuspense:false}});return i},[lang]);
  const c=copy[lang]||copy.th;
  return <I18nextProvider i18n={instance}><div className="legacy-site" dir={lang==='ar'?'rtl':'ltr'}><a className="skip" href="#main">{c.shop}</a><Header/><nav className="section-navigation" aria-label={c.nav[1]}>{[['products/white-sheets','nav.shopItems.whiteSheets'],['products/sets','nav.shopItems.beddingSets'],['towels','nav.towels'],['hotels','nav.hotelB2B'],['collections','nav.collections'],['materials','nav.learnItems.materials'],['blog','nav.blog']].map(([url,n])=><Link key={url} to={`/${lang}/${url}`} aria-current={path===url?'page':undefined}>{instance.t(n as string)}</Link>)}<Link className="finder-nav" to={`/${lang}/bedding-finder/`}>{shoppingCopy[lang].finder}</Link></nav><JourneyGuide lang={lang} path={path}/>{path&&restoredPages[path]&&<nav className="restored-breadcrumb" aria-label={c.nav[0]}><Link to={`/${lang}/`}>{c.nav[0]}</Link><span aria-hidden="true"> / </span><span>{c.titles[['','collections','gallery','products/white-sheets','products/premium-colors','products/sets','towels','materials','what-is-tencel','sizes','hotels','delivery','contact','blog'].indexOf(path)]||c.details}</span></nav>}{children}<ComparisonDock lang={lang}/><Footer/></div></I18nextProvider>

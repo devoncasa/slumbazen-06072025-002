@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-03",
+  "scope": "npm advisory database; not proof of absence of vulnerabilities",
+  "beforeProduction": {
+    "info": 0,
+    "low": 0,
+    "moderate": 3,
+    "high": 0,
+    "critical": 0,
+    "total": 3
+  },
+  "afterAllDependencies": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "updated": {
+    "react-router-dom": "7.18.5",
+    "i18next-http-backend": "4.0.9"
+  },
+  "nodeBuildVersion": "22",
+  "nodeMinimum": ">=20",
+  "advisoriesReviewed": [
+    "https://github.com/remix-run/react-router/security/advisories/GHSA-wrjc-x8rr-h8h6",
+    "https://github.com/advisories/GHSA-337j-9hxr-rhxg",
+    "https://github.com/advisories/GHSA-3cmx-xjww-583x"
+  ],
+  "applicationExploitConfirmed": false
+}

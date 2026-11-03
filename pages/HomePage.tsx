@@ -57,7 +57,7 @@ const BrandStorySection: React.FC = () => {
     const { t } = useTranslation();
     return (
         <section className="py-20 sm:py-28 bg-brand-light relative overflow-hidden">
-            <div className="absolute inset-0 z-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: "url('/assets/restored-c4d60195df9d.webp')" }}>
+            <div className="absolute inset-0 z-0 opacity-20 bg-cover bg-center" data-background="url('/assets/restored-c4d60195df9d.webp')">
                 <div className="absolute inset-0 bg-brand-light/80"></div>
             </div>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -109,7 +109,7 @@ const SummarizedWhyUsSection: React.FC = () => {
 
   return (
     <section id="why-us-summary" className="py-20 sm:py-28 bg-brand-secondary/50 relative overflow-hidden">
-      <div className="absolute inset-0 z-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: "url('/assets/restored-3009995b2299.webp')" }}>
+      <div className="absolute inset-0 z-0 opacity-20 bg-cover bg-center" data-background="url('/assets/restored-3009995b2299.webp')">
          <div className="absolute inset-0 bg-brand-secondary/70"></div>
       </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -156,7 +156,7 @@ const CustomerProblemsSection: React.FC = () => {
 
   return (
     <section id="customer-problems" className="py-20 sm:py-28 bg-brand-light relative overflow-hidden">
-       <div className="absolute inset-0 z-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: "url('/assets/restored-fe78379afdf9.webp')" }}>
+       <div className="absolute inset-0 z-0 opacity-20 bg-cover bg-center" data-background="url('/assets/restored-fe78379afdf9.webp')">
             <div className="absolute inset-0 bg-brand-light/80"></div>
        </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -190,7 +190,7 @@ const DiscoverWorldSection: React.FC = () => {
 
   return (
     <section className="py-20 sm:py-28 bg-white relative overflow-hidden">
-       <div className="absolute inset-0 z-0 opacity-20 bg-cover bg-center" style={{ backgroundImage: "url('/assets/restored-1e33fdaa5ef7.webp')" }}>
+       <div className="absolute inset-0 z-0 opacity-20 bg-cover bg-center" data-background="url('/assets/restored-1e33fdaa5ef7.webp')">
           <div className="absolute inset-0 bg-white/70"></div>
        </div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -223,7 +223,7 @@ const ConsultationCtaSection: React.FC = () => {
     <section 
       id="consultation-cta" 
       className="py-20 sm:py-28 bg-brand-dark text-white relative overflow-hidden bg-cover bg-center"
-      style={{ backgroundImage: "url('/assets/restored-1c64547b1d6a.webp')" }}
+      data-background="url('/assets/restored-1c64547b1d6a.webp')"
     >
       <div className="absolute inset-0 z-0 bg-brand-dark/70">
       </div>

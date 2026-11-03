@@ -1,0 +1,259 @@
+{
+  "stage": 6,
+  "date": "2026-11-03",
+  "status": "complete-in-work-branch",
+  "deployed": false,
+  "baseSourceCommit": "b9ad654c4b5bfa24170f760c4db2612184faf8f9",
+  "checks": {
+    "npmRunCheck": "passed",
+    "localizedRoutes": 620,
+    "products": 106,
+    "internalLinks": 33520,
+    "brokenLinks": 0,
+    "mainJsGzipBytes": 112641,
+    "cssGzipBytes": 13719,
+    "previousMainJsGzipBytes": 137746,
+    "previewNoindexRoutes": 620,
+    "sourceMaps": 0,
+    "credentialPatternMatches": 0,
+    "knownDependencyAdvisoryFindingsAfterUpdate": 0
+  },
+  "performanceConditions": {
+    "kind": "local laboratory; not field data",
+    "network": "1.6 Mbps down / 750 Kbps up / 80 ms latency",
+    "cpuSlowdown": 4,
+    "repeats": 3,
+    "cache": "cold",
+    "server": "gzip HTML, JavaScript and CSS; WebP unchanged",
+    "font": "fixed local Sarabun TTF; remote font latency excluded",
+    "viewportHeight": 900
+  },
+  "performanceSummary": [
+    {
+      "width": 390,
+      "page": "home",
+      "before": {
+        "medianLcpMs": 956,
+        "medianCls": 0.043566081038303256,
+        "medianTransferBytes": 640751,
+        "medianJsBytes": 228226
+      },
+      "after": {
+        "medianLcpMs": 968,
+        "medianCls": 0.04268027856916745,
+        "medianTransferBytes": 316225,
+        "medianJsBytes": 215769
+      },
+      "transferReductionPercent": 50.6,
+      "lcpReductionPercent": -1.3
+    },
+    {
+      "width": 390,
+      "page": "gallery",
+      "before": {
+        "medianLcpMs": 2136,
+        "medianCls": 0.03704736219927192,
+        "medianTransferBytes": 393608,
+        "medianJsBytes": 228226
+      },
+      "after": {
+        "medianLcpMs": 1628,
+        "medianCls": 0.03704736219927192,
+        "medianTransferBytes": 333580,
+        "medianJsBytes": 209323
+      },
+      "transferReductionPercent": 15.3,
+      "lcpReductionPercent": 23.8
+    },
+    {
+      "width": 390,
+      "page": "towels",
+      "before": {
+        "medianLcpMs": 4156,
+        "medianCls": 0.04693703703703704,
+        "medianTransferBytes": 811620,
+        "medianJsBytes": 228226
+      },
+      "after": {
+        "medianLcpMs": 1020,
+        "medianCls": 0.04693703703703704,
+        "medianTransferBytes": 425478,
+        "medianJsBytes": 221215
+      },
+      "transferReductionPercent": 47.6,
+      "lcpReductionPercent": 75.5
+    },
+    {
+      "width": 1440,
+      "page": "home",
+      "before": {
+        "medianLcpMs": 2664,
+        "medianCls": 0.031034316459833677,
+        "medianTransferBytes": 742693,
+        "medianJsBytes": 228226
+      },
+      "after": {
+        "medianLcpMs": 1716,
+        "medianCls": 0.030840107783564816,
+        "medianTransferBytes": 479435,
+        "medianJsBytes": 215769
+      },
+      "transferReductionPercent": 35.4,
+      "lcpReductionPercent": 35.6
+    },
+    {
+      "width": 1440,
+      "page": "gallery",
+      "before": {
+        "medianLcpMs": 2672,
+        "medianCls": 0.02590854003236454,
+        "medianTransferBytes": 637868,
+        "medianJsBytes": 228226
+      },
+      "after": {
+        "medianLcpMs": 1696,
+        "medianCls": 0.02590854003236454,
+        "medianTransferBytes": 388970,
+        "medianJsBytes": 209323
+      },
+      "transferReductionPercent": 39.0,
+      "lcpReductionPercent": 36.5
+    },
+    {
+      "width": 1440,
+      "page": "towels",
+      "before": {
+        "medianLcpMs": 2720,
+        "medianCls": 0.028296104483480154,
+        "medianTransferBytes": 1002150,
+        "medianJsBytes": 228226
+      },
+      "after": {
+        "medianLcpMs": 1756,
+        "medianCls": 0.028296104483480154,
+        "medianTransferBytes": 858330,
+        "medianJsBytes": 221215
+      },
+      "transferReductionPercent": 14.4,
+      "lcpReductionPercent": 35.4
+    }
+  ],
+  "browserResourceChecks": {
+    "routeChunksOnDemand": true,
+    "unrelatedPageChunksInitiallyAbsent": true,
+    "failedRouteChunkRetryByReload": true,
+    "sectionsRebuiltAfterAsyncNavigation": true,
+    "fontChangesWithLanguage": true,
+    "offscreenBackgroundDeferred": true,
+    "backgroundLoadedBeforeViewing": true
+  },
+  "browserEnquiryChecks": [
+    {
+      "width": 390,
+      "initialLanguage": "th",
+      "switchedLanguage": "en",
+      "finderRefresh": true,
+      "measurementHandoff": true,
+      "quantityAndContactPreserved": true,
+      "clipboardStub": true,
+      "failureRetry": true,
+      "pendingDoubleSubmitBlocked": true,
+      "changedEmailWhilePending": true,
+      "invalidQuantityBlocked": true,
+      "mockedPostCount": 3,
+      "horizontalOverflow": 0,
+      "runtimeErrors": 0
+    },
+    {
+      "width": 390,
+      "initialLanguage": "ar",
+      "switchedLanguage": "en",
+      "finderRefresh": true,
+      "measurementHandoff": true,
+      "quantityAndContactPreserved": true,
+      "clipboardStub": true,
+      "failureRetry": true,
+      "pendingDoubleSubmitBlocked": true,
+      "changedEmailWhilePending": true,
+      "invalidQuantityBlocked": true,
+      "mockedPostCount": 3,
+      "horizontalOverflow": 0,
+      "runtimeErrors": 0
+    },
+    {
+      "width": 820,
+      "initialLanguage": "th",
+      "switchedLanguage": "en",
+      "finderRefresh": true,
+      "measurementHandoff": true,
+      "quantityAndContactPreserved": true,
+      "clipboardStub": true,
+      "failureRetry": true,
+      "pendingDoubleSubmitBlocked": true,
+      "changedEmailWhilePending": true,
+      "invalidQuantityBlocked": true,
+      "mockedPostCount": 3,
+      "horizontalOverflow": 0,
+      "runtimeErrors": 0
+    },
+    {
+      "width": 820,
+      "initialLanguage": "ar",
+      "switchedLanguage": "en",
+      "finderRefresh": true,
+      "measurementHandoff": true,
+      "quantityAndContactPreserved": true,
+      "clipboardStub": true,
+      "failureRetry": true,
+      "pendingDoubleSubmitBlocked": true,
+      "changedEmailWhilePending": true,
+      "invalidQuantityBlocked": true,
+      "mockedPostCount": 3,
+      "horizontalOverflow": 0,
+      "runtimeErrors": 0
+    },
+    {
+      "width": 1440,
+      "initialLanguage": "th",
+      "switchedLanguage": "en",
+      "finderRefresh": true,
+      "measurementHandoff": true,
+      "quantityAndContactPreserved": true,
+      "clipboardStub": true,
+      "failureRetry": true,
+      "pendingDoubleSubmitBlocked": true,
+      "changedEmailWhilePending": true,
+      "invalidQuantityBlocked": true,
+      "mockedPostCount": 3,
+      "horizontalOverflow": 0,
+      "runtimeErrors": 0
+    },
+    {
+      "width": 1440,
+      "initialLanguage": "ar",
+      "switchedLanguage": "en",
+      "finderRefresh": true,
+      "measurementHandoff": true,
+      "quantityAndContactPreserved": true,
+      "clipboardStub": true,
+      "failureRetry": true,
+      "pendingDoubleSubmitBlocked": true,
+      "changedEmailWhilePending": true,
+      "invalidQuantityBlocked": true,
+      "mockedPostCount": 3,
+      "horizontalOverflow": 0,
+      "runtimeErrors": 0
+    }
+  ],
+  "limitations": [
+    "Local lab with fixed local font and HTTP gzip; not production field data or an HTTP2/CDN test.",
+    "Field INP/LCP/CLS data unavailable.",
+    "Mobile homepage median LCP changed from 956 to 968 ms; effectively unchanged, with 50.6% less transferred data.",
+    "Form POSTs were intercepted; production receipt and notifications remain Stage 7 checks.",
+    "Configured CDN headers, SSL and domain state require release verification.",
+    "Known advisories and credential-pattern checks do not establish complete security.",
+    "Rollup reports ignored use-client directives in React Router; a simulated-DOM act warning remains non-failing. Real-browser customer-flow tests reported no runtime errors."
+  ],
+  "newGeneratedImages": 0,
+  "originalAssetsPreserved": true
+}

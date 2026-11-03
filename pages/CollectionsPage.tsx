@@ -128,7 +128,7 @@ const CollectionsPage: React.FC = () => {
           <section 
             id="learn-more-cta" 
             className="text-center py-20 sm:py-24 mt-20 bg-brand-dark rounded-2xl relative overflow-hidden bg-cover bg-center"
-            style={{ backgroundImage: "url('/assets/restored-50e2c89e4a32.webp')" }}
+            data-background="url('/assets/restored-50e2c89e4a32.webp')"
           >
             <div className="absolute inset-0 bg-brand-dark/70"></div>
             <div className="max-w-2xl mx-auto px-4 relative z-10 text-white">

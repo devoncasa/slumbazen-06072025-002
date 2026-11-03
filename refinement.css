@@ -91,3 +91,7 @@ html[lang=en] .editorial-hero h1{font-family:Georgia,'Times New Roman',serif;fon
 .legacy-site>header{background-color:#faf7f2!important;backdrop-filter:none}.legacy-site .journey-guide{background-color:#faf7f2}
 
 .quote-item{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:16px}.quote-item>label{margin:0}.quote-item>button{align-self:end;margin-bottom:10px}@media(max-width:600px){.quote-item{grid-template-columns:1fr;gap:4px;margin-bottom:20px}.quote-item>button{justify-self:start;margin-bottom:0}}
+
+/* Keep the first visible hero discoverable in CSS with a width-appropriate source. */
+.legacy-site .responsive-background{background-image:var(--background-large)}
+@media(max-width:767px){.legacy-site .responsive-background{background-image:var(--background-small)}}

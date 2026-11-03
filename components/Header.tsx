@@ -145,7 +145,7 @@ const Header: React.FC = () => {
       <header ref={headerRef} className="bg-brand-light/80 backdrop-blur-md sticky top-0 z-50 border-b border-neutral-200/70 relative">
         <div 
             className="absolute inset-0 -z-10 bg-cover bg-center opacity-20" 
-            style={{ backgroundImage: "url('/assets/restored-75c85586a273.webp')" }}
+            style={{ backgroundImage: "url('/assets/restored-75c85586a273-640.webp')" }}
         ></div>
         <div 
             className="absolute inset-0 -z-10 pointer-events-none" 
@@ -160,7 +160,7 @@ const Header: React.FC = () => {
           <div className="flex items-center justify-between min-h-20 py-3">
             
             <Link to={langPrefix} className="brand-lockup flex items-center space-x-3 rtl:space-x-reverse" onClick={closeMenus}>
-               <img src="/assets/logo.png" alt={t('footer.companyName')} className="h-12 w-auto" />
+               <img src="/assets/logo.webp" alt={t('footer.companyName')} width={200} height={199} className="h-12 w-auto" />
                <span className="font-brand-base text-xl sm:text-2xl text-neutral-900 inline-flex items-baseline">
                  <Trans 
                      i18nKey="footer.companyNameRich" 

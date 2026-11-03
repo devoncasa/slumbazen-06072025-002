@@ -86,7 +86,7 @@ const PremiumColorsPage: React.FC = () => {
             id="benefits-premium-colors"
             aria-labelledby="benefits-premium-colors-heading"
             className="py-20 sm:py-24 relative bg-cover bg-center"
-            style={{ backgroundImage: "url('/assets/restored-ac7e2c8aaca0.webp')" }}
+            data-background="url('/assets/restored-ac7e2c8aaca0.webp')"
           >
             <div className="absolute inset-0 bg-white/70 backdrop-blur-sm"></div>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -116,7 +116,7 @@ const PremiumColorsPage: React.FC = () => {
                 id="premium-colors-cta" 
                 aria-labelledby="premium-colors-cta-heading" 
                 className="text-center relative overflow-hidden rounded-2xl bg-neutral-700 text-white bg-cover bg-center py-20 sm:py-24"
-                style={{ backgroundImage: "url('/assets/catalogue-07.webp')" }}
+                data-background="url('/assets/catalogue-07.webp')"
             >
               <div className="absolute inset-0 bg-neutral-700/80"></div>
               <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

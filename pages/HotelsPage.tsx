@@ -290,7 +290,7 @@ export default function HotelsPage() {
               id="b2b-contact-cta" 
               aria-labelledby="b2b-cta-heading" 
               className="text-center py-20 bg-brand-dark text-white rounded-2xl relative overflow-hidden bg-cover bg-center"
-              style={{ backgroundImage: "url('/assets/catalogue-04.webp')" }}
+              data-background="url('/assets/catalogue-04.webp')"
             >
               <div className="absolute inset-0 bg-brand-dark/70"></div>
                <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

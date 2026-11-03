@@ -38,3 +38,17 @@ After sign-in, inspect both aliases, certificate names and expiry, provisioning,
 CAA, AAAA, DNSSEC and project-specific external DNS instructions. Record existing
 values before any verified correction. Verify HTTPS on apex and www, then
 redirects preserving language, product path and query parameters.
+
+### Authenticated inspection
+
+Signed in successfully. Netlify Domain management still shows an expired
+certificate (24 September 2026), names *.slumbazen.com and slumbazen.com.
+The panel displays an ACME authorization rate-limit failure dated 26 October.
+Both aliases point to an internal Netlify DNS zone. That zone still shows the
+old Netlify registration expired 30 June 2026 and p09.nsone.net nameservers,
+whereas public delegation uses Spaceship. This confirms stale account-side
+registration/DNS metadata. No certificate or DNS change was applied.
+Netlify support case 1153097 must reconcile this association with external DNS
+and issue a certificate for slumbazen.com and www.slumbazen.com. No purchase
+or auto-renewal of the obsolete registration is required by this work.
+Stage 1 is partially complete, pending that correction and live HTTPS tests.

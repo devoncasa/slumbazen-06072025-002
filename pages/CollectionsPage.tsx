@@ -10,14 +10,19 @@ interface CategoryCardProps {
   linkTo: string;
   linkTextKey: string;
   imageUrl: string;
+  first?: boolean;
 }
 
-const CategoryCard: React.FC<CategoryCardProps> = ({ titleKey, descriptionKey, linkTo, linkTextKey, imageUrl }) => {
+const CategoryCard: React.FC<CategoryCardProps> = ({ titleKey, descriptionKey, linkTo, linkTextKey, imageUrl, first }) => {
   const { t } = useTranslation();
   return (
     <article className="stitched-category">
       <div className="stitched-category-photo">
-        <img src={imageUrl} alt={t(titleKey)} loading="lazy" decoding="async" />
+        <img src={imageUrl}
+          srcSet={`${imageUrl.replace('.webp', '-collection-400.webp')} 400w, ${imageUrl} 603w`}
+          sizes="(max-width: 620px) 86vw, (max-width: 960px) 42vw, 400px"
+          alt={t(titleKey)} width={603} height={800}
+          loading={first ? 'eager' : 'lazy'} fetchPriority={first ? 'high' : undefined} />
       </div>
       <div className="stitched-category-copy">
         <h3>{t(titleKey)}</h3>
@@ -111,8 +116,8 @@ const CollectionsPage: React.FC = () => {
           <section id="shop-by-category" aria-labelledby="shop-by-category-heading">
             <h2 id="shop-by-category-heading" className="sr-only">Shop by Category</h2>
             <div className="stitched-category-grid">
-              {categories.map(category => (
-                <CategoryCard key={category.titleKey} {...category} />
+              {categories.map((category, index) => (
+                <CategoryCard key={category.titleKey} first={index === 0} {...category} />
               ))}
             </div>
           </section>

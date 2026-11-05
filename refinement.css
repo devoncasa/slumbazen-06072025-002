@@ -1,6 +1,6 @@
 /* Quiet editorial layout; original page structures and catalog assets are retained. */
 .legacy-site{--border:#d8cbbd;--clay:#73594b;color:#393c40;background:#faf7f2}
-.legacy-site::before{inset:130px 0 auto auto;width:min(100%,1200px);height:820px;background:linear-gradient(245deg,#faf7f299 0%,#faf7f2db 40%,#faf7f2 75%),url('/assets/editorial/quiet-bedroom-640.webp') top right/cover no-repeat;filter:blur(7px)}
+.legacy-site::before{inset:130px 0 auto auto;width:min(100%,1200px);height:820px;background:linear-gradient(245deg,#faf7f299 0%,#faf7f2db 40%,#faf7f2 75%),url('/assets/editorial/quiet-bedroom-wash.webp') top right/cover no-repeat;filter:blur(7px)}
 .legacy-site .section-navigation{background:#f5eee6;border-block:1px solid #d8cbbd88;font-size:.76rem;gap:4px 24px;padding:9px 20px}
 .section-navigation a{text-decoration:none}.section-navigation a:hover,.section-navigation a[aria-current=page]{text-decoration:underline}.finder-nav{font-weight:600}
 .legacy-site main section:not(.enquiry){box-shadow:none;border-radius:8px}

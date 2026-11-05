@@ -5,12 +5,15 @@ import { useTranslation, Trans } from 'react-i18next';
 import Button from '../components/Button';
 import { BeakerIcon, PhotoIcon, BuildingStorefrontIcon, ChatBubbleLeftRightIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
 import InlineImage from '../components/InlineImage';
-import { IMAGE_ASSETS } from '../products';
+import dimensions from '../data/imageDimensions.json';
+import { homeHero } from '../homeHero';
 
 const HeroSection: React.FC = () => {
  const {i18n,t}=useTranslation();const lang=i18n.language;const w=shoppingCopy[lang]||shoppingCopy.en;
- return <section className="editorial-hero" id="welcome"><div className="editorial-hero-copy"><p className="eyebrow">{w.heroKicker}</p><h1>{w.heroTitle}</h1><p className="hero-intro">{w.heroIntro}</p><div className="actions"><Link className="button" to={`/${lang}/collections/`}>{w.heroShop} →</Link><Link className="hero-hotel" to={`/${lang}/hotels/`}>{w.heroHotel} ↗</Link></div><Link className="hero-finder" to={`/${lang}/bedding-finder/`}>{w.finder} <span aria-hidden="true">→</span></Link></div><figure className="editorial-hero-image"><img src="/assets/editorial/quiet-bedroom.webp" srcSet="/assets/editorial/quiet-bedroom-640.webp 640w, /assets/editorial/quiet-bedroom.webp 1200w" sizes="(max-width:767px) 100vw, 57vw" alt={w.heroAlt} width={1200} height={800} fetchPriority="high"/><figcaption>{t('restoration.illustration', {defaultValue:({en:'Illustrative setting',th:'ภาพบรรยากาศจำลอง',zh:'示意场景',ar:'مشهد توضيحي',hi:'सांकेतिक दृश्य'} as Record<string,string>)[lang]})}</figcaption></figure></section>;
+ return <section className="editorial-hero" id="welcome"><div className="editorial-hero-copy"><p className="eyebrow">{w.heroKicker}</p><h1>{w.heroTitle}</h1><p className="hero-intro">{w.heroIntro}</p><div className="actions"><Link className="button" to={`/${lang}/collections/`}>{w.heroShop} →</Link><Link className="hero-hotel" to={`/${lang}/hotels/`}>{w.heroHotel} ↗</Link></div><Link className="hero-finder" to={`/${lang}/bedding-finder/`}>{w.finder} <span aria-hidden="true">→</span></Link></div><figure className="editorial-hero-image"><img {...homeHero} alt={w.heroAlt} width={1200} height={800} fetchPriority="high"/><figcaption>{t('restoration.illustration', {defaultValue:({en:'Illustrative setting',th:'ภาพบรรยากาศจำลอง',zh:'示意场景',ar:'مشهد توضيحي',hi:'सांकेतिक दृश्य'} as Record<string,string>)[lang]})}</figcaption></figure></section>;
 };
+
+const imageDimensions: Record<string, number[]> = dimensions;
 
 const VisualShowcaseSection: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -37,7 +40,10 @@ const VisualShowcaseSection: React.FC = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4" style={{ gridAutoRows: 'minmax(150px, auto)' }}>
           {images.map((image, index) => (
             <div key={index} className={`group relative overflow-hidden rounded-2xl shadow-lg p-0.5 bg-brand-gold ${image.className || ''}`}>
-              <img src={image.src} alt={t(image.altKey)} width={800} height={600} loading="lazy" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02] rounded-xl" />
+              <img src={image.src}
+                srcSet={[240, 360, 480].map(width => `${image.src.slice(0, -5)}-showcase-${width}.webp ${width}w`).concat(`${image.src} ${imageDimensions[image.src][0]}w`).join(', ')}
+                sizes={`(max-width: 767px) max(185px, calc((100vw - 64px) / 2)), ${image.className ? '(max-width: 1023px) 350px, 480px' : '(max-width: 1023px) 185px, 330px'}`}
+                alt={t(image.altKey)} width={imageDimensions[image.src][0]} height={imageDimensions[image.src][1]} loading="lazy" decoding="async" className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02] rounded-xl" />
               <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors rounded-xl"></div>
             </div>
           ))}

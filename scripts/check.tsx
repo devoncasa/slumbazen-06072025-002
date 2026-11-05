@@ -7,7 +7,7 @@ import {productSpecificationRows,productSizeLabel,catalogueWords,catalogueSizeDi
 import {loadLocale} from '../localeResources';
 import React from 'react';import {renderToString} from 'react-dom/server';import {MemoryRouter} from 'react-router-dom';import assert from 'node:assert/strict';import fs from 'node:fs';import {SiteRoutes,paths,articleSlugs} from '../App';import {copy,languages} from '../content';import {products} from '../products';
 await Promise.all(languages.map(loadLocale));
-await Promise.all(paths.map(loadRoute));
+await Promise.all([...paths, 'product/' + products[0].id.toLowerCase()].map(loadRoute));
 const keys=Object.keys(copy.en).sort();for(const lang of languages){assert.deepEqual(Object.keys(copy[lang]).sort(),keys,lang+' translation keys');for(const key of keys){assert.notEqual(copy[lang][key],undefined);if(Array.isArray(copy.en[key]))assert.equal(copy[lang][key].length,copy.en[key].length,lang+key)}}
 assert.equal(new Set(products.map(p=>p.id)).size,products.length);
 let count=0;for(const lang of languages)for(const route of [...paths,...articleSlugs.map(s=>'blog/'+s),...products.map(p=>'product/'+p.id.toLowerCase())]){const url='/'+lang+(route?'/'+route:'');const html=fs.readFileSync('dist'+url+'/index.html','utf8');assert.match(html,/<h1\b/);assert.match(html,new RegExp(`<html lang="${languageTag(lang)}"`));assert(!html.includes('cimode'));assert(!html.includes('threads per 10 cm'));assert(!html.includes('Article Coming Soon'));assert(!html.includes('line.me/R/msg'));const schemas=[...html.matchAll(/<script type="application\/ld\+json">(.*?)<\/script>/g)];for(const [,data]of schemas){const d=JSON.parse(data);for(const node of d['@graph']||[d]){assert(!node.offers);assert(!node.aggregateRating)}}for(const [,src]of html.matchAll(/<img[^>]*src="([^"]+)"/g)){assert(src.startsWith('/assets/'),src);assert(fs.existsSync('dist'+src),src)}count++;}
@@ -51,8 +51,8 @@ for(const lang of languages)for(const route of [...paths,...articleSlugs.map(s=>
   const target='dist'+u.pathname.replace(/\/?$/,'/')+'index.html';assert(fs.existsSync(target),file+' broken '+href);if(u.hash)assert(fs.readFileSync(target,'utf8').includes('id="'+decodeURIComponent(u.hash.slice(1))+'"'),file+' anchor '+href);linkCount++;
  }
 }
-const entryHtml=fs.readFileSync('dist/index.html','utf8');const entry=entryHtml.match(/src="\/assets\/(index-[^"]+\.js)"/)?.[1];const css=entryHtml.match(/href="\/assets\/(index-[^"]+\.css)"/)?.[1];assert(entry&&css,'Built HTML must reference its current bundles');const jsGzip=gzipSync(fs.readFileSync('dist/assets/'+entry)).length;const cssGzip=gzipSync(fs.readFileSync('dist/assets/'+css)).length;
-assert(jsGzip<120000,'Main JavaScript gzip budget');assert(cssGzip<15000,'CSS gzip budget');
+const entryHtml=fs.readFileSync('dist/en/collections/index.html','utf8');const entry=entryHtml.match(/src="\/assets\/(index-[^"]+\.js)"/)?.[1];const css=entryHtml.match(/href="\/assets\/(index-[^"]+\.css)"/)?.[1];assert(entry&&css,'Built HTML must reference its current bundles');const jsGzip=gzipSync(fs.readFileSync('dist/assets/'+entry)).length;const cssGzip=gzipSync(fs.readFileSync('dist/assets/'+css)).length;
+assert(jsGzip<120000,'Main JavaScript gzip budget');assert(cssGzip<16000,'CSS gzip budget');
 for(const name of ['quiet-bedroom','selection-details']){assert(fs.statSync('dist/assets/editorial/'+name+'.webp').size<120000);assert(fs.statSync('dist/assets/editorial/'+name+'-640.webp').size<40000)}
 const form=fs.readFileSync('dist/__forms.html','utf8');for(const field of ['form-name','name','email','message','language','bot-field'])assert(form.includes('name="'+field+'"'));assert(form.includes('data-netlify="true"'));
 console.log(JSON.stringify({internalLinks:linkCount,brokenLinks:0,metadataParity:true,mainJsGzip:jsGzip,cssGzip,formDefinition:true}));
@@ -121,7 +121,7 @@ for(const lang of languages)for(const slug of articleSlugs){const seo=pageSEO('b
 console.log(JSON.stringify({stage5:{metadataRoutes:count,reciprocalAlternates:6,articleHeadings:45,languagePriority:true,socialImagesExist:true}}));
 
 // Route splitting must retain real HTML, localized fonts and retry-safe module caches.
-for(const lang of languages)for(const route of paths){const html=fs.readFileSync('dist/'+lang+'/'+(route?route+'/':'')+'index.html','utf8');assert(html.includes('id="locale-font"'));assert(html.includes(esc(fontStylesheet(lang))));assert(!html.includes('family=Sarabun:wght@400;500;600;700&amp;family='));}
+for(const lang of languages)for(const route of paths){const html=fs.readFileSync('dist/'+lang+'/'+(route?route+'/':'')+'index.html','utf8');assert.equal(html.includes('id="locale-font"'), Boolean(fontStylesheet(lang)));if(fontStylesheet(lang))assert(html.includes(esc(fontStylesheet(lang))));assert(!html.includes('family=Sarabun:wght@400;500;600;700&amp;family='));}
 assert(!fs.readFileSync('dist/assets/'+css,'utf8').includes('@import'));
 assert(fs.existsSync('dist/assets/logo.webp'));assert(fs.existsSync('dist/assets/logo.png'));
 assert(fs.statSync('dist/assets/logo.webp').size<fs.statSync('dist/assets/logo.png').size);

@@ -11,6 +11,7 @@
     "check:release-artifact": "node scripts/check-release-artifact.mjs"
   },
   "dependencies": {
+    "@fontsource/sarabun": "5.3.0",
     "@heroicons/react": "^2.2.0",
     "i18next": "^23.12.2",
     "i18next-browser-languagedetector": "^8.0.0",

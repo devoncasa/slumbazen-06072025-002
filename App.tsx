@@ -7,8 +7,6 @@ import React, {useEffect,useState} from 'react';
 import {BrowserRouter,Routes,Route,Navigate,Link,useLocation,useNavigate,useParams,useSearchParams} from 'react-router-dom';
 import {copy,languages,materialComparison} from './content';
 import {products} from './products';
-import ProductDetails from './ProductDetails';
-import Enquiry from './Enquiry';
 import {SelectionProvider,CompareButton,BeddingFinder} from './ShoppingTools';
 import {shoppingCopy} from './shoppingCopy';
 import {formatTHB,productDescription,productSchema,productSizeLabel,threadCountLabel} from './catalogueSpecs';
@@ -64,6 +62,8 @@ export function Site(){const {lang='th','*':rawPath=''}=useParams();const path=r
  if(!valid)return <h1>404</h1>;
 const link=(to:string)=>`/${lang}${to?'/'+to:''}`;const articleMode=path.startsWith('blog/')&&article>=0;const productMode=path.startsWith('product/')&&p;const sectionText:any={0:c.homeText,1:c.homeText,3:c.sizesText,4:c.colorText,5:c.setText,6:c.towelText,7:c.fabricText,8:c.tencelText,9:c.sizesText,10:c.b2bText,11:c.policyText,12:c.contactText};const navPaths=['','collections','gallery','materials','sizes','hotels','contact'];
 const Original=restoredPages[path];
+const Enquiry=restoredPages['Enquiry.tsx'] as typeof import('./Enquiry').default;
+const ProductDetails=restoredPages['ProductDetails.tsx'] as typeof import('./ProductDetails').default;
 if(Original)return <RestorationFrame lang={lang} path={path}><main id="main" className="restored-content"><Original/>{path==='sizes'&&<Dimensions c={c}/>}<div className="modern-shell">{path==='hotels'&&<section className="panel"><h2>{c.titles[1]}</h2><div className="category-grid">{[3,5,6].map(n=><Link className="panel category" key={n} to={link(paths[n])}><img src={`/assets/editorial/${({3:'hotel-linen-prep',5:'hotel-guest-room',6:'hotel-bath-towels'} as Record<number,string>)[n]}-640.webp`} alt={`${c.titles[n]} · ${c.illustration}`} width={640} height={480} loading="lazy" decoding="async" className="rounded-lg mb-4"/><h3>{c.titles[n]}</h3><span className="text-link">{c.details} →</span></Link>)}</div></section>}{path==='towels'&&<Catalogue c={c} lang={lang} towel/>}{['products/premium-colors','products/sets','towels','what-is-tencel','hotels','delivery','contact'].includes(path)&&<Enquiry key={path} c={c} lang={lang}/>}</div></main></RestorationFrame>;
 return <RestorationFrame lang={lang} path={path}>
 <main id="main" className="modern-shell"><div className="page-heading"><nav className="breadcrumbs"><Link to={link('')}>{c.nav[0]}</Link>{path&&<span> / {title}</span>}</nav><p className="eyebrow">SlumbaZEN</p><h1>{productMode?`${p.productType[lang as 'en']} · ${p.fabricType[lang as 'en']}`:title}</h1>{i===0&&<p className="intro">{c.intro}</p>}</div>

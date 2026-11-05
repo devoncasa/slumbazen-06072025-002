@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { useTranslation, Trans } from 'react-i18next';
 import Button from '../components/Button';
 import { BeakerIcon, PhotoIcon, BuildingStorefrontIcon, ChatBubbleLeftRightIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
-import MissionStatementSection from '../components/MissionStatementSection';
 import InlineImage from '../components/InlineImage';
 import { IMAGE_ASSETS } from '../products';
 
@@ -250,7 +249,6 @@ const HomePage: React.FC = () => {
   return (
     <div className="home-editorial">
       <HeroSection />
-      <MissionStatementSection />
       <BrandStorySection />
       <VisualShowcaseSection />
       <SummarizedWhyUsSection />

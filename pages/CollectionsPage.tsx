@@ -1,3 +1,4 @@
+import './collections-linen.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -14,24 +15,18 @@ interface CategoryCardProps {
 const CategoryCard: React.FC<CategoryCardProps> = ({ titleKey, descriptionKey, linkTo, linkTextKey, imageUrl }) => {
   const { t } = useTranslation();
   return (
-    <div 
-        className="relative group overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 aspect-[4/5] bg-brand-dark p-0.5 bg-brand-gold"
-    >
-      <img 
-          src={imageUrl} 
-          alt={t(titleKey)} 
-          loading="lazy" 
-          className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 rounded-xl"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/40 to-transparent rounded-xl"></div>
-      <div className="relative h-full flex flex-col justify-end p-8 text-white z-10 text-start">
-        <h3 className="text-3xl sm:text-4xl font-bold mb-3 transition-transform duration-300 group-hover:-translate-y-1 text-white">{t(titleKey)}</h3>
-        <p className="text-base mb-6 opacity-100 transition-opacity duration-300 delay-100 text-neutral-200">{t(descriptionKey)}</p>
-        <div className="mt-auto opacity-100 transition-opacity duration-300 delay-200">
-          <Button to={linkTo} variant="secondary" size="medium">{t(linkTextKey)} <span className="inline-block rtl:rotate-180">&rarr;</span></Button>
-        </div>
+    <article className="stitched-category">
+      <div className="stitched-category-photo">
+        <img src={imageUrl} alt={t(titleKey)} loading="lazy" decoding="async" />
       </div>
-    </div>
+      <div className="stitched-category-copy">
+        <h3>{t(titleKey)}</h3>
+        <p>{t(descriptionKey)}</p>
+        <Button to={linkTo} variant="outline" size="medium">
+          {t(linkTextKey)} <span aria-hidden="true" className="inline-block rtl:rotate-180">&rarr;</span>
+        </Button>
+      </div>
+    </article>
   );
 };
 
@@ -102,23 +97,20 @@ const CollectionsPage: React.FC = () => {
   return (
     <>
       
-      <div className="bg-brand-light relative isolate overflow-hidden">
-        <div className="absolute inset-0 -z-10 h-full w-full bg-cover bg-center opacity-10" style={{ backgroundImage: "url('/assets/catalogue-07.webp')" }}></div>
-        <div className="absolute inset-0 -z-10 h-full w-full bg-brand-secondary/20 backdrop-blur-sm" />
-        
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
-          <header className="text-center mb-16 sm:mb-20">
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-neutral-900 mb-6">
+      <div className="stitched-collections">
+        <div className="container mx-auto">
+          <header className="stitched-collection-heading">
+            <h1>
               {t('collectionsPage.mainTitle')}
             </h1>
-            <p className="text-lg text-neutral-700 max-w-3xl mx-auto">
+            <p>
               {t('collectionsPage.mainDescription')}
             </p>
           </header>
 
           <section id="shop-by-category" aria-labelledby="shop-by-category-heading">
             <h2 id="shop-by-category-heading" className="sr-only">Shop by Category</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
+            <div className="stitched-category-grid">
               {categories.map(category => (
                 <CategoryCard key={category.titleKey} {...category} />
               ))}

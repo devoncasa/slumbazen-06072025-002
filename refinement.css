@@ -134,3 +134,45 @@ html[lang=en] .editorial-hero h1{font-family:Georgia,'Times New Roman',serif;fon
 
 .legacy-site .journey-guide{top:97px}
 @media(max-width:420px){.legacy-site .journey-guide{top:84px}}
+
+.legacy-site .editorial-hero,.legacy-site .contact-welcome{border:1px solid #baa48f;border-radius:14px;outline:1px dashed var(--linen-thread);outline-offset:-5px}
+/* Stitched Linen: decorative seams sit outside text and interactive controls. */
+.legacy-site {
+  --linen-paper: #f8f2e9;
+  --linen-surface: #fffcf7;
+  --linen-thread: #9b7258;
+}
+.legacy-site > #main {
+  background-color: var(--linen-paper);
+  background-image: repeating-linear-gradient(115deg, #a1806210 0 1px, transparent 1px 5px);
+}
+.legacy-site > #main > .page-heading,
+.legacy-site .selection-guide {
+  background-color: var(--linen-surface);
+  border-inline-start: 1px dashed var(--linen-thread);
+}
+.legacy-site > #main > .page-heading { padding-inline-start: clamp(14px, 2vw, 28px); }
+.legacy-site .editorial-hero,
+.legacy-site .contact-welcome { overflow: hidden; }
+.legacy-site .editorial-hero-copy,
+.legacy-site main .contact-details-card { background-color: var(--linen-surface); }
+.legacy-site .contact-editorial figure::after { border-style: dashed; }
+/* A common paper edge on every route, with quieter stitching on dense layouts. */
+.legacy-site > #main {
+  box-shadow: inset 1px 0 #c7b29b, inset -1px 0 #c7b29b;
+}
+.legacy-site > #main :is(.product-card, .panel, .selection-guide, .contact-preparation) {
+  border-color: #d7c5b3;
+}
+.legacy-site > #main :is(.product-detail, .selection-guide, .contact-details-card) {
+  border-block-end: 1px dashed var(--linen-thread);
+}
+.legacy-site .editorial-hero-image::after {
+  content: "";
+  position: absolute;
+  inset: 6px 6px 6px 28%;
+  border-inline-end: 1px dashed #fff4df;
+  border-block-end: 1px dashed #fff4df;
+  border-end-end-radius: 28px;
+  pointer-events: none;
+}

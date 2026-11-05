@@ -13,7 +13,21 @@ import {languages} from '../content';
 import {products} from '../products';
 const template=fs.readFileSync('dist/index.html','utf8');
 const manifest=fs.existsSync('dist/.vite/manifest.json')?JSON.parse(fs.readFileSync('dist/.vite/manifest.json','utf8')):{};
-function routePreloads(route:string){const files=new Set<string>();const visit=(key:string)=>{const chunk=manifest[key];if(!chunk||files.has(chunk.file))return;files.add(chunk.file);for(const imported of chunk.imports||[])visit(imported)};visit(routeModules[route]);return [...files].filter(file=>file.endsWith('.js')).map(file=>`<link rel="modulepreload" href="/${file}">`).join('')}
+function routePreloads(route: string) {
+  const scripts = new Set<string>();
+  const styles = new Set<string>();
+  const visit = (key: string) => {
+    const chunk = manifest[key];
+    if (!chunk || scripts.has(chunk.file)) return;
+    scripts.add(chunk.file);
+    for (const file of chunk.css || []) styles.add(file);
+    for (const imported of chunk.imports || []) visit(imported);
+  };
+  visit(routeModules[route]);
+  return [...styles].filter(file => !template.includes(`href="/${file}"`)).map(file => `<link rel="stylesheet" href="/${file}">`).join('')
+    + [...scripts].filter(file => file.endsWith('.js'))
+      .map(file => `<link rel="modulepreload" href="/${file}">`).join('');
+}
 const routes=[...paths,...articleSlugs.map(s=>'blog/'+s),...products.map(p=>'product/'+p.id.toLowerCase())];
 const escape=(s:string)=>s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;');
 const map=[];

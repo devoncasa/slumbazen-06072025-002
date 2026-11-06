@@ -57,6 +57,7 @@ export function Site(){const {lang='th','*':rawPath=''}=useParams();const path=r
  set('meta[name="twitter:card"]','meta',{name:'twitter:card',content:'summary_large_image'});
  set('meta[name="twitter:image"]','meta',{name:'twitter:image',content:meta.image});
  document.documentElement.lang=languageTag(lang);document.documentElement.dir=lang==='ar'?'rtl':'ltr';document.title=`${meta.title} | SlumbaZEN`;
+ if(meta.exists)(window as Window & {slumbazenTrackPage?: () => void}).slumbazenTrackPage?.();
  },[lang,path,title,location.search]);
  useEffect(()=>{const frame=requestAnimationFrame(()=>{let id='';try{id=decodeURIComponent(location.hash.slice(1))}catch{};const target=id?document.getElementById(id):null;if(target)target.scrollIntoView({block:'start'});else window.scrollTo(0,0)});return()=>cancelAnimationFrame(frame)},[lang,path,location.hash]);
  if(!valid)return <h1>404</h1>;

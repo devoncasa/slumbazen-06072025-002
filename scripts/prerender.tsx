@@ -18,6 +18,44 @@ const homeEntry = buildSync({
   bundle: true, minify: true, write: false,
 }).outputFiles[0].text;
 const template=fs.readFileSync('dist/index.html','utf8');
+const measurementId = process.env.SLUMBAZEN_GA4_MEASUREMENT_ID?.trim();
+if (measurementId && !/^G-[A-Z0-9]+$/.test(measurementId)) {
+  throw new Error('SLUMBAZEN_GA4_MEASUREMENT_ID must be a GA4 web Measurement ID.');
+}
+const analytics = measurementId && process.env.CONTEXT === 'production' ? `<script>
+(() => {
+  if (location.origin !== ${JSON.stringify(origin)}) return;
+  const id = ${JSON.stringify(measurementId)};
+  const dataLayer = window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', id, {send_page_view: false, allow_google_signals: false, allow_ad_personalization_signals: false});
+  let previousPage;
+  window.slumbazenTrackPage = () => {
+    const page = new URL(location.pathname, location.origin);
+    page.pathname = page.pathname.replace(/\\/+$/, '') + '/';
+    for (const key of ['utm_source', 'utm_medium', 'utm_campaign', 'utm_id']) {
+      const value = new URLSearchParams(location.search).get(key);
+      if (value) page.searchParams.set(key, value);
+    }
+    if (previousPage?.pathname === page.pathname) return;
+    gtag('event', 'page_view', {
+      send_to: id,
+      page_location: page.href,
+      page_title: document.title,
+      page_referrer: previousPage?.href || (document.referrer ? new URL(document.referrer).origin : '')
+    });
+    previousPage = page;
+  };
+  window.slumbazenTrackPage();
+  window.addEventListener('load', () => {
+    const script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+    document.head.append(script);
+  }, {once: true});
+})();
+</script>` : '';
 const manifest=fs.existsSync('dist/.vite/manifest.json')?JSON.parse(fs.readFileSync('dist/.vite/manifest.json','utf8')):{};
 function routePreloads(route: string, lang: string) {
   const scripts = new Set<string>();
@@ -69,7 +107,7 @@ for(const lang of languages){await loadLocale(lang);for(const route of routes){
  const html=(route === '' ? homeTemplate : template)
    .replace(/(<meta name="viewport"[^>]*>)/, `$1${preloads}`)
    .replace(/<title>.*?<\/title>/,'').replace('<html lang="en">',`<html lang="${languageTag(lang)}" dir="${lang==='ar'?'rtl':'ltr'}">`)
-   .replace('</head>',meta+'</head>').replace('<div id="root"></div>',`<div id="root" data-prerendered="true">${body}</div>`);
+   .replace('</head>',meta+analytics+'</head>').replace('<div id="root"></div>',`<div id="root" data-prerendered="true">${body}</div>`);
  const dest=path.join('dist',url,'index.html');fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,html);
  map.push(`<url><loc>${canonical}</loc>${seo.alternates.map(v=>`<xhtml:link rel="alternate" hreflang="${v.lang}" href="${v.url}"/>`).join('')}</url>`);
 }

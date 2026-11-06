@@ -306,3 +306,14 @@ Do not rerun unchanged source QA or deploy merely because source checks pass.
 Bundle budgets read the active entry and stylesheet from built HTML, so leftover
 unused files cannot skew reported transfer sizes. The final check suite passed
 again after this test-harness correction; no application behavior changed.
+
+### Google Analytics 4
+
+Set `SLUMBAZEN_GA4_MEASUREMENT_ID` in Netlify's production build environment
+to the Measurement ID of the SlumbaZEN web stream. The tag runs on localized
+pages at `https://www.slumbazen.com` and loads after the page's load event.
+Leave the variable unset to build without analytics.
+
+In the web stream's Enhanced measurement settings, disable automatic page
+changes based on browser history to avoid counting React navigation twice.
+Verify direct visits and client-side navigation in GA4 Realtime or DebugView.

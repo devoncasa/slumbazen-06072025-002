@@ -28,6 +28,8 @@ const analytics = measurementId && process.env.CONTEXT === 'production' ? `<scri
   const id = ${JSON.stringify(measurementId)};
   const dataLayer = window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
+  // Suppress the Google tag's default page view before initialization.
+  gtag('set', 'send_page_view', false);
   gtag('js', new Date());
   gtag('config', id, {send_page_view: false, allow_google_signals: false, allow_ad_personalization_signals: false});
   let previousPage;

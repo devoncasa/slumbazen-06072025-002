@@ -309,6 +309,10 @@ again after this test-harness correction; no application behavior changed.
 
 ### Google Analytics 4
 
+Use the dedicated SlumbaZEN GA4 property `563131096` for new production
+traffic. Historical SlumbaZEN data collected before the switch remains in the
+previous shared property `498276491`.
+
 Set `SLUMBAZEN_GA4_MEASUREMENT_ID` in Netlify's production build environment
 to the Measurement ID of the SlumbaZEN web stream. The tag runs on localized
 pages at `https://www.slumbazen.com` and loads after the page's load event.

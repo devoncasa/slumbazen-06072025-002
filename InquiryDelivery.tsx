@@ -9,7 +9,10 @@ hi:['पूछताछ भेजें','आपका नाम','जवाब 
 export async function deliverInquiry(fields:Record<string,string>,request:typeof fetch=fetch){
  const abort=new AbortController();const timer=setTimeout(()=>abort.abort(),20000);
  try{const response=await request('/__forms.html',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(fields).toString(),signal:abort.signal});
- const body=await response.text();if(!response.ok||body.includes('data-form-definition'))throw Error('Receipt not confirmed');}finally{clearTimeout(timer)}
+ const body=await response.text();if(!response.ok||body.includes('data-form-definition'))throw Error('Receipt not confirmed');
+ // Analytics failure must never turn a received enquiry into a customer-facing error.
+ try{if(!fields['bot-field']&&typeof window!=='undefined')(window as Window & {slumbazenTrackLead?: (language:string)=>void}).slumbazenTrackLead?.(fields.language);}catch{}
+ }finally{clearTimeout(timer)}
 }
 export default function InquiryDelivery({lang,message,valid,contact,onContactChange}:{lang:string,message:string,valid:boolean,contact:{name:string,email:string},onContactChange:(contact:{name:string,email:string})=>void}){
  const w=deliveryWords[lang];const [status,setStatus]=useState<'idle'|'sending'|'sent'|'error'>('idle');const form=useRef<HTMLFormElement>(null);const [sentSignature,setSentSignature]=useState('');

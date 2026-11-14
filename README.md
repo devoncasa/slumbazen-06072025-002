@@ -321,3 +321,14 @@ Leave the variable unset to build without analytics.
 In the web stream's Enhanced measurement settings, disable automatic page
 changes based on browser history to avoid counting React navigation twice.
 Verify direct visits and client-side navigation in GA4 Realtime or DebugView.
+
+Received enquiries emit `generate_lead` only after the form endpoint returns a
+successful response without the static form-definition marker. This measures
+endpoint acceptance, not an email read, qualified buyer or completed sale.
+Only fixed `form_id` and supported `content_language` are included; customer
+names, emails, messages and query strings are not copied into the event.
+Honeypot submissions, failed requests and unprocessed static forms emit no lead.
+Analytics errors cannot prevent the success message. Tests use mocked responses;
+they do not create real enquiries. Keep automatic `form_submit` separate from
+this event. To roll back, revert the received-lead hook and its caller together;
+the existing page-view tracking and form delivery remain independent.

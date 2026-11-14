@@ -61,10 +61,17 @@ await mount('/en/gallery/','en');await change(document.querySelector('input[type
 await change(document.querySelector('input[type="search"]'),'');const choices=[...document.querySelectorAll('.compare-toggle')];for(const e of choices.slice(0,3))await click(e);assert(choices[3].disabled);assert.equal(JSON.parse(sessionStorage.getItem('slumbazen-compare')).length,3);await click(document.querySelector('.comparison-dock button'));assert(document.querySelector('.comparison-dialog').open);assert(document.querySelector('.comparison-dialog').textContent.includes('threads per square inch'));const selectedIds=JSON.parse(sessionStorage.getItem('slumbazen-compare'));await click(document.querySelector('.comparison-dialog a.button'));assert(window.location.pathname==='/en/hotels/');assert.equal(document.querySelectorAll('.quote-items input').length,3);await change(document.querySelector('.quote-items input'),'24');assert(document.querySelector('.enquiry-preview').value.includes('Quantity: 24'));for(const id of selectedIds)assert(document.querySelector('.enquiry-preview').value.includes(id));await change(document.querySelector('.quote-items input'),'0');assert(document.querySelector('.inquiry-delivery button').disabled);await change(document.querySelector('.quote-items input'),'24');
 await click(document.querySelector('.comparison-dock button.secondary'));assert.equal(document.querySelector('.comparison-dock'),null);assert.deepEqual(JSON.parse(sessionStorage.getItem('slumbazen-compare')),[]);
 // A failed HTTP response and an unprocessed static form must never show success.
-let received;await deliverInquiry({'form-name':'slumbazen-enquiry',message:'SKU A: 24'},async (url,options)=>{received={url,options};return new Response('Thanks',{status:200})});assert.equal(received.url,'/__forms.html');assert(new URLSearchParams(received.options.body).get('message')==='SKU A: 24');
+const trackedLeads=[];window.slumbazenTrackLead=language=>trackedLeads.push(language);
+let received;await deliverInquiry({'form-name':'slumbazen-enquiry',message:'SKU A: 24',language:'th'},async (url,options)=>{received={url,options};return new Response('Thanks',{status:200})});assert.equal(received.url,'/__forms.html');assert(new URLSearchParams(received.options.body).get('message')==='SKU A: 24');
 await assert.rejects(()=>deliverInquiry({},async()=>new Response('Unavailable',{status:503})));
 await assert.rejects(()=>deliverInquiry({},async()=>new Response('<body data-form-definition>',{status:200})));
 await assert.rejects(()=>deliverInquiry({},async()=>{throw new Error('offline')}));
+assert.deepEqual(trackedLeads,['th']);
+await deliverInquiry({'bot-field':'spam',language:'en'},async()=>new Response('Thanks',{status:200}));assert.deepEqual(trackedLeads,['th']);
+window.slumbazenTrackLead=()=>{throw Error('analytics blocked')};
+await deliverInquiry({language:'en'},async()=>new Response('Thanks',{status:200}));
+delete window.slumbazenTrackLead;
+await deliverInquiry({language:'en'},async()=>new Response('Thanks',{status:200}));
 // Customer flow regressions: URL restoration, corrupt drafts and deliberate clearing.
 for(const malformed of ['null','[]','42','"old"','{broken']){
  sessionStorage.setItem('slumbazen-enquiry',malformed);

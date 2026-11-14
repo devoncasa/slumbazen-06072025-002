@@ -64,9 +64,9 @@ const analytics = measurementId && process.env.CONTEXT === 'production' ? `<scri
   window.slumbazenTrackPage = () => {
     const page = new URL(location.pathname, location.origin);
     page.pathname = page.pathname.replace(/\\/+$/, '') + '/';
-    for (const key of ['utm_source', 'utm_medium', 'utm_campaign', 'utm_id']) {
+    for (const key of ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_id']) {
       const value = new URLSearchParams(location.search).get(key);
-      if (value) page.searchParams.set(key, value);
+      if (value && /^[a-z0-9][a-z0-9_-]{0,79}$/i.test(value) && !/[0-9]{7}/.test(value)) page.searchParams.set(key, value.toLowerCase());
     }
     if (previousPage?.pathname === page.pathname) return;
     gtag('event', 'page_view', {
@@ -151,4 +151,5 @@ const rootTemplate = template
 fs.writeFileSync('dist/index.html',rootTemplate.replace('</head>',`<meta name="robots" content="noindex, follow"><script>${homeEntry}</script></head>`).replace('<div id="root"></div>', '<div id="root"><nav aria-label="Choose language">'+languages.map(l=>`<a href="/${l}/" lang="${languageTag(l)}">${({th:'ภาษาไทย',en:'English',zh:'简体中文',ar:'العربية',hi:'हिन्दी'} as Record<string,string>)[l]}</a>`).join(' · ')+'</nav></div>'));
 fs.writeFileSync('dist/404.html',template.replace('</head>','<meta name="robots" content="noindex, follow"></head>').replace('<div id="root"></div>','<div id="root"><h1>404 · SlumbaZEN</h1><a href="/th">SlumbaZEN</a></div>'));
 console.log(`Prerendered ${routes.length*languages.length} localized routes.`);
+
 

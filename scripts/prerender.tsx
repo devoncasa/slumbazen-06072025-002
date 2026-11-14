@@ -32,6 +32,14 @@ const analytics = measurementId && process.env.CONTEXT === 'production' ? `<scri
   gtag('set', 'send_page_view', false);
   gtag('js', new Date());
   gtag('config', id, {send_page_view: false, allow_google_signals: false, allow_ad_personalization_signals: false});
+  window.slumbazenTrackLead = (language) => {
+    if (!['th', 'en', 'zh', 'ar', 'hi'].includes(language)) return;
+    gtag('event', 'generate_lead', {
+      send_to: id, form_id: 'slumbazen-enquiry', content_language: language,
+      page_location: location.origin + location.pathname,
+      page_referrer: document.referrer ? new URL(document.referrer).origin : ''
+    });
+  };
   let previousPage;
   window.slumbazenTrackPage = () => {
     const page = new URL(location.pathname, location.origin);

@@ -26,16 +26,36 @@ const analytics = measurementId && process.env.CONTEXT === 'production' ? `<scri
 (() => {
   if (location.origin !== ${JSON.stringify(origin)}) return;
   const id = ${JSON.stringify(measurementId)};
+  if (window.__slumbazenAnalyticsReady) return;
+  const query = new URLSearchParams(location.search);
+  try {
+    if (query.get('analytics') === 'off') localStorage.setItem('slumbazen-analytics-optout', '1');
+    if (query.get('analytics') === 'on') localStorage.removeItem('slumbazen-analytics-optout');
+    if (localStorage.getItem('slumbazen-analytics-optout') === '1') return;
+  } catch {}
+  if (navigator.doNotTrack === '1' || navigator.globalPrivacyControl === true || window['ga-disable-' + id]) return;
+  window.__slumbazenAnalyticsReady = true;
+  let qa = query.get('ga_debug') === '1';
+  try {
+    if (query.get('ga_debug') === '0') sessionStorage.removeItem('slumbazen-ga-debug');
+    else if (qa) sessionStorage.setItem('slumbazen-ga-debug', '1');
+    qa = qa || sessionStorage.getItem('slumbazen-ga-debug') === '1';
+  } catch {}
+  const debug = qa ? {debug_mode: true} : {};
+  const pageLanguage = () => {
+    const lang = location.pathname.split('/')[1];
+    return ['th', 'en', 'zh', 'ar', 'hi'].includes(lang) ? lang : 'en';
+  };
   const dataLayer = window.dataLayer = window.dataLayer || [];
   function gtag() { dataLayer.push(arguments); }
   // Suppress the Google tag's default page view before initialization.
   gtag('set', 'send_page_view', false);
   gtag('js', new Date());
-  gtag('config', id, {send_page_view: false, allow_google_signals: false, allow_ad_personalization_signals: false});
+  gtag('config', id, {...debug, send_page_view: false, allow_google_signals: false, allow_ad_personalization_signals: false});
   window.slumbazenTrackLead = (language) => {
     if (!['th', 'en', 'zh', 'ar', 'hi'].includes(language)) return;
     gtag('event', 'generate_lead', {
-      send_to: id, form_id: 'slumbazen-enquiry', content_language: language,
+      ...debug, send_to: id, form_id: 'slumbazen-enquiry', content_language: language,
       page_location: location.origin + location.pathname,
       page_referrer: document.referrer ? new URL(document.referrer).origin : ''
     });
@@ -50,7 +70,7 @@ const analytics = measurementId && process.env.CONTEXT === 'production' ? `<scri
     }
     if (previousPage?.pathname === page.pathname) return;
     gtag('event', 'page_view', {
-      send_to: id,
+      ...debug, send_to: id, content_language: pageLanguage(),
       page_location: page.href,
       page_title: document.title,
       page_referrer: previousPage?.href || (document.referrer ? new URL(document.referrer).origin : '')

@@ -332,3 +332,7 @@ Analytics errors cannot prevent the success message. Tests use mocked responses;
 they do not create real enquiries. Keep automatic `form_submit` separate from
 this event. To roll back, revert the received-lead hook and its caller together;
 the existing page-view tracking and form delivery remain independent.
+
+
+### Analytics QA and owner opt-out
+Production-only analytics supports `?ga_debug=1` for a tab-scoped QA session. Clear it with `?ga_debug=0`. Ordinary visits omit debug_mode. Use `?analytics=off` once per browser/device to persist an owner opt-out; `?analytics=on` reverses it. DNT, GPC and the GA disable flag suppress collection. Storage denial does not break the website. Pageviews include the route language; confirmed form submissions retain their validated form language. Personal form contents are not sent to GA4. Netlify Forms email notifications are configured separately in project Forms settings. Revert this commit to roll back these optional QA/owner controls.

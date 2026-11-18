@@ -1,0 +1,16 @@
+{
+  "siteId": "slumbazen",
+  "brand": "SlumbaZEN",
+  "locales": [
+    "th",
+    "en",
+    "zh",
+    "ar",
+    "hi"
+  ],
+  "defaultLocale": "th",
+  "whatsappUrl": "https://wa.me/66818519922",
+  "avoidSelectors": [
+    ".comparison-dock"
+  ]
+}

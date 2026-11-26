@@ -7,7 +7,9 @@ const Footer: React.FC = () => {
   const { t, i18n } = useTranslation();
   const langPrefix = `/${i18n.language}`;
 
-  const phone = t('contactPage.phone1');
+  const phone = '+66 81 851 9922';
+  const locale = i18n.language.split('-')[0];
+  const loc = ({th:['จุดติดต่อในกรุงเทพฯ · อาคารจิวเวลรี่เทรดเซ็นเตอร์','เปิดใน Google Maps','ติดต่อทาง WhatsApp'],en:['Bangkok contact point · Jewelry Trade Center','Open in Google Maps','Contact on WhatsApp'],zh:['曼谷联系点 · 珠宝贸易中心','在 Google 地图中打开','通过 WhatsApp 联系'],ar:['نقطة الاتصال في بانكوك · مركز تجارة المجوهرات','افتح في خرائط Google','تواصل عبر واتساب'],hi:['बैंकॉक संपर्क केंद्र · ज्वेलरी ट्रेड सेंटर','Google Maps में खोलें','WhatsApp पर संपर्क करें']} as Record<string,[string,string,string]>)[locale] ?? ['Bangkok contact point · Jewelry Trade Center','Open in Google Maps','Contact on WhatsApp'];
   const phoneHref = 'tel:+66818519922';
 
   return (
@@ -55,9 +57,9 @@ const Footer: React.FC = () => {
                 </a>
               </li>
               <li className="flex items-center justify-center lg:justify-start">
-                <a href="https://wa.me/66818519922" target="_blank" rel="noopener noreferrer" className="text-sm text-neutral-700 hover:text-brand-primary transition-colors" style={{display:'inline-flex',alignItems:'center',gap:12,minHeight:44}}>
+                <a href="https://wa.me/66818519922" target="_blank" rel="noopener noreferrer" aria-label={loc[2]} className="text-sm text-neutral-700 hover:text-brand-primary transition-colors" style={{display:'inline-flex',alignItems:'center',gap:12,minHeight:44}}>
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-brand-primary flex-shrink-0" aria-hidden="true"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.5L3 20.5l1.3-4.8A8.5 8.5 0 1 1 20.5 11.7Z"/><path d="m8.4 7.4 1.2-.2 1 2.4-.8 1a7.2 7.2 0 0 0 2.8 2.8l1-.8 2.4 1-.2 1.2c-.2 1.4-1.8 1.8-3.2 1.2-2.6-1-4.6-3-5.6-5.6-.6-1.4-.2-2.8 1.4-3Z" strokeLinejoin="round"/></svg>
-                  <span>WhatsApp · <bdi>+66 81 851 9922</bdi></span>
+                  <span>WhatsApp</span>
                 </a>
               </li>
               <li className="flex items-center justify-center lg:justify-start">
@@ -71,6 +73,7 @@ const Footer: React.FC = () => {
                   <span className="text-brand-primary font-bold text-sm me-3 mt-0.5">A:</span>
                   <p className="text-sm text-neutral-700">{t('contactPage.address')}</p>
               </li>
+              <li className="flex justify-center lg:justify-start"><div data-footer-location="" style={{display:'grid',gap:'0.4rem',minWidth:0}}><span>{loc[0]}</span><iframe title={loc[0]} src="https://www.google.com/maps?q=13.7227283%2C100.5201638&z=17&output=embed" width={160} height={120} loading="lazy" referrerPolicy="no-referrer-when-downgrade" style={{display:'block',width:'160px',maxWidth:'100%',height:'auto',aspectRatio:'4 / 3',border:0}}/><a href="https://maps.app.goo.gl/zKW8ZoYsmwa1XjGV6" target="_blank" rel="noopener noreferrer" style={{display:'inline-flex',alignItems:'center',minHeight:44,textDecoration:'underline'}}>{loc[1]}</a></div></li>
             </ul>
           </div>
         </div>
